@@ -36,8 +36,7 @@ img {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #00f114;
-  /* background-color: #f13f00; */
+   background-color: #f13f00; 
   border-radius: 71px;
   transition: 0.2s ease-in;
   box-sizing: border-box;
