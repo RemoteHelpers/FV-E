@@ -1,0 +1,163 @@
+<div id="assists" class="price shopify-section_inner">
+  <style>
+    .index-section.price::before{
+      border-right: 100vw solid {{section.settings.bg_color}};
+    	border-bottom: 15vw solid {{section.settings.bg_color}};
+      }
+  </style>
+  {% if section.settings.title != blank %}
+      <h2 class="section-header section-title">{{ section.settings.title | escape }}</h2>
+  {% endif %}
+  {% if section.settings.description != blank %}
+      <h3 class="price-description description">{{ section.settings.description | escape }}</h3>
+  {% endif %}
+
+  <div class="flex price-wrappper desktop">
+  	   {% for block in section.blocks %}
+        <div class="price-item">
+          {% if block.settings.image != blank %}
+            {%- assign img_url = block.settings.image | img_url: '160x160', scale: 2  -%}	
+          <img class="item__image lazyload"
+               data-src="{{ img_url }}"
+		  >
+          {% else %}
+            {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+           {% if block.settings.item_title != blank %}
+              <div class="item_title">{{block.settings.item_title}}</div>
+          {% endif %}
+          {% if block.settings.item_price != blank %}
+          <div class="item_cost item_desc"><span class="price_bolt">{{block.settings.item_currency}}{{block.settings.item_price}}</span> {{block.settings.item_duration}}</div>
+          {% endif %}
+          {% if block.settings.item_time != blank %}
+          <div class="item_time item_desc"><span class="price_bolt">{{block.settings.item_time}}</span> {{block.settings.item_per_time}}</div>
+          {% endif %}
+          {%- if block.settings.link != blank -%}
+      		<div class="button-wrapper">
+            <!-- <button class="btn" data-url="https://calendly.com/remote-helpers/consilting" disabled>{{block.settings.item_link_title}}</button> -->
+            <button class="btn" onclick="displayModal()">{{block.settings.item_link_title}}</button>
+         	</div>
+      		{%- endif -%}
+        </div>
+      {% endfor %}
+  </div>
+
+</div>
+
+{% include 'pop-up-contact' %}
+
+<script>
+  const modalWindow = document.querySelector(".pop-up-window");
+  const exitBtn = document.querySelector(".exit-btn");
+  exitBtn.addEventListener('click', hideModal);
+
+   function displayModal () {
+    modalWindow.classList.remove("pop-up-window-hide");
+    modalWindow.classList.add("pop-up-window-show");
+  } 
+
+  function hideModal () {
+    modalWindow.classList.remove("pop-up-window-show");
+    modalWindow.classList.add("pop-up-window-hide");
+  } 
+
+  
+</script>
+
+{% schema %}
+  {
+    "name": "Price",
+	"class": "index-section price",
+    "settings": [
+{
+	"type": "color",
+    "id": "bg_color",
+    "label": "Background color",
+     "default": "#fff"
+	},
+{
+		"type": "text",
+     	"id": "title",
+      	"label": "Heading",
+		"default": "Content Help"
+    },
+	{
+		"type": "text",
+     	"id": "description",
+      	"label": "Description",
+		"default": "Description Content"
+    }
+	],
+    "blocks": [
+      {
+        "type": "price_item",
+        "name": "price_item",
+		"settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+   		},
+		{
+          "type": "text",
+          "id": "item_title",
+          "label": "Item title",
+          "default": "Item title"
+		},
+        {
+			"type": "text",
+          "id": "item_currency",
+          "label": "Currency",
+          "default": "$"
+		},
+		{
+			"type": "text",
+          	"id": "item_duration",
+          	"label": "Duration",
+          	"default": "per month"
+		},
+		{
+          "type": "text",
+          "id": "item_price",
+          "label": "Price",
+          "default": "100"
+		},
+		{
+          "type": "text",
+          "id": "item_time",
+          "label": "Daily hours",
+          "default": "8"
+		},
+		{
+          "type": "text",
+          "id": "item_per_time",
+          "label": "Duration",
+          "default": "hours daily"
+		},
+		{
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+		},
+		{
+          "type": "text",
+          "id": "item_link_title",
+          "label": "Link title",
+          "default": "Link title"
+		}
+      ]
+	 }
+	],
+	"presets": [
+      {
+        "category": "Custom Content",
+        "name": "Price",
+ 		"blocks": [
+          {
+            "type": "price_item"
+          }
+      	]
+      }
+    ]
+  }
+{% endschema %}

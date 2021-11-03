@@ -1,0 +1,130 @@
+<div id="assists" class="assist shopify-section_inner">
+  {% if section.settings.title != blank %}
+      <h2 class="section-header section-title">{{ section.settings.title | escape }}</h2>
+  {% endif %}
+  {% if section.settings.description != blank %}
+      <h3 class="assist-description description">{{ section.settings.description | escape }}</h3>
+  {% endif %}
+  
+  <div class="flex assists-wrappper desktop">
+  	   {% for block in section.blocks %}
+       <a href="{{block.settings.item_url }}">
+        <div class="assist-item">
+           {% if block.settings.item_title != blank %}
+              <div class="item_title">{{block.settings.item_title}}</div>
+          {% endif %}
+          {% if block.settings.image != blank %}
+          {%- assign img_url = block.settings.image | img_url: '160x160', scale: 2  -%}	
+          <img class="item__image lazyload"
+               data-src="{{ img_url }}"
+		  >   
+          {% else %}
+            {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+          {% if block.settings.item_description != blank %}
+            <div class="item_description">{{block.settings.item_description}}</div>
+          {% endif %}
+        </div>
+      </a>
+      {% endfor %}
+  </div>
+  
+    <div class="side-wrappper mobile" data-slick='{"dots": true, "arrows": false}'>
+  	   {% for block in section.blocks %}
+       <a style="justify-content: center;" href="{{block.settings.item_url }}">
+        <div class="assist-item slide">
+           {% if block.settings.item_title != blank %}
+              <div class="item_title">{{block.settings.item_title}}</div>
+          {% endif %}
+          {% if block.settings.image != blank %}
+            {{ block.settings.image | img_url: '320x320', scale: 2 | img_tag: block.settings.image.alt, 'item__image' }}
+          {% else %}
+            {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+          {% if block.settings.item_description != blank %}
+            <div class="item_description">{{block.settings.item_description}}</div>
+          {% endif %}
+        </div>
+        </a>
+      {% endfor %}
+  </div>
+  {% javascript %}
+   $(document).ready(function() {
+	 $('.side-wrappper').slick({
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+     	arrows: false,
+		slidesToScroll: 1
+ 	});
+ });
+{% endjavascript %}
+</div>
+
+{% schema %}
+{
+	"name": "Assist",
+	"class": "index-section",
+    "settings": [
+	{
+		"type": "text",
+     	"id": "title",
+      	"label": "Heading",
+		"default": "Content Help"
+    },
+	{
+		"type": "text",
+     	"id": "description",
+      	"label": "Description",
+		"default": "Description Content"
+    }
+	],
+    "blocks": [
+      {
+        "type": "assist_item",
+        "name": "assist_item",
+		"settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+   		},
+		{	
+          "type": "text",
+          "id": "item_title",
+          "label": "Item title",
+          "default": "Item title"
+		},
+		{	
+          "type": "text",
+          "id": "item_description",
+          "label": "Item Description",
+          "default": "Item Description"
+		},
+    {	
+          "type": "url",
+          "id": "item_url",
+          "label": "Item Link"
+    } 
+      ]
+	 }
+	],
+	"presets": [
+      {
+        "category": "Custom Content",
+        "name": "Assists",
+ 		"blocks": [
+          {
+            "type": "assist_item"
+          },
+          {
+            "type": "assist_item"
+          },
+          {
+            "type": "assist_item"
+          }
+      	]
+      }
+    ]
+  }
+{% endschema %}

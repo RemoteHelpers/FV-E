@@ -1,0 +1,62 @@
+    <section class="production">
+        <div class="container">
+            <div class="production-wrapper">
+                <h2 class="production__title title">{{section.settings.production_title}}</h2>
+                <ul class="production-list">
+                  {% for block in section.blocks %}
+                    <li class="production-item">
+                        <div class="production-item__picture"><img src="{{ block.settings.card_img | img_url: "master" }}" alt="" class="production-item__img"></div>
+                        <div class="production-item__block">
+                            <h3 class="production-item__title">{{block.settings.card_title}}</h3>
+                            <p class="production-item__description">{{block.settings.card_description}} </p>
+                        </div>
+                    </li>
+{% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    {% schema %}
+{
+  "name": "production",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "production_title",
+        "label": "4th section title"
+      }
+
+     
+  ],
+	  "blocks": [
+      {
+        "type": "card",
+        "name": "cards",
+        "settings": [
+
+          {
+            "type": "text",
+            "id": "card_title",
+            "label": "Card title",
+            "default":"Item title"
+          },
+ {
+            "type": "text",
+            "id": "card_description",
+            "label": "Card description",
+            "default":"Item description"
+          },
+{
+        "type": "image_picker",
+        "id": "card_img",
+        "label": "Card Image"
+   	}
+        
+        ]
+      }
+  ]
+
+  } 
+{% endschema %}

@@ -1,0 +1,636 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+input:active,
+input:focus,
+input:hover {
+    outline: none;
+}
+
+#shopify-section-header {
+  position: fixed !important;
+}
+
+section {
+    padding-top: 180px;
+}
+
+section.first__screen {
+    padding-top: 0;
+}
+
+.first__screen-container {
+	width: 1170px;
+    margin: 0 auto;
+  	position: absolute;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* ///////////////////////////////// FIRST SCREEN */
+
+.first__screen {
+    background-image: url('../assets/first-screen-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.first__screen  img {
+  	height: 100vh;
+    object-fit: cover;
+}
+
+.first__screen::after {
+    position: absolute;
+    content: url('../assets/sound-wawe.svg');
+    width: 100%;
+    height: 1em;
+    top: 45%;
+}
+
+.first__screen-inner {
+    max-width: 600px;
+}
+
+.first__screen-title {
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 140%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.first__screen-subtitle {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    padding: 30px 0;
+  	color: #fff;
+}
+
+.first__screen-btn {
+    background: #F13F00;
+    border-radius: 100px;
+    padding: 15px 50px;
+    display: block;
+    box-sizing: border-box;
+    width: fit-content;
+    color: inherit;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* /////////////////////////////////////PROVIDE */
+
+.provide {
+    position: relative;
+}
+
+.provide::after {
+    position: absolute;
+    content: url(../assets/decor.svg);
+    width: 102px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    color: #212121;
+	max-width: 60%;
+    text-transform: initial;
+    letter-spacing: 0;
+	padding-bottom: 60px;
+}
+
+.creators .section-title {
+  	padding-bottom: 0px;
+    max-width: 45%;
+}
+
+.section__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 140%;
+    color: #212121;
+    max-width: 90%;
+  	text-transform: initial;
+  	letter-spacing: 0;
+}
+
+.section__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    padding-left: 1em;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.section__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__left {
+    width: 50%;
+}
+
+.section__right {
+    width: 50%;
+    height: 360px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/* //////////////////////////////////TYPES */
+
+.types__items {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.types {
+    position: relative;
+}
+
+.types::before {
+    position: absolute;
+    content: "";
+    background-image: url(../assets/decor-2.svg);
+    background-repeat: no-repeat;
+    width: 1.1em;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 21%;
+    margin: 0 auto;
+    display: block;
+}
+
+.types::after {
+    position: absolute;
+    content: url('../assets/sound-wawe.svg');
+    z-index: -1;
+    width: 100%;
+    height: 1em;
+    top: 50%;
+}
+
+.types__item {
+    width: 33%;
+}
+
+.types__item-icon {
+    width: 285px;
+}
+
+.types__item-text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.03em;
+  	background-color: #F9F9F9;
+    text-transform: uppercase;
+  	position: relative;
+}
+
+
+/* ///////////////////////////////////////PURPOSE */
+
+.purpose {
+    position: relative;
+}
+
+.purpose::after {
+    top: 29%;
+    position: absolute;
+    content: url(../assets/decor-3.svg);
+    width: 102px;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.purpose .section__right {
+    height: 420px;
+}
+
+
+/*  ///////////////////// CONTACTFORM*/
+
+
+.contactform-section {
+    padding: 0;
+}
+
+.contactform-section .section-header.section-title {
+	text-align: left !important;
+  	margin-bottom: 0 !important;
+  	padding: 0;
+  	letter-spacing: 0;
+}
+
+.index-section.contactForm {
+	position: relative;
+}
+
+
+.index-section.contactForm::before {
+	position: absolute;
+    content: url(../assets/decor-5.svg);
+    width: 102px;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  	top: -22%;
+}
+
+.description {
+	text-align: left;
+    font-weight: 600;
+}
+
+.contactform-section .img-wrapper {
+	order: 1;
+}
+
+.contact_form {
+	order: 2;
+}
+
+
+/* ////////////////////CREATORS */
+
+.portfolio {
+  	position: relative;
+}
+
+.portfolio::after {
+/* 	bottom: 0; */
+    position: absolute;
+    content: url(../assets/decor-4.svg);
+    width: 102px;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
+
+
+/* CONTACT FORM */
+
+
+/* ////////////////////RESPONSIVE */
+
+@media(max-width: 1366px) {
+    section {
+        padding-top: 120px;
+    }
+    .first__screen::after {
+        top: 39%;
+    }
+    .first__screen-title {
+        font-size: 40px;
+    }
+    .first__screen-subtitle {
+        padding: 29px 0 15px;
+    }
+    .section__right {
+        height: 27em;
+    }
+    .types::before {
+        top: 25%;
+    }
+    .purpose .section__title {
+        padding-top: 1em;
+    }
+    .purpose .section__right {
+        height: 29em;
+    }
+  	.portfolio {
+      	padding-top: 205px;
+    }
+}
+
+@media(max-width: 1200px) {
+  	.first__screen-container,
+    .container {
+        width: 90%;
+    }
+  	.contactform-section .section-header.section-title,
+  	.section-title,
+  	.section__title {
+      	font-size: 29px !important;
+  	}
+  	section {
+    	padding-top: 140px;
+	}
+    .section__right {
+        height: 27em;
+    }
+    .purpose .section__right {
+        height: 30em;
+    }
+    .types::before {
+        top: 22%;
+    }
+    .purpose::after {
+        top: 27%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .section__title {
+        font-size: 30px;
+    }
+    .purpose .section__right {
+        height: 33em;
+    }
+    .types::before {
+        top: 24%;
+    }
+    .purpose::after {
+        top: 24%;
+    }
+    .types__item-text {
+        font-size: 16px;
+    }
+    .creators .section-title {
+        padding-bottom: 0;
+        max-width: 54%;
+    }  
+    .description {
+       	font-size: 17px;
+    }  
+}
+
+@media(max-width: 992px) {
+    .contactform-section .section-header.section-title, .section-title, .section__title {
+        font-size: 27px!important;
+    }
+    .section__title {
+        font-size: 27px;
+    }
+    .section__right {
+        height: 28em;
+    }
+    .types::before {
+        top: 22%;
+    }
+    .purpose::after {
+        top: 23%;
+    }
+}
+
+@media(max-width: 991px) {
+  .index-section.contactForm::before {
+  		display: none;
+  }
+}
+
+@media(max-width: 800px) {
+    .section__title {
+        font-size: 23px;
+    }
+    .section__text {
+        font-size: 17px;
+    }
+    .types::before {
+        top: 23%;
+    }
+  	.section__right {
+    	height: 29em;
+	}
+  	.contactform-section .section-header.section-title, .section-title, .section__title {
+    	font-size: 22px!important;
+	}
+}
+
+@media(max-width: 768px) {
+    section {
+        padding-top: 50px;
+    }
+    .section__inner {
+        flex-direction: column;
+        padding-left: 40px;
+    }
+  	.contactform-section .section-header.section-title, .section-title, .section__title {
+    	font-size: 36px!important;
+	}
+    .section__title {
+        max-width: unset;
+    }
+    .types__inner {
+        padding-left: 40px;
+    }
+    .section__left {
+        width: unset;
+    }
+    .section__right {
+        width: unset;
+        height: unset;
+        display: block;
+    }
+    .section__text {
+        padding: 0;
+    }
+    .first__screen {
+        background-position-x: 30%;
+        justify-content: flex-end;
+    }
+    .first__screen-inner {
+        max-width: unset;
+        padding-bottom: 4em;
+    }
+    .first__screen::after {
+        content: "";
+        background-image: url(../assets/sound-wawe-mobile.svg);
+        left: 0;
+        top: 8%;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .provide::after {
+        /* display: none; */
+    }
+    .provide::after {
+        content: "";
+        background-image: url(../assets/decor-mobile.svg);
+        background-repeat: no-repeat;
+        width: unset;
+        left: 15px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 25px;
+        margin-top: 50px;
+    }
+    .section-title {
+      	max-width: unset;
+    }
+    .section__title {
+        font-weight: 900;
+        font-size: 34px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        position: relative;
+    }
+    .section__text {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+    }
+    .types {
+        padding-top: 100px;
+    }
+    .types::before {
+        background-image: url(../assets/decor-mobile-2.svg);
+        width: unset;
+        left: 15px;
+        top: 0;
+        width: 100%;
+        left: 25px;
+        margin-top: 100px;
+    }
+    .types::after {
+        background-image: url(../assets/sound-wave-mobile-2.svg);
+        top: 20px;
+        content: '';
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 5em;
+    }
+    .types__items {
+        flex-direction: column;
+    }
+    .types__item {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .types__item-img {
+        display: flex;
+        justify-content: center;
+    }
+    .types__item-text {
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 140%;
+    }
+    .purpose::after {
+        content: "";
+        background-image: url(../assets/decor-mobile-3.svg);
+        background-repeat: no-repeat;
+        width: unset;
+        left: 15px;
+        top: 0;
+        width: 100%;
+        left: 25px;
+        margin-top: 50px;
+    }
+    .purpose .section__title {
+        padding-top: 0;
+    }
+    .purpose .section__right {
+        height: unset;
+    }
+  	.index-section.contactForm::before {
+  		display: block;
+        content: url(../assets/decor-5-mobile.svg);
+        width: 102px;
+        height: 100%;
+        left: 25px;
+        right: unset;
+        margin: 0 auto;
+        top: 0%;
+  	}
+  	.portfolio {
+    	padding-top: 50px;
+	}
+    .portfolio::after {
+      	display: none;
+    }
+    .creators {
+        margin-bottom: 0;
+  	}
+    .creators .section-title {
+        max-width: unset;
+        text-align: left;
+    }  
+  	.contactform-section .img-wrapper {
+    	order: 2;
+	}
+    .button-wrapper {
+      	order: 2;
+    }
+  	.contact_form {
+    	order: 1;
+	}
+
+}
+
+@media(max-width: 500px) {
+    .provide::after {
+        left: 15px;
+    }
+    .types::before {
+        left: 15px;
+    }
+    .purpose::after {
+        left: 15px;
+    }
+  	.index-section.contactForm::before {
+  		left: 15px;
+  	}
+}

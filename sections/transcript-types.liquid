@@ -1,0 +1,61 @@
+<section class="trans-types section">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.types_title }}</h2>
+    <ul class="trans-types__list">
+      {% for block in section.blocks %}
+        <li class="trans-types__item">
+          <div class="trans-types__num">{{ block.settings.number }}</div>
+          <div class="trans-types__content">
+            <h3>{{ block.settings.list_title }}</h3>
+            <p>{{ block.settings.list_text }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Types",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "types_title",
+        "label": "Types title"
+      }
+  ],
+  "blocks": [
+      {
+        "type": "text",
+        "name": "item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "number",
+            "label": "Number"
+          },
+          {
+            "type": "text",
+            "id": "list_title",
+            "label": "List title",
+            "default":"Item title"
+          },
+          {
+            "type": "text",
+            "id": "list_text",
+            "label": "List text",
+            "default":"Item text"
+          }
+        ]
+      }
+  ],
+  "presets": [
+      {
+        "name": "Types",
+        "category": "card"
+      }
+  ]
+} 
+{% endschema %}

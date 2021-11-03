@@ -1,0 +1,22 @@
+<div data-section-id="{{ section.id }}" data-section-type="collection-template">
+  {% if section.settings.title != blank %}
+	<h3 class="video-editors_heading">{{ section.settings.title | escape }}</h3>
+  {% endif %}
+</div>
+      
+
+{% schema %}
+{
+  "name": "Title",
+  "class": "index-section creators collection-creators",
+  "settings": [
+    {
+  "type": "text",
+  "id": "title",
+  "label": "Heading",
+  "default": "Page title"
+  }
+  
+]
+}
+{% endschema %}

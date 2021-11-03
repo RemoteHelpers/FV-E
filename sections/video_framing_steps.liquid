@@ -1,0 +1,138 @@
+<div id="steps" class="steps shopify-section_inner">
+    <style>
+    .index-section.steps {
+    	background-color: {{section.settings.bg_color}};
+    }
+      
+    .circle, .transition{
+  		background-color: {{section.settings.step_color}};
+	}
+      
+    
+	.visible-color .circle, .visible-color .complete{
+		background-color: {{section.settings.step_color_visible}};
+	}
+  </style>
+  {% if section.settings.title != blank %}
+      <h2 class="title steps__title">{{ section.settings.title | escape }}</h2>
+  {% endif %}
+  {% if section.settings.description != blank %}
+      <h3 class="text steps__text">{{ section.settings.description | escape }}</h3>
+  {% endif %}
+  <div class="content-wrapper flex">
+  {% if section.settings.image != blank %}
+  	{%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+    <div class="content__item img-wrapper">
+      <img id="content__img"
+                       class="custom__image content__img lazyload js"
+                       data-src="{{ img_url }}"
+                       data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                       data-sizes="auto"
+      >
+   	</div>
+  {% endif %}
+  {% if section.settings.title != blank %}
+      <h2 class="section-header section-title mobile">{{ section.settings.title | escape }}</h2>
+  {% endif %}
+    {% if section.blocks.size > 0 %}
+    <div class="step_item-wrapper">
+      {% for block in section.blocks %}
+        <div class="step_item flex {% if forloop.index == section.blocks.size %}last{% endif %}">
+          {% if block.settings.step_description != blank %}
+           <div class="circle" style="color: {{block.settings.step_color_text}};">
+            <span>{{block.settings.step_num}}</span>
+            <div class="transition">
+              <div class="complete"></div>
+            </div>
+          </div>
+          <div class="step_item__description">{{block.settings.step_description}}</div>
+         
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+ </div>
+</div>  
+{% schema %}
+  {
+    "name": "Steps",
+	"class": "index-section steps",
+    "settings": [
+{
+	"type": "color",
+    "id": "bg_color",
+    "label": "Background color",
+     "default": "#fff"
+	},		
+{
+		"type": "text",
+     	"id": "title",
+      	"label": "Heading",
+		"default": "Content Help"
+    },
+	{
+		"type": "text",
+     	"id": "description",
+      	"label": "Description",
+		"default": "Description Content"
+    },
+	{
+         "type": "image_picker",
+         "id": "image",
+         "label": "Image"
+   	},
+	{	
+          "type": "color",
+          "id": "step_color",
+          "label": "Circle step color",
+          "default": "#E0E0E0"
+	},
+{	
+          "type": "color",
+          "id": "step_color_visible",
+          "label": "Circle step color visible",
+          "default": "#E0E0E0"
+		}
+	],
+	"blocks": [
+      {
+        "type": "step_item",
+        "name": "step_item",
+		"settings": [
+        {
+          "type": "text",
+          "id": "step_num",
+          "label": "Step Count"
+   		},
+		{
+          "type": "text",
+          "id": "step_description",
+          "label": "Step Description"
+		},
+		{	
+          "type": "color",
+          "id": "step_color_text",
+          "label": "Circle step color text",
+          "default": "#fff"
+		}
+      ]
+	 }
+	],
+	"presets": [
+      {
+        "category": "Custom Content",
+        "name": "Steps",
+ 		"blocks": [
+          {
+            "type": "step_item"
+          },
+			{
+            "type": "step_item"
+          }
+          
+      	]
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,94 @@
+<section id="io-fourth">
+    <div class="page-width">
+        <h2 class="section-heading fourth-heading">{{ section.settings.heading }}</h2>
+        <div class="lr-wrapper pc-ver">
+            <div class="left">
+                <h5 class="section-text">{{ section.settings.txt-content-1 }}</h5>
+                <h5 class="section-text">{{ section.settings.txt-content-2 }}</h5>
+                <h5 class="section-text">{{ section.settings.txt-content-3 }}</h5>
+                <h5 class="section-text">{{ section.settings.txt-content-4 }}</h5>
+                <img src="{{ section.settings.io-sec4-img2 | img_url: "master" }}" alt="img">
+            </div>
+            <div class="right">
+                <img src="{{ section.settings.io-sec4-img1 | img_url: "master" }}" alt="img">
+                <h5 class="section-text">{{ section.settings.txt-content-5 }}</h5>
+                <h5 class="section-text">{{ section.settings.txt-content-6 }}</h5>
+            </div>
+        </div>
+
+        <div class="lr-wrapper mobile-heading">
+            <div class="left">
+                <h5 class="section-text">{{ section.settings.txt-content-1 }}</h5>
+                <h5 class="section-text">{{ section.settings.txt-content-2 }}</h5>
+                <img src="{{ section.settings.io-sec4-img1 | img_url: "master" }}" alt="img">
+                <h5 class="section-text">{{ section.settings.txt-content-3 }}</h5>
+                <h5 class="section-text">{{ section.settings.txt-content-4 }}</h5>
+            </div>
+            <div class="right">
+                <img src="{{ section.settings.io-sec4-img2 | img_url: "master" }}" alt="img">
+                <h5 class="section-text">{{ section.settings.txt-content-5 }}</h5>
+                <h5 class="section-text">{{ section.settings.txt-content-6 }}</h5>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% schema %}
+
+{
+    "name": "IO 4th section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+        }, {
+            "type": "richtext",
+            "id": "txt-content-1",
+            "label": "Text line"
+        }, {
+            "type": "richtext",
+            "id": "txt-content-2",
+            "label": "Text line"
+        }, {
+            "type": "richtext",
+            "id": "txt-content-3",
+            "label": "Text line"
+        }, {
+            "type": "richtext",
+            "id": "txt-content-4",
+            "label": "Text line"
+        }, {
+            "type": "image_picker",
+            "id": "io-sec4-img1",
+            "label": "Image"
+        }, {
+            "type": "image_picker",
+            "id": "io-sec4-img2",
+            "label": "Image"
+        }, {
+            "type": "richtext",
+            "id": "txt-content-5",
+            "label": "Text line"
+        }, {
+            "type": "richtext",
+            "id": "txt-content-6",
+            "label": "Text line"
+        }
+    ]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+
+
+
+{% endstylesheet %}
+
+{% javascript %}
+
+
+
+{% endjavascript %} 

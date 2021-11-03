@@ -1,0 +1,870 @@
+{{ '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' | script_tag }}
+<!-- {{ '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' | stylesheet_tag }} -->
+{{ '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css' | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'services-style.css' | asset_url }}">
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+
+
+
+
+
+<!-- Из переменной product.description, содержащей описание сплитом удаляем ненужные фрагменты и после чего использхуем в коде ниже -->
+
+{% assign about_arr = product.description | split: '*Education*' | first %}
+{% assign education_arr = product.description | split: '*Education*' | last %}
+{% assign education_arr = education_arr | split: '*Expirience*' | first %}
+
+{% assign expirience_arr = product.description | split: '*Expirience*' | last %}
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+
+
+
+
+<!--  modal video -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+
+
+
+
+
+<!--  end of modal video -->
+
+
+
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+<div class="main-container main-container--product-page" style="background-color: #F9F9F9; margin-bottom: 100px;">
+  <div class="page-width">
+
+    <section class="remodal" data-remodal-id="modal">
+      <button data-remodal-action="close" class="remodal-close"></button>
+
+    {% for media in product.media %}
+    {% case media.media_type %}
+      {% when 'video' %}
+        <div style="width: 600px;" class="product-video">
+          {{ media | video_tag: controls: true, image_size: "1024x"}}
+          <style>.sorry-text{display: none;}</style>
+        </div>
+
+        {% when 'external_video' %}
+        <div class="product-single__media" style="padding-top: {{ 1 | divided_by: media.aspect_ratio | times: 100}}%;" data-media-id="{{ media.id }}">
+          <iframe class="lazyload" id="ytplayer" width="100%" height="360"
+                                        data-src="https://www.youtube.com/embed/{{ media.external_id }}?controls=1"
+                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <style>.sorry-text{display: none;}</style>
+        </div>
+    {% endcase %}
+    {% if media.media_type != 'video' %}
+    <h3 class="sorry-text">Sorry, there is no video</h3>
+    {% endif %}
+  {% endfor %}
+    </section>
+
+    <div class="row">
+      <div class="col-sm-6 creator_video">
+        <img src="{{ section.settings.bg_for_video | img_url: "master"}}" style="margin-top: 50px; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;">
+        <div class="inside-info">
+        <img class="inside-img" src="{{ product | img_url: '120x120' }}">
+        <h3 class="inside-text">{{ product.title }}</h3>
+		<h3 class="inside-id">{{ product.type }}</h3>
+        <p class="inside-id">{%include 'icon-id' %} {{ current_variant.sku }}</p>
+        </div>
+        <div class="play-sec"><a href="#modal"><img id="icon" class="play-btn" src="{{ section.settings.play_btn | img_url: '50x50' }}"></a></div>
+      </div>
+      <div class="col-sm-6">
+        <div class="row creator-description">
+          <div class="col-xs-12">
+            <h1 class="creator_name">{{ product.title }}</h1>
+          </div>
+          <div class="col-xs-12 m-tag">
+            <p style="padding-right: 10px;">
+              {% for skill in product.tags %}
+              <a  href="/search?q={{ skill | replace: '&', '%26' }}%2C+&options%5Bprefix%5D=last" class="ve-product-tag">{{ skill }}</a>
+              {% endfor %}
+
+          </div>
+          <div class="col-sm-12 m-btn">
+            {%- comment -%}Helps to define margin top correctly{%- endcomment -%}
+            <div class="row getinterview">
+              <div class="getinterview__inner col-xs-6">
+                <h1 class="getinterview-price">Full-time price: {{ product.price | money_without_trailing_zeros }}</h1>
+              </div>
+              <div class="getinterview__inner col-xs-6 hzcentered">
+
+                <div class="button-wrapper">
+            	<button class="ve-interview-btn" data-url="https://calendly.com/remote-helpers/consilting" disabled>Set an interview</button>
+         		</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row arrows" style="margin-top: 120px">
+      <div class="col-sm-12" align="center"><img src="{{ section.settings.arrow_img | img_url: "master"}}" style="margin-right: 51px;"><img src="{{ section.settings.arrow_img | img_url: "master"}}"style="margin-right: 51px;"><img src="{{ section.settings.arrow_img | img_url: "master"}}"></div>
+  </div> 
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+
+<script>
+
+  const player = videojs("video-ved", {
+  autoplay: "muted",
+  fluid: true
+});
+
+$(document).on("opened", ".remodal", function() {
+  player.play("muted");
+  player.currentTime('0');
+});
+
+$(document).on("closing", ".remodal", function(e) {
+  player.pause();
+  player.play("pause");
+  player.muted(true); // nmute the volume
+  player.currentTime('0');
+});
+</script>
+<script>
+$(document).ready(function(){
+  $('#icon').on('click', function(){
+      var $this = $(this);
+      
+      if ($this.hasClass('animated')) {
+          return;
+      }
+      $this.addClass('animated');
+      $this.css("transform","rotate(360deg)");
+      
+      setTimeout(function () {
+  
+          $this.removeClass('animated');
+        $this.css("transform","rotate(0deg)");
+      }, 800);
+  });
+});
+</script>
+
+<script>
+
+$(document).ready(function(){
+  $('#icon').mouseover( function(){
+      var $this = $(this);
+      
+      if ($this.hasClass('animated')) {
+          return;
+      }
+      $('.inside-img').addClass('orange-light');
+      $this.addClass('animated');
+      $this.css("transform","rotate(360deg)");
+      
+      setTimeout(function () {
+        $('.inside-img').removeClass('orange-light');
+        $this.removeClass('animated');
+        $this.css("transform","rotate(0deg)");
+      }, 800);
+  });
+});
+
+</script>
+
+
+  {% schema %}
+  {
+  "name": "Product: 1 sect1",
+  "settings": [
+  {
+  "type": "image_picker",
+  "id": "bg_for_video",
+  "label": "Background image"
+  },
+  {
+    "type": "image_picker",
+    "id": "arrow_img",
+    "label": "Arrow image"
+  },
+  {
+  "type": "image_picker",
+  "id": "play_btn",
+  "label": "Play button image"
+  }
+  ],
+  "presets": [
+  {
+  "name": "VE-Products-11",
+  "category": "Video editors"
+  }
+  ]
+  }
+  {% endschema %}
+
+  {% stylesheet %} 
+
+.slick-prev, .slick-next {
+    position: absolute;
+    display: block;
+    height: 46px;
+    width: 50px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: white;
+    border: 2px solid #F13F00 !important;
+    color: #F13F00;
+    border-radius: 10px;
+    top: 50%;
+    margin: 0 16px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -200%);
+    padding: 0;
+    border: none;
+    outline: 0;
+    box-shadow: 10px;
+    -webkit-box-shadow: 1px 8px 7px 1px rgb(0 0 0 / 45%);
+    box-shadow: 1px 8px 7px 1px rgb(0 0 0 / 45%);
+} 
+ 
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    background: #e83d00;
+    color: transparent;
+	outline: 0;
+    transition: all .5s ease;
+}  
+
+.ve-product-tag {
+    display: inline-block;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 133.4%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #BDBDBD;
+    padding: 5px 15px;
+    width: fit-content;
+    margin-top: 5px;
+}
+
+.getinterview {
+    margin-top: 150px;
+    transition: 0.3s;
+}
+.getinterview {
+    margin-top: 225px;
+    width: 470px;
+    height: 80.57px;
+    background: #F13F00;
+    border-radius: 47.9592px;
+}
+.getinterview-price {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17.2653px;
+  line-height: 133.4%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  padding-top: 10px;
+} 
+.hzcentered {
+    margin-top: 1.2em;
+} 
+.ve-interview-btn {
+    outline-style: none;
+    border-color: transparent;
+}
+.ve-interview-btn {
+    margin-top: 25px;
+    padding-top: 25px;
+    width: 188px;
+    height: 47px;
+    background: #FFFFFF;
+    border-radius: 47.9592px;
+    margin: 0px 0px;
+    padding: 10px 16px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13.4286px;
+    line-height: 133.4%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #F13F00;
+}
+.ve-interview-btn {
+    outline-style: none;
+    border-color: transparent;
+}
+.ve-btn-outline {
+    padding: 15px 50px;
+    background: #fff;
+    border-radius: 71.0644px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 133.4%;
+    border: 2px solid #F13F00;
+    box-sizing: border-box;
+    border-radius: 71.0644px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #F13F00;
+}
+.ve-btn-outline:hover {
+    background: #F13F00;
+    color: #FFFFFF !important;
+    text-decoration: none;
+    transition: all .5s ease;
+} 
+
+
+
+
+
+
+
+  .orange-light {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-box-shadow: 4px 0px 45px 15px rgba(231, 91, 29, 0.44);
+    -moz-box-shadow: 4px 0px 45px 15px rgba(231, 91, 29, 0.44);
+    box-shadow: 4px 0px 45px 15px rgba(231, 91, 29, 0.44);
+  }
+  
+  #icon{
+    overflow:hidden;
+}
+.animated {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;    
+}
+
+
+  
+  .play-sec {
+  width: 95%; 
+  margin-top: -17%;
+  text-align: center;
+  }
+
+  .inside-info {
+  	width: 95%;
+<!--   	margin-left: 211px; --> 
+    position: absolute;
+    margin-top: -53%;
+  	text-align: center;
+  }
+  
+  .inside-img {
+  border-radius: 50px;
+  margin: 0;
+  }
+  
+  .play-btn {
+
+  }
+  
+  .inside-text {
+	margin: 0;
+  	margin-top: 2%;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 145.9%;
+    letter-spacing: 0.03em;
+    color: #150e78;
+  }   
+  
+  .id-logo {
+    margin: 0;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+    color: black;
+    text-align: center;
+    
+  }
+
+    .inside-id {
+	  margin: 0;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+    color: #150e78;
+  	text-align: center;
+  }
+
+  .main-container {
+    margin-bottom: 200px;
+    margin-top: -50px;
+  }
+  .arrows {
+    margin-top: 120px;
+  }
+
+  .creator_name {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44.8529px;
+    line-height: 145.9%;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-top: 120px;
+  }
+  
+  .ve-product-tag {
+    text-decoration: none;
+  }
+   
+  .ve-product-tag:hover {
+    text-decoration: none;
+  }
+  
+  .m-btn {
+    text-align: left;
+    margin: 0;
+  }
+  
+  @media (max-width: 1100px) {
+    .arrows {
+      display: none;
+    } 
+  
+    .creator_name {
+    text-align: center;
+    margin-top: 10px;
+    } 
+    .m-btn {
+      padding-top: 49px;
+      text-align: -webkit-center;
+    }
+    .m-tag {
+    text-align: center;
+    z-index: 999;
+    margin-bottom: 5%; 
+    }
+    }
+  
+    
+    .video_ed {
+    position: relative;
+    -webkit-transform: translate(0%, 0%);
+    top: -354px;
+    left: 19.5%;
+    }
+  
+    @media (max-width: 1380px) {
+    .video_ed {
+    position: relative;
+    -webkit-transform: translate(0%, 0%);
+    top: -330px;
+    left: 18%;
+    }
+    }
+  
+    @media (max-width: 768px) {
+    .video_ed {
+    position: relative;
+    -webkit-transform: translate(0%, 0%);
+    top: -354px;
+    left: 19.5%;
+    }
+    }
+  
+    .hzcentered {
+    margin-top: 1.2em;
+    }
+
+  @media screen and (max-width: 1362px) {
+    .play-sec {
+      width: 95%; 
+      margin-top: -18%;
+      text-align: center;
+      }
+
+  }  
+  @media screen and (max-width: 1300px) {
+    .play-sec {
+      width: 95%; 
+      margin-top: -19%;
+      text-align: center;
+      }
+
+  }  
+  @media screen and (max-width: 1240px) {
+    .play-sec {
+      width: 95%; 
+      margin-top: -20%;
+      text-align: center;
+      }
+
+  }  
+  
+  @media screen and (max-width: 1180px) {
+    .play-sec {
+      width: 95%; 
+      margin-top: -19%;
+      text-align: center;
+      }
+      .inside-text {
+        margin: 0;
+          margin-top: 2%;
+          font-family: Raleway;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 14px;
+          line-height: 145.9%;
+          letter-spacing: 0.03em;
+          color: #150e78;
+        }   
+        
+        .id-logo {
+          margin: 0;
+          font-family: Raleway;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 11px;
+          letter-spacing: 0.03em;
+          color: black;
+          text-align: center;
+          
+        }
+      
+          .inside-id {
+          margin: 0;
+          font-family: Raleway;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 11px;
+          letter-spacing: 0.03em;
+          color: #150e78;
+          text-align: center;
+        }
+        .inside-img {
+          height: 105px;
+        }
+        .play-btn {
+          height: 45px;
+        }
+  }  
+  @media screen and (max-width: 1032px) {
+    .play-sec {
+      width: 95%; 
+      margin-top: -20%;
+      text-align: center;
+      }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .inside-img {
+      height: 90px;
+    }
+    .play-btn {
+      height: 35px;
+    }
+    .inside-text {
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 885px) {
+    .play-sec {
+      width: 95%; 
+      margin-top: -15%; 
+      text-align: center;
+      } 
+    .inside-text {
+      margin-top: 1%;
+    }
+    .inside-id {
+      display: none;
+    } 
+  }
+
+  @media screen and (max-width: 768px) {
+    .creator-description {
+      margin-top: 40%;
+    }
+    .play-sec {
+      width: 95%; 
+      margin-top: -17%;
+      text-align: center;
+      }
+    
+      .inside-info {
+        width: 95%;
+    <!--   	margin-left: 211px; --> 
+        position: absolute;
+        margin-top: -53%;
+        text-align: center;
+      }
+      
+      .inside-img {
+      border-radius: 50px;
+      margin: 0;
+      height: 120px;
+      }
+      
+      .play-btn {
+        height: 50px;
+      }
+      
+      .inside-text {
+      margin: 0;
+        margin-top: 2%;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 145.9%;
+        letter-spacing: 0.03em;
+        color: #150e78;
+      }   
+      
+      .id-logo {
+        margin: 0;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 15px;
+        letter-spacing: 0.03em;
+        color: black;
+        text-align: center;
+        
+      }
+    
+        .inside-id {
+        display: block;
+        margin: 0;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 15px;
+        letter-spacing: 0.03em;
+        color: #150e78;
+        text-align: center;
+      }
+  }
+
+  @media screen and (max-width: 660px) {
+    .play-sec {
+      margin-top: -18%;
+    }
+    .inside-text {
+      margin-top: 3%;
+    }
+  }
+
+  @media screen and (max-width: 635px) {
+    .play-sec {
+      margin-top: -20%;
+    }
+  .inside-text {
+    margin-top: 3%;
+  }
+} 
+
+  @media screen and (max-width: 585px) {
+    .play-sec {
+      margin-top: -21%;
+    }
+    .inside-text {
+      margin-top: 1%;
+    }
+  }
+  
+
+  @media screen and (max-width: 550px) {
+    .play-sec {
+      margin-top: -21%;
+    }
+    .inside-text {
+      font-size: 14px;
+    }
+    .inside-id {
+      font-size: 11px;
+    }
+  }
+
+  @media screen and (max-width: 525px) {
+    .play-sec {
+      margin-top: -15%;
+    }
+    .inside-text {
+      font-size: 14px;
+    }
+    .inside-id {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 485px) {
+    .play-sec {
+      margin-top: -16%;
+    }
+    .inside-text {
+      font-size: 14px;
+      margin-top: 3%;
+    }
+    .inside-id {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 448px) {
+    .play-sec {
+      margin-top: -17%;
+    }
+    .inside-text {
+      font-size: 14px;
+      margin-top: 3%;
+    }
+    .inside-id {
+      display: none;
+    }
+  }
+
+
+  @media screen and (max-width: 424px) {
+    .play-sec {
+      margin-top: -11%;
+    }
+    .inside-text {
+      display: none;
+    }
+    .inside-id {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 404px) {
+    .play-sec {
+      margin-top: -13%;
+    }
+    .inside-text {
+      display: none;
+    }
+    .inside-id {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 385px) {
+    .play-sec {
+      margin-top: -10%;
+    }
+    .inside-text {
+      display: none;
+    }
+    .inside-id {
+      display: none;
+    }
+    .iside-img {
+      height: 86px;
+    }
+  }
+
+  @media screen and (max-width: 351px) {
+    .play-sec {
+      margin-top: -11%;
+    }
+    .inside-text {
+      margin-top: 2%;
+    }
+    .inside-id {
+      display: none;
+    }
+    .iside-img {
+      height: 86px;
+    } 
+  }
+
+  @media screen and (max-width: 340px) {
+    .play-sec {
+      margin-top: -12%;
+    }
+    .inside-text {
+      display: none;
+    }
+    .inside-id {
+      display: none;
+    }
+    .iside-img {
+      height: 86px !important;
+    }
+  }
+ 
+  .product-video video {
+    width: 100% !important;
+   } 
+
+   
+  @media screen and (max-width: 680px) {
+    .product-video video {
+      width: 71% !important;
+      margin-left: -20%;
+     } 
+  }
+  @media screen and (max-width: 540px) {
+    .product-video video {
+      width: 50% !important;
+      margin-left: -30%;
+     } 
+  }
+  @media screen and (max-width: 540px) {
+    .product-video video {
+      width: 50% !important;
+      margin-left: -50%;
+     } 
+  }
+  @media screen and (max-width: 380px) {
+    .product-video video {
+      width: 40% !important;
+      margin-left: -60%;
+     }
+  }
+
+    {% endstylesheet %}

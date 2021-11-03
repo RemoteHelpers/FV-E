@@ -1,0 +1,86 @@
+
+{%- if section.settings.show_product_recommendations -%}
+  {%- if recommendations.performed -%}
+    {%- if recommendations.products_count > 0 -%}
+      <div>
+        {%- if section.settings.heading != blank -%}
+          <div class="section-header text-center">
+            <h2 class="reco-header">{{ section.settings.heading | escape }}</h2>
+          </div>
+        {%- endif -%}
+        <ul style="  display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;">
+         {%- for product in recommendations.products -%}
+            <li>
+              {% include 'product-card-grid'  , max_height: 519, product: product, show_vendor: section.settings.show_vendor %}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    {%- endif -%}
+  {%- else  -%}
+    <div class="page-width" data-base-url="{{ routes.product_recommendations_url }}" data-product-id="{{ product.id }}" data-section-id="{{ section.id }}" data-section-type="product-recommendations"></div>
+  {%- endif -%}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": {
+    "en": "Product recommendations"
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_product_recommendations",
+      "label": {
+        "en": "Show dynamic recommendations"
+      },
+      "info": {
+        "en": "Dynamic recommendations change and improve with time. [Learn more](https://help.shopify.com/en/themes/development/recommended-products)"
+      },
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": {
+        "en": "Heading"
+      },
+      "default": {
+        "en": "You may also like"
+      }
+    }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+.reco-header {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 132.4%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-transform: capitalize;
+  }
+
+.prod-title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 133.4%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+
+
+  {% endstylesheet %}
+

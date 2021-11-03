@@ -1,0 +1,122 @@
+<section id="sm-third">
+    <div class="page-width">
+      <h2 class="section-heading">{{ section.settings.sec3-heading }}</h2>
+        <div class="tripple-wrapper">
+            <div class="first">
+                <div class="popup__gallery-item top-gallery-item">
+                    <a href="{{ section.settings.video_url1 }}" class="video" title="This is a video">
+                        <div class="popup-video-wrapper">
+                          <span class="portfolio__item-title">
+                            {{ section.settings.portfolio_title1 }}
+                        </span>
+                            <video class="portfolio__iframe" src="{{ section.settings.video_url1 }}" poster="{{ section.settings.preview1 | img_url: 'master' }}" muted="muted"></video>
+                            <svg class="portfolio__play" fill="none" height="100" viewbox="0 0 100 100" width="100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" fill="#A8A8A8" opacity="0.7" r="49"/>
+                                <path d="M0 50C0 63.2608 5.26784 75.9785 14.6447 85.3553C19.2876 89.9983 24.7995 93.6812 30.8658 96.194C36.9321 98.7067 43.4339 100 50 100C63.2608 100 75.9785 94.7322 85.3553 85.3553C94.7322 75.9785 100 63.2608 100 50C100 43.4339 98.7067 36.9321 96.194 30.8658C93.6812 24.7995 89.9983 19.2876 85.3553 14.6447C80.7124 10.0017 75.2005 6.31876 69.1342 3.80602C63.0679 1.29329 56.5661 0 50 0C43.4339 0 36.9321 1.29329 30.8658 3.80602C24.7995 6.31876 19.2876 10.0017 14.6447 14.6447C5.26784 24.0215 0 36.7392 0 50ZM10 50C10 39.3913 14.2143 29.2172 21.7157 21.7157C29.2172 14.2143 39.3913 10 50 10C60.6087 10 70.7828 14.2143 78.2843 21.7157C85.7857 29.2172 90 39.3913 90 50C90 60.6087 85.7857 70.7828 78.2843 78.2843C70.7828 85.7857 60.6087 90 50 90C39.3913 90 29.2172 85.7857 21.7157 78.2843C14.2143 70.7828 10 60.6087 10 50ZM40 75L65 50L40 25V75Z" fill="white"/>
+                            </svg>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+            <div class="second">
+              <div class="popup__gallery-item bottom-gallery-item">
+                <a href="{{ section.settings.video_url2 }}" class="video" title="This is a video">
+                    <div class="popup-video-wrapper">
+                        <video class="portfolio__iframe" src="{{ section.settings.video_url2 }}" poster="{{ section.settings.preview2 | img_url: 'master' }}" muted="muted"></video>
+                        <svg class="portfolio__play" fill="none" height="100" viewbox="0 0 100 100" width="100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" fill="#A8A8A8" opacity="0.7" r="49"/>
+                            <path d="M0 50C0 63.2608 5.26784 75.9785 14.6447 85.3553C19.2876 89.9983 24.7995 93.6812 30.8658 96.194C36.9321 98.7067 43.4339 100 50 100C63.2608 100 75.9785 94.7322 85.3553 85.3553C94.7322 75.9785 100 63.2608 100 50C100 43.4339 98.7067 36.9321 96.194 30.8658C93.6812 24.7995 89.9983 19.2876 85.3553 14.6447C80.7124 10.0017 75.2005 6.31876 69.1342 3.80602C63.0679 1.29329 56.5661 0 50 0C43.4339 0 36.9321 1.29329 30.8658 3.80602C24.7995 6.31876 19.2876 10.0017 14.6447 14.6447C5.26784 24.0215 0 36.7392 0 50ZM10 50C10 39.3913 14.2143 29.2172 21.7157 21.7157C29.2172 14.2143 39.3913 10 50 10C60.6087 10 70.7828 14.2143 78.2843 21.7157C85.7857 29.2172 90 39.3913 90 50C90 60.6087 85.7857 70.7828 78.2843 78.2843C70.7828 85.7857 60.6087 90 50 90C39.3913 90 29.2172 85.7857 21.7157 78.2843C14.2143 70.7828 10 60.6087 10 50ZM40 75L65 50L40 25V75Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <span class="portfolio__item-title">
+                        {{ section.settings.portfolio_title2 }}
+                    </span>
+                </a>
+            </div>
+            </div>
+            <div class="third">
+                <div class="popup__gallery-item top-gallery-item">
+                    <a href="{{ section.settings.video_url3 }}" class="video" title="This is a video">
+                      <span class="portfolio__item-title">
+                        {{ section.settings.portfolio_title3 }}
+                    </span>
+                        <div class="popup-video-wrapper">
+                            <video class="portfolio__iframe" src="{{ section.settings.video_url3 }}" poster="{{ section.settings.preview3 | img_url: 'master' }}" muted="muted"></video>
+                            <svg class="portfolio__play" fill="none" height="100" viewbox="0 0 100 100" width="100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" fill="#A8A8A8" opacity="0.7" r="49"/>
+                                <path d="M0 50C0 63.2608 5.26784 75.9785 14.6447 85.3553C19.2876 89.9983 24.7995 93.6812 30.8658 96.194C36.9321 98.7067 43.4339 100 50 100C63.2608 100 75.9785 94.7322 85.3553 85.3553C94.7322 75.9785 100 63.2608 100 50C100 43.4339 98.7067 36.9321 96.194 30.8658C93.6812 24.7995 89.9983 19.2876 85.3553 14.6447C80.7124 10.0017 75.2005 6.31876 69.1342 3.80602C63.0679 1.29329 56.5661 0 50 0C43.4339 0 36.9321 1.29329 30.8658 3.80602C24.7995 6.31876 19.2876 10.0017 14.6447 14.6447C5.26784 24.0215 0 36.7392 0 50ZM10 50C10 39.3913 14.2143 29.2172 21.7157 21.7157C29.2172 14.2143 39.3913 10 50 10C60.6087 10 70.7828 14.2143 78.2843 21.7157C85.7857 29.2172 90 39.3913 90 50C90 60.6087 85.7857 70.7828 78.2843 78.2843C70.7828 85.7857 60.6087 90 50 90C39.3913 90 29.2172 85.7857 21.7157 78.2843C14.2143 70.7828 10 60.6087 10 50ZM40 75L65 50L40 25V75Z" fill="white"/>
+                            </svg>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{% schema %}
+
+{
+    "name": "SM 3rd section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "sec3-heading",
+            "label": "Heading"
+        }, {
+            "type": "url",
+            "id": "video_url1",
+            "label": "Video url"
+        }, {
+            "type": "image_picker",
+            "id": "preview1",
+            "label": "Preview"
+        }, {
+            "type": "text",
+            "id": "portfolio_title1",
+            "label": "Portfolio title",
+            "default": "Portfolio title"
+        }, {
+            "type": "url",
+            "id": "video_ur2",
+            "label": "Video url"
+        }, {
+            "type": "image_picker",
+            "id": "preview2",
+            "label": "Preview"
+        }, {
+            "type": "text",
+            "id": "portfolio_title2",
+            "label": "Portfolio title",
+            "default": "Portfolio title"
+        }, {
+            "type": "url",
+            "id": "video_url3",
+            "label": "Video url"
+        }, {
+            "type": "image_picker",
+            "id": "preview3",
+            "label": "Preview"
+        }, {
+            "type": "text",
+            "id": "portfolio_title3",
+            "label": "Portfolio title",
+            "default": "Portfolio title"
+        }
+    ]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+
+
+
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %} 

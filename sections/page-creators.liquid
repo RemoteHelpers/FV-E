@@ -1,0 +1,338 @@
+<div class="page-width">
+    <svg style="display: none;">
+        <symbol id="star-svg" viewBox="0 0 29 33">
+            <g>
+                <path
+                    d="M14.412 0L15.5141 10.102C15.7684 12.7117 17.7183 14.8163 20.2616 15.3214L28.1458 16.8367L20.855 17.5102C17.9726 17.7628 15.7684 20.0357 15.4293 22.8138L14.412 33L13.3947 22.898C13.1404 20.0357 10.8514 17.8469 7.969 17.5944L0 16.8367L8.22332 15.4056C10.7666 14.9847 12.8013 12.8801 13.0556 10.2704L14.412 0Z"
+                    fill="#F13F00" />
+            </g>
+        </symbol>
+    </svg>
+    <section class="heading-section">
+        <h1 class="heading-text-area">{{section.settings.heading_text}}</h1>
+    </section>
+    <div class="desktop-view">
+        <section class="left-img-text">
+            <div class="creators-wrapper">
+                <div class="left-side"><img data-src="{{ section.settings.left_img | img_url: 'master' }}"
+                        class="lazyload">
+                </div>
+                <div class="right-side">
+                    <div class="text">{{ section.settings.right_text }}</div>
+                </div>
+            </div>
+        </section>
+        <section class="right-img-text">
+            <div class="creators-wrapper-second">
+                <div class="left-side">
+                    <div class="text second-text-margin">{{ section.settings.left_text }}</div>
+                    <div class="button">
+                        <div class="btn media-text__btn">
+                            <a href="{{ section.settings.btn-link }}" class="btn__link">{{ section.settings.btn-linktext
+                                }}</a>
+                            <svg class="ve-btn-hover__star1">
+                                <use height="33px" width="28px" xlink:href="#star-svg"></use>
+                            </svg>
+                            <svg class="ve-btn-hover__star2">
+                                <use height="14px" width="11px" xlink:href="#star-svg"></use>
+                            </svg>
+                            <svg class="ve-btn-hover__star3">
+                                <use height="20px" width="17px" xlink:href="#star-svg"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side"><img data-src="{{ section.settings.right_img | img_url: 'master' }}"
+                        class="lazyload"> </div>
+            </div>
+        </section>
+    </div>
+    <div class="mobile-view">
+        <section class="left-img-text">
+            <div class="creators-wrapper">
+                <div class="left-side">
+                    <div class="image-container"><img data-src="{{ section.settings.left_img | img_url: 'master' }}"
+                        class="lazyload page-image">
+                        </div>
+                </div>
+                <div class="right-side">
+                    <div class="text">{{ section.settings.right_text }}</div>
+                </div>
+            </div>
+        </section>
+        <section class="right-img-text">
+            <div class="creators-wrapper-second">
+                <div class="right-side">
+                    <div class="image-container"><img data-src="{{ section.settings.right_img | img_url: 'master' }}"
+                        class="lazyload page-image"></div> </div>
+                <div class="left-side">
+                    <div class="text second-text-margin">{{ section.settings.left_text }}</div>
+                    <div class="button">
+                        <div class="btn media-text__btn">
+                            <a href="{{ section.settings.btn-link }}" class="btn__link">{{ section.settings.btn-linktext
+                                }}</a>
+                            <svg class="ve-btn-hover__star1">
+                                <use height="33px" width="28px" xlink:href="#star-svg"></use>
+                            </svg>
+                            <svg class="ve-btn-hover__star2">
+                                <use height="14px" width="11px" xlink:href="#star-svg"></use>
+                            </svg>
+                            <svg class="ve-btn-hover__star3">
+                                <use height="20px" width="17px" xlink:href="#star-svg"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</div>
+
+{% stylesheet %}
+.mobile-view {
+display: none;
+}
+.heading-section {
+margin-top: 75px;
+margin-bottom: 85px;
+}
+
+.heading-text-area {
+font-family: Raleway;
+font-style: normal;
+font-weight: 800;
+font-size: 44px;
+line-height: 133.4%;
+text-align: center;
+letter-spacing: 0.03em;
+color: #000000;
+}
+
+.creators-wrapper{
+width: 100%;
+display: flex;
+flex-flow: wrap;
+}
+
+.creators-wrapper-second{
+width: 100%;
+display: flex;
+flex-flow: wrap;
+}
+
+.left-side {
+width: 50%;
+}
+
+.right-side {
+width: 50%;
+}
+
+.text {
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 160%;
+color: #000000;
+padding: 0 25px;
+}
+
+.second-text-margin {
+margin-top: 140px;
+}
+
+.btn-creators {
+font-family: 'Raleway', sans-serif;
+position: relative;
+height: 55px;
+max-width: 300px;
+width: 90%;
+padding: 13px 0;
+
+background-color: #F13F00;
+
+border: 2px solid transparent;
+border-radius: 33px;
+
+transition: background-color 0.3s ease;
+}
+
+.btn__link {
+color: #fff;
+font-size: 19px;
+font-style: normal;
+font-weight: 800;
+line-height: 25px;
+letter-spacing: 0.03em;
+text-align: center;
+
+}
+
+.btn__link:hover {
+color: #fff;
+}
+
+/* Hover button */
+
+.ve-btn-hover__star1 {
+height: 30px;
+position: absolute;
+top: -36%;
+left: 100%;
+
+transition: visibility 2s, opacity 1s linear;
+}
+
+.ve-btn-hover__star2 {
+height: 30px;
+position: absolute;
+top: 16%;
+left: 106%;
+transition: visibility .6s, opacity 1.5s linear;
+}
+
+.ve-btn-hover__star3 {
+height: 30px;
+position: absolute;
+left: -4%;
+top: 85%;
+transition: visibility 1.2s, opacity 1s linear;
+}
+
+.btn__link:hover {
+color: #fff !important;
+}
+
+.btn:hover {
+background-color: #fb4200;
+}
+
+
+.btn svg {
+visibility: hidden;
+opacity: 0;
+}
+
+.btn:hover svg {
+visibility: visible;
+opacity: 1;
+}
+
+.ve-btn-hover__star1 {
+height: 30px;
+position: absolute;
+top: -36%;
+left: 100%;
+
+transition: visibility 2s, opacity 1s linear;
+}
+
+.ve-btn-hover__star2 {
+height: 30px;
+position: absolute;
+top: 16%;
+left: 106%;
+
+transition: visibility .6s, opacity 1.5s linear;
+}
+
+.ve-btn-hover__star3 {
+height: 30px;
+position: absolute;
+left: -8%;
+top: 80%;
+
+transition: visibility 1.2s, opacity 1s linear;
+}
+
+@media screen and (max-width: 1024px){
+.desktop-view {
+display: none;
+}
+.mobile-view {
+display: block;
+}
+.left-side {
+width: 100%;
+}
+
+.right-side {
+width: 100%;
+}
+.button {
+text-align: center;
+margin-top: 10%;
+margin-bottom: 10%;
+} 
+.page-image {
+    max-width: 500px;
+}
+.image-container{
+    text-align: center;
+} 
+.img {
+    max-width: 500px;
+    width: 100%;
+    border: 0;
+}
+.second-text-margin {
+    margin-top: 15px;
+}
+.heading-section {
+    margin-top: 44px;
+    margin-bottom: 15px;
+}  
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+"name": "Creators page",
+"settings": [
+{
+"type": "text",
+"id": "heading_text",
+"label": "Heading"
+},
+{
+"type": "image_picker",
+"id": "left_img",
+"label": "First section image"
+},
+{
+"type": "richtext",
+"id": "right_text",
+"label": "First section text"
+},
+{
+"type": "image_picker",
+"id": "right_img",
+"label": "Second section image"
+},
+{
+"type": "richtext",
+"id": "left_text",
+"label": "Second section text"
+},
+{
+"id": "btn_link",
+"type": "url",
+"label": "Button link"
+},
+{
+"id": "btn-linktext",
+"type": "text",
+"label": "Button text",
+"default": "hire specialist"
+}
+],
+"presets": [
+{
+"name": "Creators page",
+"category": "Video editors"
+}
+]
+}
+{% endschema %}

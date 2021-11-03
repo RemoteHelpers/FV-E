@@ -1,0 +1,61 @@
+<section class="yt-promo section">
+  <div class="container">
+    <div class="yt-promo__wrapper">
+      <div class="yt-promo__content">
+        <h2 class="section-title section-title--left">{{ section.settings.promo_title }}</h2>
+        <p class="basic-text yt-promo__text">{{ section.settings.promo_text }}</p>
+        <div class="button-wrapper">
+          <a href="{{ section.settings.btn_url }}" class="button btn star-btn">{{ section.settings.link_text }}</a>
+          <div class="star-wrapper">
+            <div class="star-w star-1">
+              {% include "star-img" %}
+            </div>
+            <div class="star-w star-2 star-2--bigbtn">
+              {% include "star-img" %}
+            </div>
+            <div class="star-w star-3">
+              {% include "star-img" %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="yt-promo__image-holder">
+        <img src="{{ section.settings.promo_image | img_url: 'master' }}" alt="" class="yt-promo__image" >
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "promo",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "promo_title",
+        "label": "Promo title"
+      },
+      {
+        "type": "text",
+        "id": "promo_text",
+        "label": "Promo text"
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link text"
+      },
+	  {
+        "type": "url",
+        "id": "btn_url",
+        "label": "URL"
+      },
+      {
+        "type": "image_picker",
+        "id": "promo_image",
+        "label": "Promo image"
+      }
+  ]
+  } 
+{% endschema %}

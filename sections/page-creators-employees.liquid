@@ -1,0 +1,440 @@
+<div class="page-width">
+    <section class="creators">
+      <div class="row">
+        <div class="header mg-60">
+          <h1 class="heading-text-area section-title">{{ section.settings.creators_h1 }}</h1>
+        </div>
+        <div class="subheader mg-60">
+          <h5 class="service-sub">{{ section.settings.creators_subtitle }}</h5>
+        </div>
+      </div> 
+      {%- assign collection = collections[section.settings.collection] -%}
+    <div class= "products-wrapper flex desktop">
+      {% for product in collection.products limit:6 %}
+            <div class="product-card">
+            {%- assign nameArr = product.title | remove: "." | downcase | split: " " -%}
+            <a style="z-index: 11;" href='/products/{{nameArr | join: "-"}}'>
+            <div class="product-card__top">
+                <div class='img'><img src="{{product.featured_image| img_url: '160x160', scale: 2}}"></div>
+                <div class='tags-wrapper'>
+                {% for tag in product.tags limit:3 %}
+                {% if forloop.index == 1 %}
+                <div class="first_level">
+                {% endif %}  
+                  <a style="z-index:11;" class="tag" href="/search?q={{tag | replace: '&', '%26' }}%2C+&options%5Bprefix%5D=last">{{tag}}</a>
+                {% if forloop.index == 2 %}
+                </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+            </div>
+            <p class='name'>{{ product.title }}</p>
+            {%- assign nameArr = product.title | remove: "." | downcase | split: " " -%}
+            <a href='/products/{{nameArr | join: "-"}}' class='btn btn-creators'>View resume</a>
+            </a>
+          </div>
+      {% endfor %}
+    </div>
+     <div class="side-wrappper slider mobile" data-slick='{"dots": true, "arrows": false}'>
+           {% for product in collection.products limit:6 %}
+          <div class="product-card slide">
+            {%- assign nameArr = product.title | remove: "." | downcase | split: " " -%}
+            <a style="z-index: 11;" href='/products/{{nameArr | join: "-"}}'>
+            <div class="product-card__top">
+                <div class='img'><img src="{{product.featured_image| img_url: '160x160', scale: 2}}"></div>
+                <div class='tags-wrapper'>
+                {% for tag in product.tags limit:3 %}
+                {% if forloop.index == 1 %}
+                <div class="first_level">
+                {% endif %}  
+                  <a style="z-index:11;" class="tag" href="/search?q={{tag | replace: '&', '%26' }}%2C+&options%5Bprefix%5D=last">{{tag}}</a>
+                {% if forloop.index == 2 %}
+                </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+            </div>
+            <p class='name'>{{ product.title }}</p>
+            {%- assign nameArr1 = product.title | remove: "." | downcase | split: " " -%}
+            <a href='/products/{{nameArr1 | join: "-"}}' class='btn'>View resume</a>
+            </a>
+          </div>
+        {% endfor %}
+    </div>
+      {%- if section.settings.see_all != blank -%}
+        <div class="button-wrapper">
+          <a class="star-btn btn button" href="{{section.settings.see_all}}" aria-label="{{section.settings.see_all}}">
+              More
+          </a>
+          <div class="star-wrapper">
+            <div class="star-w star-1">
+              {% include "star-img" %}
+            </div>
+            <div class="star-w star-2--bigbtn star-2">
+                {% include "star-img" %}
+            </div>
+            <div class="star-w star-3">
+              {% include "star-img" %}
+            </div>
+        </div>
+          </div>
+        {%- endif -%}
+    </section>
+  </div>
+  
+  <style>
+  .creators {
+      padding: 0px;
+  }
+    .product-card{
+        width: 30%;
+      min-width: 200px;
+    }
+    
+    .creators .product-card .btn {
+      font-size: 1.5vw;
+    }
+     .creators .btn, .product-card .btn {
+      border-radius: 71px;
+        padding: 1% 10%;
+      }
+    
+      .creators .btn {
+        font-family: Raleway;
+        font-weight: 800;
+        font-size: 18px !important;
+        line-height: 133.4%;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        padding: 15px 15px;
+        margin-bottom: 30px;
+}
+
+.more-btn-padding {
+    padding: 15px!important;
+    padding-left: 52px!important;
+    padding-right: 60px !important;
+}
+    
+    .product-card .img {
+      width: 100%;
+      padding: 0px;
+      display: block;
+    }
+
+    .service-sub {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    color: #000000;
+    }
+    
+    @media screen and (max-width: 800px){
+        .creators .product-card .btn {
+      font-size: 18px;
+        }
+    }
+    
+    .creators .header.mg-60 {
+            margin-top: 60px;
+          margin-bottom: 0px;
+      }
+    .creators .subheader.mg-60 {
+          text-align:center;
+          margin: 20px auto;
+      }
+    
+    .creators .subheader.mg-60 .service-sub{
+        max-width: 600px;
+        margin: 0px auto;
+        margin-bottom: 25px;
+    }
+  
+  </style>
+  
+  {% javascript %}
+     $(document).ready(function() {
+       $('.side-wrappper').slick({
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+           arrows: false,
+          slidesToScroll: 1
+       });
+   });
+  {% endjavascript %}
+  
+  
+  {% schema %}
+  {
+  "name": "Video editors cards",
+  
+  "settings": [
+  {
+  "type": "text",
+  "id": "creators_h1",
+  "label": "Title"
+  },
+  {
+  "type": "text",
+  "id": "creators_subtitle",
+  "label": "Subtitle"
+  },
+  {
+    "id": "collection",
+    "type": "collection",
+    "label": {
+      "en": "Collection"
+    }
+  },
+  {
+  "id": "see_all",
+  "type": "url",
+  "label": "See all link"
+  }
+  
+  ],
+  
+  "presets": [
+  {
+  "name": "Video editors cards",
+  "category": "Video editors"
+  }
+  ]
+  }
+  
+  {% endschema %}
+  
+  
+  {%- comment -%}
+  {% stylesheet %}
+  
+  .mg-60 {
+    margin-top: 60px;
+  }
+  
+  
+  .creators-section {
+  display: block;
+  }
+  
+  .mobile-creators-section {
+  display: none;
+  }
+  
+  .cr-photo {
+  height: 150px;
+  width: 150px;
+  }
+  
+  @media (max-width: 1214px) {
+  .creators-section {
+  display: none;
+  }
+  
+  }
+  
+  @media (max-width: 1214px) {
+  .mobile-creators-section {
+  display: block;
+  }
+  
+  .slider{
+  
+  position: relative;
+  margin: auto;
+  height: auto;
+  margin-bottom: 15px;
+  }
+  /* Картинка масштабируется по отношению к родительскому элементу */
+  .slider .item img {
+  /* заполняем картинкой поле с сохранением пропорций */
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+  border: none !important;
+  box-shadow: none !important;
+  }
+  /* Кнопки вперед и назад */
+  .slider .prev, .slider .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #F13F00;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  }
+  .slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  }
+  /* Фон кнопок вперед и назад при наведении */
+  .slider .prev:hover,
+  .slider .next:hover {
+  background-color: #F13F00;
+  text-decoration: none;
+  }
+  /* надпись */
+  .slideText {
+  position: absolute;
+  color: #fff;
+  font-size: 35px;
+  /* Выравнивание текста горизонтально и по вертикально*/
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* Тень текста*/
+  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+  }
+  /* Кружочки под слайдами */
+  .slider-dots {
+  text-align: center;
+  }
+  .slider-dots_item{
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background: #fff;
+  border-radius: 50%;
+  border: 1.36662px solid #F13F00;
+  box-sizing: border-box;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  }
+  .active,
+  .slider-dots_item:hover {
+    background-color: #F13F00;
+  }
+  /* Анимация слайдов */
+  .slider .item {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+  from {
+  opacity: .4
+  }
+  to {
+  opacity: 1
+  }
+  }
+  @keyframes fade {
+  from {
+  opacity: .4
+  }
+  to {
+  opacity: 1
+  }
+  }
+  
+  a {
+  text-decoration: none;
+  color: white;
+  }
+  
+  }
+  
+  .creator {
+  text-align: center;
+  
+  }
+  
+  .creator-card {
+  height: 519px;
+  width: 370px;
+  background-color: #fff;
+  box-shadow: 2px 8px 25px -10px rgba(0, 0, 0, 0.07);
+  border-radius: 55px;
+  margin-right: 28px;
+  margin-bottom: 49px;
+  border: 2px solid transparent;
+  } 
+  
+  .creator-card:hover {
+  border: 2px solid #F13F00;
+  border-radius: 55px;
+  transition: all .5s ease;
+  }  
+  
+  .creator-img {
+  height: 370px;
+  width: 370px;
+  border-top-left-radius: 55px;
+  border-top-right-radius: 55px;
+  }
+  
+  .btn-mg {
+  margin-top: 30px;
+  }
+  
+  .creator-name {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 133.4%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-bottom: 5%;
+  
+  }
+  
+  {% endstylesheet %}
+  
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+  
+  
+    /* Функция увеличивает индекс на 1, показывает следующй слайд*/
+    function plusSlide() {
+      showSlides(slideIndex += 1);
+    }
+  
+    /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+    function minusSlide() {
+      showSlides(slideIndex -= 1);
+    }
+  
+    /* Устанавливает текущий слайд */
+    function currentxSlide(n) {
+      showSlides(slideIndex = n);
+    }
+  
+    /* Основная функция слайдера */
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("item");
+      var dots = document.getElementsByClassName("slider-dots_item");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  
+  </script>
+  {%- endcomment -%}

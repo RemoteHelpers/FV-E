@@ -1,0 +1,68 @@
+<section class="editor section">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.editor_title }}</h2>
+    <div class="editor__card-wrapper">
+      {% for block in section.blocks %}
+        <div class="editor__card">
+          <img src="{{ block.settings.edit_image | img_url: 'master' }}" alt="">
+          <h3 class="card-title card-title--upper">{{ block.settings.edit_title }}</h3>
+          <p class="card-text">{{ block.settings.edit_text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="editor__slider">
+      {% for block in section.blocks %}
+        <div class="editor__slide">
+          <img src="{{ block.settings.edit_image | img_url: 'master' }}" alt="">
+          <h3 class="card-title card-title--upper">{{ block.settings.edit_title }}</h3>
+          <p class="card-text">{{ block.settings.edit_text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Editor",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "editor_title",
+        "label": "Editor title"
+      }
+  ],
+  "blocks": [
+      {
+        "type": "image",
+        "name": "images",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "edit_image",
+            "label": "Edit image"
+          },
+          {
+            "type": "text",
+            "id": "edit_title",
+            "label": "Edit title",
+            "default":"Item title"
+          },
+          {
+            "type": "text",
+            "id": "edit_text",
+            "label": "Edit text",
+            "default":"Item text"
+          }
+        ]
+      }
+  ],
+  "presets": [
+      {
+        "name": "Editor",
+        "category": "card"
+      }
+  ]
+} 
+{% endschema %}

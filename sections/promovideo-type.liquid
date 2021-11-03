@@ -1,0 +1,50 @@
+<section class="type">
+  <div class="container">
+      <div class="type__inner">
+          <div class="type__inner-texts">
+              <h3 class="section-title">
+                {{ section.settings.type_title }}
+              </h3>
+              <p class="type__inner-text">
+                {{ section.settings.type_text }}
+              </p>
+              
+              <div class="anchor-button">
+                  <a href="#contact" class="anchor-link">{{ section.settings.link_text }}</a>
+              </div>
+          </div>
+          <div class="type__inner-image">
+            <img src="{{ section.settings.type_image | img_url: 'master' }}" alt="">
+          </div>
+      </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Type",
+  
+  "settings": [
+      {
+        "type": "image_picker",
+        "id": "type_image",
+        "label": "Type Image"
+      },
+      {
+        "type": "text",
+        "id": "type_title",
+        "label": "Type title"
+      },
+      {
+        "type": "text",
+        "id": "type_text",
+        "label": "Type text"
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link text"
+      }
+  ]
+  } 
+{% endschema %}

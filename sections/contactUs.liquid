@@ -1,0 +1,98 @@
+<div class="about_us-section contact_us">
+    <div class="first-block mobile">
+        <h2>
+            {{ section.settings.h2 }}
+        </h2>
+      	<div class="picture-wrapper">
+        	<picture><source srcset="{{ section.settings.img | img_url: "master" }}" type="image/webp"><img src="{{ section.settings.img | img_url: "master" }}" alt="video star"></picture>
+      	</div>
+        <p>
+            {{ section.settings.p }}
+        </p>
+        {%- if section.settings.button_link != blank -%}
+        <div class="button-wrapper">
+            <a class="star-btn btn btn-link" href="{{section.settings.button_link}}"
+                aria-label="{{section.settings.button_link}}">
+                {{section.settings.button_label}}
+            </a>
+            <div class="star-wrapper">
+                <div class="star-w star-1">
+                    {% include "star-img" %}
+                </div>
+                <div class="star-w star-2">
+                    {% include "star-img" %}
+                </div>
+                <div class="star-w star-3">
+                    {% include "star-img" %}
+                </div>
+            </div>
+        </div>
+        {%- endif -%}
+
+    </div>
+    <div class="first-block desctop">
+        <div class="">
+            <h2>
+                {{ section.settings.h2 }}
+            </h2>
+            <p>
+                {{ section.settings.p }}
+            </p>
+            {%- if section.settings.button_link != blank -%}
+            <div class="button-wrapper">
+                <a class="star-btn btn btn-link" href="{{section.settings.button_link}}"
+                    aria-label="{{section.settings.button_link}}">
+                    {{section.settings.button_label}}
+                </a>
+                <div class="star-wrapper">
+                    <div class="star-w star-1">
+                        {% include "star-img" %}
+                    </div>
+                    <div class="star-w star-2 star-2--bigbtn">
+                        {% include "star-img" %}
+                    </div>
+                    <div class="star-w star-3">
+                        {% include "star-img" %}
+                    </div>
+                </div>
+            </div>
+            {%- endif -%}
+
+        </div>
+        <picture><source srcset="{{ section.settings.img | img_url: "master" }}" type="image/webp"><img src="{{ section.settings.img | img_url: "master" }}" alt="video star"></picture>
+    </div>
+</div>
+
+{% schema %}
+{
+"name": "Contanct Us",
+
+"settings": [
+    {
+      "type": "text",
+      "id": "h2",
+      "label": "H2"
+    },
+    {
+      "type": "text",
+      "id": "p",
+      "label": "p"
+    },
+    {
+    "type": "image_picker",
+    "id": "img",
+    "label": "Img"
+    },
+    {
+    "type": "url",
+    "id": "button_link",
+    "label": "Button Link"
+    },
+    {
+    "type": "text",
+    "id": "button_label",
+    "label": "Button label"
+    }
+]
+} 
+{% endschema %}

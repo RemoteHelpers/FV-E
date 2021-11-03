@@ -1,0 +1,88 @@
+
+    <section class="hero">
+        <div class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-bg" id="videoHolder">
+                      <div id="overlayVideo" ></div>
+                      <video poster="{{ section.settings.video_bg | img_url: "master" }}" style="width: 100%; height: auto;" tabindex="0" width="892" height="504" id="full_video" class ="hero-bg__vd">
+                      		<source src="{{section.settings.video_link}}" width="400" height="200" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />          
+                      </video>
+                        
+                    </div>
+                    <div class="hero-info">
+                        <h1 class="hero-info__title">{{section.settings.hero_title}}</h1>
+                        <p class="hero-info__text">{{section.settings.hero_text}}</p>
+                        <a href="" class="button hero-info__button">{{ section.settings.link_text }}</a>
+                  		 
+                  </div>
+                </div>
+        </div>
+        
+    </section>
+  
+
+  <script>
+const overlayVideo = document.getElementById('overlayVideo');
+const videoElement = document.getElementById('full_video');
+const videoSec = document.querySelector("#videoHolder");
+
+videoSec.addEventListener("mouseover", function() {
+    overlayVideo.classList.add("trasform-rotate");
+    overlayVideo.classList.remove("trasform-unrotate");
+  })
+  videoSec.addEventListener("mouseout", function() {
+    overlayVideo.classList.remove("trasform-rotate");
+    overlayVideo.classList.add("trasform-unrotate");
+  })
+
+if(overlayVideo.addEventListener){
+    overlayVideo.addEventListener("click", play, false)
+	}else if(overlayVideo.attachEvent){
+		overlayVideo.attachEvent("onclick", play)
+	}
+
+function play() { 
+    if (videoElement.paused){
+        videoElement.play(); 
+        overlayVideo.className = "playing";
+    }else {
+        videoElement.pause(); 
+        overlayVideo.className = "";
+    }
+} 
+  </script>
+
+    {% schema %}
+{
+  "name": "hero",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "hero_title",
+        "label": "Hero title"
+      },
+      {
+        "type": "text",
+        "id": "hero_text",
+        "label": "Hero text"
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link text"
+      },
+{
+      "id": "video_link",
+      "type": "url",
+      "label": ".mp4 video link"
+    },
+  	{
+        "type": "image_picker",
+        "id": "video_bg",
+        "label": "Background video Image"
+   	}
+     
+  ]
+  } 
+{% endschema %}

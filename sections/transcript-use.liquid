@@ -1,0 +1,37 @@
+<section class="trans-use section">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.use_title }}</h2>
+    <div class="trans-use__wrapper">
+      <div class="trans-use__content">
+        <p class="basic-text trans-use__text">{{ section.settings.use_text }}</p>
+      </div>
+      <div class="trans-use__image-wrapper">
+        <img src="{{ section.settings.use_image | img_url: 'master' }}" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "use",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "use_title",
+        "label": "Use title"
+      },
+      {
+        "type": "text",
+        "id": "use_text",
+        "label": "Use text"
+      },
+      {
+        "type": "image_picker",
+        "id": "use_image",
+        "label": "Use image"
+      }
+  ]
+  } 
+{% endschema %}

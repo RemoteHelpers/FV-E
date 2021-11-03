@@ -1,0 +1,120 @@
+<section id="va-fifth">
+  <div class="page-width">
+  <h1 class="va-fifth-text">{{ section.settings.creators_h1 }}</h1>
+{%- assign collection = collections[section.settings.collection] -%}
+<div class= "products-wrapper flex desktop">
+  {% for product in collection.products limit:3 %}
+    <div class="product-card">
+        {%- assign nameArr = product.title | remove: "." | downcase | split: " " -%}
+        <a style="z-index: 11;" href='/products/{{nameArr | join: "-"}}'>
+        <div class="product-card__top">
+          <div class='img'><img src="{{product.featured_image| img_url: '160x160', scale: 2}}"></div>
+          <div class='tags-wrapper'>
+          {% for tag in product.tags limit:3 %}
+            {% if forloop.index == 1 %}
+            <div class="first_level">
+            {% endif %}  
+              <a style="z-index:11;" class="tag" href="/search?q={{tag | replace: '&', '%26' }}%2C+&options%5Bprefix%5D=last">{{tag}}</a>
+            {% if forloop.index == 2 %}
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        </div>
+        <p class='name'>{{ product.title }}</p>
+        {%- assign nameArr = product.title | remove: "." | downcase | split: " " -%}
+        <a href='/products/{{nameArr | join: "-"}}' class='btn'>View resume</a>
+        </a>
+    </div>
+{% endfor %}
+</div>
+
+  {%- if section.settings.see_all != blank -%}
+    <div class="button-wrapper">
+      <a class="star-btn btn" href="{{section.settings.see_all}}" aria-label="{{section.settings.see_all}}">
+        See All
+      </a>
+      <div class="star-wrapper">
+        <div class="star-w star-1">
+    {% include "star-img" %}
+        </div>
+        <div class="star-w star-2">
+          {% include "star-img" %}
+        </div>
+        <div class="star-w star-3">
+          {% include "star-img" %}
+        </div>
+    </div>
+      </div>
+    {%- endif -%}
+</div>
+</div>
+</div>
+</section>
+
+{% javascript %}
+ $(document).ready(function() {
+ $('.products-wrapper').slick({
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+     arrows: false,
+     dots: true,
+  slidesToScroll: 1,
+  responsive: [
+  {
+    breakpoint: 1100,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      dots: true,
+      }
+    },
+    {
+      breakpoint: 820,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    }
+  ]
+});
+});
+{% endjavascript %}
+
+
+{% schema %}
+{
+"name": "Services: 5 section",
+
+"settings": [
+{
+"type": "text",
+"id": "creators_h1",
+"label": "Title"
+},
+{
+"id": "collection",
+"type": "collection",
+"label": {
+  "en": "Collection"
+}
+},
+{
+"id": "see_all",
+"type": "url",
+"label": "See all link"
+}
+
+],
+
+"presets": [
+{
+"name": "Video editors fifth section",
+"category": "Video editors"
+}
+]
+}
+
+{% endschema %}

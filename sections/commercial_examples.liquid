@@ -1,0 +1,61 @@
+
+    <section class="examples">
+        <div class="container">
+            <div class="examples-wrapper">
+                <h2 class="examples__title title">{{section.settings.examples_title}}</h2>
+                <ul class="examples-list">
+                  {% for block in section.blocks %}
+                    <li class="examples-item">
+                        <img src="{{ block.settings.card_img | img_url: "master" }}" alt="" class="examples-item__img">
+                        <h3 class="examples-item__title">{{block.settings.card_title}}</h3>
+                        <p class="examples-item__description">{{block.settings.card_description}} </p>
+                    </li>
+{% endfor %}
+                </ul> 
+            </div>
+        </div>
+    </section>
+
+    {% schema %}
+{
+  "name": "examples",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "examples_title",
+        "label": "4th section title"
+      }
+
+     
+  ],
+	  "blocks": [
+      {
+        "type": "card",
+        "name": "cards",
+        "settings": [
+
+          {
+            "type": "text",
+            "id": "card_title",
+            "label": "Card title",
+            "default":"Item title"
+          },
+ {
+            "type": "text",
+            "id": "card_description",
+            "label": "Card description",
+            "default":"Item description"
+          },
+{
+        "type": "image_picker",
+        "id": "card_img",
+        "label": "Card Image"
+   	}
+        
+        ]
+      }
+  ]
+
+  } 
+{% endschema %}

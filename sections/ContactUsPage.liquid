@@ -1,0 +1,203 @@
+<div class="contact-us-section">
+  {% include 'contact-us-surround-img-left' %}
+  {% include 'contact-us-surround-img-left-bottom' %}
+  {% include 'contact-us-surround-img-right' %}
+  {% include 'contact-us-surround-img-right-top' %}
+
+
+  <div class="contact-us-card-section"> 
+    <section class="contact-us-card">
+        <div class="contact-us-list">
+          {% if section.settings.title != blank %}
+            <h3 class="contact-us-title">{{ section.settings.title | escape }}</h3>
+          {% endif %}
+            <div class="contact_us_list">
+              {% if section.settings.skype_login != blank %}
+              <li>
+                {% include 'contact-us-skype' %}
+                <a href="skype:{{ section.settings.skype_login }}?chat" target="_blank" rel="noopener noreferrer"">{{ section.settings.skype_login  }}</a>
+              </li>
+              {% endif %}
+              {% if section.settings.viber_login != blank %}
+              <li>
+                {% include 'contact-us-viber' %}
+                <a href="viber://chat/?number=%2B{{ section.settings.viber_login }}" target="_blank" rel="noopener noreferrer" >+{{ section.settings.viber_login  }}</a>
+              </li>
+              {% endif %}
+              {% if section.settings.whatsapp_login != blank %}
+              <li>
+                {% include 'contact-us-whatsapp' %}
+                <a href="https://api.whatsapp.com/send?phone={{ section.settings.whatsapp_login }}" target="_blank" rel="noopener noreferrer" >{{ section.settings.whatsapp_login  }}</a>
+              </li>
+              {% endif %}
+              {% if section.settings.telegram_login != blank %}
+              <li>
+                {% include 'contact-us-telegram' %}
+                <a href="https://t.me/{{ section.settings.telegram_login }}" target="_blank" rel="noopener noreferrer" >{{ section.settings.telegram_login  }}</a>
+              </li>
+              {% endif %} 
+            </div>
+        </div>
+        <div class="contact-us-form">
+          {% if section.settings.title != blank %}
+            <h3 class="contact-us-title mobile">{{ section.settings.title | escape }}</h3>
+          {% endif %}
+          <!-- FORM CONTACT US -->
+          {%- assign formId = 'Contact-Us-Page-Form' -%}
+            {% form 'contact', id: formId %}
+                <form action="">
+				{% include 'custom-form-status', form: form, form_id: formId %}
+                  {% if section.blocks.size > 0 %}
+                    <div class="contact-us-form-select">
+                      <div class="contact-us-option-display" id="contact-us-opt-d"></div>
+                        <div class="contact-us-option-wrapper" id="contact-us-option-wrapper">
+                            {% for block in section.blocks %}
+                            {% if forloop.first == true %}
+                            	<div value="{{block.settings.select_option_value | downcase}}" class="contact-us-form-option contact-us-active" id="contact-us-active">{{block.settings.select_option}}</div>
+                            {% else %}
+                            	<div value="{{block.settings.select_option_value | downcase}}" class="contact-us-form-option">{{block.settings.select_option}}</div>
+                            {% endif %}
+                            {% endfor %}
+                          </div>
+                    </div>
+                    {% endif %}
+					<input type="text" style="display:none;" class="contact_form__input--select" required id="{{ formId }}-type" name="contact[{{ 'contact.form.type' | t }}]" value="{{section.blocks[0].settings.select_option_value | downcase}}">                                                                           
+                    <input class="contact-us-input" oninvalid="setCustomValidity('Enter your name with letters only')" oninput="setCustomValidity('')" id="{{ formId }}-name" name="contact[{{ 'contact.form.name' | t }}]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}" required type="text" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$"  placeholder="Your name*">
+                    <input class="contact-us-input" type="text" placeholder="Company name" id="{{ formId }}-company_name" name="contact[{{ 'contact.form.company_name' | t }}]" value="{% if form[company_name] %}{{ form[company_name] }}{% elsif customer %}{{ customer.company_name }}{% endif %}">
+                    <input class="contact-us-input"
+                    id="{{ formId }}-email"
+                    name="contact[email]"
+                    value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" 
+                    required type="email"
+                    placeholder="E-mail*"
+                    {%- if form.errors contains 'email' -%}
+                      class="input--error"
+                      aria-invalid="true"
+                      aria-describedby="{{ formId }}-email-error"
+                    {%- endif -%}
+                    pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" oninvalid="setCustomValidity('xxx@xxx.xxx')" oninput="setCustomValidity('')"
+                    >
+                    <input class="contact-us-input" oninvalid="setCustomValidity('Enter phone only numbers without () or - ')" oninput="setCustomValidity('')" required type="tel" placeholder="Your phone* (international format)" id="{{ formId }}-phone" name="contact[{{ 'contact.form.phone' | t }}]" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}" pattern="(\+)?[0-9]{0,3}[0-9]{3}[0-9]{3}[0-9]{4}">
+                    <textarea class="contact-us-input textarea" id="{{ formId }}-message" name="contact[{{ 'contact.form.message' | t }}]" placeholder="Your message"></textarea>
+                    <div class="button-wrapper">
+                      <input type="submit" class="form_btn star-btn btn" value="{{ 'contact.form.submit' | t }}">
+                        <div class="star-wrapper">
+                          <div class="star-w star-1">
+                            {% include "star-img" %}
+                          </div>
+                          <div class="star-w star-2">
+                            {% include "star-img" %}
+                          </div>
+                          <div class="star-w star-3">
+                            {% include "star-img" %}
+                          </div>
+                      	</div>
+      				</div>
+                </form>
+              {% endform %}
+        </div>
+    </section>
+  </div>
+</div>
+
+{% javascript %}
+    const contactUsOptionDisplay = document.getElementById("contact-us-opt-d");
+    const contactUsOptionWrapper = document.getElementById("contact-us-option-wrapper");
+    const contactUsActive = document.getElementById("contact-us-active");
+    const selectCustomType = document.getElementById("Contact-Us-Page-Form-type");
+    
+
+    if(contactUsOptionDisplay){
+        contactUsOptionDisplay.innerHTML = contactUsActive.innerHTML;
+        contactUsOptionDisplay.addEventListener('click',function(){
+            contactUsOptionWrapper.classList.toggle('display');
+        });
+    }
+    contactUsOptionWrapper.addEventListener('click',function({target}){
+      let name = target.innerHTML;
+        let value = target.attributes.value.value;
+        contactUsOptionDisplay.innerHTML = name;
+      if(contactUsActive){
+        contactUsActive.classList.remove('contact-us-active');
+      }
+      target.classList.add('contact-us-active');
+      selectCustomType.value = target.attributes.value.value;
+      contactUsOptionWrapper.classList.remove('display');
+	  contactUsOptionDisplay.classList.add('valid');
+    });
+  const companyName = document.getElementById("Contact-Us-Page-Form-company_name")
+  const contactUsMessage = document.getElementById("Contact-Us-Page-Form-message")
+  companyName.addEventListener('keyup', companyValid)
+
+  function companyValid(){
+    companyName.classList.add('valid')
+  }
+  contactUsMessage.addEventListener('keyup', messageValid)
+  function messageValid(){
+    contactUsMessage.classList.add('valid')
+  }
+  const emailFail = document.getElementById("Contact-Us-Page-Form-email");
+    if(emailFail){
+      let ariaInvalid = emailFail.hasAttribute('aria-invalid');
+      if(ariaInvalid == true){
+      emailFail.classList.add('invalid')
+    }
+    emailFail.addEventListener('keydown', emailFailFunction)
+    function emailFailFunction(e)
+	{
+      emailFail.classList.remove('invalid')
+    }
+  }
+{% endjavascript %}
+
+{% schema %}
+{
+"name": "Contact Us Page Form",
+"class": "index-section contactForm",
+  "settings": [				
+  {
+    "type": "text",
+    "id": "title",
+    "label": "Heading"
+  },
+  {
+    "type": "text",
+    "id": "skype_login",
+    "label": "Skype Login"
+  },
+  {
+    "type": "text",
+    "id": "viber_login",
+    "label": "Viber Login dont add +"
+  },
+  {
+    "type": "text",
+    "id": "whatsapp_login",
+    "label": "WhatsApp Login"
+  },
+  {
+    "type": "text",
+    "id": "telegram_login",
+    "label": "Telegram Login dont add @ "
+  }
+],
+"blocks": [
+      {
+        "type": "select_item",
+        "name": "select_item",
+		    "settings": [
+        {
+          "type": "text",
+          "id": "select_option",
+          "label": "Select Option"
+   		  },
+		    {
+          "type": "text",
+          "id": "select_option_value",
+          "label": "Select Option Value"
+   		  }
+		  ]
+		}
+	]
+}
+{% endschema %}

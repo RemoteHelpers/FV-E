@@ -1,0 +1,109 @@
+<section class="section-intro" style="background-color:{{section.settings.background_color}};
+background-image: 
+url('https://cdn.shopify.com/s/files/1/0519/4124/5123/files/BG.png?v=1612430937');">
+
+	<div class="wrap">
+
+		<div class="intro-content">
+			<div class="intro-content__img"><img class="left-img"
+					src="https://cdn.shopify.com/s/files/1/0519/4124/5123/files/img-left2.png?v=1612445712"
+					alt="worker" style="margin-left: 25px;">{% include 'smm-anim-insta' %}</div>
+			<h1 class="intro-content__text">{% include 'smm-anim-facebook' %}{% include 'smm-anim-youtube' %}{{ section.settings.heading }}</h1>
+			<div class="intro-content__img"><img
+					src="https://cdn.shopify.com/s/files/1/0519/4124/5123/files/right-image.png?v=1612443861"
+					alt="worker">{% include 'smm-anim-like' %}{% include 'smm-anim-in' %}</div>
+		</div>
+
+	</div>
+</section>
+<!-- ./section-intro -->
+
+
+<section class="section-article" style="background-color:{{section.settings.background_color}};">
+
+	<div class="wrap">
+		<div class="container">
+
+			<div class="section-article__text">
+				{{section.settings.description }}
+			</div>
+
+		</div>
+	</div>
+
+</section>
+<!-- ./section-article -->
+
+<script>
+	const animRegion = document.querySelector(".intro-content");
+	const bgRegion = document.querySelector(".intro-content__text");
+	const instaIcon = document.querySelector(".smm-anim-insta");
+	const facebookIcon = document.querySelector(".smm-anim-facebook");
+	const youtubeIcon = document.querySelector(".smm-anim-youtube");
+	const likeIcon = document.querySelector(".smm-anim-like");
+	const inIcon = document.querySelector(".smm-anim-in");
+	const bgImg = document.querySelector(".section-intro");
+	const leftImg = document.querySelector(".left-img");
+	const circle = 360;
+	let step = 0;
+
+
+	function autoRotateElements () {
+
+		instaIcon.classList.add("rotate");
+		facebookIcon.classList.add("rotate");
+		youtubeIcon.classList.add("rotate");
+		likeIcon.classList.add("rotate");
+		inIcon.classList.add("rotate");
+		leftImg.classList.add("left-img-rotate");
+		setTimeout(function(){leftImg.classList.remove("left-img-rotate"); }, 2010);
+	}
+	
+	if (window.innerWidth < 769) {
+
+		autoRotateElements();
+} else {
+	//Moving animation
+	animRegion.addEventListener('mousemove', (e) => {
+		let xAxis = (window.innerWidth / 2 - e.pageX) / 20;
+		let yAxis = (window.innerHeight / 2 - e.pageY) / 20;
+		instaIcon.style.transform = `rotate(${xAxis}deg)`;
+		facebookIcon.style.transform = `rotate(${xAxis}deg)`;
+		youtubeIcon.style.transform = `rotate(${xAxis}deg)`;
+		likeIcon.style.transform = `rotate(${xAxis}deg)`;
+		inIcon.style.transform = `rotate(${xAxis}deg)`;
+	})
+
+	bgRegion.addEventListener('mouseenter', (e) => {
+		bgImg.classList.add("scaled");
+	})
+	bgRegion.addEventListener('mouseleave', (e) => {
+		bgImg.classList.remove("scaled");
+	})
+};
+</script>
+
+{% schema %}
+{
+"name": "Section Intro",
+"settings": [
+{
+"type": "text",
+"label": "Your head line for section",
+"id": "heading"
+},
+{
+"type": "color",
+"id": "background_color",
+"label": "Background color",
+"default": "#ffffff"
+},
+{
+"type":"richtext",
+"label": "your description",
+"id": "description"
+}
+
+]
+}
+{% endschema %}

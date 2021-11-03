@@ -1,0 +1,52 @@
+<div class="page-width">
+<div class="pop-up-window pop-up-window-hide">
+    <div class="exit-btn">
+        {% include 'icon-close' %}
+        </div>
+<div class="elemets-wrapper">
+    <div class="left-side">
+        <img class="pop-up-left-side-image" src="https://cdn.shopify.com/s/files/1/0519/4124/5123/files/Frame.png?v=1612858450" alt="contact">
+    </div>
+    <div class="right-side">
+        <div class="pop-up-heading"><h1 class="pop-up-heading-text">Drop us a line</h1></div>
+        <div class="contact-form">
+            <!-- Form -->
+            <div class="contactform-wrapper">
+                {%- assign formId = 'contactForm' -%}
+                   {% form 'contact', id: formId %}
+                     <div class='flex'>
+                  <div class="contact_form">
+                   {% include 'custom-form-status', form: form, form_id: formId %}
+                    {% if section.blocks.size > 0 %}
+                    <!-- <div class="custom-select">
+                      <div class='option-display'>{{section.blocks[0].settings.select_option}}</div>
+                      <div class="option-wrapper">
+                        {% for block in section.blocks %}
+                        {% if forloop.first == true %}
+                        <div value="{{block.settings.select_option_value | downcase}}" class="contact_form__option active">{{block.settings.select_option}}</div>
+                        {% else %}
+                        <div value="{{block.settings.select_option_value | downcase}}" class="contact_form__option">{{block.settings.select_option}}</div>
+                        {% endif %}
+                        {% endfor %}
+                        </div>
+                    </div> -->
+                    {% endif %}
+                    
+                     <input type="text" style="display:none;" class="contact_form__input--select" required id="{{ formId }}-type" name="contact[{{ 'contact.form.type' | t }}]" value="{{section.blocks[0].settings.select_option_value | downcase}}">
+                    
+                    <input type="text" required class="contact_form__input--name contact_form__input" placeholder="Your name" id="{{ formId }}-name" name="contact[{{ 'contact.form.name' | t }}]" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" oninvalid="setCustomValidity('Enter letters')" oninput="setCustomValidity('')">
+                    <input type="tel"  oninvalid="setCustomValidity('Enter phone only numbers without () or - ')" oninput="setCustomValidity('')" class="contact_form__input--phone contact_form__input" placeholder="Phone number" pattern="(\+)?[0-9]{0,3}[0-9]{3}[0-9]{3}[0-9]{4}"
+                    required id="{{ formId }}-phone" name="contact[{{ 'contact.form.phone' | t }}]">
+                    <input type="email" required class="contact_form__input--email contact_form__input" placeholder="E-mail" id="{{ formId }}-email" name="contact[email]" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" oninvalid="setCustomValidity('xxx@xxx.xxx')" oninput="setCustomValidity('')">
+                   <textarea required class='contact_form__input textarea' id="{{ formId }}-message" name="contact[{{ 'contact.form.message' | t }}]" placeholder="Your message"></textarea>
+                  </div>
+                    </div>
+                    <input type="submit" class="pop-up-window-btn" value="{{ 'contact.form.submit' | t }}"> 
+                {% endform %}
+              </div>
+              <!-- end form -->
+        </div>
+    </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,62 @@
+<section class="promotional">
+  <div class="container">
+      <div class="promotional__inner">
+          <div class="promotional__inner-image">
+            <img src="{{ section.settings.promo_image | img_url: 'master' }}" alt="">
+          </div>
+          <div class="promotional__inner-texts">
+              {% if page.metafields.promo-video.promotional-title != blank %}
+              <h3 class="section-title">
+                {{ section.settings.promo_title }}
+              </h3>
+              {% endif %}
+              <div class="promotional" id="promotional">
+                <ul class="promotional__inner-list">
+                  {% for block in section.blocks %}
+                    <li class="promotional__inner-item">{{block.settings.promo_text}}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+
+          </div>
+      </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Promotional",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "promo_title",
+        "label": "Promo title"
+      },
+      {
+        "type": "image_picker",
+        "id": "promo_image",
+        "label": "Promo Image"
+      }
+  ],
+  "blocks": [
+      {
+        "type": "text",
+        "name": "Items",
+        "settings": [
+          {
+            "type": "text",
+            "id": "promo_text",
+            "label": "Promo text"
+          }
+        ]
+      }
+  ],
+  "presets": [
+      {
+        "name": "Promotional",
+        "category": "card"
+      }
+  ]
+} 
+{% endschema %}

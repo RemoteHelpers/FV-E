@@ -1,0 +1,66 @@
+<div id="thankPage" class="thankPage flex shopify-section_inner">
+  <div class="text-wrapper">
+    {% if section.settings.title_richtext != blank %}
+    <h2 class="section-header section-title">
+    	Thank you! <br> Your request has been submitted.
+    </h2>
+  	{% endif %}
+    {%- if section.settings.button_link != blank -%}
+    <div class="button-wrapper">
+      <a class="star-btn btn" href="{{section.settings.button_link}}" aria-label="{{section.settings.button_link}}">
+      	{{section.settings.button_label}}
+      </a>
+      <div class="star-wrapper">
+          <div class="star-w star-1">
+			{% include "star-img" %}
+          </div>
+          <div class="star-w star-2">
+          	{% include "star-img" %}
+          </div>
+          <div class="star-w star-3">
+            {% include "star-img" %}
+          </div>
+      </div>
+    </div>
+    {%- endif-%}
+  </div>
+  <div class="img-wrapper">
+    {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+      <img id="thank__img"
+                       class="thank__img lazyload js"
+                       data-src="{{ img_url }}"
+                       data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                       data-sizes="auto"
+      >
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Thank Page",
+	"class": "thankPage",
+    "settings": [
+	{
+		"type": "richtext",
+   		"id": "title_richtext",
+        "label": "Header",
+		"default": "<p>Thank you</p>"
+    },
+	{
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+    },
+	{
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label"  
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link" 
+    }
+	]
+  }
+{% endschema %}

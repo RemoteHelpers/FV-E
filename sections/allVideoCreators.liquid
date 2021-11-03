@@ -1,0 +1,52 @@
+<div data-section-id="{{ section.id }}" data-section-type="collection-template">
+  {% if section.settings.title != blank %}
+	<h2 class="section-header section-title">{{ section.settings.title | escape }}</h2>
+  {% endif %}
+  	<div class="description-content">
+     {% for block in section.blocks %}
+        <div class="description-item flex">
+           {% if block.settings.item_title != blank %}
+              <p class="item_desc">{{block.settings.item_title}}</p>
+          {% endif %}
+          {% if block.settings.item_image != blank %}
+            {{ block.settings.item_image | img_url: '550x550', scale: 2 | img_tag: block.settings.item_image.alt, 'item__image' }}
+          {% endif %}
+        </div>
+      {% endfor %}
+	</div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "All Creators",
+	"class": "index-section creators collection-creators",
+    "settings": [
+		{
+		"type": "text",
+     	"id": "title",
+      	"label": "Heading",
+		"default": "Page title"
+    	}],
+	    "blocks": [
+      	{
+        "type": "description_item",
+        "name": "description_item",
+		"settings": [
+        {
+          "type": "image_picker",
+          "id": "item_image",
+          "label": "Image"
+   		},
+		{	
+          "type": "text",
+          "id": "item_title",
+          "label": "Item title",
+          "default": "Item title"
+		}
+		]
+	}
+	]
+  }
+{% endschema %}
+

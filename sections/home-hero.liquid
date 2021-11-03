@@ -1,0 +1,61 @@
+<section class="hero section">
+  <div class="video-bg">
+    <div class="video-bg__bg"></div>
+    <video loop="" muted="" autoplay="" poster="}}">
+      <source src="{{ section.settings.video_url }}" type="video/mp4">
+    </video>
+  </div>
+  <div class="img-holder">
+    <img src="{{ section.settings.hero_image | img_url: 'master' }}" alt="">
+  </div>
+  <div class="hero__content">
+    <h1 class="main-title">{{ section.settings.hero_title }}</h1>
+    <p class="basic-text basic-text--hero">{{ section.settings.hero_text }}</p>
+    <a href="{{ section.settings.btn_url }}" class="button btn star-btn">{{ section.settings.link_text }}</a>
+  </div>
+</section>
+
+{% schema %}
+{
+"name": "main-hero",
+
+"settings": [
+{
+"type": "text",
+"id": "hero_title",
+"label": "Hero title"
+},
+{
+"type": "text",
+"id": "hero_text",
+"label": "Hero text"
+},
+{
+"type": "text",
+"id": "link_text",
+"label": "Link text"
+},
+{
+"type": "url",
+"id": "btn_url",
+"label": "URL"
+},
+{
+"type": "image_picker",
+"id": "hero_image",
+"label": "Hero image"
+},
+{
+"type": "url",
+"id": "video_url",
+"label": "videoURL"
+}
+],
+"presets": [
+{
+"name": "home-hero",
+"category": "section"
+}
+]
+}
+{% endschema %}

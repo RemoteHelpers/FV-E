@@ -1,0 +1,70 @@
+<section class="web-smm-section find-expert">
+    <div class="text">
+        <h2>
+            {{ section.settings.h2 }}
+        </h2>
+        <h4>
+            {{ section.settings.h4 }}
+        </h4>
+        <div class="button-wrapper">
+            {%- if section.settings.button_link != blank -%}
+            <div class="button-wrapper">
+                <a class="star-btn btn btn-link" href="{{section.settings.button_link}}"
+                    aria-label="{{section.settings.button_link}}">
+                    {{section.settings.button_label}}
+                </a>
+                <div class="star-wrapper">
+                    <div class="star-w star-1">
+                        {% include "star-img" %}
+                    </div>
+                    <div class="star-w star-2 star-2--bigbtn">
+                        {% include "star-img" %}
+                    </div>
+                    <div class="star-w star-3">
+                        {% include "star-img" %}
+                    </div>
+                </div>
+            </div>
+            {%- endif -%}
+        </div>
+    </div>
+    <div class="custom-item">
+        <picture>
+            <source srcset="{{ section.settings.undraw_Social | img_url: "master" }}" type="image/webp"><img
+                src="{{ section.settings.undraw_Social | img_url: "master" }}" alt="group social icons"></picture>
+    </div>
+</section>
+
+{% schema %}
+{
+"name": "Web Smm Find Expert",
+
+"settings": [
+{
+"type": "text",
+"id": "h2",
+"label": "H2"
+},
+{
+"type": "text",
+"id": "h4",
+"label": "H4"
+},
+{
+"type": "image_picker",
+"id": "undraw_Social",
+"label": "undraw social find"
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "Button Link"
+},
+{
+"type": "text",
+"id": "button_label",
+"label": "Button label"  
+}
+]
+}
+{% endschema %}

@@ -1,0 +1,68 @@
+<section class="sub-intro section--sub">
+  <div class="container">
+    <h2 class="section-title section-title--desc">{{ section.settings.intro_title }}</h2>
+    <div class="sub-intro__wrapper">
+      <div class="sub-intro__image-wrapper">
+        <img src="{{ section.settings.intro_image | img_url: 'master' }}" alt="" class="sub-intro__image" >
+      </div>
+      <div class="sub-intro__content">
+        <h2 class="section-title section-title--mob">{{ section.settings.intro_title }}</h2>
+        <p class="basic-text sub-intro__text">{{ section.settings.intro_text }}</p>
+        <p class="basic-text sub-intro__text">{{ section.settings.intro_text2 }}</p>
+        <div class="button-wrapper">
+          <a href="{{ section.settings.btn_url }}" class="button btn star-btn">{{ section.settings.link_text }}</a>
+          <div class="star-wrapper">
+            <div class="star-w star-1">
+              {% include "star-img" %}
+            </div>
+            <div class="star-w star-2 star-2--bigbtn">
+              {% include "star-img" %}
+            </div>
+            <div class="star-w star-3">
+              {% include "star-img" %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "intro",
+  
+  "settings": [
+      {
+        "type": "image_picker",
+        "id": "intro_image",
+        "label": "Intro Image"
+      },
+      {
+        "type": "text",
+        "id": "intro_title",
+        "label": "Intro title"
+      },
+      {
+        "type": "text",
+        "id": "intro_text",
+        "label": "Intro text"
+      },
+      {
+        "type": "text",
+        "id": "intro_text2",
+        "label": "Intro text"
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link text"
+      },
+	  {
+        "type": "url",
+        "id": "btn_url",
+        "label": "URL"
+      }
+  ]
+  } 
+{% endschema %}

@@ -1,0 +1,119 @@
+<section class="make-video">
+  <div class="wrap">
+  <div class="container">
+
+    <svg style="display: none;">
+      <symbol id="star-svg" viewBox="0 0 29 33">
+        <g>
+          <path
+            d="M14.412 0L15.5141 10.102C15.7684 12.7117 17.7183 14.8163 20.2616 15.3214L28.1458 16.8367L20.855 17.5102C17.9726 17.7628 15.7684 20.0357 15.4293 22.8138L14.412 33L13.3947 22.898C13.1404 20.0357 10.8514 17.8469 7.969 17.5944L0 16.8367L8.22332 15.4056C10.7666 14.9847 12.8013 12.8801 13.0556 10.2704L14.412 0Z"
+            fill="#F13F00" />
+        </g>
+      </symbol>
+    </svg>
+
+
+          {% if section.settings.title != blank %}
+            <h3 class="make-video__title text-center">{{ section.settings.title | escape }}</h3>
+          {% endif %}
+
+        <div class="make-video-content">
+
+
+          <div class="make-video-text">
+              {% if section.settings.text != blank %}
+                <div class="make-video-text__subtext">{{ section.settings.text }}</div>
+              {% endif %}
+
+
+              {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+              <div class="btn make-video-text__btn">
+                <a href="{{ section.settings.button_link }}" class="btn__link">
+                  {{- section.settings.button_label | escape -}}
+                </a>
+
+                <svg class="btn-hover__star1">
+                  <use height="33px" width="28px" xlink:href="#star-svg"></use>
+                </svg>
+                <svg class="btn-hover__star2">
+                  <use height="14px" width="11px" xlink:href="#star-svg"></use>
+                </svg>
+                <svg class="btn-hover__star3">
+                  <use height="20px" width="17px" xlink:href="#star-svg"></use>
+                </svg>
+
+              </div><!-- ./btn make-video-text__btn -->
+              {% endif %}
+
+        </div><!-- ./make-video-text -->
+
+        {% if section.settings.image != blank %}
+            <div class="make-video-content__img">
+              <img data-src="{{ section.settings.image | img_url: 'master' }}" class="lazyload"> 
+            </div><!-- ./make-video-content__img -->
+        {% endif %}
+        
+      </div><!-- ./make-video-content -->
+
+
+  </div>
+  </div>
+</section>
+
+{% schema %}
+{
+"name": "Section Make A Video",
+"class": "index-section",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "select",
+"id": "layout",
+"label": "Image alignment",
+"default": "right",
+"options": [
+{
+"value": "left",
+"label": "Left"
+},
+{
+"value": "right",
+"label": "Right"
+}
+]
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "Image with text"
+},
+{
+"type": "richtext",
+"id": "text",
+"label": "Text",
+"default": "<p>Section make a video text</p>"
+},
+{
+"type": "text",
+"id": "button_label",
+"label": "Button label"
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "Button link"
+}
+],
+"presets": [
+{
+"name": "Image with text",
+"category": "Image"
+}
+]
+}
+{% endschema %}

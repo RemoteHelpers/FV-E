@@ -1,0 +1,46 @@
+{{ 'homePage.css' | asset_url | stylesheet_tag }}
+{{ 'promo-video.css' | asset_url | stylesheet_tag }}
+{{ 'ContactForm.css' | asset_url | stylesheet_tag }}
+{{ 'portfolio.css' | asset_url | stylesheet_tag }}
+{{ 'main-web-smm.css' | asset_url | stylesheet_tag }}
+
+<!-- <div class="red-line"></div> -->
+
+{% section 'web-smm-index-section' %}
+{% section 'web-smm-custom-text' %}
+{% section 'web-smm-custom-channels' %}
+{% section 'web-smm-find-expert' %}
+{% section 'video-portfolio' %}
+{% section 'page-creators-employees' %}
+{% section 'ContactForm' %}
+
+<script>
+    const overlay = document.getElementById('overlay');
+    const vid = document.getElementById('video');
+    const videoRegion = document.querySelector("#video_holder");
+  
+    videoRegion.addEventListener("mouseover", function() {
+      overlay.classList.add("trasform-rotate");
+      overlay.classList.remove("trasform-unrotate");
+    })
+    videoRegion.addEventListener("mouseout", function() {
+      overlay.classList.remove("trasform-rotate");
+      overlay.classList.add("trasform-unrotate");
+    })
+  
+  if(overlay.addEventListener){
+          overlay.addEventListener("click", play, false)
+      }else if(overlay.attachEvent){
+          overlay.attachEvent("onclick", play)
+      }
+  
+  function play() { 
+      if (vid.paused){
+          vid.play(); 
+          overlay.className = "playing";
+      }else {
+          vid.pause(); 
+          overlay.className = "";
+      }
+  } 
+  </script>

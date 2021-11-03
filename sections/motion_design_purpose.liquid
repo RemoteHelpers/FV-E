@@ -1,0 +1,45 @@
+    <section class="purpose">
+        <div class="container">
+            <div class="purpose-wrapper">
+                <div class="purpose-info">
+                    <h2 class="title purpose-info__title"> {{section.settings.purpose_title}}</h2>
+                    <p class="text purpose-info__text">  {{section.settings.purpose_text}}</p>
+                    <a href="#" class="button purpose-info__button">{{section.settings.link_text}}</a>
+                </div>
+                <div class="purpose-bg">
+                    <img src="{{section.settings.purpose_bg | img_url: 'master'}}" alt="" class="purpose-bg__img">
+                </div>
+            </div>
+        </div>
+</section>
+
+    {% schema %}
+{
+  "name": "purpose",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "purpose_title",
+        "label": "Purpose title"
+      },
+        {
+        "type": "text",
+        "id": "purpose_text",
+        "label": "Purpose text"
+      },
+     
+      {
+        "type": "image_picker",
+        "id": "purpose_bg",
+        "label": "Purpose Image"
+      },
+       {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link text"
+      }
+     
+  ]
+  }  
+{% endschema %}

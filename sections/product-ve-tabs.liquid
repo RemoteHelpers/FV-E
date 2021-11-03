@@ -1,0 +1,851 @@
+
+
+<!-- Bootstrap needs for portfolio cubes -->
+{{ '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' | script_tag }}
+<!-- {{ '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' | stylesheet_tag }} -->
+{{ '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css' | stylesheet_tag }}
+<!-- --------------- -->
+
+<!-- Needs for portfolio info -->
+<!-- Из переменной product.description, содержащей описание сплитом удаляем ненужные фрагменты и после чего используем в коде ниже -->
+{% assign about_arr = product.description | split: '*Education*' | first %}
+{% assign education_arr = product.description | split: '*Education*' | last %}
+{% assign education_arr = education_arr | split: '*Experience*' | first %}
+
+{% assign expirience_arr = product.description | split: '*Experience*' | last %}
+<!-- ------------ -->
+
+<div class="page-width">
+    <div class="big-screen">
+        <div class="left-section">
+            <div class="tab1-img"
+                style="height: 800px;"><img class="lazyload" data-src="{{ section.settings.img_tabs | img_url: "master"}}"></div>
+            <div class="tab2-img no-display" style="height: 800px;"><img class="lazyload" data-src="{{ section.settings.img_tabs2 | img_url: "master"}}"></div>
+            <div class="tab3-img no-display" style="height: 800px;"><img class="lazyload" data-src="{{ section.settings.img_tabs3 | img_url: "master"}}"></div>
+            <div class="tab4-img no-display"></div>
+        </div>
+        <div class="center-section">
+            <div class="tabs-nav">
+                <div class="tab-btn tab-btn1 active-btn">About me</div>
+                <div class="tab-btn tab-btn2">Experience</div>
+                <div class="tab-btn tab-btn3">Education</div>
+                <div class="tab-btn tab-btn4">Portfolio</div>
+            </div>
+            <div class="svg-pics no-display">
+                {% include 'pic-girl-base' %}
+                {% include 'pic-girl-hand' %}
+                {% include 'pic-girl-palm' %}
+                {% include 'pic-disp' %}
+            </div>
+            <div class="tab-content">
+                <div class="content1">
+                    <h4>{{about_arr}}</h4>
+                    <h4 class="editor-soft-skill">Skills:</h4>
+                    {% for variant in product.variants %}
+                    <p class="editor-soft-skill">{{ variant.title }};</p>
+                    {%endfor%}
+                </div>
+                <div class="content2 no-display">
+                    <h4>{{expirience_arr}}</h4>
+                </div>
+                <div class="content3 no-display">
+                    <h4>{{ education_arr }}</h4>
+                </div>
+
+                <div class="content4 no-display" style="z-index: 3;">
+                    <!-- Кубики с портфолио -->
+                    <div class="flex-portfolio-cubes">
+                        {% if product.metafields.projects.names != 0 %}
+                        {% assign prname = product.metafields.projects.names %}
+                        {% assign prlink = product.metafields.projects.links %}
+                        {% assign pryear = product.metafields.projects.years %}
+                        {% assign prcategory = product.metafields.projects.categories %}
+                        {% for i in (0..prname.size) %}
+                        {% if i < prname.size %} <div class="portfolio-cart" style="width: 250px;">
+                            <div class="row">
+                                {% assign mod = i | modulo: 2 %}
+                                {% if mod == 0 %}
+                                {% assign bgc = '#F13F00' %}
+                                {% else %}
+                                {% assign bgc = 'gray' %}
+                                {% endif %}
+                                <a href="#modal{{i}}" class="href"><div class="col-sm-12"
+                                    style="background-color: {{ bgc }}; height: 210px; width: 250px; border-radius: 30px 30px 0px 0px;">
+                                    <section class="remodal" data-remodal-id="modal{{i}}">
+                                        <button data-remodal-action="close" class="remodal-close"></button>
+                                        <iframe class="lazyload" id="ytplayer" width="100%" height="360"
+                                        data-src="{{prlink[i]}}"
+                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                      </section>
+                                </div></a>
+                            </div>
+                            <div class="row portfolio-info"
+                                style="background-color: {{ bgc }}; box-shadow: -3px 10px 10px -15px #000000;">
+                                <a href="#modal{{i}}">
+                                    <div class="col-sm-12">
+                                        <p class="portfolio-cart-category">{{prcategory[i]}}</p>
+                                    </div>
+                                    <div class="col-xs-9">
+                                        <h3 class="portfolio-cart-projecttitle">{{prname[i]}}</h3>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <h3 class="portfolio-cart-year">{{pryear[i]}}</h3>
+                                    </div>
+                                </a>
+                            </div>
+                    </div>
+
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+
+                </div>
+                <!-- Конец кубиков с портфолио -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of widescreen version -->
+
+<!-- Mobile version -->
+<div class="mobile-screen">
+    <div style="text-align: center;"><img class="lazyload" data-src="{{ section.settings.img_tabs | img_url: "master" }}" alt="worker"></div>
+    <div>
+        <h1 class="m-title">About me</h1>
+    </div>
+    <div>
+        <h4 class="m-text">{{about_arr}}</h4>
+        <h4 class="editor-soft-skill">Skills:</h4>
+        {% for variant in product.variants %}
+                    <p class="editor-soft-skill">{{ variant.title }};</p>
+                    {%endfor%}
+    </div>
+    <div style="text-align: center;"><img class="lazyload" data-src="{{ section.settings.img_tabs2 | img_url: "master" }}" alt="worker"></div>
+    <div>
+        <h1 class="m-title">Experience</h1>
+    </div>
+    <div>
+        <h4 class="m-text">{{expirience_arr}}</h4>
+    </div>
+    <div style="text-align: center;"><img class="lazyload" data-src="{{ section.settings.img_tabs3 | img_url: "master" }}" alt="work"></div>
+    <div>
+        <h1 class="m-title">Education</h1>
+    </div>
+    <div>
+        <h4 class="m-text">{{education_arr}}</h4>
+    </div>
+    <div style="text-align: center;"><img class="lazyload" data-src="{{ section.settings.img_tabs4_3 | img_url: "master" }}" alt="eduction"></div>
+    <div>
+        <h1 class="m-title">Portfolio</h1>
+    </div>
+    {% if product.metafields.projects.names != 0 %}
+    {% assign prname = product.metafields.projects.names %}
+    {% assign prlink = product.metafields.projects.links %}
+    {% assign pryear = product.metafields.projects.years %}
+    {% assign prcategory = product.metafields.projects.categories %}
+    <ul class="slider-slick1">
+        {% for i in (0..prname.size) %}
+        {% if i < prname.size %} <li>
+            <div>
+                <div>
+                    <div class="portfolio-cart" style="width: 250px;">
+                        <div class="row">
+                            {% assign mod = i | modulo: 2 %}
+                            {% if mod == 0 %}
+                            {% assign bgc = '#F13F00' %}
+                            {% else %}
+                            {% assign bgc = 'gray' %}
+                            {% endif %}
+                            <a href="#modal{{i}}"><div class="col-sm-12"
+                                style="background-color: {{ bgc }}; height: 210px; width: 250px; border-radius: 30px 30px 0px 0px;">
+                                <section class="remodal" data-remodal-id="modal{{i}}">
+                                    <button data-remodal-action="close" class="remodal-close"></button>
+                                    <iframe class="lazyload" id="ytplayer" width="100%" height="360"
+                                    data-src="{{prlink[i]}}"
+                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                  </section>
+                            </div></a>
+                        </div>
+                        <div class="row portfolio-info" style="background-color: white;   box-shadow: -3px 10px 10px -15px #000000;
+      ">
+                            <a href="#modal{{i}}">
+                                <div class="col-sm-12">
+                                    <p class="portfolio-cart-category">{{prcategory[i]}}</p>
+                                </div>
+                                <div class="col-xs-9">
+                                    <h3 class="portfolio-cart-projecttitle">{{prname[i]}}</h3>
+                                </div>
+                                <div class="col-xs-3">
+                                    <h3 class="portfolio-cart-year">{{pryear[i]}}</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </li>
+
+
+                {% endif %}
+                {% endfor %}
+    </ul>
+    {% endif %}
+
+</div>
+</div>
+
+
+
+
+<script>
+    function tabFunc() {
+        const leftSection = document.querySelector('.left-section');
+        const centerSection = document.querySelector('.center-section');
+        const tabsNav = document.querySelector('.tabs-nav');
+        const tabContentSection = document.querySelector('.tab-content');
+
+        const btn1 = document.querySelector('.tab-btn1');
+        const btn2 = document.querySelector('.tab-btn2');
+        const btn3 = document.querySelector('.tab-btn3');
+        const btn4 = document.querySelector('.tab-btn4');
+
+        const tab1Img = document.querySelector('.tab1-img');
+        const tab2Img = document.querySelector('.tab2-img');
+        const tab3Img = document.querySelector('.tab3-img');
+        const tab4Img = document.querySelector('.tab4-img');
+
+
+        const svgPics = document.querySelector('.svg-pics');
+
+        const content1 = document.querySelector('.content1');
+        const content2 = document.querySelector('.content2');
+        const content3 = document.querySelector('.content3');
+        const content4 = document.querySelector('.content4');
+
+        const tabContent = document.querySelector('.tab-content')
+
+        btn1.addEventListener('click', function () {
+            btn1.classList.add("active-btn");
+            btn2.classList.remove("active-btn");
+            btn3.classList.remove("active-btn");
+            btn4.classList.remove("active-btn");
+
+            tab1Img.classList.remove("no-display");
+            tab2Img.classList.add("no-display");
+            tab3Img.classList.add("no-display");
+            tab4Img.classList.add("no-display");
+
+
+            svgPics.classList.add("no-display");
+
+            content1.classList.remove("no-display");
+            content2.classList.add("no-display");
+            content3.classList.add("no-display");
+            content4.classList.add("no-display");
+            tabContentSection.classList.remove("tab-content-new-border-radius");
+
+
+
+            tabContent.classList.remove("forTab4-content");
+
+            leftSection.classList.remove("no-display");
+            centerSection.classList.remove("width-for-center-section");
+            tabsNav.classList.remove("margin-for-tab-nav");
+        })
+
+        btn2.addEventListener('click', function () {
+            btn1.classList.remove("active-btn");
+            btn2.classList.add("active-btn");
+            btn3.classList.remove("active-btn");
+            btn4.classList.remove("active-btn");
+
+            tab1Img.classList.add("no-display");
+            tab2Img.classList.remove("no-display");
+            tab3Img.classList.add("no-display");
+            tab4Img.classList.add("no-display");
+
+            svgPics.classList.add("no-display");
+
+            content1.classList.add("no-display");
+            content2.classList.remove("no-display");
+            content3.classList.add("no-display");
+            content4.classList.add("no-display");
+            tabContentSection.classList.remove("tab-content-new-border-radius");
+
+
+            tabContent.classList.remove("forTab4-content");
+
+            leftSection.classList.remove("no-display");
+            centerSection.classList.remove("width-for-center-section");
+            tabsNav.classList.remove("margin-for-tab-nav");
+        })
+
+        btn3.addEventListener('click', function () {
+            btn1.classList.remove("active-btn");
+            btn2.classList.remove("active-btn");
+            btn3.classList.add("active-btn");
+            btn4.classList.remove("active-btn");
+
+            tab1Img.classList.add("no-display");
+            tab2Img.classList.add("no-display");
+            tab3Img.classList.remove("no-display");
+            tab4Img.classList.add("no-display");
+
+            svgPics.classList.add("no-display");
+
+            content1.classList.add("no-display");
+            content2.classList.add("no-display");
+            content3.classList.remove("no-display");
+            content4.classList.add("no-display");
+            tabContentSection.classList.remove("tab-content-new-border-radius");
+
+
+            tabContent.classList.remove("forTab4-content");
+
+            leftSection.classList.remove("no-display");
+            centerSection.classList.remove("width-for-center-section");
+            tabsNav.classList.remove("width-for-tab-nav");
+            tabsNav.classList.remove("margin-for-tab-nav");
+        })
+
+        btn4.addEventListener('click', function () {
+            btn1.classList.remove("active-btn");
+            btn2.classList.remove("active-btn");
+            btn3.classList.remove("active-btn");
+            btn4.classList.add("active-btn");
+
+            tab1Img.classList.add("no-display");
+            tab2Img.classList.add("no-display");
+            tab3Img.classList.add("no-display");
+            tab4Img.classList.remove("no-display");
+
+            svgPics.classList.remove("no-display");
+
+            content1.classList.add("no-display");
+            content2.classList.add("no-display");
+            content3.classList.add("no-display");
+            content4.classList.remove("no-display");
+            tabContentSection.classList.add("tab-content-new-border-radius");
+
+
+            tabContent.classList.add("forTab4-content");
+
+            leftSection.classList.add("no-display");
+            centerSection.classList.add("width-for-center-section");
+            tabsNav.classList.add("margin-for-tab-nav");
+
+
+        })
+    }
+    tabFunc();
+</script>
+
+
+{% stylesheet %}
+
+.cover {
+    height: fit-content;
+}
+
+
+.editor-soft-skill {
+    display: inline; 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 133.4%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #BDBDBD;
+} 
+
+.mobile-screen {
+    display: none;
+} 
+
+.mobile-screen img {
+<!--     height: 70%; -->
+}  
+
+
+.big-screen {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.left-section {
+width: 50%;
+}
+
+.center-section {
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+
+.right-section {
+width: 15%;
+min-height: 610px;
+}
+
+.tabs-nav {
+display: flex;
+flex-direction: row;
+width: 100%;
+}
+
+.tab-btn {
+background: white;
+border-radius: 30px 30px 0px 0px;
+box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.06);
+cursor: pointer;
+flex: 1;
+padding: 20px;
+font-family: Raleway;
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 160%;
+color: #000000;
+text-align: center;
+z-index: 3;
+}
+
+.tab-btn:hover {
+transition-duration: 0.3s;
+background-color: black;
+font-family: Raleway;
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 160%;
+color: #F13F00;
+}
+
+.active-btn {
+background: #F13F00;
+box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.06);
+border-radius: 30px 30px 0px 0px;
+font-family: Raleway;
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 160%;
+color: #FFFFFF;
+}
+
+.tab-content {
+min-height: 610px;
+background: #FFFFFF;
+box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.06);
+border-radius: 0px 0px 30px 30px;
+padding: 20px;
+z-index: 3;
+}
+
+.tab-content-new-border-radius {
+    border-radius: 30px 0px 30px 30px !important;
+}
+
+.no-display {
+display: none;
+}
+
+.tab1-secondary-img, .tab2-secondary-img, .tab3-secondary-img, .tab4-secondary-img, .tab4-img {
+min-height: 735px;
+background-repeat: no-repeat;
+}
+
+
+
+.tab4-secondary-img {
+margin-left: -32%;
+margin-top: 260px;
+}
+
+.forTab4-content {
+min-height: 850px !important;
+}
+ 
+.width50 {
+width: 50%;
+}
+
+.width-for-left-section {
+width: 22% !important;
+}
+
+.width-for-center-section {
+width: 100% !important;
+}
+
+.margin-for-tab-nav {
+margin-left: 50%;
+width: 50% !important;
+}
+
+.svg-girl-base {
+position: absolute;
+right: 80%;
+top: 27%;
+z-index: 2;
+}
+
+.svg-girl-hand {
+position: absolute;
+right: 83%;
+top: 32%;
+z-index: 4;
+}
+
+.svg-girl-palm {
+top: 29.5%;
+position: absolute;
+right: 80%;
+z-index: 4;
+} 
+
+.svg-disp {
+position: absolute;
+right: 10%;
+top: 40%;
+}
+
+
+.m-title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 133.4%;
+    letter-spacing: 0.03em;
+    color: #000000;
+    text-align: center;
+    }
+    
+    .m-text {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    color: #000000;
+    }
+    
+    .wrapper {
+    margin: 0 auto;
+    width: 800px;
+    }
+
+    .noshadow {
+        box-shadow: none;
+      }
+      
+      .flex-portfolio-cubes {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      }
+      
+      .portfolio-content {
+      height: 210px;
+      width: 250px;
+      background: #F13F00;
+      border-radius: 47.9592px;
+      }
+      .portfolio-img {
+      width:100%;
+      object-fit:cover;
+      text-align: center;
+      height: 210px;
+      border-top-left-radius: 47.9592px;
+      border-top-right-radius: 47.9592px;
+      }
+      
+      .portfolio-info {
+      margin-top: 0;
+      width: 100%;
+      height: 90px;
+      border-bottom-left-radius: 47.9592px;
+      border-bottom-right-radius: 47.9592px;
+      
+      }
+      
+      .portfolio-info:hover {
+      width: 100%;
+      height: 90px;
+      border-bottom-left-radius: 47.9592px;
+      border-bottom-right-radius: 47.9592px;
+      background: white !important 
+      }
+      
+      .portfolio-cart {
+        margin-bottom: 35px;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+      
+      .portfolio-cart-category {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 12px;
+      line-height: 133.4%;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #BDBDBD;
+      margin-top: 15px;
+      }
+      
+      .portfolio-cart-projecttitle {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 17px;
+      line-height: 133.4%;
+      letter-spacing: 0.03em;
+      color: #000000;
+      margin-top: 0;
+      }
+      
+      .portfolio-cart-year {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 17px;
+      line-height: 133.4%;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: #BDBDBD;
+      margin-left: -22px;
+      margin-top: 0px;
+      }
+      
+      
+      .slider{
+      
+      position: relative;
+      margin: auto;
+      height: auto;
+      margin-bottom: 15px;
+      }
+      /* Картинка масштабируется по отношению к родительскому элементу */
+      .slider .item img {
+      /* заполняем картинкой поле с сохранением пропорций */
+      object-fit: cover;
+      width: 100%;
+      height: 70%;
+      border: none !important;
+      box-shadow: none !important;
+      }
+      /* Кнопки вперед и назад */
+      .slider .prev, .slider .next {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: #F13F00;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      }
+      .slider .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+      }
+      /* Фон кнопок вперед и назад при наведении */
+      .slider .prev:hover,
+      .slider .next:hover {
+      background-color: #F13F00;
+      text-decoration: none;
+      }
+      /* надпись */
+      .slideText {
+      position: absolute;
+      color: #fff;
+      font-size: 35px;
+      /* Выравнивание текста горизонтально и по вертикально*/
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      /* Тень текста*/
+      text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+      }
+      /* Кружочки под слайдами */
+      .slider-dots {
+      text-align: center;
+      }
+      .slider-dots_item{
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      margin: 0 2px;
+      background: #fff;
+      border-radius: 50%;
+      border: 1.36662px solid #F13F00;
+      box-sizing: border-box;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      }
+      .active,
+      .slider-dots_item:hover {
+      background-color: #F13F00;
+      }
+      /* Анимация слайдов */
+      .slider .item {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+      from {
+      opacity: .4
+      }
+      to {
+      opacity: 1
+      }
+      }
+      @keyframes fade {
+      from {
+      opacity: .4
+      }
+      to {
+      opacity: 1
+      }
+      }
+       
+      a {
+      text-decoration: none;
+      color: white;
+      }
+      
+
+@media screen and (max-width: 1700px) {
+.svg-girl-base {
+position: absolute;
+right: 83%;
+top: 27%;
+z-index: 2;
+}
+.svg-girl-hand {
+position: absolute;
+right: 85%;
+top: 32%;
+z-index: 4;
+}
+.svg-girl-palm {
+top: 29.5%;
+position: absolute;
+right: 81%;
+z-index: 4;
+}
+.svg-disp {
+position: absolute;
+right: 5%;
+top: 40%;
+}
+}
+
+@media screen and (max-width: 1560px) {
+.svg-girl-base {
+position: absolute;
+right: 86%;
+top: 27%;
+z-index: 2;
+}
+.svg-girl-hand {
+position: absolute;
+right: 89%;
+top: 32%;
+z-index: 4;
+} 
+.svg-girl-palm {
+top: 29.5%;
+position: absolute;
+right: 84%;
+z-index: 4;
+}
+.svg-disp {
+position: absolute;
+right: 1%;
+top: 40%;
+}
+}
+
+@media screen and (max-width: 1400px) {
+.svg-girl-base {
+display: none;
+}
+.svg-girl-hand {
+display: none;
+}
+.svg-girl-palm {
+display: none;
+} 
+.svg-disp {
+display: none;
+}
+}
+ 
+@media screen and (max-width: 1100px) {
+.big-screen {
+    display: none;
+} 
+
+.mobile-screen {
+    display: block;
+}
+}
+
+
+{% endstylesheet %}
+
+{% schema %}
+{
+"name": "Product: tabs sect",
+"settings": [
+{
+"type": "image_picker",
+"id": "img_tabs",
+"label": "Tab1 image"
+},
+{
+"type": "image_picker",
+"id": "img_tabs2",
+"label": "Tab 2 image"
+},
+{
+"type": "image_picker",
+"id": "img_tabs3",
+"label": "tab 3 image"
+},
+{
+"type": "image_picker",
+"id": "img_tabs4",
+"label": "tab 4 image"
+},
+{
+"type": "image_picker",
+"id": "img_tabs4_2",
+"label": "tab 4_2 image"
+},
+{
+"type": "image_picker",
+"id": "img_tabs4_3",
+"label": "tab 4_3 image"
+}
+],
+"presets": [
+{
+"name": "VE- tabs section",
+"category": "Video editors"
+}
+]
+}
+{% endschema %}

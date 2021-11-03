@@ -1,0 +1,133 @@
+.video-editors_heading {
+  font-family: Raleway;
+  font-style: normal;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  line-height: 64px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.all-video-creat p {
+  max-width: 570px;
+}
+
+.all-video-creat .featured-row__subtext p {
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.035em;
+  color: #000;
+}
+.all-video-creat
+  .feature-row__item
+  .feature-row__text
+  .feature-row__text--left
+  p {
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.035em;
+  color: #000;
+}
+.all-video-creat .btn:hover {
+  background-color: #fb4200;
+}
+.all-video-creat .button-wrapper {
+  position: relative;
+  width: 250px;
+  margin-top: 59px;
+}
+
+.all-video-creat .btn-hover__star1 {
+  height: 30px;
+  width: 35px;
+  position: absolute;
+  transition: visibility 2s, opacity 1s linear;
+  left: 73.92%;
+  right: 2.64%;
+  bottom: 63.63%;
+}
+
+.all-video-creat .btn-hover__star2 {
+  height: 20px;
+  width: 10px;
+  position: absolute;
+  left: 74.67%;
+  right: 1.62%;
+  top: 37.21%;
+  bottom: 41.51%;
+  transition: visibility 0.6s, opacity 1.5s linear;
+}
+
+.all-video-creat .btn-hover__star3 {
+  height: 30px;
+  width: 20px;
+  position: absolute;
+  left: -2%;
+  right: 94.27%;
+  top: 88.74%;
+  bottom: 0%;
+  transition: visibility 1.2s, opacity 1s linear;
+}
+.all-video-creat .button-wrapper svg {
+  visibility: hidden;
+  opacity: 0;
+}
+.all-video-creat .button-wrapper:hover svg {
+  visibility: visible;
+  opacity: 1;
+}
+@media only screen and (max-width: 480px) {
+  .video-editors_heading {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  
+  
+}
+@media only screen and (max-width: 749px) {
+  .all-video-creat .feature-row__image-wrapper {
+    width: 100%;
+  }
+  .all-video-creat .feature-row__item.feature-row__text {
+    width: 90%;
+  }
+ .all-video-creat .feature-row__item {
+    -webkit-flex: 1 1 auto;
+    -moz-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  .all-video-creat .btn {
+    display: block;
+    max-width: 264.12px;
+    margin: 70px auto 120px auto;
+  }
+  .all-video-creat .button-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .all-video-creat .button-wrapper:hover svg {
+    visibility: hidden;
+    opacity: 0;
+  }
+   .all-creators .btn {
+    border: 1.36662px solid #f13f00;
+    background-color: white;
+    color: #f13f00;
+    border-radius: 71.0644px;
+  }
+}
+@media only screen and (min-width: 1650px) {
+  .all-video-creat .btn {
+    font-size: 16px;
+  }
+  .all-creators-list .product-card {
+    min-width: 200px;
+  }
+}
+

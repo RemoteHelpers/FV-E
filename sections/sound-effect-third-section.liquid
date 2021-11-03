@@ -1,0 +1,102 @@
+<section id="se-third">
+  <div class="page-width">
+  {% if section.settings.title != blank %}
+      <h2 class="se-banner-heading centered">{{ section.settings.title | escape }}</h2>
+  {% endif %}
+
+  
+  <div class="flex effects-wrappper desktop">
+  	   {% for block in section.blocks %}
+          <div class="effect-item">
+          {%- assign img_url = block.settings.image | img_url: 'master' -%}	
+          <img class="item__image lazyload" data-src="{{ img_url }}">   
+          <div class="item_title">{{block.settings.item_title}}</div>
+            <div class="item_description">{{block.settings.item_description}}</div>
+        </div>
+      {% endfor %}
+  </div>
+  
+    <div class="side-wrappper mobile" data-slick='{"dots": true, "arrows": false}'>
+  	   {% for block in section.blocks %}
+        <div class="effect-item slide">
+            {{ block.settings.image | img_url: 'master' | img_tag: block.settings.image.alt, 'item__image' }}
+            <div class="item_title">{{block.settings.item_title}}</div>
+            <div class="item_description">{{block.settings.item_description}}</div>
+        </div>
+      {% endfor %}
+    </div>
+      </section>
+  {% javascript %}
+   $(document).ready(function() {
+	 $('.side-wrappper').slick({
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+     	arrows: false,
+		slidesToScroll: 1
+ 	});
+ });
+{% endjavascript %}
+</div>
+
+{% schema %}
+{
+	"name": "Sound effects",
+	"class": "index-section",
+    "settings": [
+	{
+		"type": "text",
+     	"id": "title",
+      	"label": "Heading",
+		"default": "Content"
+    }
+	],
+    "blocks": [
+      {
+        "type": "assist_item",
+        "name": "effect_item",
+		"settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+   		},
+		{	
+          "type": "text",
+          "id": "item_title",
+          "label": "Item title",
+          "default": "Item title"
+		},
+		{	
+          "type": "text",
+          "id": "item_description",
+          "label": "Item Description",
+          "default": "Item Description"
+		},
+    {	
+          "type": "url",
+          "id": "item_url",
+          "label": "Item Link"
+    } 
+      ]
+	 }
+	],
+	"presets": [
+      {
+        "category": "Custom Content",
+        "name": "Assists",
+ 		"blocks": [
+          {
+            "type": "assist_item"
+          },
+          {
+            "type": "assist_item"
+          },
+          {
+            "type": "assist_item"
+          }
+      	]
+      }
+    ]
+  }
+{% endschema %}

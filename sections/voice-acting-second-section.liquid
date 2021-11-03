@@ -1,0 +1,64 @@
+<section id="va-second">
+  <div class="va-second-sec-wrapper page-width ds-flex">
+    <div class="va-sec-img">
+      <img src="{{ section.settings.va-sec-pic1 | img_url: "master" }}" alt="pic">
+    </div>
+    <div class="va-2nd-content">
+      <h2 class="va-2nd-content-text">{{ section.settings.va-2nd-heading }}</h2>
+      <text>{{ section.settings.va-2nd-subheading }}</text>
+      <div class="button"><div class="btn media-text__btn">
+        <a href="{{ section.settings.va-2nd-btn-link }}" class="btn__link">{{ section.settings.va-2nd-btn-linktext }}</a> 
+        <svg class="ve-btn-hover__star1">
+          <use height="33px" width="28px" xlink:href="#star-svg"></use>
+        </svg>
+        <svg class="ve-btn-hover__star2">
+          <use height="14px" width="11px" xlink:href="#star-svg"></use>
+        </svg>
+        <svg class="ve-btn-hover__star3">
+          <use height="20px" width="17px" xlink:href="#star-svg"></use>
+        </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "VA 2nd section",
+    "settings": [
+    {
+      "type": "image_picker",
+      "id": "va-sec-pic1",
+      "label": "Picture"
+      },
+      {
+        "type": "text",
+        "id": "va-2nd-heading",
+        "label": "Heading"
+        },
+        {
+        "type": "text",
+        "id": "va-2nd-subheading",
+        "label": "Subheading"
+        },
+        {
+          "id": "va-2nd-btn-link",
+          "type": "url",
+          "label": "Button link"
+          },
+          {
+          "id": "va-2nd-btn-linktext",
+          "type": "text",
+          "label": "Button text",
+          "default": "Click Here"
+          }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

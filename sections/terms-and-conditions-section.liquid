@@ -1,0 +1,644 @@
+<div class="tabs"><button onclick="" class="tab tab1 tab-active">Terms & Conditions</button><button onclick="" class="tab tab2">Privacy Policy</button></div>
+<div class="content-block">
+{% for block in section.blocks %} 
+  {% if block.type == 'block-1' %}
+  <div class="terms-and-conditions">
+    <h2 class="heading">{{block.settings.title | upcase}}</h2>
+    <div class="paragraph-content">{{block.settings.content}}</div>
+  </div>
+  {%endif%}
+  {% if block.type == 'block-2' %}
+  <div class="terms-and-conditions">
+    <h2 class="heading">{{block.settings.title | upcase}}</h2>
+    <p class="company-name">{{block.settings.company_name}}</p>
+    <div class="paragraph-content"><p>{{block.settings.house_number}}, {{block.settings.street}}</p> </div>
+    <div class="paragraph-content"><p>{{block.settings.city}}, {{block.settings.post_code}} </p></div>
+    <div class="paragraph-content"><p>{{block.settings.country}} </p></div>
+    <p>{{block.settings.adress}}</p>
+    <div><a class="tel" href="tel:{{block.settings.phone}}">{{block.settings.phone}}</a></div>
+    <div class="mailto"><a class="mailto" href="mailto:{{block.settings.email}}">{{block.settings.email}}</a></div>
+  </div>
+  {% endif %}
+  {% if block.type == 'block-3' %}
+  <div class="privacy-policy">
+    <h2 class="heading">{{block.settings.privacy_title | upcase}}</h2>
+    <div class="paragraph-content">{{block.settings.privacy_content}}</div>
+</div>
+{% endif %}
+{% if block.type == 'block-4' %}
+<div class="privacy-policy">
+  <h2 class="heading">{{block.settings.title | upcase}}</h2>
+  <div class="paragraph-content"><p>{{block.settings.words}}</p></div>
+  <p class="company-name">{{block.settings.company_name}}</p>
+  <div class="paragraph-content"><p>{{block.settings.house_number}}, {{block.settings.street}}</p> </div>
+  <div class="paragraph-content"><p>{{block.settings.city}}, {{block.settings.post_code}} </p></div>
+  <div class="paragraph-content"><p>{{block.settings.country}} </p></div>
+  <p>{{block.settings.adress}}</p>
+  <div><a class="tel" href="tel:{{block.settings.phone}}">{{block.settings.phone}}</a></div>
+  <div class="mailto"><a class="mailto" href="mailto:{{block.settings.email}}">{{block.settings.email}}</a></div>
+</div>
+{% endif %}
+{% endfor %}
+</div>
+
+{% stylesheet %}
+    .content-block {
+      background: #FFFFFF;
+      box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.06);
+      border-radius: 30px 0px 30px 30px;
+      padding: 25px;
+      transition: all 1.3s ease;
+    }
+
+    .tabs {
+      text-align: right;
+    } 
+
+    .tab {
+      background: #FFFFFF;
+      box-shadow: 2px 0px 10px rgb(0 0 0 / 6%);
+      border-radius: 30px 30px 0px 0px;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 0px 0px;
+      outline: 0;
+      border: 0;
+      padding: 25px 25px;
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 160%;
+      color: #000000;
+      transition: all .3s ease;
+    }
+
+    .tab:hover {
+      background: #000000;
+      box-shadow: 2px 0px 10px rgb(0 0 0 / 6%);
+      border-radius: 30px 30px 0px 0px;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 0px 0px;
+      outline: 0;
+      border: 0;
+      padding: 25px 25px;
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 160%;
+      color: #F13F00;
+      transition: all .3s ease;
+    }
+
+    .tab-active {
+      background: #F13F00;
+      box-shadow: 2px 0px 10px rgb(0 0 0 / 6%);
+      border-radius: 30px 30px 0px 0px;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 0px 0px;
+      outline: 0;
+      border: 0;
+      padding: 25px 25px;
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 160%;
+      color: #FFFFFF;
+      transition: all .3s ease;
+    } 
+
+    .page-heading {
+      text-align: center;
+      font-size: 44px;
+      font-weight: 800;
+      font-style: normal;
+      letter-spacing: 0.03em;
+      line-height: 64px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+    .heading {
+        margin-top: 25px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 129.9%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: #000000;
+    }
+
+    .paragraph-content > p{
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 160.4%;
+        text-align: justify;
+        letter-spacing: 0.035em;
+        color: #000000;
+    }
+    
+    .company-name{
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 160.4%;
+        text-align: justify;
+        letter-spacing: 0.035em;
+        color: #000000;
+    }
+
+    .mailto, .tel {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 130%;
+        color: #48484C;
+    }
+    .mailto:hover, .tel:hover {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 130%;
+        color: #F13F00 !important;
+    } 
+
+    .empty-space {
+      height: 50px;
+    }
+
+    .hidden {
+      transition: all 1.3s ease;
+      display: none;
+    }
+    .right-top-pic {
+      position: absolute;
+      right: -17%;
+      top: 0%;
+      margin-top: 20%;
+      z-index: -1;
+  }
+    .img-clock {
+      position: absolute;
+      right: -9%;
+      top: 0%;
+      margin-top: 85%;
+      z-index: -1;
+    }
+    .circle {
+      position: absolute;
+      right: -15%;
+      top: 0%;
+      margin-top: 50%;
+      z-index: -1;
+    }
+
+    .img-doc {
+      position: absolute;
+      right: -10%;
+      top: 0%;
+      margin-top: 65%;
+      z-index: -1;
+    } 
+
+  .left-bottom-pic {
+    z-index: 0;
+    position: relative;
+    right: 18%;
+    top: -600%;
+}
+
+.lamp {
+  position: relative;
+  top: -1400%;
+  right: 43%;
+}
+
+.target {
+  position: relative;
+  top: -1400%;
+  right: 43%;
+}
+
+@media screen and (max-width: 1380px) {
+  .left-bottom-pic {
+    z-index: 0;
+    position: relative;
+    right: 25%;
+    top: -600%;
+} 
+}
+
+@media screen and (max-width: 1200px) {
+  .target {
+    position: relative;
+    top: -1250%;
+    right: 50%;
+} 
+}
+
+    @media screen and (max-width: 1024px) {
+      .tab {
+        background: #FFFFFF;
+        box-shadow: 2px 0px 10px rgb(0 0 0 / 6%);
+        border-radius: 30px 30px 0px 0px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 0px;
+        outline: 0;
+        border: 0;
+        padding: 25px 25px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 160%;
+        color: #000000;
+        transition: all .3s ease;
+      }
+  
+      .tab:hover {
+        background: #000000;
+        box-shadow: 2px 0px 10px rgb(0 0 0 / 6%);
+        border-radius: 30px 30px 0px 0px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 0px;
+        outline: 0;
+        border: 0;
+        padding: 25px 25px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 160%;
+        color: #F13F00;
+        transition: all .3s ease;
+      }
+  
+      .tab-active {
+        background: #F13F00;
+        box-shadow: 2px 0px 10px rgb(0 0 0 / 6%);
+        border-radius: 30px 30px 0px 0px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 0px;
+        outline: 0;
+        border: 0;
+        padding: 25px 25px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 160%;
+        color: #FFFFFF;
+        transition: all .3s ease;
+      } 
+      .left-bottom-pic, .lamp, .target, .img-clock, .circle, .img-doc {
+        display: none;
+    }
+    }
+    @media screen and (max-width: 768px) {
+      .tab {
+        background: #FFFFFF;
+        box-shadow: 2px 0px 10px rgb(0 0 0 / 6%);
+        border-radius: 30px 30px 0px 0px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 0px;
+        outline: 0;
+        border: 0;
+        padding: 15px 15px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 160%;
+        color: #000000;
+        transition: all .3s ease;
+      }
+  
+      .tab:hover {
+        background: #000000;
+        box-shadow: 2px 0px 10px rgb(0 0 0 / 6%);
+        border-radius: 30px 30px 0px 0px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 0px;
+        outline: 0;
+        border: 0;
+        padding: 15px 15px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 160%;
+        color: #F13F00;
+        transition: all .3s ease;
+      }
+  
+      .tab-active {
+        background: #F13F00;
+        box-shadow: 2px 0px 10px rgb(0 0 0 / 6%);
+        border-radius: 30px 30px 0px 0px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 0px;
+        outline: 0;
+        border: 0;
+        padding: 15px 15px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 160%;
+        color: #FFFFFF;
+        transition: all .3s ease;
+      } 
+    }
+    @media screen and (max-width: 500px) {
+      .tab {
+        background: #FFFFFF;
+        box-shadow: 2px 0px 10px rgb(0 0 0 / 6%);
+        border-radius: 30px 30px 0px 0px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 0px;
+        outline: 0;
+        border: 0;
+        padding: 15px 15px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 160%;
+        color: #000000;
+        transition: all .3s ease;
+      }
+  
+      .tab:hover {
+        background: #000000;
+        box-shadow: 2px 0px 10px rgb(0 0 0 / 6%);
+        border-radius: 30px 30px 0px 0px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 0px;
+        outline: 0;
+        border: 0;
+        padding: 15px 15px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 160%;
+        color: #F13F00;
+        transition: all .3s ease;
+      }
+   
+      .tab-active {
+        background: #F13F00;
+        box-shadow: 2px 0px 10px rgb(0 0 0 / 6%);
+        border-radius: 30px 30px 0px 0px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 0px;
+        outline: 0;
+        border: 0;
+        padding: 15px 15px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 160%;
+        color: #FFFFFF;
+        transition: all .3s ease;
+      }
+      .heading {
+        margin-top: 25px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 129.9%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: #000000;
+    }
+    }
+{% endstylesheet %}
+
+<script>
+  const tabBtn1 = document.querySelector(".tab1");
+  const tabBtn2 = document.querySelector(".tab2");
+  const terms = document.querySelectorAll(".terms-and-conditions");
+  const privacy = document.querySelectorAll(".privacy-policy");
+  console.log(terms);
+
+  tabBtn1.addEventListener('click', function () {
+    tabBtn2.classList.remove("tab-active");
+    tabBtn1.classList.add("tab-active");
+    for (let i = 0; i < terms.length; i++) {
+    terms[i].classList.remove('hidden');
+    }
+    for (let i = 0; i < privacy.length; i++) {
+      privacy[i].classList.add('hidden');
+    }
+  })
+
+  tabBtn2.addEventListener('click', function () {
+    tabBtn1.classList.remove("tab-active");
+    tabBtn2.classList.add("tab-active");
+    for (let i = 0; i < privacy.length; i++) {
+      privacy[i].classList.remove('hidden');
+    }
+    for (let i = 0; i < terms.length; i++) {
+      terms[i].classList.add('hidden');
+    }
+  })
+
+  function hidePrivacyContent () {
+    for (let i = 0; i < terms.length; i++) {
+    terms[i].classList.remove('hidden');
+    }
+    for (let i = 0; i < privacy.length; i++) {
+      privacy[i].classList.add('hidden');
+    }
+  }
+
+  hidePrivacyContent ();
+</script>
+
+{% schema %}
+  {
+    "name": "Multiple Blocks of text",
+    "blocks":[
+      {
+        "type": "block-1",
+        "name": "Terms and conditions",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content"
+          }
+        ]
+      },
+      {
+        "type": "block-2",
+        "name": "Terms&Conditions contacts",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "CONTACT US"
+          },
+          {
+            "type": "text",
+            "id": "company_name",
+            "label": "Company name",
+            "default": "Company Name"
+          },
+          {
+            "type": "text",
+            "id": "house_number",
+            "label": "House number"
+          },
+          {
+            "type": "text",
+            "id": "street",
+            "label": "Street"
+          },
+          {
+            "type": "text",
+            "id": "city",
+            "label": "City"
+          },
+          {
+            "type": "text",
+            "id": "post_code",
+            "label": "Post code"
+          },
+          {
+            "type": "text",
+            "id": "country",
+            "label": "Country"
+          },
+          {
+            "type": "text",
+            "id": "phone",
+            "label": "Phone"
+          },
+          {
+            "type": "text",
+            "id": "email",
+            "label": "E-mail"
+          }
+        ]
+      },
+      {
+        "type": "block-3",
+        "name": "Privacy Policy",
+        "settings": [
+          {
+            "type": "text",
+            "id": "privacy_title",
+            "label": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "privacy_content",
+            "label": "Content"
+          }
+        ]
+      },
+      {
+        "type": "block-4",
+        "name": "Privacy policy contacts",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "CONTACT US"
+          },
+          {
+            "type": "text",
+            "id": "words",
+            "label": "Some words"
+          },
+          {
+            "type": "text",
+            "id": "company_name",
+            "label": "Company name",
+            "default": "Company Name"
+          },
+          {
+            "type": "text",
+            "id": "house_number",
+            "label": "House number"
+          },
+          {
+            "type": "text",
+            "id": "street",
+            "label": "Street"
+          },
+          {
+            "type": "text",
+            "id": "city",
+            "label": "City"
+          },
+          {
+            "type": "text",
+            "id": "post_code",
+            "label": "Post code"
+          },
+          {
+            "type": "text",
+            "id": "country",
+            "label": "Country"
+          },
+          {
+            "type": "text",
+            "id": "phone",
+            "label": "Phone"
+          },
+          {
+            "type": "text",
+            "id": "email",
+            "label": "E-mail"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

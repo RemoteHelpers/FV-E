@@ -1,0 +1,37 @@
+<section class="yt-goal section">
+  <div class="container">
+    <div class="yt-goal__wrapper">
+      <div class="yt-goal__image-holder">
+        <img src="{{ section.settings.goal_image | img_url: 'master' }}" alt="">
+      </div>
+      <div class="yt-goal__content">
+        <h2 class="section-title section-title--left">{{ section.settings.goal_title }}</h2>
+        <p class="basic-text yt-goal__text">{{ section.settings.goal_text }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "goal",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "goal_title",
+        "label": "Goal title"
+      },
+      {
+        "type": "text",
+        "id": "goal_text",
+        "label": "Goal text"
+      },
+      {
+        "type": "image_picker",
+        "id": "goal_image",
+        "label": "Goal image"
+      }
+  ]
+  } 
+{% endschema %}

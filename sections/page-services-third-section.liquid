@@ -1,0 +1,120 @@
+<div class="page-width container-3rd">
+    <div class="row">
+        <div class="col-xs-12"><h1 class="service-title">{{ section.settings.heading_3rd_section }}</h1></div>
+        <div class="col-xs-12" align="center"><p class="service-sub third">{{ section.settings.sub_heading_3rd_section }}</p></div>
+        <div class="col-xs-6 col-md-3">
+            <div class="mw">
+            <div align="center"><img data-src="{{ section.settings.img_id1 | img_url: "master" }}" class="lazyload img-3rd-section" ></div>
+            <p class="img-sub">{{ section.settings.img_sub1 }}</p></div></div>
+        <div class="col-xs-6 col-md-3">
+            <div class="mw">
+                <div align="center"><img data-src="{{ section.settings.img_id2 | img_url: "master" }}" class="lazyload img-3rd-section" ></div>
+            <p class="img-sub">{{ section.settings.img_sub2 }}</p></div></div>
+        <div class="col-xs-6 col-md-3">
+            <div class="mw">
+                <div align="center"><img data-src="{{ section.settings.img_id3 | img_url: "master" }}" class="lazyload img-3rd-section" ></div>
+            <p class="img-sub">{{ section.settings.img_sub3 }}</p></div></div>
+        <div class="col-xs-6 col-md-3">
+            <div class="mw">
+                <div align="center"><img data-src="{{ section.settings.img_id4 | img_url: "master" }}" class="lazyload img-3rd-section" ></div>
+            <p class="img-sub">{{ section.settings.img_sub4 }}</p></div></div>
+    </div>
+</div>
+
+{% schema %}
+
+     {
+         "name": "Services: 3 section",
+         "settings": [
+         {
+             "type": "text",
+             "id": "heading_3rd_section",
+             "label": "Enter heading text",
+             "default": "Heading"
+         },
+         {
+            "type": "text",
+            "id": "sub_heading_3rd_section",
+            "label": "Enter subheading text",
+            "default": "Subheading"
+        },
+         {
+        "type": "image_picker",
+        "id": "img_id1",
+        "label": "Image #1"
+    },
+    {
+        "type": "text",
+        "id": "img_sub1",
+        "label": "label",
+        "default": "Enter your text"
+    },
+    {
+        "type": "image_picker",
+        "id": "img_id2",
+        "label": "Image #2"
+    },
+    {
+        "type": "text",
+        "id": "img_sub2",
+        "label": "label",
+        "default": "Enter your text"
+    },
+    {
+        "type": "image_picker",
+        "id": "img_id3",
+        "label": "Image #3"
+    },
+    {
+        "type": "text",
+        "id": "img_sub3",
+        "label": "label",
+        "default": "Enter your text"
+    },
+    {
+        "type": "image_picker",
+        "id": "img_id4",
+        "label": "Image #4"
+    },
+    {
+        "type": "text",
+        "id": "img_sub4",
+        "label": "label",
+        "default": "Enter your text"
+    }
+    ],
+    "presets": [
+    {
+      "name": "VE-3-sec",
+      "category": "Video editors"
+      }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+.mw {
+    width: 100%;
+    height: 300px;
+} 
+    .container-3rd {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .img-sub {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 142.9%;
+        text-align: center;
+        letter-spacing: 0.035em;
+        color: #000000;
+        max-width: 88%;
+    } 
+
+.third {
+    max-width: 786px; 
+}
+
+{% endstylesheet %}

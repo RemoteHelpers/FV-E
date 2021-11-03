@@ -1,0 +1,175 @@
+<section id="io-third">
+
+    <div class="page-width">
+        <h2 class="section-heading centered-heading">{{ section.settings.heading }}</h2>
+        <h2 class="service-heading mobile-heading">{{ section.settings.subheading1 }}</h2>
+        <div class="lr-wrapper left-sided">
+            <div class="left">
+
+                <h2 class="service-heading pc-heading">{{ section.settings.subheading1 }}</h2>
+                <h5 class="service-content">{{ section.settings.textcontent1 }}</h5>
+                <div class="button">
+                    <div class="btn media-text__btn">
+                        <a href="{{ section.settings.btn-link }}" class="btn__link">{{ section.settings.btn-linktext }}</a>
+                        <svg class="ve-btn-hover__star1">
+                            <use height="33px" width="28px" xlink:href="#star-svg"></use>
+                        </svg>
+                        <svg class="ve-btn-hover__star2">
+                            <use height="14px" width="11px" xlink:href="#star-svg"></use>
+                        </svg>
+                        <svg class="ve-btn-hover__star3">
+                            <use height="20px" width="17px" xlink:href="#star-svg"></use>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+
+                <img src="{{ section.settings.io-sec3-img1 | img_url: "master" }}" alt="img">
+
+            </div>
+        </div>
+
+        <h2 class="service-heading mobile-heading">{{ section.settings.subheading2 }}</h2>
+        <div class="lr-wrapper right-sided">
+            
+            <div class="left" id="sec2-img">
+
+                <img src="{{ section.settings.io-sec3-img2 | img_url: "master" }}" alt="img">
+
+            </div>
+            <div class="right">
+
+                <h2 class="service-heading pc-heading">{{ section.settings.subheading2 }}</h2>
+                <h5 class="service-content">{{ section.settings.textcontent2 }}</h5>
+                <div class="button">
+                    <div class="btn media-text__btn">
+                        <a href="{{ section.settings.btn-link }}" class="btn__link">{{ section.settings.btn-linktext }}</a>
+                        <svg class="ve-btn-hover__star1">
+                            <use height="33px" width="28px" xlink:href="#star-svg"></use>
+                        </svg>
+                        <svg class="ve-btn-hover__star2">
+                            <use height="14px" width="11px" xlink:href="#star-svg"></use>
+                        </svg>
+                        <svg class="ve-btn-hover__star3">
+                            <use height="20px" width="17px" xlink:href="#star-svg"></use>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <h2 class="service-heading mobile-heading">{{ section.settings.subheading3 }}</h2>
+        <div class="lr-wrapper left-sided">
+            <div class="left">
+
+                <h2 class="service-heading pc-heading">{{ section.settings.subheading3 }}</h2>
+                <h5 class="service-content">{{ section.settings.textcontent3 }}</h5>
+                <div class="button">
+                    <div class="btn media-text__btn">
+                        <a href="{{ section.settings.btn-link }}" class="btn__link">{{ section.settings.btn-linktext }}</a>
+                        <svg class="ve-btn-hover__star1">
+                            <use height="33px" width="28px" xlink:href="#star-svg"></use>
+                        </svg>
+                        <svg class="ve-btn-hover__star2">
+                            <use height="14px" width="11px" xlink:href="#star-svg"></use>
+                        </svg>
+                        <svg class="ve-btn-hover__star3">
+                            <use height="20px" width="17px" xlink:href="#star-svg"></use>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+
+                <div class="embed-responsive embed-responsive-16by9">
+
+
+                    {% assign videoId = section.settings.video_url | split: '?v=' %}
+
+
+                    <iframe allow="autoplay; encrypted-media" allowfullscreen class="video-frame" frameborder="0" height="445" src="https://www.youtube.com/embed/{{ videoId[1] }}" width="670"></iframe>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% schema %}
+
+{
+    "name": "I&O 3rd section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+        }, {
+            "type": "image_picker",
+            "id": "io-sec3-img1",
+            "label": "Image 1"
+        }, {
+            "type": "text",
+            "id": "subheading1",
+            "label": "Subheading 1"
+        }, {
+            "type": "text",
+            "id": "textcontent1",
+            "label": "Text content 1"
+        }, {
+            "type": "image_picker",
+            "id": "io-sec3-img2",
+            "label": "Image 2"
+        }, {
+            "type": "text",
+            "id": "subheading2",
+            "label": "Subheading 2"
+        }, {
+            "type": "text",
+            "id": "textcontent2",
+            "label": "Text content 2"
+        }, {
+            "type": "text",
+            "id": "video_url",
+            "label": "YouTube video URL"
+        }, {
+            "type": "text",
+            "id": "subheading3",
+            "label": "Subheading 3"
+        }, {
+            "type": "text",
+            "id": "textcontent3",
+            "label": "Text content 3"
+        }, {
+            "id": "btn-link",
+            "type": "url",
+            "label": "Button link"
+        }, {
+            "id": "btn-linktext",
+            "type": "text",
+            "label": "Button text",
+            "default": "Click Here"
+        }
+    ]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+
+
+
+{% endstylesheet %}
+
+{% javascript %}
+
+
+
+{% endjavascript %} 

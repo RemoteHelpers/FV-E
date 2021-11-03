@@ -1,0 +1,127 @@
+<div id="contactformSection" class="contactform-section shopify-section_inner page-width">
+
+{% if section.settings.title != blank %}
+  <h1>{{ section.settings.title | escape }}</h1>
+  <h1>{{ section.settings.title2 | escape }}</h1>
+{% endif %}
+
+
+<div class="contactform-wrapper">
+  {% if section.settings.image != blank %}
+  {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+  <div class="form-img-wrapper">
+   <img id="contact_img"
+                   class="lazyload js"
+                   data-src="{{ img_url }}"
+                   data-sizes="auto"
+  >
+   </div>
+{%- endif -%}
+{%- assign formId = 'contactForm' -%}
+   {% form 'contact', id: formId %}
+     <div class='flex'>
+  <div class="contact_form">
+   {% include 'custom-form-status', form: form, form_id: formId %}
+    {% if section.blocks.size > 0 %}
+    <div class="custom-select">
+      <div class='option-display'>{{section.blocks[0].settings.select_option}}</div>
+      <div class="option-wrapper">
+      {% for block in section.blocks %}
+        {% if forloop.first == true %}
+      <div value="{{block.settings.select_option_value | downcase}}" class="contact_form__option active">{{block.settings.select_option}}</div>
+        {% else %}
+        <div value="{{block.settings.select_option_value | downcase}}" class="contact_form__option">{{block.settings.select_option}}</div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+    
+     <input type="text" style="display:none;" class="contact_form__input--select" required id="{{ formId }}-type" name="contact[{{ 'contact.form.type' | t }}]" value="{{section.blocks[0].settings.select_option_value | downcase}}">
+  
+    <input type="text" required class="contact_form__input--name contact_form__input" placeholder="Your name" id="{{ formId }}-name" name="contact[{{ 'contact.form.name' | t }}]" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" oninvalid="setCustomValidity('Enter letters')" oninput="setCustomValidity('')">
+   <input type="text" class="contact_form__input--company contact_form__input" placeholder="Company name"  id="{{ formId }}-company_name" name="contact[{{ 'contact.form.company_name' | t }}]" onchange="if(this.value.trim()){this.classList.add('notEmpty')}">
+   <input type="email" required class="contact_form__input--email contact_form__input" placeholder="E-mail" id="{{ formId }}-email" name="contact[email]" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" oninvalid="setCustomValidity('xxx@xxx.xxx')" oninput="setCustomValidity('')">
+   <input type="tel"  oninvalid="setCustomValidity('Enter phone only numbers without () or - ')" oninput="setCustomValidity('')" class="contact_form__input--phone contact_form__input" placeholder="Phone number" pattern="(\+)?[0-9]{0,3}[0-9]{3}[0-9]{3}[0-9]{4}"
+   required id="{{ formId }}-phone" name="contact[{{ 'contact.form.phone' | t }}]">
+   <textarea required class='contact_form__input textarea' id="{{ formId }}-message" name="contact[{{ 'contact.form.message' | t }}]" placeholder="Your message"></textarea>
+  </div>
+       
+       
+    </div>
+  <div class="button-wrapper sub-btn-form">
+  <input type="submit" class="form_btn star-btn btn" value="{{ 'contact.form.submit' | t }}">
+    <div class="star-wrapper">
+      <div class="star-w star-1">
+  {% include "star-img" %}
+      </div>
+      <div class="star-w star-2">
+        {% include "star-img" %}
+      </div>
+      <div class="star-w star-3">
+        {% include "star-img" %}
+      </div>
+  </div>
+  </div>
+{% endform %}
+</div>
+</div>
+<style>
+  .site-footer {
+    background: url({{ section.settings.image-footer-bg | img_url: "master" }}) center center no-repeat;
+  }
+</style>
+{% schema %}
+{
+"name": "Contact Form",
+"class": "index-section contactForm",
+"settings": [		
+{
+"type": "text",
+   "id": "title",
+    "label": "Heading",
+"default": "Content Help"
+},
+{
+  "type": "text",
+     "id": "title2",
+      "label": "Heading",
+  "default": "Content Help"
+  },
+{
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+ },
+{
+      "type": "image_picker",
+      "id": "image-footer-bg",
+      "label": "Image for footer background"
+ }
+],
+"blocks": [
+  {
+    "type": "select_item",
+    "name": "select_item",
+"settings": [
+    {
+      "type": "text",
+      "id": "select_option",
+      "label": "Select Option"
+   },
+{
+      "type": "text",
+      "id": "select_option_value",
+      "label": "Select Option Value"
+   }
+]
+}
+],
+"presets": [
+  {
+    "category": "Custom Content",
+    "name": "Contact Form"
+  }
+]
+}
+{% endschema %}

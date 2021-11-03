@@ -1,0 +1,72 @@
+{% for block in section.blocks %}
+	{% if section.settings.provide__item != blank %}
+      <div class="provide__content-item">
+         {% if block.settings.provide__content-title != blank %}
+            <p class="provide__content-title">
+               {{block.settings.provide__content-title}}
+            </p>
+         {% endif %}
+         {% if block.settings.provide__content-image != blank %}
+            {%- assign img_url = block.settings.provide__content-image | img_url: '320x320', scale: 2   -%}
+               <img class="provide__content-img" src="{{ img_url }}" >  
+         {% endif %}
+         {% if block.settings.provide__content-text != blank %}
+            <p class="provide__content-text">
+               {{block.settings.provide__content-text}}
+            </p>
+         {% endif %}
+      </div>		
+	{% endif %}
+{% endfor %}
+
+{% schema %}
+{
+   "name":"Provide Items",
+   "class":"provide__item",
+   "settings":[
+      {
+         "id":"provide__item",
+         "type":"text",
+         "label":"Heading",
+         "default":"Title"
+      },
+      {
+         "id":"text",
+         "type":"richtext",
+         "label":"Add custom text below",
+         "default":"<p>Add your text here</p>"
+      }
+   ],
+   "blocks":[
+      {
+         "type":"text",
+         "name":"provide__content-item",
+         "settings":[
+            {
+               "type":"image_picker",
+               "id":"provide__content-image",
+               "label":"Provide Contant Image"
+            },
+            {
+               "type":"text",
+               "id":"provide__content-title",
+               "label":"Provide Content Title",
+               "default":"Item title"
+            },
+            {
+               "type":"text",
+               "id":"provide__content-text",
+               "label":"Provide Content Text",
+               "default":"Item text"
+            }
+         ]
+      }
+   ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

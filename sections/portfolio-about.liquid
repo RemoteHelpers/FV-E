@@ -1,0 +1,90 @@
+
+<!-- Needs for portfolio info -->
+<!-- Из переменной product.description, содержащей описание сплитом удаляем ненужные фрагменты и после чего используем в коде ниже -->
+{% assign about_arr = product.description | split: '*Education*' | first %}
+{% assign education_arr = product.description | split: '*Education*' | last %}
+{% assign education_arr = education_arr | split: '*Experience*' | first %}
+
+{% assign expirience_arr = product.description | split: '*Experience*' | last %}
+<!-- ------------ -->
+
+<section id="about" class="about">
+        <div class="container">
+            <div class="section__inner">
+                <div class="section__left">
+                    <h2 class="section__title">
+                        {{ section.settings.about__title }}
+                    </h2>
+                    <h4 class="section__text">
+                        {{about_arr}}
+                    </h4>
+                    <div class="skills__box">
+                        <h3 class="skills__title">
+                            Skills
+                        </h3>
+                        <div class="skills">
+<!--                              {% for block in section.blocks %}
+                                <p class="skill">
+                                    {{ block.settings.skill__item }} 
+                                </p>
+                             {% endfor %} -->
+                             {% for variant in product.variants %}
+                    				<p class="skill">{{ variant.title }};</p>
+                    		{%endfor%}
+                        </div>
+                    </div>
+                </div>
+                <div class="section__right">
+                    <img class="section__img" src="{{ section.settings.about__image | img_url: 'master' }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% schema %}
+  {
+    "name": "Portfolio About",
+    "settings": [
+		{
+			"type": "text",
+			"id": "about__title",
+			"label": "About Title"
+		},
+		{
+			"type": "text",
+			"id": "about__text",
+			"label": "About text"
+		},
+		{
+			"type": "image_picker",
+			"id": "about__image",
+			"label": "About image"
+		},
+		{
+			"type": "text",
+			"id": "skills__title",
+			"label": "Skills Title"
+		}
+	],
+      "blocks": [
+          {
+            "type": "text",
+            "name": "Skills",
+            "settings": [
+              {
+                "type": "text",
+                "id": "skill__item",
+                "label": "Skill",
+                "default":"Skill item"
+              }
+            ]
+          }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

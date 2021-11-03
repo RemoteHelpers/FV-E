@@ -1,0 +1,104 @@
+{{ 'portfolio.css' | asset_url | stylesheet_tag }}
+{{ 'magnific-popup.css' | asset_url | stylesheet_tag }}
+
+<section class="portfolio">
+    <div class="page-width">
+        <div class="portfolio__inner">
+            <h3 class="section-title">
+                {{ section.settings.portfolio_title }}
+            </h3>
+            <div class="popup-gallery popup-gallery1">
+                {% for block in section.blocks %}
+                    <div class="popup__gallery-item">
+                        <a href="{{ block.settings.video_url }}" class="video" title="This is a video">
+                            <div class="popup-video-wrapper">
+                                <video class="portfolio__iframe" src="{{ block.settings.video_url }}" poster="{{ block.settings.preview | img_url: 'master' }}" muted="muted"></video>
+                                <svg class="portfolio__play" fill="none" height="100" viewbox="0 0 100 100" width="100" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="50" cy="50" fill="#A8A8A8" opacity="0.7" r="49"/>
+                                    <path d="M0 50C0 63.2608 5.26784 75.9785 14.6447 85.3553C19.2876 89.9983 24.7995 93.6812 30.8658 96.194C36.9321 98.7067 43.4339 100 50 100C63.2608 100 75.9785 94.7322 85.3553 85.3553C94.7322 75.9785 100 63.2608 100 50C100 43.4339 98.7067 36.9321 96.194 30.8658C93.6812 24.7995 89.9983 19.2876 85.3553 14.6447C80.7124 10.0017 75.2005 6.31876 69.1342 3.80602C63.0679 1.29329 56.5661 0 50 0C43.4339 0 36.9321 1.29329 30.8658 3.80602C24.7995 6.31876 19.2876 10.0017 14.6447 14.6447C5.26784 24.0215 0 36.7392 0 50ZM10 50C10 39.3913 14.2143 29.2172 21.7157 21.7157C29.2172 14.2143 39.3913 10 50 10C60.6087 10 70.7828 14.2143 78.2843 21.7157C85.7857 29.2172 90 39.3913 90 50C90 60.6087 85.7857 70.7828 78.2843 78.2843C70.7828 85.7857 60.6087 90 50 90C39.3913 90 29.2172 85.7857 21.7157 78.2843C14.2143 70.7828 10 60.6087 10 50ZM40 75L65 50L40 25V75Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <span class="portfolio__item-title">
+                                {{ block.settings.portfolio_title }}
+                            </span>
+                            <span class="portfolio__item-text">
+                                {{ block.settings.portfolio_text }}
+                            </span>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+
+{
+    "name": "Portfolio",
+    "settings": [
+        {
+            "type": "text",
+            "id": "portfolio_title",
+            "label": "Portfolio title"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "video",
+            "name": "Video",
+            "settings": [
+                {
+                    "type": "url",
+                    "id": "video_url",
+                    "label": "Video url"
+                }, {
+                    "type": "image_picker",
+                    "id": "preview",
+                    "label": "Preview"
+                }, {
+                    "type": "text",
+                    "id": "portfolio_title",
+                    "label": "Portfolio title",
+                    "default": "Portfolio title"
+                }, {
+                    "type": "text",
+                    "id": "portfolio_text",
+                    "label": "Portfolio text",
+                    "default": "Portfolio text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Portfolio",
+            "category": "card"
+        }
+    ]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+
+
+
+{% endstylesheet %}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".video").magnificPopup({type: "iframe", fixedContentPos: false});
+    });
+
+    $(document).ready(function () {
+        if ($(window).width() > 821) {
+
+            return
+        } else {
+            $(".popup-gallery1").slick({infinite: true, dots: true, slidesToShow: 1, slidesToScroll: 1});
+
+        }
+    })
+</script>

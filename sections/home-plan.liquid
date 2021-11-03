@@ -1,0 +1,66 @@
+<section class="plan section">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.plan_title }}</h2>
+    <div class="plan__wrapper">
+      <div class="img-holder">
+        <img src="{{ section.settings.plan_image | img_url: 'master' }}" alt="">
+      </div>
+      <div class="steps__wrapper">
+        {% for block in section.blocks %}
+        <div class="steps__item">
+          <p class="steps__text basic-text">{{ block.settings.item_text }}</p>
+          <div class="plan__circle">
+            <p class="number">{{ block.settings.item_number }}</p>
+            <div class="transition"></div>
+            <div class="complete"></div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "home-plan",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "plan_title",
+        "label": "Plan title"
+      },
+      {
+        "type": "image_picker",
+        "id": "plan_image",
+        "label": "Plan image"
+      }
+  ],
+  "blocks": [
+      {
+        "type": "text",
+        "name": "text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "item_text",
+            "label": "Item text",
+            "default":"Item title"
+          },
+          {
+            "type": "text",
+            "id": "item_number",
+            "label": "Item number"
+          }
+        ]
+      }
+  ],
+  "presets": [
+      {
+        "name": "home-plan",
+        "category": "card"
+      }
+  ]
+} 
+{% endschema %}

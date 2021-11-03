@@ -1,0 +1,53 @@
+    <section class="marketing">
+        <div class="container">
+            <div class="marketing-wrapper">
+                <div class="marketing-info">
+                    <h2 class="title marketing-info__title">{{section.settings.marketing_title}}</h2>
+                    <p class="text marketing-info__text">{{section.settings.marketing_text}}</p>
+                    <div class="btn-marketing"><a href="{{section.settings.link}}" class="button marketing-info__button">{{section.settings.link_text}}</a></div>
+                </div>
+                <div class="marketing-bg">
+                    <img src="{{section.settings.marketing_img | img_url: "master"}}" alt="" class="marketing-bg__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% schema %}
+{
+  "name": "marketing",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "marketing_title",
+        "label": "Second section title"
+      },
+        {
+        "type": "text",
+        "id": "marketing_text",
+        "label": "Second section text"
+      },
+     
+
+           {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link text"
+      },
+
+           {
+        "type": "url",
+        "id": "link",
+        "label": "Link url"
+      },
+           {
+        "type": "image_picker",
+        "id": "marketing_img",
+        "label": "Second section img"
+      }
+     
+  ]
+  } 
+{% endschema %}
+

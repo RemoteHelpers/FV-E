@@ -1,0 +1,73 @@
+<section class="work-with">
+    <div class="container">
+        <h3 class="work-with__title text-center">{{ section.settings.title | escape }}</h3>
+
+        <div class="grid-social">
+
+            <div class="grid-social__item">
+                <div class="grid-social__item-link"><i class="fab fa-instagram"></i></div>
+                <span class="grid-social__item-text">Instagram</span>
+            </div>
+            <!-- /.grid-social__item -->
+
+            <div class="grid-social__item">
+                <div class="grid-social__item-link"><i class="fab fa-facebook-f"></i></div>
+                <span class="grid-social__item-text">Facebook</span>
+            </div>
+            <!-- /.grid-social__item -->
+
+            <div class="grid-social__item">
+                <div class="grid-social__item-link"><i class="fab fa-linkedin-in"></i></div>
+                <span class="grid-social__item-text">LinkedIn</span>
+            </div>
+            <!-- /.grid-social__item -->
+
+            <div class="grid-social__item">
+                <div class="grid-social__item-link"><i class="fab fa-pinterest-p"></i></div>
+                <span class="grid-social__item-text">Pinterest</span>
+            </div>
+            <!-- /.grid-social__item -->
+
+            <div class="grid-social__item">
+                <div class="grid-social__item-link"><i class="fab fa-tiktok"></i></div>
+                <span class="grid-social__item-text">TikTok</span>
+            </div>
+            <!-- /.grid-social__item -->
+
+            <div class="grid-social__item">
+                <div class="grid-social__item-link"><i class="fab fa-youtube"></i></div>
+                <span class="grid-social__item-text">YouTube</span>
+            </div>
+            <!-- /.grid-social__item -->
+
+            <div  class="grid-social__item">
+                <div class="grid-social__item-link"><i class="fab fa-twitter"></i></div>
+                <span class="grid-social__item-text">Twitter</span>
+            </div>
+            <!-- /.grid-social__item -->
+
+            <div class="grid-social__item">
+                <div href="#" class="grid-social__item-link"><i class="fab fa-tumblr"></i></div>
+                <span class="grid-social__item-text">Tumblr</span>
+            </div>
+            <!-- /.grid-social__item -->
+
+        </div>
+        <!-- /.social-grid -->
+    </div>
+</section>
+
+
+
+{% schema %}
+{
+"name": "Section Work With",
+"settings": [
+{
+"type": "text",
+"label": "Your head line for section",
+"id": "title"
+}
+]
+}
+{% endschema %}

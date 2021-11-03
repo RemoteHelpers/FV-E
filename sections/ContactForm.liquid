@@ -1,0 +1,129 @@
+{{ 'ContactForm.css' | asset_url | stylesheet_tag }}
+<section id="contactformSection" class="contactform-section shopify-section_inner container">
+      <style>
+    	.index-section.contactForm {
+    	background-color: {{section.settings.bg_color}};
+    }
+  </style>
+  {% if section.settings.title != blank %}
+      <h2 class="section-header section-title">{{ section.settings.title | escape }}</h2>
+  {% endif %}
+  {% if section.settings.description != blank %}
+      <h3 class="contactform-description description">{{ section.settings.description | escape }}</h3>
+  {% endif %}
+  
+  <div class="contactform-wrapper">
+    {%- assign formId = 'contactForm' -%}
+       {% form 'contact', id: formId %}
+         <div class='flex form-wrapper'>
+      <div class="contact_form">
+       {% include 'custom-form-status', form: form, form_id: formId %}
+        {% if section.blocks.size > 0 %}
+        <div class="custom-select">
+          <div class='option-display'>{{section.blocks[0].settings.select_option}}</div>
+          <div class="option-wrapper">
+        	{% for block in section.blocks %}
+            {% if forloop.first == true %}
+        	<div value="{{block.settings.select_option_value | downcase}}" class="contact_form__option active">{{block.settings.select_option}}</div>
+            {% else %}
+            <div value="{{block.settings.select_option_value | downcase}}" class="contact_form__option">{{block.settings.select_option}}</div>
+            {% endif %}
+            {% endfor %}
+        	</div>
+        </div>
+        {% endif %}
+        
+         <input type="text" style="display:none;" class="contact_form__input--select" required id="{{ formId }}-type" name="contact[{{ 'contact.form.type' | t }}]" value="{{section.blocks[0].settings.select_option_value | downcase}}">
+    	
+        <input type="text" required class="contact_form__input--name contact_form__input" placeholder="Your name" id="{{ formId }}-name" name="contact[{{ 'contact.form.name' | t }}]" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" oninvalid="setCustomValidity('Enter letters')" oninput="setCustomValidity('')">
+       <input type="text" class="contact_form__input--company contact_form__input" placeholder="Company name"  id="{{ formId }}-company_name" name="contact[{{ 'contact.form.company_name' | t }}]" onchange="if(this.value.trim()){this.classList.add('notEmpty')}">
+       <input type="email" required class="contact_form__input--email contact_form__input" placeholder="E-mail" id="{{ formId }}-email" name="contact[email]" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" oninvalid="setCustomValidity('xxx@xxx.xxx')" oninput="setCustomValidity('')">
+       <input type="tel"  oninvalid="setCustomValidity('Enter phone only numbers without () or - ')" oninput="setCustomValidity('')" class="contact_form__input--phone contact_form__input" placeholder="Phone number" pattern="(\+)?[0-9]{0,3}[0-9]{3}[0-9]{3}[0-9]{4}"
+       required id="{{ formId }}-phone" name="contact[{{ 'contact.form.phone' | t }}]">
+       <textarea required class='contact_form__input textarea' id="{{ formId }}-message" name="contact[{{ 'contact.form.message' | t }}]" placeholder="Your message"></textarea>
+      </div>
+           
+           
+        {% if section.settings.image != blank %}
+      {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+      <div class="custom__item img-wrapper">
+       <img id="about__img"
+                       class="custom__image about__img lazyload js"
+                       data-src="{{ img_url }}"
+                       data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                       data-sizes="auto"
+      >
+   	  </div>
+    {%- endif -%}
+        </div>
+      <div class="button-wrapper">
+        <input type="submit" class="button star-btn btn" value="{{ 'contact.form.submit' | t }}">
+        <div class="star-wrapper">
+          <div class="star-w star-1">
+			      {% include "star-img" %}
+          </div>
+          <div class="star-w star-2 star-2--bigbtn">
+          	{% include "star-img" %}
+          </div>
+          <div class="star-w star-3">
+            {% include "star-img" %}
+          </div>
+        </div>
+      </div>
+    {% endform %}
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Contact Form",
+	"class": "index-section contactForm",
+    "settings": [
+{
+	"type": "color",
+    "id": "bg_color",
+    "label": "Background color",
+     "default": "#fff"
+	},				
+{
+		"type": "text",
+     	"id": "title",
+      	"label": "Heading",
+		"default": "Content Help"
+    },
+	{
+		"type": "text",
+     	"id": "description",
+      	"label": "Description"
+    },
+	{
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+   	}
+	],
+	"blocks": [
+      {
+        "type": "select_item",
+        "name": "select_item",
+		"settings": [
+        {
+          "type": "text",
+          "id": "select_option",
+          "label": "Select Option"
+   		},
+		{
+          "type": "text",
+          "id": "select_option_value",
+          "label": "Select Option Value"
+   		}
+		]
+		}
+	],
+	"presets": [
+      {
+        "category": "Custom Content",
+        "name": "Contact Form"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,122 @@
+<div class="page-width">
+<div class="row" align="center">
+    <div class="col-sm-12"><h1 class="service-title">{{ section.settings.instruments_h1 }}</h1></div>
+    <div class="col-sm-12 mg-60"><h5 class="service-sub fourth">{{ section.settings.instruments_subtitle }}</h5></div>
+    <div class="col-sm-offset-1 col-sm-2" align="center"><img data-src="{{ section.settings.programm_img1 | img_url: "master" }}" class="lazyload prog-logo" ><p class="img-sub" style="margin-bottom: 5%;">{{ section.settings.programm_name1 }}</p></div>
+    <div class="col-sm-2" align="center"><img data-src="{{ section.settings.programm_img2 | img_url: "master" }}" class="lazyload prog-logo" ><p class="img-sub" style="margin-bottom: 5%;">{{ section.settings.programm_name2 }}</p></div>
+    <div class="col-sm-2" align="center"><img data-src="{{ section.settings.programm_img3 | img_url: "master" }}" class="lazyload prog-logo" ><p class="img-sub" style="margin-bottom: 5%;">{{ section.settings.programm_name3 }}</p></div>
+    <div class="col-sm-2" align="center"><img data-src="{{ section.settings.programm_img4 | img_url: "master" }}" class="lazyload prog-logo" ><p class="img-sub" style="margin-bottom: 5%;">{{ section.settings.programm_name4 }}</p></div>
+    <div class="col-sm-2" align="center"><img data-src="{{ section.settings.programm_img5 | img_url: "master" }}" class="lazyload prog-logo" ><p class="img-sub" style="margin-bottom: 5%;">{{ section.settings.programm_name5 }}</p></div>
+</div>
+</div>
+
+
+{% schema %}
+
+
+
+{
+    "name": "Services: 4 section",
+    
+    "settings": [
+    {
+    "type": "text",
+    "id": "instruments_h1",
+    "label": "Title"
+    },
+    {
+    "type": "text",
+    "id": "instruments_subtitle",
+    "label": "Subtitle"
+    },
+                {
+        "type": "image_picker",
+        "id": "programm_img1",
+        "label": "First programm image"
+        },
+        {
+            "type": "text",
+            "id": "programm_name1",
+            "label": "First programm name"
+            },
+            {
+                "type": "image_picker",
+                "id": "programm_img2",
+                "label": "Second programm image"
+                },
+                {
+                    "type": "text",
+                    "id": "programm_name2",
+                    "label": "Second programm name"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "programm_img3",
+                        "label": "Third programm image"
+                        },
+                        {
+                            "type": "text",
+                            "id": "programm_name3",
+                            "label": "Third programm name"
+                            },
+                            {
+                                "type": "image_picker",
+                                "id": "programm_img4",
+                                "label": "Fourth programm image"
+                                },
+                                {
+                                    "type": "text",
+                                    "id": "programm_name4",
+                                    "label": "Fourth programm name"
+                                    },
+                                    {
+                                        "type": "image_picker",
+                                        "id": "programm_img5",
+                                        "label": "Fifth programm image"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "id": "programm_name5",
+                                            "label": "Fifth programm name"
+                                            }
+                            
+                            
+    ],
+    
+    "presets": [
+    {
+    "name": "Video editors fourth section",
+    "category": "Video editors"
+    }
+    ]
+    }
+
+{% endschema %}
+
+{% stylesheet %}
+
+.mg-60 {
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.prog-logo {
+ text-align: center;
+}
+
+.img-sub {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 160.4%;
+    text-align: center;
+    letter-spacing: 0.035em;
+    color: #000000;
+    margin-bottom: 5%;
+}
+
+.fourth {
+    max-width: 760px;
+} 
+{% endstylesheet %}

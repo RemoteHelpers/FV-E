@@ -1,0 +1,229 @@
+
+<div class="page-width full-version">
+    {% if section.settings.title != blank %}
+      <div class="section-header text-center">
+        <h2 class="collection-slider-header">{{ section.settings.title | escape }}</h2>
+      </div>
+    {% endif %}
+  
+    {%- assign collection = collections[section.settings.collection] -%}
+  
+    {% case section.settings.grid %}
+      {% when 2 %}
+        {%- assign max_height = 530 -%}
+        {%- assign grid_item_width = 'medium-up--one-half' -%}
+      {% when 3 %}
+        {%- assign max_height = 345 -%}
+        {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
+      {% when 4 %}
+        {%- assign max_height = 250 -%}
+        {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
+      {% when 5 %}
+        {%- assign max_height = 195 -%}
+        {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
+    {% endcase %}
+  
+    {%- assign product_limit = 12 -%}
+  
+    <ul class="grid grid--uniform grid--view-items collection-slider" style="height: 100%; overflow: hidden;">
+      {% for product in collection.products limit: product_limit %}
+        <li class="grid__item grid__item--{{section.id}} {{ grid_item_width }}">
+          {% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
+        </li>
+      {% endfor %}
+    </ul>
+
+    
+
+    {% if section.settings.show_view_all %}
+      <hr class="hr--invisible" aria-hidden="true" />
+      <div class="text-center">
+        <a href="{{ collection.url }}" class="btn" aria-label="{{ 'collections.general.view_all_label' | t: collection_name: collection.title }}">
+          {{ 'collections.general.view_all' | t }}
+        </a>
+      </div>
+    {% endif %}
+  
+  </div>
+  
+  
+  
+  {% schema %}
+  {
+    "name": {
+      "en": "Featured collection"
+    },
+    "class": "index-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": {
+          "en": "Heading"
+        },
+        "default": {
+          "en": "Featured collection"
+        }
+      },
+      {
+        "id": "collection",
+        "type": "collection",
+        "label": {
+          "en": "Collection"
+        }
+      },
+      {
+        "type": "range",
+        "id": "grid",
+        "label": {
+          "en": "Products per row"
+        },
+        "min": 1,
+        "max": 3,
+        "step": 1,
+        "default": 3
+      },
+      
+      {
+        "type": "checkbox",
+        "id": "show_view_all",
+        "label": {
+          "en": "Show 'View all' button"
+        },
+        "default": false
+      }
+    ],
+    "presets": [
+      {
+        "name": {
+          "en": "Featured collection slider"
+        },
+        "category": {
+          "en": "Collection"
+        }
+      }
+    ]
+  }
+  {% endschema %}
+
+  {% stylesheet %}
+  .collection-slider-header {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 133.4%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+    text-transform: none;
+  }
+
+  .cart-image-inside {
+    height: 284px;
+    width: 284px;
+  }
+
+/* Sergey for featured products slider */
+.collection-sider {
+  padding-right: 25px;
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+}
+
+.product-card {
+  width: 100%;
+}
+.slick-prev {
+  left: 0;
+  z-index: 999;
+}
+.slick-next{
+  right: 0;
+  z-index: 999;
+}
+
+  .my-dots {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-top: -40px;
+    list-style: none;
+    text-align: center;
+  }
+   
+  .my-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .my-dots li button {
+    font-size: 45;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  
+  .my-dots li button:hover,
+  .my-dots li button:focus {
+    outline: none;
+  }
+  
+  .my-dots li button:hover:before,
+  .my-dots li button:focus:before {
+    opacity: 1;
+  }
+  
+  .my-dots li button:before {
+    font-family: 'slick';
+    font-size: 45px;
+    line-height: 5;
+  
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* Обводка маркеров */
+    
+    /* WebKit (Safari/Chrome) Only */
+    -webkit-text-stroke: 1px #F13F00;
+    /* If we weren't using text-shadow, we'd set a fallback color
+       and use this to set color instead
+      -webkit-text-fill-color: white; */
+    text-shadow: 1px 1px 0 #f00, /* Simulated effect for Firefox and Opera
+         and nice enhancement for WebKit */
+    -1px -1px 0 #f00, 1px -1px 0 #f00, -1px 1px 0 #f00, 1px 1px 0 #f00;
+     /* / Обводка мар керов */
+     
+  }
+  
+  .my-dots li.slick-active button:before {
+    opacity: .75;
+    color: #F13F00;
+  }
+   
+
+/* end Sergey's comment */ 
+{% endstylesheet %}

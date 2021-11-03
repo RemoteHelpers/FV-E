@@ -1,0 +1,269 @@
+{{ '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' | script_tag }}
+{{ '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' | stylesheet_tag }}
+{{ '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css' | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'services-style.css' | asset_url }}">
+
+
+<div>
+  <svg style="display: none;">
+    <symbol id="star-svg" viewBox="0 0 29 33">
+      <g>
+        <path
+          d="M14.412 0L15.5141 10.102C15.7684 12.7117 17.7183 14.8163 20.2616 15.3214L28.1458 16.8367L20.855 17.5102C17.9726 17.7628 15.7684 20.0357 15.4293 22.8138L14.412 33L13.3947 22.898C13.1404 20.0357 10.8514 17.8469 7.969 17.5944L0 16.8367L8.22332 15.4056C10.7666 14.9847 12.8013 12.8801 13.0556 10.2704L14.412 0Z"
+          fill="#F13F00" />
+      </g> 
+    </symbol>
+  </svg>
+</div>
+<div class="without-video">
+  <div class="row image" style="background-image: url({{ section.settings.bg_img | img_url: "master" }}); margin-top: -200px;">
+    <div class="col-xs-12">
+      <div class="page-width">
+        <div class="row">
+          <div class="heading col-xs-12">
+            <h1 class="heading-text">{{ section.settings.heading }}</h1>
+          </div>
+          <div class="sub-heading col-xs-12" style="margin-top: 71px; width: 100%; padding: 0;">
+            <p class="sub-text">{{ section.settings.sub }}</p>
+          </div>
+          <div class="button col-xs-12" align="center" style="margin-top: 6%;"><div class="btn media-text__btn">
+            <a href="{{ section.settings.btn-link }}" class="btn__link">{{ section.settings.btn-linktext }}</a>
+            <svg class="ve-btn-hover__star1">
+              <use height="33px" width="28px" xlink:href="#star-svg"></use>
+            </svg>
+            <svg class="ve-btn-hover__star2">
+              <use height="14px" width="11px" xlink:href="#star-svg"></use>
+            </svg>
+            <svg class="ve-btn-hover__star3">
+              <use height="20px" width="17px" xlink:href="#star-svg"></use>
+            </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Services: 1 section",
+"settings": [
+{
+"type": "image_picker",
+"id": "bg_img",
+"label": "Background image"
+},
+{
+"type": "text",
+"id": "heading",
+"label": "Heading"
+},
+{
+"type": "text",
+"id": "sub",
+"label": "Subtitle"
+},
+
+{
+"id": "btn-link",
+"type": "url",
+"label": "Button link"
+},
+{
+"id": "btn-linktext",
+"type": "text",
+"label": "Button text",
+"default": "Click Here"
+}
+],
+"presets": [
+{
+"name": "VE-Services-1",
+"category": "Video editors"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+
+.without-video .btn {
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  height: 55px;
+  width: 300px;
+  padding: 13px 0;
+
+  background-color: #F13F00;
+
+  border: 2px solid transparent;
+  border-radius: 33px;
+
+  transition: background-color 0.3s ease;
+}
+
+.without-video .btn__link {
+  color: #fff;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+  text-align: center;
+ 
+}
+
+.without-video .btn__link:hover {
+  color: #fff;
+}
+
+/* Hover button */
+
+.without-video .ve-btn-hover__star1 {
+  height: 30px;
+  position: absolute;
+  top: -36%;
+  left: 100%;
+
+  transition: visibility 2s, opacity 1s linear;
+}
+
+.without-video .ve-btn-hover__star2 {
+  height: 30px;
+  position: absolute;
+  top: 16%;
+  left: 106%;
+
+  transition: visibility .6s, opacity 1.5s linear;
+}
+
+.without-video .ve-btn-hover__star3 {
+  height: 30px;
+  position: absolute;
+  left: -4%;
+  top: 85%;
+
+  transition: visibility 1.2s, opacity 1s linear;
+}
+
+.without-video .btn__link:hover {
+  color: #fff;
+}
+
+.without-video .btn:hover {
+  background-color: #fb4200;
+}
+
+ 
+.without-video .btn svg {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.without-video .btn:hover svg {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ve-btn-hover__star1 {
+  height: 30px;
+  position: absolute;
+  top: -36%;
+  left: 100%;
+
+  transition: visibility 2s, opacity 1s linear;
+}
+
+.ve-btn-hover__star2 {
+  height: 30px;
+  position: absolute;
+  top: 16%;
+  left: 106%;
+
+  transition: visibility .6s, opacity 1.5s linear;
+}
+
+.ve-btn-hover__star3 {
+  height: 30px;
+  position: absolute;
+  left: -8%;
+  top: 80%;
+
+  transition: visibility 1.2s, opacity 1s linear;
+}
+
+@media (min-width: 960px) {
+.without-video {
+display: none;
+}
+}
+
+.image {
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.heading-text {
+padding-top: 299px;
+font-family: Raleway;
+font-style: normal;
+font-weight: 900;
+font-size: 44.8529px;
+line-height: 145.9%;
+text-align: center;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: white;
+}
+
+@media screen and (max-width: 600px) {
+
+.heading-text {
+padding-top: 476px;
+font-family: Raleway;
+font-style: normal;
+font-weight: 800;
+font-size: 30px;
+line-height: 145.9%;
+/* or 44px */
+
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+/* white */
+
+color: #FFF;
+}
+
+}
+
+.sub-text {
+font-family: Raleway;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 160.4%;
+/* or 38px */
+
+text-align: center;
+letter-spacing: 0.035em;
+color: #FFFFFF;
+}
+
+@media screen and (max-width: 600px) {
+
+.sub-text {
+width: 100%;
+background-color: black;
+}
+
+}
+
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

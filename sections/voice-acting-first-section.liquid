@@ -1,0 +1,75 @@
+<section id="va-first">
+<div>
+  <svg style="display: none;">
+    <symbol id="star-svg" viewBox="0 0 29 33">
+      <g>
+        <path
+          d="M14.412 0L15.5141 10.102C15.7684 12.7117 17.7183 14.8163 20.2616 15.3214L28.1458 16.8367L20.855 17.5102C17.9726 17.7628 15.7684 20.0357 15.4293 22.8138L14.412 33L13.3947 22.898C13.1404 20.0357 10.8514 17.8469 7.969 17.5944L0 16.8367L8.22332 15.4056C10.7666 14.9847 12.8013 12.8801 13.0556 10.2704L14.412 0Z"
+          fill="#F13F00" />
+      </g> 
+    </symbol>
+  </svg>
+</div>
+
+  <div class="va-banner" style="background: url({{ section.settings.bg_img | img_url: "master" }}) no-repeat">
+  <div class="page-width">
+    <div class="banner-content">    
+      <h1 class="va-banner-heading">{{ section.settings.heading }}</h1>
+      <h4 class="va-banner-subheading">{{ section.settings.subheading }}</h4>
+      <div class="button"><div class="btn media-text__btn">
+        <a href="{{ section.settings.btn-link }}" class="btn__link">{{ section.settings.btn-linktext }}</a>
+        <svg class="ve-btn-hover__star1">
+          <use height="33px" width="28px" xlink:href="#star-svg"></use>
+        </svg>
+        <svg class="ve-btn-hover__star2">
+          <use height="14px" width="11px" xlink:href="#star-svg"></use>
+        </svg>
+        <svg class="ve-btn-hover__star3">
+          <use height="20px" width="17px" xlink:href="#star-svg"></use>
+        </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "VA 1st section",
+    "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_img",
+      "label": "Background image"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+        },
+        {
+        "type": "text",
+        "id": "subheading",
+        "label": "Subheading"
+        },
+        {
+          "id": "btn-link",
+          "type": "url",
+          "label": "Button link"
+          },
+          {
+          "id": "btn-linktext",
+          "type": "text",
+          "label": "Button text",
+          "default": "Click Here"
+          }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,44 @@
+<section class="interlingual section--sub">
+  <div class="container">
+    <h2 class="section-title section-title--desc">{{ section.settings.interling_title }}</h2>
+    <div class="interlingual__wrapper">
+      <div class="interlingual__content">
+        <h2 class="section-title section-title--mob">{{ section.settings.interling_title }}</h2>
+        <p class="basic-text interlingual__text">{{ section.settings.interling_text }}</p>
+        <p class="basic-text interlingual__text">{{ section.settings.interling_text2 }}</p>
+      </div>
+      <div class="interlingual__image-wrapper">
+        <img src="{{ section.settings.interling_image | img_url: 'master' }}" alt="" class="interlingual__image" >
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "interling",
+  
+  "settings": [
+      {
+        "type": "image_picker",
+        "id": "interling_image",
+        "label": "Interling Image"
+      },
+      {
+        "type": "text",
+        "id": "interling_title",
+        "label": "Interling title"
+      },
+      {
+        "type": "text",
+        "id": "interling_text",
+        "label": "Interling text"
+      },
+      {
+        "type": "text",
+        "id": "interling_text2",
+        "label": "Interling text"
+      }
+  ]
+  } 
+{% endschema %}

@@ -1,0 +1,7 @@
+{% assign searchResCounter = search.results_count %}
+{%for item in search.results%}
+{% if item.object_type == 'page' %}
+{% assign searchResCounter = searchResCounter | minus: 1 %}
+{%endif%}
+{%endfor%}
+<p class="res-counter">{{searchResCounter}}</p>

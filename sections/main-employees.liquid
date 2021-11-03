@@ -1,0 +1,192 @@
+<section class="main-employees shopify-section_inner">
+  <style>
+  	.index-section.employees {
+    	background-color: {{section.settings.bg_color}};
+    }
+    .main-employees.shopify-section_inner{
+    	background-color: transparent;
+      	background: none;
+    }
+    
+    .employees .product-card .price {
+    	color: #F13F00;
+      	font-size: 33px;
+      	margin-bottom: 10px;
+    }
+    
+    .main-employees .link-view_all {
+    margin-top: 30px;
+	}
+    
+    .main-employees a {
+    	color: #BDBDBD;
+    }
+    
+    @media only screen and (max-width: 800px) {
+	.employees .product-card {
+    	max-width: 300px !important;
+      	margin-top: 0px;
+	}
+    }
+  </style>
+  <div class="wrap-container">
+    
+    <svg style="display: none;">
+      <symbol id="star-svg" viewBox="0 0 29 33">
+        <g>
+          <path
+            d="M14.412 0L15.5141 10.102C15.7684 12.7117 17.7183 14.8163 20.2616 15.3214L28.1458 16.8367L20.855 17.5102C17.9726 17.7628 15.7684 20.0357 15.4293 22.8138L14.412 33L13.3947 22.898C13.1404 20.0357 10.8514 17.8469 7.969 17.5944L0 16.8367L8.22332 15.4056C10.7666 14.9847 12.8013 12.8801 13.0556 10.2704L14.412 0Z"
+            fill="#F13F00" />
+        </g>
+      </symbol>
+    </svg>
+    
+{%-comment-%}
+    <div class="section-header text-center">
+      {% if section.settings.title != blank %}
+        <h2>{{ section.settings.title | escape }}</h2>
+      {% endif %}
+
+      {% if section.settings.text != blank %}
+        <div class="text-center main-employees__text">{{ section.settings.text }}</div>
+      {% endif %}
+    </div>
+{%-endcomment-%}
+
+    {% if section.settings.title != blank %}
+      <h2 class="section-header section-title">{{ section.settings.title | escape }}</h2>
+  {% endif %}
+  {% if section.settings.text != blank %}
+      <h3 class="creators-section__description description">{{ section.settings.text | escape }}</h3>
+  {% endif %}
+    
+ 
+    
+  {%- comment -%}
+    {% assign collection = collections['all'] %}
+    <h4 class="main-employees-collection__title text-center">{{ collection.title }}</h4> 
+
+    <ul class="main-employees-collection">
+
+      {% for product in collection.products %}
+      <li class="main-employees-item">
+        <a href="{{ product.url }}">
+              <div class="main-employees-item__img"><img src='{{ product | img_url: '500x500' }}'><div>
+              <div class="main-employees-item__name">{{ product.title }}</div> 
+              <div class="main-employees-item__price">{{ product.price | money }}</div>
+              <div class="main-employees-item__click">View Resume</div>
+            
+        </a>
+      </li>
+      {% endfor %}
+
+    </ul>
+
+	{%- endcomment -%}
+
+ {%- assign collection = collections['video-editors'] -%}
+  <div class= "products-wrapper flex desktop">
+    {% for product in collection.products limit:6 %}
+    {%- assign nameArr = product.title | remove: "." | downcase | split: " " -%}
+  		<div class="product-card">
+           <a href='/products/{{nameArr | join: "-"}}' class='product-card__hover-link'></a>
+          <div class="product-card__top">
+          	<div class='img'><img src="{{product.featured_image| img_url: '160x160', scale: 2}}"></div>
+          	<div class='tags-wrapper'>
+          	{% for tag in product.tags limit:3 %}
+              {% if forloop.index == 1 %}
+              <div class="first_level">
+              {% endif %}  
+                <a style="z-index:40;" class="tag" href="/search?type=product&q={{tag}}">{{tag}}</a>
+              {% if forloop.index == 2 %}
+              </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+          </div>
+          <p class='name'>{{ product.title }}</p>
+           <p class='price'>{{ product.price | money }}</p>
+          {%- assign nameArr = product.title | remove: "." | downcase | split: " " -%}
+          <a href='/products/{{nameArr | join: "-"}}' class='btn'>View resume</a>
+       </div>
+	{% endfor %}
+  </div>  
+        
+    {% if section.settings.show_view_all %}
+      <div class="text-center link-view_all">
+        <a href="{{ collection.url }}" class="btn"
+          aria-label="{{ 'collections.general.view_all_label' | t: collection_name: collection.title }}">
+          
+          <svg class="btn-hover__star1">
+                  <use height="33px" width="28px" xlink:href="#star-svg"></use>
+                </svg>
+                <svg class="btn-hover__star2">
+                  <use height="14px" width="11px" xlink:href="#star-svg"></use>
+                </svg>
+                <svg class="btn-hover__star3">
+                  <use height="20px" width="17px" xlink:href="#star-svg"></use>
+                </svg>
+          
+          {{ 'collections.general.view_all' | t }}
+          
+          
+        </a>
+        
+        		
+      </div>
+    {% endif %}
+
+  </div>
+</section>
+
+
+
+
+{% schema %}
+{
+"name": "Employees collection",
+"class": "index-section employees",
+"settings": [
+{
+	"type": "color",
+    "id": "bg_color",
+    "label": "Background color",
+     "default": "#fff"
+	},
+  {
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "Featured collection"
+},
+{
+"type": "text",
+"id": "text",
+"label": "Text"
+},
+{
+"id": "collection",
+"type": "collection",
+"label": "Collection"
+},
+{
+"type": "checkbox",
+"id": "show_vendor",
+"label": "Show product vendors",
+"default": false
+},
+{
+"type": "checkbox",
+"id": "show_view_all",
+"label": "Show 'View all' button",
+"default": false
+}
+],
+"presets": [
+{
+"name": "Employees collection",
+"category": "Collection"
+}
+]
+}
+{% endschema %}

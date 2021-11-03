@@ -1,0 +1,65 @@
+<section class="provide">
+  <div class="container">
+      <div class="provide__inner">
+          {% if page.metafields.promo-video.provide-title != blank %}
+          <h3 class="section-title">
+            {{ section.settings.provide_title }}
+          </h3>
+          {% endif %}
+          <div class="provide__content">
+            {% for block in section.blocks %}
+                <div class="provide__content-item">
+                      <p class="provide__content-title">{{block.settings.card_title}}</p>
+                      <img src="{{ block.settings.card_image | img_url: 'master' }}" alt=""> 
+                      <p class="provide__content-text">{{block.settings.card_text}}</p>
+                </div>		
+            {% endfor %}
+          </div>
+      </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Provide",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "provide_title",
+        "label": "Provide title"
+      }
+  ],
+  "blocks": [
+      {
+        "type": "image",
+        "name": "images",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "card_image",
+            "label": "Card image"
+          },
+          {
+            "type": "text",
+            "id": "card_title",
+            "label": "Card title",
+            "default":"Item title"
+          },
+          {
+            "type": "text",
+            "id": "card_text",
+            "label": "Card text",
+            "default":"Item text"
+          }
+        ]
+      }
+  ],
+  "presets": [
+      {
+        "name": "Provide",
+        "category": "card"
+      }
+  ]
+} 
+{% endschema %}

@@ -1,0 +1,74 @@
+<section class="types section">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.types_title }}</h2>
+    <div class="types__schedule">
+      <div class="types__card"><p>{{ section.settings.types_text }}</p></div>
+      <div class="img-holder"><img src="{{ section.settings.types_image | img_url: 'master' }}" alt=""></div>
+    </div>
+    <ul class="types__list">
+      {% for block in section.blocks %}
+      <li class="types__item">
+        <div class="types__title-wrapper">
+          <img src="{{ block.settings.card_image | img_url: 'master' }}" alt="">
+          <h4 class="types__title">{{ block.settings.card_title }}</h4>
+        </div>
+        <p class="types__description">{{ block.settings.card_text }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "home-types",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "types_title",
+        "label": "Types title"
+      },
+      {
+        "type": "text",
+        "id": "types_text",
+        "label": "Types text"
+      },
+      {
+        "type": "image_picker",
+        "id": "types_image",
+        "label": "Types image"
+      }
+  ],
+  "blocks": [
+      {
+        "type": "image",
+        "name": "images",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "card_image",
+            "label": "Card image"
+          },
+          {
+            "type": "text",
+            "id": "card_title",
+            "label": "Card title",
+            "default":"Item title"
+          },
+          {
+            "type": "text",
+            "id": "card_text",
+            "label": "card Text"
+          }
+        ]
+      }
+  ],
+  "presets": [
+      {
+        "name": "home-types",
+        "category": "card"
+      }
+  ]
+} 
+{% endschema %}

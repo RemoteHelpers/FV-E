@@ -1,0 +1,65 @@
+<section class="services section">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.services_title }}</h2>
+    <div class="services__wrapper">
+      {% for block in section.blocks %}
+      <a href="{{ section.settings.card_url }}" class="services__card">
+        <img src="{{ block.settings.card_image | img_url: 'master' }}" alt="">
+        <h3 class="card-title">{{ block.settings.card_title }}</h3>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="services__slider">
+      {% for block in section.blocks %}
+      <a href="{{ section.settings.card_url }}" class="services__card">
+        <img src="{{ block.settings.card_image | img_url: 'master' }}" alt="">
+        <h3 class="card-title">{{ block.settings.card_title }}</h3>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "main-services",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "services_title",
+        "label": "Services title"
+      }
+  ],
+  "blocks": [
+      {
+        "type": "image",
+        "name": "images",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "card_image",
+            "label": "Card image"
+          },
+          {
+            "type": "text",
+            "id": "card_title",
+            "label": "Card title",
+            "default":"Item title"
+          },
+          {
+            "type": "url",
+            "id": "card_url",
+            "label": "card URL"
+          }
+        ]
+      }
+  ],
+  "presets": [
+      {
+        "name": "main-services",
+        "category": "card"
+      }
+  ]
+} 
+{% endschema %}

@@ -1,0 +1,62 @@
+    <section class="chromatic" style ="background-image: url({{ section.settings.bg_img | img_url: "master" }});" >
+       
+        <div class="container">
+            <div class="chromatic-wrapper">
+               
+                <div class="chromatic-info">
+                    <h2 class="chromatic-info__title title">{{ section.settings.chromatic_title }}</h2>
+                  <p class="chromatic-info__text text">{{section.settings.chromatic_text}} </p>
+              </div>
+                        <div class="chromatic-bg">
+                            <img src="{{ section.settings.chromatic_imagemob | img_url: 'master' }}" alt="" class="chromatic-bg__img">
+                        </div>
+                  
+                  
+                    
+                   
+                
+                  
+                  
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+{% schema %}
+{
+  "name": "services",
+  
+  "settings": [
+  
+      {
+        "type": "text",
+        "id": "chromatic_title",
+        "label": "Section title"
+      },
+
+      {
+        "type": "text",
+        "id": "chromatic_text",
+        "label": "Section text"
+      },
+
+      {
+        "type": "image_picker",
+        "id": "bg_img",
+        "label": "Section image"
+      },
+      {
+        "type": "image_picker",
+        "id": "chromatic_imagemob",
+        "label": "Section image mob"
+      }
+
+  ]
+
+
+  } 
+{% endschema %}
+
+

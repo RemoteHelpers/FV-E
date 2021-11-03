@@ -1,0 +1,61 @@
+<section class="yt-channel section">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.channel_title }}</h2>
+    <ul class="yt-channel__list">
+      {% for block in section.blocks %}
+        <li class="yt-channel__item">
+          <div class="item__img-holder"><img src="{{ block.settings.card_image | img_url: 'master' }}" alt=""></div>
+          <div class="item__content-holder">
+            <h3 class="card-title card-title--item">{{ block.settings.card_title }}</h3>
+            <p class="card-text">{{ block.settings.card_text }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Channel",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "channel_title",
+        "label": "Channel title"
+      }
+  ],
+  "blocks": [
+      {
+        "type": "image",
+        "name": "images",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "card_image",
+            "label": "Card image"
+          },
+          {
+            "type": "text",
+            "id": "card_title",
+            "label": "Card title",
+            "default":"Item title"
+          },
+          {
+            "type": "text",
+            "id": "card_text",
+            "label": "Card text",
+            "default":"Item text"
+          }
+        ]
+      }
+  ],
+  "presets": [
+      {
+        "name": "Channel",
+        "category": "card"
+      }
+  ]
+} 
+{% endschema %}

@@ -1,0 +1,54 @@
+.thankPage.shopify-section_inner{
+	padding: 40px 5vw;
+}
+
+.thankPage .section-header{
+	text-align: left;
+  	text-transform: inherit;
+  	margin: 30px 0px;
+}
+
+.thankPage .text-wrapper{
+	width: 40%;
+  	max-width: 420px;
+}
+
+.thankPage .img-wrapper {
+    width: 50%;
+}
+
+
+.thankPage .img-wrapper .thank__img{
+    width: 100%;
+}
+
+@media (max-width: 710px){
+  .thankPage.shopify-section_inner{
+  	flex-wrap: wrap;
+  }
+	.thankPage .text-wrapper{
+	width: 100%;
+    order:2;
+      margin: 0 auto;
+}
+
+.thankPage .img-wrapper {
+    width: 75%;
+  	order:1;
+  margin: 0 auto;
+}
+  .thankPage .section-header{
+    text-align: center;
+  }
+  
+  .thankPage .button-wrapper { 
+  	margin: 0 auto;
+  }
+}
+
+@media (max-width: 550px){
+
+.thankPage .img-wrapper {
+    width: 100%;
+}
+}

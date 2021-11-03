@@ -1,0 +1,262 @@
+{{ 'portfolio-page.css' | asset_url | stylesheet_tag }} 
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+
+<!--  modal video -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+
+
+
+<!--  end of modal video -->
+
+    <section class="remodal" data-remodal-id="modal">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        {% for media in product.media %}
+        {% case media.media_type %}
+          {% when 'video' %}
+            <div style="width: 600px;" class="product-video">
+              {{ media | video_tag: controls: true, image_size: "1024x"}}
+              <style>.sorry-text{display: none;}</style>
+            </div>
+
+            {% when 'external_video' %}
+            <div class="product-single__media" style="padding-top: {{ 1 | divided_by: media.aspect_ratio | times: 100}}%;" data-media-id="{{ media.id }}">
+              <iframe class="lazyload" id="ytplayer" width="100%" height="360"
+                                            data-src="https://www.youtube.com/embed/{{ media.external_id }}?controls=1"
+                                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <style>.sorry-text{display: none;}</style>
+            </div>
+        {% endcase %}
+        {% if media.media_type != 'video' %}
+        <h3 class="sorry-text">Sorry, there is no video</h3>
+        {% endif %}
+      {% endfor %}
+    </section>
+
+<section class="first__screen">
+        <div class="container">
+            <div class="first__screen-wrapper">
+                <div class="first__screen-inner">
+                    <div class="section__inner">
+                        <div class="section__left">
+                            <div class="designer">
+                                <div class="designer__image">
+                                    <img class="designer__wrapper-img" src="images/laptop.svg" alt="">
+                                  	<img class="designer__wrapper-img" src="{{ section.settings.designer__image | img_url: 'master' }}" alt="">
+                                </div>
+                                <div class="designer__info">
+                                  	<img class="designer__avatar" src="{{ product | img_url: '120x120' }}" alt="">
+                                    <h3 class="designer__name">
+                                        {{ product.title }}
+                                    </h3>
+                                    <div class="designer__button">
+                                        <a href="#modal" class="designer__btn play-btn">
+                                            <span class="designer__btn-text">
+                                                {{ section.settings.designer__btn-text }}
+                                            </span>
+                                            <svg class="play" width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <g clip-path="url(#clip0)">
+                                              <path d="M13.1978 5.52485L11.099 4.17017C11.099 4.17017 12.0053 6.16235 12.2915 6.85298C12.4108 7.14517 12.5777 7.49048 12.697 7.83579C12.7685 8.07486 12.7924 8.3936 12.7924 8.52642C12.7924 8.71236 12.7447 9.19048 12.2915 9.48267L4.61182 14.3702C4.68337 14.4764 5.01727 14.6358 5.32732 14.742C6.51982 15.1405 7.61693 15.0608 8.69018 14.3702L13.2932 11.3952C14.1996 10.8108 14.7481 9.77486 14.7958 8.63267C14.8435 7.35767 14.1757 6.16235 13.1978 5.52485Z" fill="white"/>
+                                              <path d="M3.80101 14.8482C3.61021 14.7951 3.39556 14.6623 3.32401 14.6091C3.18091 14.5029 2.82316 14.2373 2.82316 13.6529V3.98413C2.53695 4.11694 2.1315 4.40913 1.9407 4.59507C1.3206 5.09976 0.795898 6.16226 0.795898 7.38413V14.3701C0.795898 14.5294 0.819749 14.6888 0.891299 14.8482C1.53525 16.2826 2.68006 16.9998 3.82486 16.9998C4.34956 16.9998 4.87426 16.8404 5.32741 16.5482L6.87767 15.5654C6.87767 15.5654 5.18431 15.2732 4.63576 15.1138C4.39726 15.0341 4.01566 14.9013 3.80101 14.8482Z" fill="white"/>
+                                              <path d="M9.40578 3.10859L5.39896 0.478903C4.49266 -0.105472 3.34786 -0.185159 2.4177 0.372653C1.39215 0.957028 0.795898 2.09922 0.795898 3.34765V5.47265C0.795898 5.47265 1.86915 3.79922 2.34615 3.2414C2.65621 2.89609 3.06166 2.52422 3.25246 2.3914C3.34786 2.33828 3.58636 2.23203 3.82486 2.23203C3.96796 2.23203 4.13491 2.25859 4.32571 2.3914L11.2661 6.90703C11.2899 6.77422 11.2899 6.56172 11.2899 6.32265C11.1707 4.96797 10.4552 3.77265 9.40578 3.10859Z" fill="white"/>
+                                              </g>
+                                              <defs>
+                                              <clipPath id="clip0">
+                                              <rect width="14" height="17" fill="white" transform="translate(0.795898)"/>
+                                              </clipPath>
+                                              </defs>
+                                            </svg>
+<!--                                             <img src="images/play-small.svg" alt="" class="play"> -->
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__right">
+                            <h2 class="designer__name-large">
+                                {{ product.title }}
+                            </h2>
+                            <div class="skills">
+                               	{% for skill in product.tags %}
+              						<a  href="/search?q={{ skill | replace: '&', '%26' }}%2C+&options%5Bprefix%5D=last" class="skill">{{ skill }}</a>
+              					{% endfor %}
+<!--                                 {% for block in section.blocks %}
+                                <p class="skill">
+                                    {{ block.settings.skill__item }} 
+                                </p>
+                                {% endfor %} -->
+                            </div>
+                            <div class="designer__id-wrap">
+                                <p class="designer__id-icon">
+                                    {{ section.settings.designer__id-key }}
+                                </p>
+                                <p class="designer__id">
+                                   	{{ current_variant.sku }}
+                                </p>
+                            </div>
+                            <div class="first__screen-button">
+                                <div class="price__row">
+                                    <p class="price__key">
+                                        {{ section.settings.price__key }}
+                                    </p>
+                                    <p class="price__value">
+                                        {{ section.settings.price__value }}
+                                    </p>
+                                </div>
+                               <button class="first__screen-link" data-url="https://calendly.com/remote-helpers/consilting">
+                                    {{ section.settings.set__interview-text }}
+                                </button>
+                              	
+<!--                                 <a href="{{ section.settings.set__interview-link }}" class="first__screen-link">
+                                    {{ section.settings.set__interview-text }}
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="down">
+                    <div class="down__link">
+                      		<svg class="down__arrow" width="8" height="46" viewBox="0 0 8 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            	<path d="M3.64644 45.3536C3.84171 45.5488 4.15829 45.5488 4.35355 45.3536L7.53553 42.1716C7.73079 41.9763 7.73079 41.6597 7.53553 41.4645C7.34027 41.2692 7.02369 41.2692 6.82842 41.4645L4 44.2929L1.17157 41.4645C0.976308 41.2692 0.659725 41.2692 0.464463 41.4645C0.269201 41.6597 0.269201 41.9763 0.464463 42.1716L3.64644 45.3536ZM3.5 -1.38522e-08L3.5 45L4.5 45L4.5 1.38522e-08L3.5 -1.38522e-08Z" fill="black"/>
+                            </svg>
+                      		<svg class="down__arrow" width="8" height="46" viewBox="0 0 8 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            	<path d="M3.64644 45.3536C3.84171 45.5488 4.15829 45.5488 4.35355 45.3536L7.53553 42.1716C7.73079 41.9763 7.73079 41.6597 7.53553 41.4645C7.34027 41.2692 7.02369 41.2692 6.82842 41.4645L4 44.2929L1.17157 41.4645C0.976308 41.2692 0.659725 41.2692 0.464463 41.4645C0.269201 41.6597 0.269201 41.9763 0.464463 42.1716L3.64644 45.3536ZM3.5 -1.38522e-08L3.5 45L4.5 45L4.5 1.38522e-08L3.5 -1.38522e-08Z" fill="black"/>
+                            </svg>
+                      		<svg class="down__arrow" width="8" height="46" viewBox="0 0 8 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            	<path d="M3.64644 45.3536C3.84171 45.5488 4.15829 45.5488 4.35355 45.3536L7.53553 42.1716C7.73079 41.9763 7.73079 41.6597 7.53553 41.4645C7.34027 41.2692 7.02369 41.2692 6.82842 41.4645L4 44.2929L1.17157 41.4645C0.976308 41.2692 0.659725 41.2692 0.464463 41.4645C0.269201 41.6597 0.269201 41.9763 0.464463 42.1716L3.64644 45.3536ZM3.5 -1.38522e-08L3.5 45L4.5 45L4.5 1.38522e-08L3.5 -1.38522e-08Z" fill="black"/>
+                            </svg>
+<!--                         <img src="images/arrow.svg" alt="" class="down__arrow">
+                        <img src="images/arrow.svg" alt="" class="down__arrow"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% schema %}
+  {
+    "name": "first__screen",
+    "settings": [
+		{
+			"type": "text",
+			"id": "designer__name",
+			"label": "Designer name"
+		},
+        {
+          "type": "image_picker",
+          "id": "designer__image",
+          "label": "Laptop image"
+        },
+        {
+          "type": "image_picker",
+          "id": "designer__avatar",
+          "label": "Designer avatar"
+        },
+        {
+          "type": "text",
+          "id": "designer__btn-link",
+          "label": "Designer CV link"
+        },
+		{
+			"type": "text",
+			"id": "designer__btn-text",
+			"label": "First screen button"
+		},
+		{
+			"type": "text",
+			"id": "designer__name-large",
+			"label": "Designer name Large"
+		},
+		{
+			"type": "text",
+			"id": "designer__id-key",
+			"label": "Designer id key"
+		},
+		{
+			"type": "text",
+			"id": "designer__id-value",
+			"label": "Designer id value"
+		},
+		{
+			"type": "text",
+			"id": "price__key",
+			"label": "Price key"
+		},
+		{
+			"type": "text",
+			"id": "price__value",
+			"label": "Price value"
+		},
+		{
+			"type": "text",
+			"id": "set__interview-link",
+			"label": "Set interview link"
+		},
+		{
+			"type": "text",
+			"id": "set__interview-text",
+			"label": "Set interview text"
+		}
+	],
+      "blocks": [
+          {
+            "type": "text",
+            "name": "Skills",
+            "settings": [
+              {
+                "type": "text",
+                "id": "skill__item",
+                "label": "Skill item",
+                "default":"Skill item"
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "name": "arrows",
+            "settings": [
+              {
+                "type": "image_picker",
+                "id": "arrow__down",
+                "label": "Arrow down"
+              }
+            ]
+          }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+// ///////////////////// ANCHOR
+
+const element = document.querySelector('.about')
+const topPos = element.getBoundingClientRect().top + window.pageYOffset
+const downLink = document.querySelector('.down__link')
+
+downLink.addEventListener('click', (e) => {
+    e.preventDefault()
+    window.scrollTo({
+        top: topPos, // scroll so that the element is at the top of the view
+        behavior: 'smooth' // smooth scroll
+    })
+})
+
+{% endjavascript %}

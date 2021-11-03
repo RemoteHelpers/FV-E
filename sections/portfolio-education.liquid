@@ -1,0 +1,108 @@
+{% assign about_arr = product.description | split: '*Education*' | first %}
+{% assign education_arr = product.description | split: '*Education*' | last %}
+{% assign education_arr = education_arr | split: '*Experience*' | first %}
+
+{% assign expirience_arr = product.description | split: '*Experience*' | last %}
+
+<section class="education">
+        <div class="container">
+            <div class="section__inner">
+                <div class="section__left">
+                    <h2 class="section__title">
+                        {{ section.settings.education__title }}
+                    </h2>
+                    <div class="section__items">
+                       {% for block in section.blocks %}
+                          <div class="section__item">
+                            <h4>
+                            	 {{ education_arr }}
+                            </h4>
+                           
+<!--                               <div class="section__item-header">
+                                  <span class="section__item-value">
+                                      {{ block.settings.education__title-value }}
+                                  </span>
+                              </div>
+                              <span class="section__item-faculty">
+                                  {{ block.settings.education__item-faculty }}
+                              </span>
+                              <p class="section__item-period">
+                                  {{ block.settings.education__item-period }}
+                              </p> -->
+                          </div>
+                        {% endfor %}
+                    </div>
+                    <div class="hire__button">
+                        <a href="{{ section.settings.education__link }}" target="_blank" class="hire__link">
+                            {{ section.settings.education__link-text }}
+                        </a>
+                    </div>
+                </div>
+                <div class="section__right">
+                    <img class="section__img" src="{{ section.settings.education__image | img_url: 'master' }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% schema %}
+  {
+    "name": "Portfolio education",
+    "settings": [
+		{
+			"type": "image_picker",
+			"id": "education__image",
+			"label": "Education image"
+		},
+		{
+			"type": "text",
+			"id": "education__title",
+			"label": "Education Title"
+		},
+		{
+			"type": "text",
+			"id": "education__link",
+			"label": "Education link"
+		},
+		{
+			"type": "text",
+			"id": "education__link-text",
+			"label": "Education link text"
+		}
+	],
+	"blocks": [
+	    {
+            "type": "block",
+            "name": "Education item",
+            "settings": [
+              {
+                "type": "text",
+                "id": "education__title-value",
+                "label": "Education title value",
+                "default":"Education title value"
+              },
+             {
+                "type": "text",
+                "id": "education__item-faculty",
+                "label": "Education item faculty",
+                "default":"Education item faculty"
+              },
+              {
+                "type": "text",
+                "id": "education__item-period",
+                "label": "Education item period",
+                "default":"Education item period"
+              }
+ 
+            ]
+         }
+
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

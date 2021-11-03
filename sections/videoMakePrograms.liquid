@@ -1,0 +1,67 @@
+<div class="about_us-section video_make-programs">
+    <div class="text">
+        <h2>
+            {{ section.settings.h2 }}
+        </h2>
+        <p>
+            {{ section.settings.p }}
+        </p>
+    </div>
+    <div class="programs-block">
+        {% for block in section.blocks %}
+            <div class="item">
+                {% if block.settings.card_image != blank %}
+                    <picture><source srcset="{{ block.settings.card_image | img_url: 'master' }}"><img src="{{ block.settings.card_image | img_url: 'master' }}" alt="vlog"></picture>
+                {% endif %}
+                
+                {% if block.settings.card_text_h3 != blank %}
+                    <h3>{{ block.settings.card_text_h3 }}</h3>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+"name": "Video Make Programs",
+
+"settings": [
+    {
+      "type": "text",
+      "id": "h2",
+      "label": "H2"
+    },
+    {
+      "type": "text",
+      "id": "p",
+      "label": "p"
+    }
+],
+"blocks": [
+    {
+      "type": "image",
+      "name": "images",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "card_image",
+          "label": "Card image"
+        },
+        {
+          "type": "text",
+          "id": "card_text_h3",
+          "label": "Card text H3",
+          "default":"Item title"
+        }
+      ]
+    }
+],
+"presets": [
+    {
+      "name": "types",
+      "category": "card"
+    }
+]
+} 
+{% endschema %}

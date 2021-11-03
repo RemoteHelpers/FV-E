@@ -1,0 +1,56 @@
+    <section class="first__screen">
+        <picture>
+    		<source srcset="{{ section.settings.first_screen_image | img_url: 'master' }}" media="(min-width: 720px)">
+    		<img src="{{ section.settings.first_screen_image | img_url: 'master' }}" alt="">
+  		</picture>
+        <div class="first__screen-container">
+            <div class="first__screen-inner">
+                <h1 class="first__screen-title">
+                    {{ section.settings.first__screen-title }}
+                </h1>
+                <p class="first__screen-subtitle">
+                    {{ section.settings.first__screen-subtitle }}
+                </p>
+                <div class="first__screen-button">
+                    <a href="#" class="first__screen-btn">
+                        {{ section.settings.button_text }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% schema %}
+  {
+    "name": "first__screen",
+    "settings": [
+		{
+        	"type": "text",
+        	"id": "first__screen-title",
+        	"label": "First screen title"
+      	},
+		{
+        	"type": "text",
+        	"id": "first__screen-subtitle",
+        	"label": "First screen subtitle"
+      	},
+		{
+        	"type": "text",
+        	"id": "button_text",
+        	"label": "Button text"
+      	},
+      {
+        "type": "image_picker",
+        "id": "first_screen_image",
+        "label": "First screen image"
+      }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

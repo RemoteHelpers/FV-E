@@ -1,0 +1,45 @@
+<section class="hero section">
+  <picture>
+    <source srcset="{{ section.settings.hero_image | img_url: 'master' }}" media="(min-width: 720px)">
+    <img src="{{ section.settings.hero_imagemob | img_url: 'master' }}" alt="">
+  </picture>
+  <div class="hero__content">
+    <h1 class="main-title">{{ section.settings.hero_title }}</h1>
+    <p class="hero__text">{{ section.settings.hero_text }}</p>
+    <a href="#" class="button btn star-btn">{{ section.settings.link_text }}</a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "hero",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "hero_title",
+        "label": "Hero title"
+      },
+      {
+        "type": "text",
+        "id": "hero_text",
+        "label": "Hero text"
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link text"
+      },
+      {
+        "type": "image_picker",
+        "id": "hero_image",
+        "label": "Hero image"
+      },
+      {
+        "type": "image_picker",
+        "id": "hero_imagemob",
+        "label": "Hero image mob"
+      }
+  ]
+  } 
+{% endschema %}

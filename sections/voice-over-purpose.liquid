@@ -1,0 +1,44 @@
+    <section class="purpose">
+        <div class="container">
+            <div class="section__inner">
+                <div class="section__left">
+
+                    <h2 class="section__title">
+                        {{ section.settings.purpose-title }}
+                    </h2>
+
+                </div>
+                <div class="section__right">
+
+                    <p class="section__text">
+                        {{ section.settings.purpose-text }}
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% schema %}
+  {
+    "name": "Purpose",
+    "settings": [
+		{
+        	"type": "text",
+        	"id": "purpose-title",
+        	"label": "Purpose title"
+      	},
+		{
+        	"type": "text",
+        	"id": "purpose-text",
+        	"label": "Purpose text"
+      	}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

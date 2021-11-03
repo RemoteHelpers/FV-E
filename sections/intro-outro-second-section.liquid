@@ -1,0 +1,74 @@
+<section id="io-second">
+
+    <div class="page-width">
+        <h2 class="section-heading mobile-heading">{{ section.settings.heading }}</h2>
+        <div class="lr-wrapper">
+            
+            <div class="left" id="sec2-img">
+                <img src="{{ section.settings.io-sec-img | img_url: "master" }}" alt="img">
+            </div>
+            <div class="right">
+                <h2 class="section-heading pc-heading">{{ section.settings.heading }}</h2>
+                <h5 class="section-text">{{ section.settings.text }}</h5>
+            </div>
+        </div>
+        <div class="button">
+            <div class="btn media-text__btn">
+                <a href="{{ section.settings.btn-link }}" class="btn__link">{{ section.settings.btn-linktext }}</a>
+                <svg class="ve-btn-hover__star1">
+                    <use height="33px" width="28px" xlink:href="#star-svg"></use>
+                </svg>
+                <svg class="ve-btn-hover__star2">
+                    <use height="14px" width="11px" xlink:href="#star-svg"></use>
+                </svg>
+                <svg class="ve-btn-hover__star3">
+                    <use height="20px" width="17px" xlink:href="#star-svg"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+
+{
+    "name": "I&O 2nd section",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "io-sec-img",
+            "label": "Image"
+        }, {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+        }, {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text content"
+        }, {
+            "id": "btn-link",
+            "type": "url",
+            "label": "Button link"
+        }, {
+            "id": "btn-linktext",
+            "type": "text",
+            "label": "Button text",
+            "default": "Click Here"
+        }
+    ]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+
+
+
+{% endstylesheet %}
+
+{% javascript %}
+
+
+
+{% endjavascript %} 

@@ -1,0 +1,67 @@
+<section class="hero section">
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero__content">
+        <h1 class="main-title">{{ section.settings.hero_title }}</h1>
+        <p class="basic-text">{{ section.settings.hero_text }}</p>
+        <div class="button-wrapper">
+          <a href="{{ section.settings.btn_url }}" class="button btn star-btn">{{ section.settings.link_text }}</a>
+          <div class="star-wrapper">
+            <div class="star-w star-1">
+              {% include "star-img" %}
+            </div>
+            <div class="star-w star-2 star-2--bigbtn">
+              {% include "star-img" %}
+            </div>
+            <div class="star-w star-3">
+              {% include "star-img" %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__image-holder">
+        <img src="{{ section.settings.hero_image | img_url: 'master' }}" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+"name": "main-hero",
+
+"settings": [
+{
+"type": "text",
+"id": "hero_title",
+"label": "Hero title"
+},
+{
+"type": "text",
+"id": "hero_text",
+"label": "Hero text"
+},
+{
+"type": "text",
+"id": "link_text",
+"label": "Link text"
+},
+{
+"type": "url",
+"id": "btn_url",
+"label": "URL"
+},
+{
+"type": "image_picker",
+"id": "hero_image",
+"label": "Hero image"
+}
+],
+"presets": [
+{
+"name": "main-hero",
+"category": "section"
+}
+]
+}
+{% endschema %}

@@ -1,0 +1,200 @@
+<footer class="site-footer footer" role="contentinfo" data-section-id="{{ section.id }}" data-section-type="footer-section">
+<style>
+  .site-footer{
+    background-color: {{section.settings.bg_color}};
+  }
+  
+  .site-footer .social-media__item path{
+    stroke: {{section.settings.text_color}};
+        transition: 0.3s;
+  }
+  
+  
+  .site-footer__logo__title{
+    color: {{section.settings.text_color}}
+  }
+  
+  .footer-description a, .footer-description p {
+  	color: {{section.settings.text_color}};
+  }
+  
+</style>
+  <div class="flex">
+  	<div class="footer__item logo">
+        {% if request.page_type == 'index' %}
+          <h1 class="h2 site-footer__logo">
+        {% else %}
+          <div class="h2 site-footer__logo">
+        {% endif %}
+          {% if section.settings.logo %}
+            {%- assign img_url = section.settings.logo | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <a href="{{ routes.root_url }}" class="site-footer__logo-image{% if section.settings.align_logo == 'center' %} site-header__logo-image--centered{% endif %}" data-image-loading-animation>
+              {% capture logo_alt %}{{ section.settings.logo.alt | default: shop.name }}{% endcapture %}
+              <img class="lazyload js"
+                   src="{{ section.settings.logo | img_url: '300x300' }}"
+                   data-src="{{ img_url }}"
+                   data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                   data-aspectratio="{{ section.settings.logo.aspect_ratio }}"
+                   data-sizes="auto"
+                   alt="{{ logo_alt | escape }}"
+                   style="max-width: {{ section.settings.logo_max_width }}px;min-width: {{ section.settings.logo_max_width }}px;max-height: {{ section.settings.logo_max_width }}px;min-height: {{ section.settings.logo_max_width }}px">
+              <div class="site-footer__logo__title">
+                <div class="site-footer__logo__title--main">{{section.settings.logo_text_main}}</div>
+                <div class="site-footer__logo__title--sub">{{section.settings.logo_text_sub}}</div>
+              </div>
+              <noscript>
+                {% capture image_size %}{{ section.settings.logo_max_width | escape }}x{% endcapture %}
+                <img src="{{ section.settings.logo | img_url: image_size }}"
+                     srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+                     alt="{{ section.settings.logo.alt | default: shop.name }}"
+                     style="max-width: {{ section.settings.logo_max_width }}px;">
+              </noscript>
+            </a>
+          {% else %}
+            <a class="site-footer__logo-link" href="{{ routes.root_url }}">{{ shop.name }}</a>
+          {% endif %}
+        {% if request.page_type == 'index' %}
+          </h1>
+        {% else %}
+          </div>
+        {% endif %}
+      </div>
+    <nav class="footer__nav">
+      <ul class="footer__nav-list">
+        {% for link in linklists['footer'].links %}
+          <li class="footer__nav-item">
+            <a href="{{ link.url }}" class="footer__nav-link">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <div class="social-media-wrapper">
+      <ul class="social-media">
+        {% for block in section.blocks %}
+        <li class="social-media__item {% if forloop.index == section.blocks.size %}last{% endif %}">
+          {% if block.settings.social_media_url != blank %}
+          <a href="{{block.settings.social_media_url}}" class="social-media__item--link">
+          	{% case block.settings.social_media %}
+            	{% when 'whatsapp' %}
+            		{% include 'whatsapp' %}
+            	{% when 'twitter' %}
+            		{% include 'twitter' %}
+            	{% when 'facebook' %}
+            		{% include 'facebook' %}
+            	{% when 'instagram' %}
+            		{% include 'instagram' %}
+            {% endcase %}
+            
+          </a>
+          {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+    <div class="footer-description">
+      <div class="link-wrapper">
+      <a href="{{section.settings.privacy_link}}">{{section.settings.privacy_text}}</a>
+      </div>
+      <p class="last">{{section.settings.text_description}}</p>
+    </div>
+  </div>
+</footer>
+{% schema %}
+  {
+    "name": "Footer",
+    "settings": [
+		{	
+          "type": "color",
+          "id": "bg_color",
+          "label": "Background Color",
+          "default": "#ffffff"
+		},
+		{	
+          "type": "color",
+          "id": "text_color",
+          "label": "Text Color",
+          "default": "#ffffff"
+		},
+		{
+      	 "type": "image_picker",
+     	 "id": "logo",
+     	 "label": "Logo image"
+    	},
+   		{
+     	 "type": "range",
+    	  "id": "logo_max_width",
+   	 	  "label": "Custom logo width",
+   		   "min": 10,
+  	 	   "max": 250,
+  		   "step": 5,
+			"unit": "px",
+     	 "default": 100
+    	},
+		{
+    	  "type": "text",
+   		   "id": "logo_text_main",
+   		   "label": "Main logo Text"
+   		 },
+		{
+      	"type": "text",
+      	"id": "logo_text_sub",
+     	 "label": "Sub logo Text"
+		},
+		{
+		"type": "url",
+          "id": "privacy_link",
+          "label":"Link to Privacy Policy"
+		},
+	{
+      	"type": "text",
+      	"id": "privacy_text",
+     	 "label": "Privacy Policy Text"
+		},
+		{
+			"type": "text",
+          "id": "text_description",
+          "label":"Footer Text"
+		}
+	],
+	"blocks": [
+      {
+        "type": "social_item",
+        "name": "social_item",		
+		"settings": [
+			{
+          "type": "select",
+          "id": "social_media",
+          "label":"Social Media",
+          "default": "twitter",
+          "options": [
+            {
+              "value": "instagram",
+              "label": "Instagram"	
+            },
+			{
+              "value": "twitter",
+              "label": "Twitter"
+            },
+			{
+              "value": "facebook",
+              "label": "Facebook"
+            },
+			{
+              "value": "whatsapp",
+              "label": "WhatsApp"
+            }
+        	]
+	 	}
+		,{
+		"type": "url",
+          "id": "social_media_url",
+          "label":"Social Media Link"
+		}
+		]
+
+  	}
+	]
+}
+
+{% endschema %}
+

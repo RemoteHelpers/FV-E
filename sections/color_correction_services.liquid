@@ -1,0 +1,57 @@
+    <section class="services">
+        <div class="container">
+            <div class="services-wrapper">
+                <h2 class="title services__title">{{section.settings.services_title}}</h2>
+              
+                <ul class="services__list services-list services-list">
+                  {% for block in section.blocks %}
+                    <li class="services-item services__item">
+                        <img src="{{ block.settings.card_img | img_url: "master" }}" alt="" class="services-item__img">
+                        <h3 class="services-item__title">{{block.settings.card_title}}</h3>
+                    </li>
+                  {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    {% schema %}
+{
+  "name": "types",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "services_title",
+        "label": "Services title"
+      }
+
+     
+  ],
+	  "blocks": [
+      {
+        "type": "text",
+        "name": "Services cards",
+        "settings": [
+        
+          {
+            "type": "text",
+            "id": "card_title",
+            "label": "Card title",
+            "default":"Title"
+          },
+          {
+            "type": "image_picker",
+            "id": "card_img",
+            "label": "Services img"
+            
+          }
+
+        
+        ]
+      }
+  ]
+
+  } 
+{% endschema %}

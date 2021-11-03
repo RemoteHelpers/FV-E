@@ -1,0 +1,62 @@
+<section class="spec section">
+  <div class="container">
+    <div class="spec__wrapper">
+      <div class="spec__content">
+        <h2 class="section-title section-title--left">{{ section.settings.spec_title }}</h2>
+        <p class="basic-text">{{ section.settings.spec_text }}</p>
+        <div class="button-wrapper">
+          <a href="#" class="button btn star-btn">{{ section.settings.link_text }}</a>
+          <div class="star-wrapper">
+            <div class="star-w star-1">
+              {% include "star-img" %}
+            </div>
+            <div class="star-w star-2 star-2--bigbtn">
+              {% include "star-img" %}
+            </div>
+            <div class="star-w star-3">
+              {% include "star-img" %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="spec__image-holder">
+        <img src="{{ section.settings.spec_image | img_url: 'master' }}" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+    {
+      "name": "Spec",
+      
+      "settings": [
+          {
+            "type": "image_picker",
+            "id": "spec_image",
+            "label": "Spec Image"
+          },
+          {
+            "type": "text",
+            "id": "spec_title",
+            "label": "Spec title"
+          },
+          {
+            "type": "text",
+            "id": "spec_text",
+            "label": "Spec text",
+            "default":"Spec text"
+          },
+          {
+            "type": "text",
+            "id": "link_text",
+            "label": "Link text"
+          },
+	  	  {
+        	"type": "url",
+        	"id": "btn_url",
+        	"label": "URL"
+      	  }
+      ]
+    } 
+{% endschema %}

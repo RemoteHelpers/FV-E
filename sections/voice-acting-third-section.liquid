@@ -1,0 +1,93 @@
+
+<section id="va-third">
+<div class="page-width">
+  <h1>{{ section.settings.va-3rd-heading }}</h1>
+  <div class="slide-wrappper">
+    {% for block in section.blocks %}
+    <div class="item">
+      <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
+      <h3 class="item-title">{{block.settings.item_title}}</h3>
+      <h5 class="item-description">{{block.settings.item_description}}</h5>
+    </div>
+    {% endfor %}
+  </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "VA 3rd section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "va-3rd-heading",
+        "label": "Heading"
+        }
+    ],
+    "blocks": [
+      {
+        "type": "assist_item",
+        "name": "assist_item",
+		"settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+   		},
+		{	
+          "type": "text",
+          "id": "item_title",
+          "label": "Item title",
+          "default": "Item title"
+		},
+		{	
+          "type": "text",
+          "id": "item_description",
+          "label": "Item Description",
+          "default": "Item Description"
+		}
+      ]
+	 }
+	],
+	"presets": [
+      {
+        "category": "Custom Content",
+        "name": "Assists",
+ 		"blocks": [
+          {
+            "type": "assist_item"
+          },
+          {
+            "type": "assist_item"
+          },
+          {
+            "type": "assist_item"
+          }
+      	]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+$(document).ready(function() {
+  $('.slide-wrappper').slick({
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+         arrows: false,
+         dots: true,
+      slidesToScroll: 1,
+      responsive: [{
+        breakpoint: 820,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }]
+});
+   });
+{% endjavascript %}

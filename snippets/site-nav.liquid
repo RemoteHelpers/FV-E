@@ -1,0 +1,121 @@
+{% comment %}
+    Renders a list of menu items
+    Accepts:
+    - linklist: {Object} Linklist Liquid object (required)
+    - wrapper_class: {String} CSS wrapper class for the navigation (optional)
+
+    Usage:
+    {% include 'site-nav', linklist: section.settings.main_linklist, wrapper_class: 'site-nav--centered' %}
+{% endcomment %}
+<ul class="site-nav list--inline{% if wrapper_class != blank %} {{ wrapper_class }}{% endif %}" id="SiteNav">
+  {% for link in linklists[linklist].links %}
+    {%- assign child_list_handle = link.title | handleize -%}
+
+    {% comment %}
+      Check if third-level nav exists on each parent link.
+    {% endcomment %}
+    {%- assign three_level_nav = false -%}
+    {% if link.links != blank %}
+      {% if link.levels == 2 %}
+        {%- assign three_level_nav = true -%}
+      {% endif %}
+    {% endif %}
+
+    {% if link.links != blank %}
+      <li id="dropdBtn" class="site-nav--has-dropdown{% if three_level_nav %} site-nav--has-centered-dropdown{% endif %}{% if link.active %} site-nav--active{% endif %}" data-has-dropdowns>
+       
+        <button id="dropDownButton" class="site-nav__link site-nav__link--main site-nav__link--button{% if link.child_active %} site-nav__link--active{% endif %}" type="button" aria-expanded="false" aria-controls="SiteNavLabel-{{ child_list_handle }}">
+          <span class="site-nav__label">{{ link.title | escape }}{% include 'icon-chevron-down' %}{%if link.child_active%}{% include 'icon-on' %}{%endif%}</span>
+        </button>
+
+
+        <div class="site-nav__dropdown{% if three_level_nav %} site-nav__dropdown--centered{% endif %} critical-hidden" id="SiteNavLabel-{{ child_list_handle }}">
+          {% if three_level_nav %}
+            <div class="site-nav__childlist">
+              <ul class="site-nav__childlist-grid">
+                {% if link.links != blank %}
+                  {% for childlink in link.links %}
+                    <li class="site-nav__childlist-item">
+                      <a href="{{ childlink.url }}"
+                        class="site-nav__link site-nav__child-link site-nav__child-link--parent"
+                        {% if childlink.current %} aria-current="page"{% endif %}
+                      >
+                        <span class="site-nav__label">{{ childlink.title | escape }}</span>
+                      </a>
+
+                      {% if childlink.links != blank %}
+                        <ul>
+                        {% for grandchildlink in childlink.links %}
+                          <li>
+                            <a href="{{ grandchildlink.url }}"
+                            class="site-nav__link site-nav__child-link"
+                            {% if grandchildlink.current %} aria-current="page"{% endif %}
+                          >
+                              <span class="site-nav__label">{{ grandchildlink.title | escape }}</span>
+                            </a>
+                          </li>
+                        {% endfor %}
+                        </ul>
+                      {% endif %}
+
+                    </li>
+                  {% endfor %}
+                {% endif %}
+              </ul>
+            </div>
+
+          {% else %}
+            <ul>
+              {% for childlink in link.links %}
+                <li>
+                  <a href="{{ childlink.url }}"
+                  class="site-nav__link-sec site-nav__child-link{% if forloop.last %} site-nav__link--last{% endif %}"
+                  {% if childlink.current %} aria-current="page"{% endif %}
+                >
+                    <span class="site-nav__label site-nav__link-sec bottom-line-shadow"{% if childlink.current %} style="color: #F13F00 !important;"{%endif%}>{{ childlink.title | escape }}</span>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </li>
+    {% else %}
+      <li {% if link.active %} class="site-nav--active"{% endif %}>
+        <a href="{{ link.url }}"
+          class="site-nav__link site-nav__link--main{% if link.active %} site-nav__link--active  {% endif %}"
+          {% if link.current %} aria-current="page"{% endif %} 
+        > 
+          <span class="site-nav__label">{{ link.title | escape }}{%if link.active%}{% include 'icon-on' %}{%endif%}</span>
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>
+  const btn = document.getElementById("dropdBtn"); 
+  const menuDiv = document.querySelector(".site-nav__dropdown");
+  const focusElement = document.querySelector("#dropDownButton");
+
+   function showMenu (){
+    menuDiv.classList.add("stn-visible");
+    btn.classList.add("site-nav--active-dropdown");
+    setTimeout(function(){ menuDiv.classList.add("site-nav__dropdown-motion");  }, 200);
+    focusElement.focus();
+    btn.removeEventListener("click", showMenu);
+    btn.addEventListener("click", hideMenu);
+} 
+
+function hideMenu (){
+ btn.classList.remove("site-nav--active-dropdown");
+ menuDiv.classList.remove("site-nav__dropdown-motion");
+ setTimeout(function(){ menuDiv.classList.remove("stn-visible");  }, 360);
+ focusElement.blur();
+ btn.removeEventListener("click", hideMenu);
+ btn.addEventListener("click", showMenu);
+} 
+
+btn.addEventListener("click", showMenu);
+
+</script>

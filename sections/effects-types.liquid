@@ -1,0 +1,59 @@
+<section class="types section">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.types_title }}</h2>
+    <div class="types__wrapper">
+      {% for block in section.blocks %}
+      <div class="types__card">
+        <img src="{{ block.settings.card_image | img_url: 'master' }}" alt="">
+        <h3 class="card-title">{{ block.settings.card_title }}</h3>
+        <p class="card-text">{{ block.settings.card_text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Types",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "types_title",
+        "label": "Types title"
+      }
+  ],
+  "blocks": [
+      {
+        "type": "image",
+        "name": "images",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "card_image",
+            "label": "Card image"
+          },
+          {
+            "type": "text",
+            "id": "card_title",
+            "label": "Card title",
+            "default":"Item title"
+          },
+          {
+            "type": "text",
+            "id": "card_text",
+            "label": "Card text",
+            "default":"Item text"
+          }
+        ]
+      }
+  ],
+  "presets": [
+      {
+        "name": "Types",
+        "category": "card"
+      }
+  ]
+} 
+{% endschema %}

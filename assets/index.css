@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  color: #212121;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 50px;
+}
+
+.button {
+  margin: 0;
+  display: block;
+  padding: 15px 0;
+  width: 300px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 19px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #F13F00;
+  border-radius: 71px;
+  transition: 0.2s ease-in;
+  box-sizing: border-box;
+}
+
+.button:hover {
+  background-color: #f8622c;
+}
+
+.main-title {
+  margin: 0;
+  /* margin-bottom: 60px; */
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 1.4;
+  font-family: 'Raleway', sans-serif;
+}
+
+.section {
+  margin-bottom: 180px;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  font-family: 'Raleway', sans-serif;
+  text-transform: unset;
+}
+
+.basic-text {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.7;
+}
+
+.hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__content {
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 630px;
+}
+
+.hire__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hire__content {
+  margin-right: 15px;
+  width: 670px;
+}
+
+.hire__text {
+  margin-bottom: 65px;
+}
+
+.hire__card {
+  margin: 0;
+  padding: 35px;
+  font-size: 18px;
+  border: 1px solid #F5F5F5;
+  box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+}
+
+.hire__card--mob {
+  display: none;
+}
+
+.services__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+
+.services__slider {
+  display: none;
+}
+
+.services__card {
+  padding: 60px 30px;
+  display: block;
+  width: calc(33.33% - 20px);
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 2px 8px 25px -10px rgba(0, 0, 0, 0.07);
+  border-radius: 30px;
+}
+
+.services__card img {
+  margin-bottom: 50px;
+}
+
+.card-title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 24px;
+  color: #000;
+}
+
+.none {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .main-title {
+    font-size: 35px;
+  }
+
+  .basic-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .section-title {
+    margin-bottom: 30px;
+  }
+
+  .hire__text {
+    margin-bottom: 30px;
+  }
+
+  .hire__card {
+    padding: 25px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero__wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .hero__image-holder {
+    margin-bottom: 30px;
+    width: 60%;
+  }
+
+  .hero__content {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .hire__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hire__content {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .hire__card {
+    display: none;
+  }
+
+  .hire__card--mob {
+    margin-top: 30px;
+    display: block;
+    width: 80%;
+  }
+
+  .hire__image-holder {
+    width: 80%;
+  }
+
+  .services__card {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section {
+    margin-bottom: 80px;
+  }
+
+  .services__wrapper {
+    display: none;
+  }
+
+  .services__slider {
+    display: block;
+  }
+
+  .slick-track {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  
+  .slick-list {
+    overflow: hidden;
+  }
+  
+  .services__slider .slick-dots {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .services__slider .slick-dots li {
+    list-style: none;
+    margin: 0 5px;
+  }
+  
+  .services__slider .slick-dots button {
+    font-size: 0;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #f13f00 !important;
+    padding: 0 !important;
+    box-sizing: content-box;
+    display: inline-block !important;
+  }
+  
+  .services__slider .slick-dots li.slick-active button {
+    background-color: rgb(233, 67, 67);
+  }
+}
+
+@media (max-width: 550px) {
+  .button {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .basic-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-title {
+    font-size: 28px;
+  }
+
+  .hero__image-holder {
+    width: 85%;
+  }
+
+  .hero__content {
+    row-gap: 15px;
+  }
+
+  .hire__card--mob {
+    margin-top: 30px;
+    display: block;
+    width: 100%;
+  }
+}

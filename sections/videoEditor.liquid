@@ -1,0 +1,122 @@
+<div class="about_us-section video-editors">
+    <div class="first-video-block mobile first-block">
+        <div class="video-text">
+            <h1>
+                {{ section.settings.h1 }}
+            </h1>
+        </div>
+      	<div class="picture-wrapper">
+        	<picture>
+            	<source srcset="{{ section.settings.imgFirst | img_url: "master" }}" type="image/webp"><img
+                	src="{{ section.settings.imgFirst | img_url: "master" }}" alt="video editors">
+      			</picture>
+      	</div>
+        <p>
+            {{ section.settings.p1First }}
+        </p>
+        <p>
+            {{ section.settings.p2First }}
+        </p>
+    </div>
+    <div class="first-video-block desctop first-block">
+        <div class="video-text">
+            <h1>
+                {{ section.settings.h1}}
+            </h1>
+            <p>
+                {{ section.settings.p1First }}
+            </p>
+            <p>
+                {{ section.settings.p2First }}
+            </p>
+        </div>
+      	
+        	<picture>
+            	<source srcset="{{ section.settings.imgFirst | img_url: "master" }}" type="image/webp"><img
+                	src="{{ section.settings.imgFirst | img_url: "master" }}" alt="video editors">
+          	</picture>
+      	
+    </div>
+    <div class="second-video-block">
+      <div class="picture-wrapper">
+        <picture>
+            <source srcset="{{ section.settings.imgSecond | img_url: "master" }}" type="image/webp"><img
+                src="{{ section.settings.imgSecond | img_url: "master" }}" alt="video editors">
+        </picture>
+      </div>
+        <div class="">
+            <p>
+                {{ section.settings.p1Second }}
+            </p>
+            {%- if section.settings.button_link != blank -%}
+            <div class="button-wrapper">
+                <a class="star-btn btn btn-link" href="{{section.settings.button_link}}"
+                    aria-label="{{section.settings.button_link}}">
+                    {{section.settings.button_label}}
+                </a>
+                <div class="star-wrapper">
+                    <div class="star-w star-1">
+                        {% include "star-img" %}
+                    </div>
+                    <div class="star-w star-2 star-2--bigbtn">
+                        {% include "star-img" %}
+                    </div>
+                    <div class="star-w star-3">
+                        {% include "star-img" %}
+                    </div>
+                </div>
+            </div>
+            {%- endif -%}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+"name": "Video Editor About Us",
+
+"settings": [
+{
+"type": "text",
+"id": "h1",
+"label": "H1"
+},
+
+{
+"type": "text",
+"id": "p1First",
+"label": "P 1 First"
+},
+{
+"type": "text",
+"id": "p2First",
+"label": "P 2 First"
+},
+{
+"type": "text",
+"id": "p1Second",
+"label": "P 1 Second"
+},
+{
+"type": "image_picker",
+"id": "imgFirst",
+"label": "Img First"
+},
+{
+"type": "image_picker",
+"id": "imgSecond",
+"label": "Img Second"
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "Button Link"
+},
+{
+"type": "text",
+"id": "button_label",
+"label": "Button label"
+}
+]
+}
+{% endschema %}

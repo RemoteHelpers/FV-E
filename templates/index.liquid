@@ -1,0 +1,8 @@
+{{ 'home-page.css' | asset_url | stylesheet_tag }}
+{{ content_for_index }}
+{% section 'home-videoPortfolio' %}
+{% section 'page-creators-employees' %}
+{% section 'newContactForm' %}
+{{ 'slick.min.js' | asset_url | script_tag }}
+{{ 'home-page.js' | asset_url | script_tag }}
+

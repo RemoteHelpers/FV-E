@@ -1,0 +1,8 @@
+{% capture video_1 %}{% section 'video' %}{% endcapture %}
+{% assign vid = video_1 | replace: 'class="shopify-section"', 'class="shopify-section-nested"' %}
+
+{% capture section %}{% section 'feature-row' %}{% endcapture %}
+{% assign section = section | replace: "%%insert-video-section%%", vid %}
+{{ section }}
+
+{{ content_for_index }}

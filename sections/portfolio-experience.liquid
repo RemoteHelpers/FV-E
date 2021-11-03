@@ -1,0 +1,100 @@
+{% assign about_arr = product.description | split: '*Education*' | first %}
+{% assign education_arr = product.description | split: '*Education*' | last %}
+{% assign education_arr = education_arr | split: '*Experience*' | first %}
+
+{% assign expirience_arr = product.description | split: '*Experience*' | last %}
+
+<section class="experience">
+        <div class="container">
+            <div class="section__inner">
+                <div class="section__left">
+                    <img class="section__img" src="{{ section.settings.experience__image | img_url: 'master' }}" alt="">
+                </div>
+                <div class="section__right">
+                    <h2 class="section__title">
+                       {{ section.settings.experience__title }}
+                    </h2>
+                    <div class="section__items">
+<!--                         {% for block in section.blocks %} -->
+                          <div class="section__item">
+                            <h4>
+                            	 {{expirience_arr}}
+                            </h4>
+<!--                               <div class="section__item-header">
+                                  <span class="section__item-key">
+                                      {{ block.settings.experience__title-key }}
+                                  </span>
+                                  <span class="section__item-value">
+                                      {{ block.settings.experience__title-value }}
+                                  </span>
+                              </div>
+                              <p class="section__item-period">
+                                	{{ block.settings.experience__item-period }}
+                              </p>
+                              <p class="section__item-text">
+									{{ block.settings.experience__item-text }}
+                              </p> -->
+                          </div>
+<!--                       	{% endfor %} -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% schema %}
+  {
+    "name": "Portfolio experience",
+    "settings": [
+		{
+			"type": "image_picker",
+			"id": "experience__image",
+			"label": "Experience image"
+		},
+		{
+			"type": "text",
+			"id": "experience__title",
+			"label": "Experience Title"
+		}
+	],
+	"blocks": [
+	    {
+            "type": "block",
+            "name": "Experience item",
+            "settings": [
+              {
+                "type": "text",
+                "id": "experience__title-key",
+                "label": "Experience title key",
+                "default":"Experience title key"
+              },
+              {
+                "type": "text",
+                "id": "experience__title-value",
+                "label": "Experience title value",
+                "default":"Experience title value"
+              },
+              {
+                "type": "text",
+                "id": "experience__item-period",
+                "label": "Experience item period",
+                "default":"Experience item period"
+              },
+              {
+                "type": "text",
+                "id": "experience__item-text",
+                "label": "Experience item text",
+                "default":"Experience item text"
+              }
+            ]
+         }
+
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,50 @@
+<section class="hire section">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.hire_title }}</h2>
+    <div class="hire__wrapper">
+      <div class="hire__content">
+        <p class="hire__text basic-text">{{ section.settings.hire_text }}</p>
+        <p class="hire__card">{{ section.settings.hire_card }}</p>
+      </div>
+      <div class="hire__image-holder">
+        <img src="{{ section.settings.hire_image | img_url: 'master' }}" alt="">
+      </div>
+      <p class="hire__card hire__card--mob">{{ section.settings.hire_card }}</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "home-hire",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "hire_title",
+        "label": "Hire title"
+      },
+      {
+        "type": "text",
+        "id": "hire_text",
+        "label": "Hire text"
+      },
+      {
+        "type": "text",
+        "id": "hire_card",
+        "label": "Hire card"
+      },
+      {
+        "type": "image_picker",
+        "id": "hire_image",
+        "label": "Hire image"
+      }
+  ],
+  "presets": [
+      {
+        "name": "home-hire",
+        "category": "section"
+      }
+  ]
+  } 
+{% endschema %}

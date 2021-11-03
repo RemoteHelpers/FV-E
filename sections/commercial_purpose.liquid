@@ -1,0 +1,54 @@
+
+    <section class="marketing">
+        <div class="container">
+            <div class="marketing-wrapper marketing-wrapper--2 ">
+                <div class="marketing-bg">
+                    <img src="{{section.settings.purpose_img | img_url: "master"}}" alt="" class="marketing-bg__img">
+                </div>
+                <div class="marketing-info ">
+                    <h2 class="title marketing-info__title">{{section.settings.purpose_title}}</h2>
+                    <p class="text marketing-info__text">{{section.settings.purpose_text}}</p>
+                  </div>
+
+            </div>
+        </div>
+    </section>
+
+    {% schema %}
+{
+  "name": "purpose",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "purpose_title",
+        "label": "Third section title"
+      },
+        {
+        "type": "text",
+        "id": "purpose_text",
+        "label": "Third section text"
+      },
+     
+
+           {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link text"
+      },
+
+           {
+        "type": "url",
+        "id": "link",
+        "label": "Link url"
+      },
+           {
+        "type": "image_picker",
+        "id": "purpose_img",
+        "label": "Third section img"
+      }
+     
+  ]
+  } 
+{% endschema %}
+

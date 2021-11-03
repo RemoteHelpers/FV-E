@@ -1,0 +1,326 @@
+<section class="v-editors">
+
+    <div class="wrap">
+        <div class="container">
+
+            <svg style="display: none;">
+                <symbol id="star-svg" viewBox="0 0 29 33">
+                    <g>
+                        <path
+                            d="M14.412 0L15.5141 10.102C15.7684 12.7117 17.7183 14.8163 20.2616 15.3214L28.1458 16.8367L20.855 17.5102C17.9726 17.7628 15.7684 20.0357 15.4293 22.8138L14.412 33L13.3947 22.898C13.1404 20.0357 10.8514 17.8469 7.969 17.5944L0 16.8367L8.22332 15.4056C10.7666 14.9847 12.8013 12.8801 13.0556 10.2704L14.412 0Z"
+                            fill="#F13F00" />
+                    </g>
+                </symbol>
+            </svg>
+
+            <div class="v-editors__text text-center">
+                <h1 class="v-editors__title">{{ section.settings.title }}</h1>
+                <div class="v-editors__descr">{{section.settings.description }}</div>
+            </div>
+
+            <div class="v-editors-slider">
+
+                <div class="v-editors__slide">
+                    <div class="v-editors__slide-img">
+                        <div class="slide-img__hover">
+                            <div class="v-editors__slide-links">
+                                
+                                    <div class="slide-link"><a href="#">Business video</a></div>
+                                
+                                <div class="slide-link"><a href="#">Promos</a></div>
+                                <div class="slide-link"><a href="#">Subtitles</a></div>
+                            </div>
+                        </div>
+                        <img src="{{ section.settings.creator_img1 | img_url: "master" }}"
+                            alt="img" class="v-editors__slide-img">
+
+                    </div>
+                    <span class="v-editors__slide-text">{{ section.settings.creator1_name }}</span>
+                    <div class="btn"><a href="{{ section.settings.creator1_url }}" class="btn__link">View resume</a></div>
+                </div>
+
+                <div class="v-editors__slide">
+                    <div class="v-editors__slide-img">
+                         <div class="slide-img__hover">
+                        <div class="v-editors__slide-links">
+                            <div class="first-slide-link">
+                                <div class="slide-link"><a href="#">Business video</a></div>
+                            </div>
+                            <div class="slide-link"><a href="#">Promos</a></div>
+                            <div class="slide-link"><a href="#">Subtitles</a></div>
+                        </div>
+                    </div>
+                        <img src="{{ section.settings.creator_img2 | img_url: "master" }}"
+                            alt="img" class="v-editors__slide-img">
+                    </div>
+                    <span class="v-editors__slide-text">{{ section.settings.creator2_name }}</span>
+                    <div class="btn"><a href="{{ section.settings.creator2_url }}" class="btn__link">View resume</a></div>
+                </div>
+
+                <div class="v-editors__slide">
+                    <div class="v-editors__slide-img">
+                         <div class="slide-img__hover">
+                        <div class="v-editors__slide-links">
+                            <div class="first-slide-link">
+                                <div class="slide-link"><a href="#">Business video</a></div>
+                            </div>
+                            <div class="slide-link"><a href="#">Promos</a></div>
+                            <div class="slide-link"><a href="#">Subtitles</a></div>
+                        </div>
+                    </div>
+                        <img src="{{ section.settings.creator_img3 | img_url: "master" }}"
+                            alt="img" class="v-editors__slide-img">
+                    </div>
+                    <span class="v-editors__slide-text">{{ section.settings.creator3_name }}</span>
+                    <div class="btn"><a href="{{ section.settings.creator3_url }}" class="btn__link">View resume</a></div>
+                </div>
+
+                <div class="v-editors__slide">
+                    <div class="v-editors__slide-img">
+                        <div class="slide-img__hover">
+                        <div class="v-editors__slide-links">
+                            <div class="first-slide-link">
+                                <div class="slide-link"><a href="#">Business video</a></div>
+                            </div>
+                            <div class="slide-link"><a href="#">Promos</a></div>
+                            <div class="slide-link"><a href="#">Subtitles</a></div>
+                        </div>
+                    </div>
+                        <img src="{{ section.settings.creator_img4 | img_url: "master" }}"
+                            alt="img" class="v-editors__slide-img">
+                    </div>
+                    <span class="v-editors__slide-text">{{ section.settings.creator4_name }}</span>
+                    <div class="btn"><a href="{{ section.settings.creator4_url }}" class="btn__link">View resume</a></div>
+                </div>
+
+                <div class="v-editors__slide">
+                    <div class="v-editors__slide-img">
+                        <div class="slide-img__hover">
+                        <div class="v-editors__slide-links">
+                            <div class="first-slide-link">
+                                <div class="slide-link"><a href="#">Business video</a></div>
+                            </div>
+                            <div class="slide-link"><a href="#">Promos</a></div>
+                            <div class="slide-link"><a href="#">Subtitles</a></div>
+                        </div>
+                    </div>
+                        <img src="{{ section.settings.creator_img5 | img_url: "master" }}"
+                            alt="img" class="v-editors__slide-img">
+                    </div>
+                    <span class="v-editors__slide-text">{{ section.settings.creator5_name }}</span>
+                    <div class="btn"><a href="{{ section.settings.creator5_url }}" class="btn__link">View resume</a></div>
+                </div>
+
+                <div class="v-editors__slide">
+                    <div class="v-editors__slide-img">
+                        <div class="slide-img__hover">
+                        <div class="v-editors__slide-links">
+                            <div class="first-slide-link">
+                                <div class="slide-link"><a href="#">Business video</a></div>
+                            </div>
+                            <div class="slide-link"><a href="#">Promos</a></div>
+                            <div class="slide-link"><a href="#">Subtitles</a></div>
+                        </div>
+                    </div>
+                        <img src="{{ section.settings.creator_img6 | img_url: "master" }}"
+                            alt="img" class="v-editors__slide-img">
+                    </div>
+                    <span class="v-editors__slide-text">{{ section.settings.creator6_name }}</span>
+                    <div class="btn"><a href="{{ section.settings.creator6_url }}" class="btn__link">View resume</a></div>
+                </div>
+
+            </div>
+
+            <div class="v-editors__bottom-btn">
+
+                <!-- <a href="#" class="btn__link">See All</a> -->
+                <a href="{{ section.settings.button_link }}" class="btn__link">
+                    {{- section.settings.button_label | escape -}}
+                  </a>
+
+                <svg class="btn-hover__star1">
+                    <use height="33px" width="28px" xlink:href="#star-svg"></use>
+                </svg>
+                <svg class="btn-hover__star2">
+                    <use height="14px" width="11px" xlink:href="#star-svg"></use>
+                </svg>
+                <svg class="btn-hover__star3">
+                    <use height="20px" width="17px" xlink:href="#star-svg"></use>
+                </svg>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+{% javascript %}
+$(document).ready(function () {
+
+
+ $(window).on('resize', function (e) {
+
+   var init = $(".v-editors-slider").data('init-slider');
+  
+
+   if (window.innerWidth < 700) {
+
+     if (init != 1) {
+       
+                               
+       $('.v-editors-slider').slick({
+
+         centerMode: true,
+         autoplay: false,
+         infinite: true,
+         autoplaySpeed: 4000,
+         delay: 5000,
+         speed: 700,
+         arrows: false,
+         dots: true,
+         variableWidth: true,                    
+         mobileFirst: true,
+         slidesToShow: 1,
+         slidesToScroll: 1,
+       }).data({ 'init-slider': 1 });
+     }
+   }
+ 
+   else {
+
+     if (init == 1) {
+
+       $('.v-editors-slider').slick('unslick').data({ 'init-slider': 0 });
+     }
+   }
+ }).trigger('resize');
+
+
+});
+
+{% endjavascript %}
+
+{% schema %}
+{
+"name": "Section Video Editors",
+"settings": [
+{
+"type": "text",
+"label": "Your head line for section",
+"id": "title"
+},
+{
+"type":"richtext",
+"label": "your description",
+"id": "description"
+},
+{
+"type": "text",
+"id": "button_label",
+"label": "Button label"
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "Button link"
+},
+{
+"type": "image_picker",
+"id": "creator_img1",
+"label": "Photo"
+},
+{
+"type": "text",
+"id": "creator1_name",
+"label": "Name"
+},
+{
+"id": "creator1_url",
+"type": "url",
+"label": "Profile link"
+}
+,
+{
+    "type": "image_picker",
+    "id": "creator_img2",
+    "label": "Photo"
+    },
+{
+"type": "text",
+"id": "creator2_name",
+"label": "Name"
+},
+{
+"id": "creator2_url",
+"type": "url",
+"label": "Profile link"
+}
+,
+{
+    "type": "image_picker",
+    "id": "creator_img3",
+    "label": "Photo"
+    },
+{
+"type": "text",
+"id": "creator3_name",
+"label": "Name"
+},
+{
+"id": "creator3_url",
+"type": "url",
+"label": "Profile link"
+}
+,
+{
+    "type": "image_picker",
+    "id": "creator_img4",
+    "label": "Photo"
+    },
+{
+"type": "text",
+"id": "creator4_name",
+"label": "Name"
+},
+{
+"id": "creator4_url",
+"type": "url",
+"label": "Profile link"
+}
+,
+{
+    "type": "image_picker",
+    "id": "creator_img5",
+    "label": "Photo"
+    },
+{
+"type": "text",
+"id": "creator5_name",
+"label": "Name"
+},
+{
+"id": "creator5_url",
+"type": "url",
+"label": "Profile link"
+}
+,
+{
+    "type": "image_picker",
+    "id": "creator_img6",
+    "label": "Photo"
+    },
+{
+"type": "text",
+"id": "creator6_name",
+"label": "Name"
+},
+{
+"id": "creator6_url",
+"type": "url",
+"label": "Profile link"
+}
+]
+}
+{% endschema %}

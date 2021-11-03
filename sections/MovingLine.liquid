@@ -1,0 +1,56 @@
+<div id="movingLine" class="moving-line line-section shopify-section_inner">
+  <style>
+    .moving-line{
+    	background-color: {{section.settings.bg_color}};
+    }
+    .text-move{
+      color: {{section.settings.text_color}};
+    }
+    
+    .text-move{
+		position: relative;
+    }
+    
+	.text-move .text-with-border{
+	 -webkit-text-stroke: 1px {{section.settings.text_color}};
+	}
+    
+  </style>
+  {% if section.settings.line != blank %}
+    <div class='text-move'>
+    	<span class='text-with-border'> {{section.settings.line}} </span><span> {{section.settings.line}} </span><span class='text-with-border'> {{section.settings.line}} </span><span> {{section.settings.line}}</span>
+      	<span class='text-with-border'>{{section.settings.line}}</span><span> {{section.settings.line}} </span>
+ 	</div>
+  	{% endif %}
+</div>
+
+{% schema %}
+  {
+    "name": "Moving Line",
+	"class": "index-section moving-line",
+    "settings": [
+		{
+		"type": "text",
+     	"id": "line",
+      	"label": "Line",
+		"default": "Line"
+    	}, {
+	"type": "color",
+    "id": "bg_color",
+    "label": "Background color",
+     "default": "#fff"
+	},
+{
+	"type": "color",
+    "id": "text_color",
+    "label": "Text color",
+     "default": "#000"
+	}
+	],
+	"presets": [
+      {
+        "category": "Custom Content",
+        "name": "Moving Line"
+	  }]
+  }
+{% endschema %}

@@ -1,0 +1,37 @@
+<section class="trans-services section">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.services_title }}</h2>
+    <div class="trans-services__wrapper">
+      <div class="trans-services__image-wrapper">
+        <img src="{{ section.settings.services_image | img_url: 'master' }}" alt="">
+      </div>
+      <div class="trans-services__content">
+        <p class="basic-text trans-services__text">{{ section.settings.services_text }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "services",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "services_title",
+        "label": "Services title"
+      },
+      {
+        "type": "text",
+        "id": "services_text",
+        "label": "Services text"
+      },
+      {
+        "type": "image_picker",
+        "id": "services_image",
+        "label": "Services image"
+      }
+  ]
+  } 
+{% endschema %}

@@ -1,0 +1,280 @@
+{{ 'magnific-popup.css' | asset_url | stylesheet_tag }}
+{{ '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' | script_tag }}
+<!-- {{ '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' | stylesheet_tag }} -->
+{{ '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css' | stylesheet_tag }}
+
+
+
+<section class="portfolio">
+        <div class="container">
+            
+                <h3 class="section__title">
+                    {{ section.settings.portfolio_title }}
+                </h3>
+                
+                <div class="portfolio__slider">
+                  
+<!--                     <div class="portfolio__slide"> -->
+                    <div class="popup-gallery">
+                      
+                      {% for block in section.blocks %}
+                        <div class="portfolio-cart">
+                                <div class="row">
+    
+                                    <a href="#modal{{i}}" class="video"><div class="portfolio__iframe"
+                                                                             style="background-image: url('https://i.ytimg.com/vi_webp/OQN3M-il1tw/sddefault.webp')"
+                                       >
+                                          <svg class="portfolio__play" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle opacity="0.7" cx="50" cy="50" r="49" fill="#A8A8A8"/>
+                                            <path d="M0 50C0 63.2608 5.26784 75.9785 14.6447 85.3553C19.2876 89.9983 24.7995 93.6812 30.8658 96.194C36.9321 98.7067 43.4339 100 50 100C63.2608 100 75.9785 94.7322 85.3553 85.3553C94.7322 75.9785 100 63.2608 100 50C100 43.4339 98.7067 36.9321 96.194 30.8658C93.6812 24.7995 89.9983 19.2876 85.3553 14.6447C80.7124 10.0017 75.2005 6.31876 69.1342 3.80602C63.0679 1.29329 56.5661 0 50 0C43.4339 0 36.9321 1.29329 30.8658 3.80602C24.7995 6.31876 19.2876 10.0017 14.6447 14.6447C5.26784 24.0215 0 36.7392 0 50ZM10 50C10 39.3913 14.2143 29.2172 21.7157 21.7157C29.2172 14.2143 39.3913 10 50 10C60.6087 10 70.7828 14.2143 78.2843 21.7157C85.7857 29.2172 90 39.3913 90 50C90 60.6087 85.7857 70.7828 78.2843 78.2843C70.7828 85.7857 60.6087 90 50 90C39.3913 90 29.2172 85.7857 21.7157 78.2843C14.2143 70.7828 10 60.6087 10 50ZM40 75L65 50L40 25V75Z" fill="white"/>
+                                          </svg> 
+                                        <section class="remodal" data-remodal-id="modal{{i}}">
+                                            <button data-remodal-action="close" class="remodal-close"></button>
+                                          	
+                                            <iframe class="lazyload" id="ytplayer" width="100%" height="360"
+                                            data-src="{{ block.settings.video_url }}"
+                                                    poster="{{ block.settings.preview | img_url: 'master' }}"
+                                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                         
+                                      </section>
+                                    </div></a>
+                                </div>
+                                <div class="portfolio__item-texts">
+                                    <span class="portfolio__item-title">
+                              {{ block.settings.portfolio_title }}
+                            </span>
+                            <span class="portfolio__item-text">
+                              {{ block.settings.portfolio_text }} 
+                            </span>
+                                </div>
+                      </div>
+                    {% endfor %}
+           
+                      </div>
+                      
+                </div>
+            </div>
+    </section>
+
+    {% schema %}
+    {
+      "name": "Portfolio Gallery",
+      
+      "settings": [
+          {
+            "type": "text",
+            "id": "portfolio_title",
+            "label": "Portfolio title"
+          }
+   
+      ],
+      "blocks": [
+          {
+            "type": "video",
+            "name": "Video",
+            "settings": [
+              {
+                "type": "text",
+                "id": "video_url",
+                "label": "Video url"
+              },
+              {
+                "type": "image_picker",
+                "id": "preview",
+                "label": "Preview"
+              },
+              {
+                "type": "text",
+                "id": "portfolio_top",
+                "label": "Portfolio top",
+                "default":"Portfolio top"
+              },
+                {
+                "type": "text",
+                "id": "portfolio_title",
+                "label": "Portfolio title",
+                "default":"Portfolio title"
+              },
+              {
+                "type": "text",
+                "id": "portfolio_text",
+                "label": "Portfolio text",
+                "default":"Portfolio text"
+              }
+            ]
+          }
+      ],
+      "presets": [
+          {
+            "name": "Portfolio-main",
+            "category": "card"
+          }
+      ]
+    } 
+    {% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+  
+$(document).ready(function gallery() {
+    if ($(window).width() > 700) {
+        $('.popup__gallery-item').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            fixedContentPos: false,
+            mainClass: 'mfp-width-zoom',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+            },
+            callbacks: {
+                open: function() { // When you open the
+                    $('html').css('overflow', 'hidden'); // window, the element
+                }, // "body" is used "overflow: hidden".
+
+                close: function() { // When the window
+                    $('html').css('overflow', ''); // is closed, the 
+                },
+                elementParse: function(item) {
+                    console.log(item.el[0].className);
+                    if (item.el[0].className == 'video') {
+                        item.type = 'iframe',
+                            item.iframe = {
+                                patterns: {
+                                    youtube: {
+                                        index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+                                        id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                                        // Or null - full URL will be returned
+                                        // Or a function that should return %id%, for example:
+                                        // id: function(url) { return 'parsed id'; }
+
+                                        src: '//www.youtube.com/embed/%id%' // URL that will be set as a source for iframe.
+                                    },
+                                    vimeo: {
+                                        index: 'vimeo.com/',
+                                        id: '/',
+                                        src: '//player.vimeo.com/video/%id%'
+                                    },
+                                    gmaps: {
+                                        index: '//maps.google.',
+                                        src: '%id%&output=embed'
+                                    }
+                                }
+                            }
+
+
+                    } else {
+                        item.type = 'image',
+                            item.tLoading = 'Loading image #%curr%...',
+                            item.mainClass = 'mfp-img-mobile',
+                            item.image = {
+                                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+                            }
+                    }
+
+                }
+            }
+        });
+    } else {
+        $('.popup-gallery-item').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            mainClass: 'mfp-img-mobile',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+            },
+            callbacks: {
+                open: function() { // When you open the
+                    $('html').css('overflow', 'hidden'); // window, the element
+                }, // "body" is used "overflow: hidden".
+
+                close: function() { // When the window
+                    $('html').css('overflow', ''); // is closed, the 
+                },
+                elementParse: function(item) {
+                    console.log(item.el[0].className);
+
+                    if (item.el[0].className == 'video') {
+                        item.type = 'iframe',
+                            item.iframe = {
+                                patterns: {
+                                    youtube: {
+                                        index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+                                        id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                                        // Or null - full URL will be returned
+                                        // Or a function that should return %id%, for example:
+                                        // id: function(url) { return 'parsed id'; }
+
+                                        src: '//www.youtube.com/embed/%id%' // URL that will be set as a source for iframe.
+                                    },
+                                    vimeo: {
+                                        index: 'vimeo.com/',
+                                        id: '/',
+                                        src: '//player.vimeo.com/video/%id%'
+                                    },
+                                    gmaps: {
+                                        index: '//maps.google.',
+                                        src: '%id%&output=embed'
+                                    }
+                                }
+                            }
+                    } else {
+                        item.type = 'image',
+                            item.tLoading = 'Loading image #%curr%...',
+                            item.mainClass = 'mfp-img-mobile',
+                            item.image = {
+                                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+                            }
+                    }
+
+                }
+            }
+        });
+    }
+})
+  
+  $(document).ready(function() {
+//     if ($(window).width() > 900) {
+    $('.resume__slider').slick({
+        infinite: false,
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [{
+                breakpoint: 901,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 601,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    })
+
+})
+
+
+
+{% endjavascript %}

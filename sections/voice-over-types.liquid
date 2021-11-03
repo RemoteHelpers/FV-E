@@ -1,0 +1,69 @@
+    <section class="types">
+        <div class="container">
+            <div class="types__inner">
+                <div class="section__left">
+                    <h2 class="section__title">
+                        {{ section.settings.types_title }}
+                    </h2>
+                </div>
+                <div class="types__items">
+                  {% for block in section.blocks %}
+                    <div class="types__item">
+                        <div class="types__item-img">
+                          	<img src="{{ block.settings.item_image | img_url: 'master' }}" alt=""> 
+<!--                             <img src="images/mg-female-voicei.svg" alt="" class="types__item-icon"> -->
+                        </div>
+                        <p class="types__item-text">
+                            {{block.settings.item_text}}
+                        </p>
+                    </div>
+                  {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% schema %}
+{
+  "name": "Types",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "types_title",
+        "label": "Types title"
+      }
+  ],
+  "blocks": [
+      {
+        "type": "image",
+        "name": "images",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "item_image",
+            "label": "Item image"
+          },
+          {
+            "type": "text",
+            "id": "item_text",
+            "label": "Item text",
+            "default":"Item text"
+          }
+        ]
+      }
+  ],
+  "presets": [
+      {
+        "name": "Types",
+        "category": "card"
+      }
+  ]
+} 
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

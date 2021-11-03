@@ -1,0 +1,81 @@
+<section id="se-fourth">
+
+  <div class="page-width">
+    <div class="lr-wrapper">
+      <div class="left">
+        <img src="{{ section.settings.img | img_url: "master" }}" alt="img">
+        </div>
+        <div class="right">
+          <h1 class="se-banner-heading">{{ section.settings.heading }}</h1>
+          <h4 class="se-banner-subheading">{{ section.settings.subheading }}</h4>
+          <div class="button desktop"><div class="btn media-text__btn">
+            <a href="{{ section.settings.btn-link }}" class="btn__link">{{ section.settings.btn-linktext }}</a>
+            <svg class="ve-btn-hover__star1">
+              <use height="33px" width="28px" xlink:href="#star-svg"></use>
+            </svg>
+            <svg class="ve-btn-hover__star2">
+              <use height="14px" width="11px" xlink:href="#star-svg"></use>
+            </svg>
+            <svg class="ve-btn-hover__star3">
+              <use height="20px" width="17px" xlink:href="#star-svg"></use>
+            </svg>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="button mobile"><div class="btn media-text__btn">
+          <a href="{{ section.settings.btn-link }}" class="btn__link">{{ section.settings.btn-linktext }}</a>
+          <svg class="ve-btn-hover__star1">
+            <use height="33px" width="28px" xlink:href="#star-svg"></use>
+          </svg>
+          <svg class="ve-btn-hover__star2">
+            <use height="14px" width="11px" xlink:href="#star-svg"></use>
+          </svg>
+          <svg class="ve-btn-hover__star3">
+            <use height="20px" width="17px" xlink:href="#star-svg"></use>
+          </svg>
+          </div>
+        </div>
+  </div>
+    </section>
+    
+    {% schema %}
+      {
+        "name": "SE 4thd section",
+        "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+          },
+          {
+          "type": "richtext",
+          "id": "subheading",
+          "label": "Text"
+          },
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image"
+          },
+            {
+              "id": "btn-link",
+              "type": "url",
+              "label": "Button link"
+              },
+              {
+              "id": "btn-linktext",
+              "type": "text",
+              "label": "Button text",
+              "default": "Click Here"
+              }
+        ]
+      }
+    {% endschema %}
+    
+    {% stylesheet %}
+    {% endstylesheet %}
+    
+    {% javascript %}
+    {% endjavascript %}
+    

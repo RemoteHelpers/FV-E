@@ -1,0 +1,113 @@
+<section class="contact-us">
+
+  <div class="wrap">
+    <div class="container">
+
+      <div class="contact-content" id="animated">
+
+        <div class="contact-content__bg-rect"></div>
+        <div id="animated-contact-img" class="contact-content__img">
+            {% if section.settings.image != blank %}
+              <img src="{{ section.settings.image | img_url: 'master' }}">
+            {% endif %}
+        </div>
+
+
+        <div id="animated-contact-info" class="contact-content__info">
+          
+            {% if section.settings.text != blank %} 
+              <div class="contact-content__info-text text-center">
+                  {{ section.settings.text }}
+              </div>    
+            {% endif %}
+          
+          {% if section.settings.button_label != blank %}
+          <div class="contact-content__info-btn btn">
+          {% comment %}
+            Add Calendly
+            <a href="{{ section.settings.button_link }}" class="btn__link">
+              {{- section.settings.button_label | escape -}}
+            </a>
+			{% endcomment %}
+            <button class="btn__link calendly" data-url="https://calendly.com/remote-helpers/consilting" disabled>{{section.settings.button_label | escape}}</button>
+          </div>
+          {% endif %}
+
+        </div><!-- ./contact-content__info -->
+
+      </div><!-- ./contact-content -->
+
+    </div>
+  </div>
+
+</section>
+{% javascript %}
+
+function callbackFunc(entries, observer)
+{
+  entries.forEach(entry => {
+    if (entry.isIntersecting == true){
+        document.getElementById('animated').classList.add('triggered')
+        document.getElementById('animated').classList.remove('animation-out')
+        
+        document.getElementById('animated-contact-img').classList.add('triggered')
+        document.getElementById('animated-contact-img').classList.remove('animation-out')
+        document.getElementById('animated-contact-info').classList.add('triggered')
+        document.getElementById('animated-contact-info').classList.remove('animation-out')
+
+    } 
+    else {
+        document.getElementById('animated').classList.add('animation-out')
+        document.getElementById('animated-contact-info').classList.add('animation-out')
+        document.getElementById('animated-contact-img').classList.add('animation-out')
+
+    }
+  });
+}
+
+let options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3
+  };
+
+let observer = new IntersectionObserver(callbackFunc, options);
+observer.observe(document.getElementById('animated'));
+
+{% endjavascript %}
+{% schema %}
+{
+"name": "Section Contact",
+"class": "index-section",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "richtext",
+"id": "text",
+"label": "Text",
+"default": "<p>Section media text</p>"
+},
+{
+"type": "text",
+"id": "button_label",
+"label": "Button label"
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "Button link"
+}
+],
+"presets": [
+{
+"name": "Image with text",
+"category": "Image"
+}
+]
+}
+{% endschema %}
+

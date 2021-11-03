@@ -1,0 +1,35 @@
+<section class="project section">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.project_title }}</h2>
+    <div class="project__wrapper">
+      <div class="project__image-holder">
+        <img src="{{ section.settings.project_image | img_url: 'master' }}" alt="">
+      </div>
+      <p class="project__content">{{ section.settings.project_text }}</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "project",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "project_title",
+        "label": "Project title"
+      },
+      {
+        "type": "text",
+        "id": "project_text",
+        "label": "Project text"
+      },
+      {
+        "type": "image_picker",
+        "id": "project_image",
+        "label": "Project image"
+      }
+  ]
+  } 
+{% endschema %}

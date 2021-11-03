@@ -1,0 +1,96 @@
+    <section class="types">
+        <div class="container">
+            <div class="types-wrapper">
+                <h3 class="types__title title">{{section.settings.types_title}}</h3>
+              
+                 {% for block in section.blocks %}
+                    <ul class="types__list">
+
+                      <li class="types__item video-wrapper">
+                      <div class = "overlay-for-video"  ></div>
+                      <video poster="{{ block.settings.video_bg | img_url: "master" }}" style="width: 100%; height: auto;" tabindex="0" width="892" height="504"  class ="hero-bg__vd full-video">
+                      		<source src="{{block.settings.card_video}}" width="400" height="200" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />          
+                      </video>
+                        <h3 class="types__name">{{block.settings.card_title}}</h3>
+
+
+                     </li>
+                   </ul>
+      			{% endfor %}
+
+            </div>
+        </div>
+    </section>
+
+<script>
+  const serviceUl = document.querySelector('.types-wrapper');
+
+ 
+
+  serviceUl.addEventListener('click', handleClick)
+  function handleClick(e){
+        if(e.target.classList.contains('overlay-for-video')){
+          e.target.classList.toggle("playing"); 
+          
+          var videoOfElement = e.target.nextElementSibling;
+              if (videoOfElement.paused){
+                videoOfElement.play(); 
+
+
+              }else{
+                videoOfElement.pause(); 
+
+              }
+
+        }
+        else { 
+            return;
+        }
+        e.preventDefault();
+    }
+
+
+  </script>
+
+    {% schema %}
+{
+  "name": "types",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "types_title",
+        "label": "Types title"
+      }
+
+     
+  ],
+	  "blocks": [
+      {
+        "type": "video",
+        "name": "videos",
+        "settings": [
+          {
+            
+            "type": "url",
+      		"id" : "card_video",
+            "label": "Card video"
+          },
+          {
+            "type": "text",
+            "id": "card_title",
+            "label": "Card title",
+            "default":"Item title"
+          },
+{
+        "type": "image_picker",
+        "id": "video_bg",
+        "label": "Background video Image"
+   	}
+        
+        ]
+      }
+  ]
+
+  } 
+{% endschema %}

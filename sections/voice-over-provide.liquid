@@ -1,0 +1,40 @@
+    <section class="provide">
+        <div class="container">
+            <div class="section__inner">
+                <div class="section__left">
+                    <h2 class="section__title">
+                        {{ section.settings.provide-title }}
+                    </h2>
+                </div>
+                <div class="section__right">
+                    <p class="section__text">
+                        {{ section.settings.provide-text }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% schema %}
+  {
+    "name": "Provide",
+    "settings": [
+		{
+        	"type": "text",
+        	"id": "provide-title",
+        	"label": "Provide title"
+      	},
+		{
+        	"type": "text",
+        	"id": "provide-text",
+        	"label": "Provide text"
+      	}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
