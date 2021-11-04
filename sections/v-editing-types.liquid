@@ -1,5 +1,6 @@
 <section class="types section">
   <div class="container">
+      <h2 class="section-title">{{ section.settings.type_section_title }}</h2>
     <div class="types-wrapper">
           <img class="types-illustration" src="{{ section.settings.types-illustration| img_url: 'master' }}" alt="">
           <div class="types-list">
@@ -20,8 +21,8 @@
   "settings": [
       {
         "type": "text",
-        "id": "product_title",
-        "label": "Product title"
+        "id": "type_section_title",
+        "label": "Section title"
       },
       {
         "type": "text",
