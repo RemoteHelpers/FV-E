@@ -1,9 +1,11 @@
 <section class="services section">
   <div class="container">
           <h2 class="section-title section-title--left">{{ section.settings.service_title }}</h2>
+          <div class="services-wrapper">
           <div class="service-item">
           <img class="service-icon" src="{{ section.settings.service_image | img_url: 'master' }}" alt="">
           <p class="service-text">{{ section.settings.service_text }}</p>
+          </div>
           </div>
           <p class="basic-text">{{ section.settings.service_description }}</p>
   </div>

@@ -195,8 +195,7 @@ img {
 }
 
 .services__wrapper {
-    display: flex;
-    justify-content: space-between;
+    margin-top: 72px;
 }
 
 .services__image-holder {
