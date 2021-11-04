@@ -1,4 +1,52 @@
-<section>
-<h1>v-editing-variety</h1>
+<section class="variety section">
+  <div class="container">
+      <h2 class="section-title">{{ section.settings.variety_title }}</h2>
+    <div class="variety-wrapper">
+          <img class="variety-illustration" src="{{ section.settings.variety-illustration | img_url: 'master' }}" alt="">
+          <div class="variety-list">
+              <ul class="variety__list">
+              {% for block in section.blocks %}
+              <li class="variety__item">{{ block.settings.type_text }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+    </div>
+  </div> 
 </section>
 
+{% schema %}
+{
+  "name": "Type section",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "variety_title",
+        "label": "Section title"
+      },
+      {
+        "type": "text",
+        "id": "product_text",
+        "label": "Product text"
+      },
+      {
+        "type": "image_picker",
+        "id": "variety-illustration",
+        "label": "Types illustration"
+      }
+  ],
+  "blocks": [
+      {
+        "type": "text",
+        "name": "variety list",
+        "settings": [
+          {
+            "type": "text",
+            "id": "variety_text",
+            "label": "Type text"
+          }
+        ]
+      }
+  ]
+} 
+{% endschema %}
