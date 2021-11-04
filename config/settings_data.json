@@ -2143,11 +2143,7 @@
       "v-editing-hero": {
         "type": "v-editing-hero",
         "settings": {
-<<<<<<< HEAD
           "hero_title": "Get a quality video of your footage with our video editing team!",
-=======
-          "hero_title": "Get a quality video of your footage with our video editing team",
->>>>>>> parent of 39b7bf9 (Revert "Merge branch 'sergey_branch' into staging")
           "hero_text": "Need movie editing or promotional video editing?<br>Our specialists combine video materials and do all <br>film processing from brief till the final cut",
           "link_text": "hire specialist",
           "btn_url": "#contact_from",
@@ -2168,29 +2164,29 @@
       "v-editing-spec": {
         "type": "v-editing-spec",
         "blocks": {
-          "5cf8270f-496c-4df7-977f-38173df1a99c": {
+          "52d3b2b7-070b-4ad2-9457-add771b50e56": {
             "type": "text",
             "settings": {
-              "item_text": "Order <b>video editing for vloggers<\/b>, and we will professionally edit vlogs and YouTube videos to create <b>original content<\/b>."
+              "item_text": "Order video editing for vloggers, and we will professionally edit vlogs and YouTube videos to create original content."
             }
           },
-          "8e50599f-4527-49ec-961e-b0f034d4d887": {
+          "e1a7061a-cd47-4399-8184-743492f185ee": {
             "type": "text",
             "settings": {
-              "item_text": "Get <b>video editing for social media<\/b> to develop video products for Instagram, Facebook, or YouTube."
+              "item_text": "Get video editing for social media to develop video products for Instagram, Facebook, or YouTube."
             }
           },
-          "39f4b6c5-31d9-4aff-8a01-35e8a0dc43d5": {
+          "68c08571-ac6b-4606-b9e9-816322a41f9e": {
             "type": "text",
             "settings": {
-              "item_text": "With <b>video editing for marketing<\/b>, you will get videos that help <b>attract customers, distribute products and fascinate visitors on your site<\/b>."
+              "item_text": "With video editing for marketing, you will get videos that help attract customers, distribute products and fascinate visitors on your site."
             }
           }
         },
         "block_order": [
-          "5cf8270f-496c-4df7-977f-38173df1a99c",
-          "8e50599f-4527-49ec-961e-b0f034d4d887",
-          "39f4b6c5-31d9-4aff-8a01-35e8a0dc43d5"
+          "52d3b2b7-070b-4ad2-9457-add771b50e56",
+          "e1a7061a-cd47-4399-8184-743492f185ee",
+          "68c08571-ac6b-4606-b9e9-816322a41f9e"
         ],
         "settings": {
           "product_title": "Video-editing for any purpose",
@@ -4367,56 +4363,54 @@
         ],
         "settings": {
           "portfolio_title": "Look through the portfolios of our creative video producers"
-<<<<<<< HEAD
-=======
         }
       },
       "v-editing-variety": {
         "type": "v-editing-variety",
         "blocks": {
-          "6353b812-fbca-4a32-ab9a-8700cdf00a4f": {
+          "72564059-be6e-47f3-89bb-1a315f99cd14": {
             "type": "text",
             "settings": {
               "variety_text": "Video framing",
               "variety_desc": "framing a video for social media, making a video collage, and editing a video frame at a specific time"
             }
           },
-          "493e64b7-c47b-4f37-9e96-2044a1122041": {
+          "45c80b83-1d1e-46b9-8fec-135dc581dc52": {
             "type": "text",
             "settings": {
               "variety_text": "Chroma Key",
               "variety_desc": "editing the background from any green or blue screen video."
             }
           },
-          "e0033d11-54b9-4b7a-abdd-1da5386d8eab": {
+          "ab157985-524b-4417-913b-ba022b02dd96": {
             "type": "text",
             "settings": {
               "variety_text": "Screencast",
               "variety_desc": "digital video recording of your device's screen containing audio narration"
             }
           },
-          "d94c4a13-781a-458a-bfe0-7c05fef5a5e7": {
+          "6400388f-dee8-47a0-86b5-583579bacbf7": {
             "type": "text",
             "settings": {
               "variety_text": "Subtitles",
               "variety_desc": "adding captions to your video and making edits to the text of the subtitles"
             }
           },
-          "1c0345a4-431e-4e43-8331-eb23194e963e": {
+          "018ef6ae-9da5-48da-8149-0553293797f7": {
             "type": "text",
             "settings": {
               "variety_text": "Intro and outro videos",
               "variety_desc": "creating videos that hook your audience from the start and end with a concise and powerful message"
             }
           },
-          "d8589ea1-a66e-4d9e-8493-b81a50ce080b": {
+          "26c750c7-9352-4fd6-9734-60833794d12d": {
             "type": "text",
             "settings": {
               "variety_text": "Color correction",
               "variety_desc": "correcting color problems and making the footage look clean and real"
             }
           },
-          "e3ca22cb-3fcf-46bb-92dc-94d05e89b014": {
+          "575604f6-1124-46d6-b5b6-0a055c60b730": {
             "type": "text",
             "settings": {
               "variety_text": "Visual effects",
@@ -4425,13 +4419,13 @@
           }
         },
         "block_order": [
-          "6353b812-fbca-4a32-ab9a-8700cdf00a4f",
-          "493e64b7-c47b-4f37-9e96-2044a1122041",
-          "e0033d11-54b9-4b7a-abdd-1da5386d8eab",
-          "d94c4a13-781a-458a-bfe0-7c05fef5a5e7",
-          "1c0345a4-431e-4e43-8331-eb23194e963e",
-          "d8589ea1-a66e-4d9e-8493-b81a50ce080b",
-          "e3ca22cb-3fcf-46bb-92dc-94d05e89b014"
+          "72564059-be6e-47f3-89bb-1a315f99cd14",
+          "45c80b83-1d1e-46b9-8fec-135dc581dc52",
+          "ab157985-524b-4417-913b-ba022b02dd96",
+          "6400388f-dee8-47a0-86b5-583579bacbf7",
+          "018ef6ae-9da5-48da-8149-0553293797f7",
+          "26c750c7-9352-4fd6-9734-60833794d12d",
+          "575604f6-1124-46d6-b5b6-0a055c60b730"
         ],
         "settings": {
           "variety_title": "Look through the variety of types of video montage we suggest",
@@ -4442,42 +4436,41 @@
       "v-editing-video-portfolio": {
         "type": "v-editing-video-portfolio",
         "blocks": {
-          "a911498e-2ccc-4429-a94c-da7244a3464c": {
+          "38ba5c85-b68c-4cf3-b25a-a32907636001": {
             "type": "video",
             "settings": {
-              "video_urlMfp": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
-              "video_url": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
-              "portfolio_title": "Video editor portfolio",
-              "portfolio_text": "examples of video products our specialists work with"
+              "video_urlMfp": "",
+              "video_url": "",
+              "portfolio_title": "Portfolio title",
+              "portfolio_text": "Portfolio text"
             }
           },
-          "8e0345e7-763f-4aef-b34b-6fbe02e17212": {
+          "4abacb41-4485-4161-a660-64b020ffc375": {
             "type": "video",
             "settings": {
-              "video_urlMfp": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
-              "video_url": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
-              "portfolio_title": "Video editing examples",
-              "portfolio_text": "the various examples of videos edited by our specialists"
+              "video_urlMfp": "",
+              "video_url": "",
+              "portfolio_title": "Portfolio title",
+              "portfolio_text": "Portfolio text"
             }
           },
-          "ce6bcb9e-213c-4f2d-85c4-2b23a0ecc2a4": {
+          "aa0e4799-ea90-4a51-9b6c-c4b0cc3a9c0c": {
             "type": "video",
             "settings": {
-              "video_urlMfp": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
-              "video_url": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
-              "portfolio_title": "video editing templates",
-              "portfolio_text": "examples of templates created by our editors"
+              "video_urlMfp": "",
+              "video_url": "",
+              "portfolio_title": "Portfolio title",
+              "portfolio_text": "Portfolio text"
             }
           }
         },
         "block_order": [
-          "a911498e-2ccc-4429-a94c-da7244a3464c",
-          "8e0345e7-763f-4aef-b34b-6fbe02e17212",
-          "ce6bcb9e-213c-4f2d-85c4-2b23a0ecc2a4"
+          "38ba5c85-b68c-4cf3-b25a-a32907636001",
+          "4abacb41-4485-4161-a660-64b020ffc375",
+          "aa0e4799-ea90-4a51-9b6c-c4b0cc3a9c0c"
         ],
         "settings": {
-          "portfolio_title": "Browse the portfolio of talented video editors from our company"
->>>>>>> parent of 39b7bf9 (Revert "Merge branch 'sergey_branch' into staging")
+          "portfolio_title": ""
         }
       }
     },
