@@ -1,51 +1,67 @@
-<section class="type section">
+<section class="editor section">
   <div class="container">
-      <h2 class="section-title">{{ section.settings.type_section_title }}</h2>
-    <div class="types-wrapper">
-          <img class="types-illustration" src="{{ section.settings.types-illustration| img_url: 'master' }}" alt="">
-          <div class="types-list">
-              <ul class="product__list">
-              {% for block in section.blocks %}
-              <li class="type__item">{{ block.settings.type_text }}</li>
-              {% endfor %}
-            </ul>
-          </div>
+    <h2 class="section-title">{{ section.settings.editor_title }}</h2>
+    <div class="editor__card-wrapper">
+      {% for block in section.blocks %}
+        <div class="editor__card">
+          <img src="{{ block.settings.edit_image | img_url: 'master' }}" alt="">
+          <h3 class="card-title card-title--upper">{{ block.settings.edit_title }}</h3>
+          <p class="card-text">{{ block.settings.edit_text }}</p>
+        </div>
+      {% endfor %}
     </div>
-  </div> 
+    <div class="editor__slider">
+      {% for block in section.blocks %}
+        <div class="editor__slide">
+          <img src="{{ block.settings.edit_image | img_url: 'master' }}" alt="">
+          <h3 class="card-title card-title--upper">{{ block.settings.edit_title }}</h3>
+          <p class="card-text">{{ block.settings.edit_text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
 
 {% schema %}
 {
-  "name": "Type section",
+  "name": "Editor",
   
   "settings": [
       {
         "type": "text",
-        "id": "type_section_title",
-        "label": "Section title"
-      },
-      {
-        "type": "text",
-        "id": "product_text",
-        "label": "Product text"
-      },
-      {
-        "type": "image_picker",
-        "id": "types-illustration",
-        "label": "Types illustration"
+        "id": "editor_title",
+        "label": "Editor title"
       }
   ],
   "blocks": [
       {
-        "type": "text",
-        "name": "list",
+        "type": "image",
+        "name": "images",
         "settings": [
           {
+            "type": "image_picker",
+            "id": "edit_image",
+            "label": "Edit image"
+          },
+          {
             "type": "text",
-            "id": "type_text",
-            "label": "Type text"
+            "id": "edit_title",
+            "label": "Edit title",
+            "default":"Item title"
+          },
+          {
+            "type": "text",
+            "id": "edit_text",
+            "label": "Edit text",
+            "default":"Item text"
           }
         ]
+      }
+  ],
+  "presets": [
+      {
+        "name": "Editor",
+        "category": "card"
       }
   ]
 } 

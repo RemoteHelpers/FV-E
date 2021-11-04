@@ -2161,52 +2161,6 @@
           "btn_url": "#"
         }
       },
-      "v-editing-types": {
-        "type": "v-editing-types",
-        "blocks": {
-          "677b6b1f-5adf-4839-a52f-4685a44e9198": {
-            "type": "image",
-            "settings": {
-              "card_image": "shopify:\/\/shop_images\/youtube_71481c6e-e7fe-4185-9fde-ddea0acfb33c.jpg",
-              "card_title": "YouTube video editing service",
-              "card_text": "Transform your raw video or footage into professionally edited videos for YouTube."
-            }
-          },
-          "d67496f2-7220-4dac-8b52-ec797f1d0a0e": {
-            "type": "image",
-            "settings": {
-              "card_image": "shopify:\/\/shop_images\/music.jpg",
-              "card_title": "Music video editing service",
-              "card_text": "Our video editing service provides creative ideas and puts perfection into the final cut."
-            }
-          },
-          "9a9f3fe6-0bb6-46d9-b9ce-dcf10b08b566": {
-            "type": "image",
-            "settings": {
-              "card_image": "shopify:\/\/shop_images\/montage.jpg",
-              "card_title": "Make a video montage",
-              "card_text": "Create and edit a photo or video montage, slideshow, or supercut."
-            }
-          },
-          "79aaa555-4c90-44f5-ba54-a75d0fd687b2": {
-            "type": "image",
-            "settings": {
-              "card_image": "shopify:\/\/shop_images\/files.jpg",
-              "card_title": "Join video files",
-              "card_text": "Create one special video by adding another video together."
-            }
-          }
-        },
-        "block_order": [
-          "677b6b1f-5adf-4839-a52f-4685a44e9198",
-          "d67496f2-7220-4dac-8b52-ec797f1d0a0e",
-          "9a9f3fe6-0bb6-46d9-b9ce-dcf10b08b566",
-          "79aaa555-4c90-44f5-ba54-a75d0fd687b2"
-        ],
-        "settings": {
-          "types_title": "Look through the variety of types of production services we suggest"
-        }
-      },
       "v-editing-spec": {
         "type": "v-editing-spec",
         "blocks": {
@@ -4409,6 +4363,25 @@
         ],
         "settings": {
           "portfolio_title": "Look through the portfolios of our creative video producers"
+        }
+      },
+      "v-editing-variety": {
+        "type": "v-editing-variety",
+        "blocks": {
+          "6353b812-fbca-4a32-ab9a-8700cdf00a4f": {
+            "type": "text",
+            "settings": {
+              "variety_text": "Video framing"
+            }
+          }
+        },
+        "block_order": [
+          "6353b812-fbca-4a32-ab9a-8700cdf00a4f"
+        ],
+        "settings": {
+          "variety_title": "Look through the variety of types of video montage we suggest",
+          "product_text": "",
+          "variety-illustration": "shopify:\/\/shop_images\/Group_782.png"
         }
       }
     },
