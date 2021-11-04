@@ -75,6 +75,13 @@
         margin-bottom: 180px;
     }
     
+    .hero,
+    .services,
+    .variety,
+    .product {
+        background: white !important;
+    }
+    
     .section-title {
         margin: 0;
         margin-bottom: 60px;
