@@ -12,6 +12,10 @@
         color: #000;
     }
     
+    .contactform-section {
+        margin-bottom: 0px;
+    }
+    
     img {
         max-width: 100%;
         height: auto;
@@ -610,6 +614,15 @@
         }
         .hero__content {
             max-width: 100%;
+        }
+        .main-title {
+            font-size: 38px;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 38px;
+            line-height: 150%;
+            color: #000000;
         }
         .service-item {
             width: 100%;
