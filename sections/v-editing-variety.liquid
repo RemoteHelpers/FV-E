@@ -7,6 +7,7 @@
               <ul class="variety__list">
               {% for block in section.blocks %}
               <li class="variety__item">{{ block.settings.variety_text }}</li>
+              <p class="variety__item-description">{{ block.settings.variety_desc }}<</p>
               {% endfor %}
             </ul>
           </div>
@@ -44,6 +45,11 @@
             "type": "text",
             "id": "variety_text",
             "label": "Type text"
+          },
+            {
+            "type": "text",
+            "id": "variety_desc",
+            "label": "Type description"
           }
         ]
       }
