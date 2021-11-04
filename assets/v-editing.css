@@ -194,8 +194,9 @@ img {
     width: 282px;
 }
 
-.services__wrapper {
+.services_wrapper {
     margin-top: 72px;
+    margin-bottom: 31px;
 }
 
 .services__image-holder {
