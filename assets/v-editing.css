@@ -228,6 +228,13 @@ img {
 .product__text {
     margin: 0;
     margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 170%;
+}
+
+li.product__item {
+    line-height: 40.8px;
+    font-size: 24px;
 }
 
 .product__list {
@@ -237,7 +244,7 @@ img {
 }
 
 .product__item {
-    padding-left: 40px;
+    padding-left: 67px;
     position: relative;
 }
 
@@ -249,10 +256,10 @@ img {
     content: "";
     position: absolute;
     background-image: url(./list.png);
-    top: -5px;
+    top: 8px;
     left: 0;
-    width: 30px;
-    height: 30px;
+    width: 42px;
+    height: 42px;
     background-size: contain;
 }
 
