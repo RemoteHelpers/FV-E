@@ -2143,12 +2143,11 @@
       "v-editing-hero": {
         "type": "v-editing-hero",
         "settings": {
-          "video_url": "https:\/\/video-previews.elements.envatousercontent.com\/h264-video-previews\/6531fe37-b384-4e74-b09d-02c5c96e816f\/22510303.mp4",
-          "preview": "shopify:\/\/shop_images\/preview.jpg",
-          "hero_title": "All-inclusive video production. Order montage in a few clicks",
-          "hero_text": "Need a promotional video or movie editing? Our filmmakers can combine videos and do all film processing from brief, till the final cut for you!",
-          "link_text": "Create your video",
-          "btn_url": "#"
+          "hero_title": "Get a quality video of your footage with our video editing team!",
+          "hero_text": "Need movie editing or promotional video editing?<br>Our specialists combine video materials and do all <br>film processing from brief till the final cut",
+          "link_text": "hire specialist",
+          "btn_url": "#contact_from",
+          "hero_image": "shopify:\/\/shop_images\/Online_games_addiction-amico_1.png"
         }
       },
       "v-editing-services": {
