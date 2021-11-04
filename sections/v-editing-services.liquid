@@ -1,28 +1,13 @@
 <section class="services section">
   <div class="container">
-    <div class="services__wrapper">
-      <div class="services__image-holder">
-        <img src="{{ section.settings.services_image | img_url: 'master' }}" alt="">
-      </div>
-      <div class="services__content">
-        <h2 class="section-title section-title--left">{{ section.settings.services_title }}</h2>
-        <p class="basic-text">{{ section.settings.services_text }}</p>
-        <div class="button-wrapper">
-          <a href="{{ section.settings.btn_url }}" class="button btn star-btn">{{ section.settings.link_text }}</a>
-          <div class="star-wrapper">
-            <div class="star-w star-1">
-              {% include "star-img" %}
-            </div>
-            <div class="star-w star-2 star-2--bigbtn">
-              {% include "star-img" %}
-            </div>
-            <div class="star-w star-3">
-              {% include "star-img" %}
-            </div>
+          <h2 class="section-title section-title--left">{{ section.settings.service_title }}</h2>
+          <div class="services-wrapper">
+          <div class="service-item">
+          <img class="service-icon" src="{{ section.settings.service_image | img_url: 'master' }}" alt="">
+          <p class="service-text">{{ section.settings.service_text }}</p>
           </div>
-        </div>
-      </div>
-    </div>
+          </div>
+          <p class="basic-text">{{ section.settings.service_description }}</p>
   </div>
 </section>
 
@@ -33,19 +18,25 @@
       "settings": [
           {
             "type": "image_picker",
-            "id": "services_image",
+            "id": "service_image",
             "label": "Services Image"
           },
           {
             "type": "text",
-            "id": "services_title",
+            "id": "service_title",
             "label": "Services title"
           },
           {
             "type": "text",
-            "id": "services_text",
-            "label": "Services text",
-            "default":"Services text"
+            "id": "service_text",
+            "label": "Service text",
+            "default":"Service text"
+          },
+          {
+            "type": "text",
+            "id": "service_description",
+            "label": "Services description",
+            "default":"Services description"
           },
           {
             "type": "text",
