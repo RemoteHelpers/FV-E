@@ -163,12 +163,15 @@ img {
 .service-item {
     width: 502px;
     height: 149px;
-    background: #FFFFFF;
-    border: 1px solid #F5F5F5;
+    background: #fff;
+    border: 1px solid #f5f5f5;
     box-sizing: border-box;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
+    padding: 30px 57px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .service-item:hover {
@@ -188,6 +191,7 @@ img {
     font-size: 16px;
     line-height: 170%;
     color: #4F4F4F;
+    width: 282px;
 }
 
 .services__wrapper {
