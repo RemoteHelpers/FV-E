@@ -270,40 +270,12 @@ li.product__item {
 
 /* Types */
 
-.types__wrapper {
+.types-wrapper {
     display: flex;
-    column-gap: 30px;
-    row-gap: 40px;
-    flex-wrap: wrap;
 }
 
-.types__card {
-    width: calc(25% - 22.5px);
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    column-gap: 30px;
-    align-items: center;
-    text-align: center;
-}
-
-.types__card img {
-    display: block;
-    border-radius: 30px;
-}
-
-.card-title {
-    margin: 0;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.2;
-    min-height: 56px;
-}
-
-.card-text {
-    margin: 0;
-    font-size: 18px;
-    line-height: 1.4;
+.types-list {
+    width: 50%;
 }
 
 

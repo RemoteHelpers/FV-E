@@ -1,67 +1,50 @@
 <section class="types section">
   <div class="container">
-    <h2 class="section-title">{{ section.settings.types_title }}</h2>
-    <div class="types__wrapper">
-      {% for block in section.blocks %}
-        <div class="types__card">
-          <img src="{{ block.settings.card_image | img_url: 'master' }}" alt="">
-          <h3 class="card-title">{{ block.settings.card_title }}</h3>
-          <p class="card-text">{{ block.settings.card_text }}</p>
-        </div>
-      {% endfor %}
-    </div>
-    <div class="types__slider-wrapper slider">
-      {% for block in section.blocks %}
-        <div class="slider__item">
-          <img src="{{ block.settings.card_image | img_url: 'master' }}" alt="">
-          <h3 class="card-title">{{ block.settings.card_title }}</h3>
-          <p class="card-text">{{ block.settings.card_text }}</p>
-        </div>
-      {% endfor %}
+    <div class="types-wrapper">
+          <img class="types-illustration" src="{{ section.settings.types-illustration| img_url: 'master' }}" alt="">
+          <div class="types-list">
+              <ul class="product__list">
+              {% for block in section.blocks %}
+              <li class="type__item">{{ block.settings.type_text }}</li>
+              {% endfor %}
+            </ul>
+          </div>
     </div>
   </div>
 </section>
 
 {% schema %}
 {
-  "name": "Types",
+  "name": "v-editing-types",
   
   "settings": [
       {
         "type": "text",
-        "id": "types_title",
-        "label": "Types title"
+        "id": "product_title",
+        "label": "Product title"
+      },
+      {
+        "type": "text",
+        "id": "product_text",
+        "label": "Product text"
+      }
+      {
+        "type": "image_picker",
+        "id": "types-illustration",
+        "label": "Types illustration"
       }
   ],
   "blocks": [
       {
-        "type": "image",
-        "name": "images",
+        "type": "text",
+        "name": "list",
         "settings": [
           {
-            "type": "image_picker",
-            "id": "card_image",
-            "label": "Card image"
-          },
-          {
             "type": "text",
-            "id": "card_title",
-            "label": "Card title",
-            "default":"Item title"
-          },
-          {
-            "type": "text",
-            "id": "card_text",
-            "label": "Card text",
-            "default":"Item text"
+            "id": "type_text",
+            "label": "Type text"
           }
         ]
-      }
-  ],
-  "presets": [
-      {
-        "name": "Types",
-        "category": "card"
       }
   ]
 } 
