@@ -82,6 +82,10 @@
         background: white !important;
     }
     
+    main#MainContent {
+        background: white;
+    }
+    
     .section-title {
         margin: 0;
         margin-bottom: 60px;
