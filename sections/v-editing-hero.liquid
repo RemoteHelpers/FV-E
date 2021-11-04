@@ -1,66 +1,50 @@
 <section class="hero section">
   <div class="container">
-    <div class="video-wrapper" id="videoHolder">
-      <div id="overlayVideo" ></div>
-      <video class="hero__iframe" id="full_video" src="{{ section.settings.video_url }}" poster="{{ section.settings.preview | img_url: 'master' }}" muted="muted"><video>   
-    </div>
-    <div class="hero__content">
-      <h1 class="main-title">{{ section.settings.hero_title }}</h1>
-      <p class="hero__text">{{ section.settings.hero_text }}</p>
-      <div class="button-wrapper">
-        <a href="{{ section.settings.btn_url }}" class="button btn star-btn">{{ section.settings.link_text }}</a>
-        <div class="star-wrapper">
-          <div class="star-w star-1">
-            {% include "star-img" %}
-          </div>
-          <div class="star-w star-2 star-2--bigbtn">
-            {% include "star-img" %}
-          </div>
-          <div class="star-w star-3">
-            {% include "star-img" %}
-          </div>
-        </div>
+    <div class="hero__wrapper">
+      <div class="hero__content">
+        <h1 class="main-title">{{ section.settings.hero_title }}</h1>
+        <p class="basic-text">{{ section.settings.hero_text }}</p>
+        <a href="{{ section.settings.btn_url }}"
+          class="button btn star-btn button--desk">{{ section.settings.link_text }}</a>
+      </div>
+      <div class="hero__video-holder">
+        <img src="{{ section.settings.hero_image | img_url: 'master' }}" alt="">
+        <a href="{{ section.settings.btn_url }}"
+          class="button btn star-btn button--mobile">{{ section.settings.link_text }}</a>
       </div>
     </div>
-  </div>
 </section>
 
 {% schema %}
-    {
-      "name": "Hero",
-      
-      "settings": [
-          {
-            "type": "url",
-            "id": "video_url",
-            "label": "Video url"
-          },
-          {
-            "type": "image_picker",
-            "id": "preview",
-            "label": "Preview"
-          },
-          {
-            "type": "text",
-            "id": "hero_title",
-            "label": "Hero title"
-          },
-          {
-            "type": "text",
-            "id": "hero_text",
-            "label": "Hero text",
-            "default":"Portfolio text"
-          },
-          {
-            "type": "text",
-            "id": "link_text",
-            "label": "Link text"
-          },
-	  	  {
-        	"type": "url",
-        	"id": "btn_url",
-      	  	"label": "URL"
-      	  }
-      ]
-    } 
+{
+  "name": "Video editing hero",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "hero_title",
+        "label": "Hero title"
+      },
+      {
+        "type": "text",
+        "id": "hero_text",
+        "label": "Hero text"
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link text"
+      },
+      {
+        "type": "url",
+        "id": "btn_url",
+        "label": "URL"
+      },
+      {
+        "type": "image_picker",
+        "id": "hero_image",
+        "label": "Hero image"
+      }
+  ]
+  } 
 {% endschema %}

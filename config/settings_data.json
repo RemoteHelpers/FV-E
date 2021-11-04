@@ -2143,78 +2143,54 @@
       "v-editing-hero": {
         "type": "v-editing-hero",
         "settings": {
-          "video_url": "https:\/\/video-previews.elements.envatousercontent.com\/h264-video-previews\/6531fe37-b384-4e74-b09d-02c5c96e816f\/22510303.mp4",
-          "preview": "shopify:\/\/shop_images\/preview.jpg",
-          "hero_title": "All-inclusive video production. Order montage in a few clicks",
-          "hero_text": "Need a promotional video or movie editing? Our filmmakers can combine videos and do all film processing from brief, till the final cut for you!",
-          "link_text": "Create your video",
-          "btn_url": "#"
+          "hero_title": "Get a quality video of your footage with our video editing team",
+          "hero_text": "Need movie editing or promotional video editing?<br>Our specialists combine video materials and do all <br>film processing from brief till the final cut",
+          "link_text": "hire specialist",
+          "btn_url": "#contact_from",
+          "hero_image": "shopify:\/\/shop_images\/Online_games_addiction-amico_1.png"
         }
       },
       "v-editing-services": {
         "type": "v-editing-services",
         "settings": {
-          "services_image": "shopify:\/\/shop_images\/services_2db4cc9f-25f4-4b5e-8f97-7d4aa24f439d.png",
-          "services_title": "Learn more about a variety of services our video editors provide",
-          "services_text": "We begin with descriptive editing. It is a stage of the writing process in which a video editor strives to improve a draft by correcting errors. After editing, we start with video merge side by side. It is an online tool that allows you to place multiple videos side by side. Then comes color grading that helps our video editors or filmmakers to stylize the footage to suit the film’s style or look.  We need color correction to improve the appearance of an image for presentation in different environments on different devices. Online editing is a final cut of the project where editing high-quality footage together. Final Cut is a series of non-linear video editing software programs that is first developed.",
+          "service_image": "shopify:\/\/shop_images\/film_9e58a4e7-e1d1-4ad2-9a4c-f1971abf53b8.png",
+          "service_title": "Video editing services",
+          "service_text": "Our specialists provide video editing services and create amazing videos from the raw footage.",
+          "service_description": "It includes video merging, cinematic color grading, trimming, sound mixing, and implementing special effects. We offer professional video montage and post-production work for various materials, whether a corporate training video or an entertainment social media video.",
           "link_text": "Create your video",
           "btn_url": "#"
-        }
-      },
-      "v-editing-types": {
-        "type": "v-editing-types",
-        "blocks": {
-          "677b6b1f-5adf-4839-a52f-4685a44e9198": {
-            "type": "image",
-            "settings": {
-              "card_image": "shopify:\/\/shop_images\/youtube_71481c6e-e7fe-4185-9fde-ddea0acfb33c.jpg",
-              "card_title": "YouTube video editing service",
-              "card_text": "Transform your raw video or footage into professionally edited videos for YouTube."
-            }
-          },
-          "d67496f2-7220-4dac-8b52-ec797f1d0a0e": {
-            "type": "image",
-            "settings": {
-              "card_image": "shopify:\/\/shop_images\/music.jpg",
-              "card_title": "Music video editing service",
-              "card_text": "Our video editing service provides creative ideas and puts perfection into the final cut."
-            }
-          },
-          "9a9f3fe6-0bb6-46d9-b9ce-dcf10b08b566": {
-            "type": "image",
-            "settings": {
-              "card_image": "shopify:\/\/shop_images\/montage.jpg",
-              "card_title": "Make a video montage",
-              "card_text": "Create and edit a photo or video montage, slideshow, or supercut."
-            }
-          },
-          "79aaa555-4c90-44f5-ba54-a75d0fd687b2": {
-            "type": "image",
-            "settings": {
-              "card_image": "shopify:\/\/shop_images\/files.jpg",
-              "card_title": "Join video files",
-              "card_text": "Create one special video by adding another video together."
-            }
-          }
-        },
-        "block_order": [
-          "677b6b1f-5adf-4839-a52f-4685a44e9198",
-          "d67496f2-7220-4dac-8b52-ec797f1d0a0e",
-          "9a9f3fe6-0bb6-46d9-b9ce-dcf10b08b566",
-          "79aaa555-4c90-44f5-ba54-a75d0fd687b2"
-        ],
-        "settings": {
-          "types_title": "Look through the variety of types of production services we suggest"
         }
       },
       "v-editing-spec": {
         "type": "v-editing-spec",
+        "blocks": {
+          "5cf8270f-496c-4df7-977f-38173df1a99c": {
+            "type": "text",
+            "settings": {
+              "item_text": "Order <b>video editing for vloggers<\/b>, and we will professionally edit vlogs and YouTube videos to create <b>original content<\/b>."
+            }
+          },
+          "8e50599f-4527-49ec-961e-b0f034d4d887": {
+            "type": "text",
+            "settings": {
+              "item_text": "Get <b>video editing for social media<\/b> to develop video products for Instagram, Facebook, or YouTube."
+            }
+          },
+          "39f4b6c5-31d9-4aff-8a01-35e8a0dc43d5": {
+            "type": "text",
+            "settings": {
+              "item_text": "With <b>video editing for marketing<\/b>, you will get videos that help <b>attract customers, distribute products and fascinate visitors on your site<\/b>."
+            }
+          }
+        },
+        "block_order": [
+          "5cf8270f-496c-4df7-977f-38173df1a99c",
+          "8e50599f-4527-49ec-961e-b0f034d4d887",
+          "39f4b6c5-31d9-4aff-8a01-35e8a0dc43d5"
+        ],
         "settings": {
-          "spec_image": "shopify:\/\/shop_images\/spec_8841e392-e3a1-467d-892d-632d8706dadb.png",
-          "spec_title": "Find the specialist according to the  purpose of video-editing",
-          "spec_text": "Usually, our clients are interested in the development of video products for Instagram, Facebook, YouTube. In this case, we suggest video editing for social media. They need creative videos to attract the viewers’ attention to their video product. That is why  video editing for YouTubers is very important. Unfortunately, video edition takes a lot of time and sometimes bloggers don’t have enough time to make it by themselves. But our specialists are always ready to help them to make creative videos.",
-          "link_text": "Create your video",
-          "btn_url": "#"
+          "product_title": "Video-editing for any purpose",
+          "product_text": "Do you run your channel but don't have time to process the footage?"
         }
       },
       "v-editing-editor": {
@@ -4387,6 +4363,114 @@
         ],
         "settings": {
           "portfolio_title": "Look through the portfolios of our creative video producers"
+        }
+      },
+      "v-editing-variety": {
+        "type": "v-editing-variety",
+        "blocks": {
+          "6353b812-fbca-4a32-ab9a-8700cdf00a4f": {
+            "type": "text",
+            "settings": {
+              "variety_text": "Video framing",
+              "variety_desc": "framing a video for social media, making a video collage, and editing a video frame at a specific time"
+            }
+          },
+          "493e64b7-c47b-4f37-9e96-2044a1122041": {
+            "type": "text",
+            "settings": {
+              "variety_text": "Chroma Key",
+              "variety_desc": "editing the background from any green or blue screen video."
+            }
+          },
+          "e0033d11-54b9-4b7a-abdd-1da5386d8eab": {
+            "type": "text",
+            "settings": {
+              "variety_text": "Screencast",
+              "variety_desc": "digital video recording of your device's screen containing audio narration"
+            }
+          },
+          "d94c4a13-781a-458a-bfe0-7c05fef5a5e7": {
+            "type": "text",
+            "settings": {
+              "variety_text": "Subtitles",
+              "variety_desc": "adding captions to your video and making edits to the text of the subtitles"
+            }
+          },
+          "1c0345a4-431e-4e43-8331-eb23194e963e": {
+            "type": "text",
+            "settings": {
+              "variety_text": "Intro and outro videos",
+              "variety_desc": "creating videos that hook your audience from the start and end with a concise and powerful message"
+            }
+          },
+          "d8589ea1-a66e-4d9e-8493-b81a50ce080b": {
+            "type": "text",
+            "settings": {
+              "variety_text": "Color correction",
+              "variety_desc": "correcting color problems and making the footage look clean and real"
+            }
+          },
+          "e3ca22cb-3fcf-46bb-92dc-94d05e89b014": {
+            "type": "text",
+            "settings": {
+              "variety_text": "Visual effects",
+              "variety_desc": "combining existing footage with computer graphics to make realistic scenes"
+            }
+          }
+        },
+        "block_order": [
+          "6353b812-fbca-4a32-ab9a-8700cdf00a4f",
+          "493e64b7-c47b-4f37-9e96-2044a1122041",
+          "e0033d11-54b9-4b7a-abdd-1da5386d8eab",
+          "d94c4a13-781a-458a-bfe0-7c05fef5a5e7",
+          "1c0345a4-431e-4e43-8331-eb23194e963e",
+          "d8589ea1-a66e-4d9e-8493-b81a50ce080b",
+          "e3ca22cb-3fcf-46bb-92dc-94d05e89b014"
+        ],
+        "settings": {
+          "variety_title": "Look through the variety of types of video montage we suggest",
+          "product_text": "",
+          "variety-illustration": "shopify:\/\/shop_images\/Group_782.png"
+        }
+      },
+      "v-editing-video-portfolio": {
+        "type": "v-editing-video-portfolio",
+        "blocks": {
+          "a911498e-2ccc-4429-a94c-da7244a3464c": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
+              "video_url": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
+              "portfolio_title": "Video editor portfolio",
+              "portfolio_text": "examples of video products our specialists work with"
+            }
+          },
+          "8e0345e7-763f-4aef-b34b-6fbe02e17212": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
+              "video_url": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
+              "portfolio_title": "Video editing examples",
+              "portfolio_text": "the various examples of videos edited by our specialists"
+            }
+          },
+          "ce6bcb9e-213c-4f2d-85c4-2b23a0ecc2a4": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
+              "video_url": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
+              "portfolio_title": "video editing templates",
+              "portfolio_text": "examples of templates created by our editors"
+            }
+          }
+        },
+        "block_order": [
+          "a911498e-2ccc-4429-a94c-da7244a3464c",
+          "8e0345e7-763f-4aef-b34b-6fbe02e17212",
+          "ce6bcb9e-213c-4f2d-85c4-2b23a0ecc2a4"
+        ],
+        "settings": {
+          "portfolio_title": "Browse the portfolio of talented video editors from our company"
         }
       }
     },
