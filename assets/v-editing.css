@@ -288,16 +288,17 @@ li.product__item {
     align-items: center;
     letter-spacing: 0.02em;
     color: #000000;
+    margin-left: 45px;
 }
 
 .variety__item::before {
     content: "";
-    position: absolute;
-    background-image: url(./list.png);
-    top: 8px;
+    position: relative;
+    background: #F13F00;
+    top: 0px;
     left: 0;
-    width: 42px;
-    height: 42px;
+    width: 20px;
+    height: 20px;
     background-size: contain;
 }
 
