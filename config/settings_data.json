@@ -4432,6 +4432,46 @@
           "product_text": "",
           "variety-illustration": "shopify:\/\/shop_images\/Group_782.png"
         }
+      },
+      "v-editing-video-portfolio": {
+        "type": "v-editing-video-portfolio",
+        "blocks": {
+          "a911498e-2ccc-4429-a94c-da7244a3464c": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
+              "video_url": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
+              "portfolio_title": "Video editor portfolio",
+              "portfolio_text": "examples of video products our specialists work with"
+            }
+          },
+          "8e0345e7-763f-4aef-b34b-6fbe02e17212": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
+              "video_url": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
+              "portfolio_title": "Video editing examples",
+              "portfolio_text": "the various examples of videos edited by our specialists"
+            }
+          },
+          "ce6bcb9e-213c-4f2d-85c4-2b23a0ecc2a4": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
+              "video_url": "https:\/\/www.youtube.com\/embed\/XWkF4MyeaG0",
+              "portfolio_title": "video editing templates",
+              "portfolio_text": "examples of templates created by our editors"
+            }
+          }
+        },
+        "block_order": [
+          "a911498e-2ccc-4429-a94c-da7244a3464c",
+          "8e0345e7-763f-4aef-b34b-6fbe02e17212",
+          "ce6bcb9e-213c-4f2d-85c4-2b23a0ecc2a4"
+        ],
+        "settings": {
+          "portfolio_title": "Browse the portfolio of talented video editors from our company"
+        }
       }
     },
     "content_for_index": [
