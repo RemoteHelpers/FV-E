@@ -2209,12 +2209,34 @@
       },
       "v-editing-spec": {
         "type": "v-editing-spec",
+        "blocks": {
+          "5cf8270f-496c-4df7-977f-38173df1a99c": {
+            "type": "text",
+            "settings": {
+              "item_text": "Order <b>video editing for vloggers<\/b>, and we will professionally edit vlogs and YouTube videos to create <b>original content<\/b>."
+            }
+          },
+          "8e50599f-4527-49ec-961e-b0f034d4d887": {
+            "type": "text",
+            "settings": {
+              "item_text": "Get <b>video editing for social media<\/b> to develop video products for Instagram, Facebook, or YouTube."
+            }
+          },
+          "39f4b6c5-31d9-4aff-8a01-35e8a0dc43d5": {
+            "type": "text",
+            "settings": {
+              "item_text": "With <b>video editing for marketing<\/b>, you will get videos that help <b>attract customers, distribute products and fascinate visitors on your site<\/b>."
+            }
+          }
+        },
+        "block_order": [
+          "5cf8270f-496c-4df7-977f-38173df1a99c",
+          "8e50599f-4527-49ec-961e-b0f034d4d887",
+          "39f4b6c5-31d9-4aff-8a01-35e8a0dc43d5"
+        ],
         "settings": {
-          "spec_image": "shopify:\/\/shop_images\/spec_8841e392-e3a1-467d-892d-632d8706dadb.png",
-          "spec_title": "Find the specialist according to the  purpose of video-editing",
-          "spec_text": "Usually, our clients are interested in the development of video products for Instagram, Facebook, YouTube. In this case, we suggest video editing for social media. They need creative videos to attract the viewers’ attention to their video product. That is why  video editing for YouTubers is very important. Unfortunately, video edition takes a lot of time and sometimes bloggers don’t have enough time to make it by themselves. But our specialists are always ready to help them to make creative videos.",
-          "link_text": "Create your video",
-          "btn_url": "#"
+          "product_title": "Video-editing for any purpose",
+          "product_text": "Do you run your channel but don't have time to process the footage?"
         }
       },
       "v-editing-editor": {
