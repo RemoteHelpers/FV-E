@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
 *,
 ::after,
 ::before {
@@ -35,7 +36,7 @@ img {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #f13f00;
+   background-color: #f13f00; 
   border-radius: 71px;
   transition: 0.2s ease-in;
   box-sizing: border-box;
@@ -341,9 +342,11 @@ img {
   .main-title {
     font-size: 35px;
   }
+
   .basic-text {
     font-size: 20px;
   }
+
   .hero__content {
     left: 50px;
   }
@@ -353,23 +356,28 @@ img {
   .section-title {
     margin-bottom: 30px;
   }
+
   .hero__content {
     width: 80%;
   }
+
   .hire__text {
     margin-bottom: 30px;
   }
+
   .hire__card {
     padding: 25px;
     padding-left: 65px;
     font-size: 16px;
   }
+
   .hire__card::before {
     left: 15px;
     width: 35px;
     height: 35px;
     background-size: contain;
   }
+
   .types__card {
     padding: 25px;
   }
@@ -380,28 +388,35 @@ img {
     flex-direction: column;
     align-items: center;
   }
+
   .hire__content {
     margin-right: 0;
     width: 100%;
   }
+
   .hire__card {
     display: none;
   }
+
   .hire__card--mob {
     margin-top: 30px;
     display: block;
     width: 80%;
   }
+
   .hire__image-holder {
     width: 80%;
   }
+
   .services__card {
     width: calc(50% - 15px);
   }
+
   .types__list {
     column-gap: 70px;
     row-gap: 80px;
   }
+
   .types__item {
     width: calc(50% - 35px);
   }
@@ -411,42 +426,53 @@ img {
   .hero {
     height: 500px;
   }
+
   .video-bg {
     display: none;
   }
+
   .hero .img-holder {
     display: block;
     height: 100%;
   }
+
   .hero .img-holder img {
     height: 100%;
     object-fit: cover;
   }
+
   .plan__wrapper {
     flex-direction: column;
   }
+
   .plan .img-holder {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
     width: 70%;
   }
+
   .steps__item {
     height: 80px;
   }
+
   .steps__text {
     width: 70%;
   }
+
   .plan__circle {
     width: 40px;
     height: 40px;
   }
+
   .number {
     font-size: 30px;
   }
+
   .transition {
     height: 40px;
   }
+
   .active {
     max-height: 40px;
   }
@@ -456,30 +482,38 @@ img {
   .container {
     padding: 0 15px;
   }
+
   .section-title {
     font-size: 32px;
   }
+
   .section {
     margin-bottom: 80px;
   }
+
   .hero__content {
     left: 15px;
   }
+
   .services__wrapper {
     display: none;
   }
+
   .services__slider {
     display: block;
   }
+
   .slick-track {
     display: flex;
     align-items: flex-start;
     padding-top: 16px;
     padding-bottom: 16px;
   }
+
   .slick-list {
     overflow: hidden;
   }
+
   .services .slick-dots {
     padding: 0;
     padding-top: 30px;
@@ -487,10 +521,12 @@ img {
     align-items: center;
     justify-content: center;
   }
+
   .services .slick-dots li {
     list-style: none;
     margin: 0 5px;
   }
+
   .services .slick-dots button {
     font-size: 0;
     width: 10px;
@@ -501,19 +537,24 @@ img {
     padding: 0;
     box-sizing: content-box;
   }
+
   .services .slick-dots li.slick-active button {
     background-color: rgb(233, 67, 67);
   }
+
   .types__title-wrapper {
     margin-bottom: 15px;
   }
+
   .types__card {
     margin-right: 0;
     width: 100%;
   }
+
   .types .img-holder {
     display: none;
   }
+
   .types__list {
     row-gap: 30px;
   }
@@ -523,16 +564,20 @@ img {
   .basic-text {
     font-size: 16px;
   }
+
   .section-title {
     font-size: 26px;
   }
+
   .button {
     width: 100%;
     margin: 0 auto;
   }
+
   .hero__content {
     width: calc(100% - 30px);
   }
+
   .types__item {
     width: 100%;
   }
@@ -542,6 +587,7 @@ img {
   .main-title {
     font-size: 28px;
   }
+
   .hire__card--mob {
     margin-top: 30px;
     display: block;
