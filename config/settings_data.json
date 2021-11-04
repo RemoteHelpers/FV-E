@@ -2153,9 +2153,10 @@
       "v-editing-services": {
         "type": "v-editing-services",
         "settings": {
-          "services_image": "shopify:\/\/shop_images\/services_2db4cc9f-25f4-4b5e-8f97-7d4aa24f439d.png",
-          "services_title": "Learn more about a variety of services our video editors provide",
-          "services_text": "We begin with descriptive editing. It is a stage of the writing process in which a video editor strives to improve a draft by correcting errors. After editing, we start with video merge side by side. It is an online tool that allows you to place multiple videos side by side. Then comes color grading that helps our video editors or filmmakers to stylize the footage to suit the film’s style or look.  We need color correction to improve the appearance of an image for presentation in different environments on different devices. Online editing is a final cut of the project where editing high-quality footage together. Final Cut is a series of non-linear video editing software programs that is first developed.",
+          "service_image": "shopify:\/\/shop_images\/film_9e58a4e7-e1d1-4ad2-9a4c-f1971abf53b8.png",
+          "service_title": "Video editing services",
+          "services_text": "Our specialists provide video editing services and create amazing videos from the raw footage.",
+          "service_description": "It includes video merging, cinematic color grading, trimming, sound mixing, and implementing special effects. We offer professional video montage and post-production work for various materials, whether a corporate training video or an entertainment social media video.",
           "link_text": "Create your video",
           "btn_url": "#"
         }
