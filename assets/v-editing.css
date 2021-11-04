@@ -505,6 +505,9 @@ img {
     .section-title--left {
         margin-bottom: 0;
     }
+    .product {
+        background-image: none;
+    }
 }
 
 @media (max-width: 1175px) {
@@ -579,6 +582,9 @@ img {
     .editor__slider {
         display: block;
     }
+    .product {
+        padding: 30px 0;
+    }
 }
 
 @media (max-width: 550px) {
@@ -591,6 +597,12 @@ img {
     }
     .button-wrapper {
         width: 100%;
+    }
+    .product__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .product__item::before {
+        top: 0;
     }
 }
 
