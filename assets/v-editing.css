@@ -278,6 +278,29 @@ li.product__item {
     width: 50%;
 }
 
+.variety__item {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.variety__item::before {
+    content: "";
+    position: absolute;
+    background-image: url(./list.png);
+    top: 8px;
+    left: 0;
+    width: 42px;
+    height: 42px;
+    background-size: contain;
+}
+
 
 /* //Types */
 
