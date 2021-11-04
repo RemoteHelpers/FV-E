@@ -1,62 +1,43 @@
-<section class="spec section">
+<section class="product section">
   <div class="container">
-    <div class="spec__wrapper">
-      <div class="spec__content">
-        <h2 class="section-title section-title--left">{{ section.settings.spec_title }}</h2>
-        <p class="basic-text">{{ section.settings.spec_text }}</p>
-        <div class="button-wrapper">
-          <a href="#" class="button btn star-btn">{{ section.settings.link_text }}</a>
-          <div class="star-wrapper">
-            <div class="star-w star-1">
-              {% include "star-img" %}
-            </div>
-            <div class="star-w star-2 star-2--bigbtn">
-              {% include "star-img" %}
-            </div>
-            <div class="star-w star-3">
-              {% include "star-img" %}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="spec__image-holder">
-        <img src="{{ section.settings.spec_image | img_url: 'master' }}" alt="">
-      </div>
-    </div>
+    <h2 class="section-title">{{ section.settings.product_title }}</h2>
+    <p class="product__text">{{ section.settings.product_text }}</p>
+    <ul class="product__list">
+      {% for block in section.blocks %}
+      <li class="product__item">{{ block.settings.item_text }}</li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
 
 {% schema %}
-    {
-      "name": "Spec",
-      
-      "settings": [
-          {
-            "type": "image_picker",
-            "id": "spec_image",
-            "label": "Spec Image"
-          },
+{
+  "name": "Video editing products",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "product_title",
+        "label": "Product title"
+      },
+      {
+        "type": "text",
+        "id": "product_text",
+        "label": "Product text"
+      }
+  ],
+  "blocks": [
+      {
+        "type": "text",
+        "name": "list",
+        "settings": [
           {
             "type": "text",
-            "id": "spec_title",
-            "label": "Spec title"
-          },
-          {
-            "type": "text",
-            "id": "spec_text",
-            "label": "Spec text",
-            "default":"Spec text"
-          },
-          {
-            "type": "text",
-            "id": "link_text",
-            "label": "Link text"
-          },
-	  	  {
-        	"type": "url",
-        	"id": "btn_url",
-        	"label": "URL"
-      	  }
-      ]
-    } 
+            "id": "item_text",
+            "label": "Item text"
+          }
+        ]
+      }
+  ]
+} 
 {% endschema %}
