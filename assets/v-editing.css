@@ -181,6 +181,15 @@ img {
     height: 50px;
 }
 
+.service-text {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 170%;
+    color: #4F4F4F;
+}
+
 .services__wrapper {
     display: flex;
     justify-content: space-between;
