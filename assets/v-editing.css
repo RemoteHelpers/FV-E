@@ -272,10 +272,17 @@ li.product__item {
 
 .variety-wrapper {
     display: flex;
+    justify-content: space-around;
 }
 
 .variety-list {
     width: 50%;
+    margin-top: 40px;
+}
+
+img.variety-illustration {
+    width: 486px;
+    height: 695px;
 }
 
 .variety__item {
@@ -314,6 +321,7 @@ p.variety__item-description {
     display: flex;
     align-items: center;
     color: #000000;
+    margin-bottom: 36px;
 }
 
 
