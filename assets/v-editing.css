@@ -121,6 +121,7 @@ img {
 
 .hero__wrapper {
     display: flex;
+    margin-top: 180px;
 }
 
 .hero {
