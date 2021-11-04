@@ -270,11 +270,11 @@ li.product__item {
 
 /* Types */
 
-.types-wrapper {
+.variety-wrapper {
     display: flex;
 }
 
-.types-list {
+.variety-list {
     width: 50%;
 }
 
