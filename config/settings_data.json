@@ -2155,7 +2155,7 @@
         "settings": {
           "service_image": "shopify:\/\/shop_images\/film_9e58a4e7-e1d1-4ad2-9a4c-f1971abf53b8.png",
           "service_title": "Video editing services",
-          "services_text": "Our specialists provide video editing services and create amazing videos from the raw footage.",
+          "service_text": "Our specialists provide video editing services and create amazing videos from the raw footage.",
           "service_description": "It includes video merging, cinematic color grading, trimming, sound mixing, and implementing special effects. We offer professional video montage and post-production work for various materials, whether a corporate training video or an entertainment social media video.",
           "link_text": "Create your video",
           "btn_url": "#"
