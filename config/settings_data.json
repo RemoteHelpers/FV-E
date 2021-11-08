@@ -4439,8 +4439,8 @@
           "38ba5c85-b68c-4cf3-b25a-a32907636001": {
             "type": "video",
             "settings": {
-              "video_urlMfp": "",
-              "video_url": "",
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=UdsSKgZiXM8&ab_channel=RemoteHelpers-OutsourcingMarketingAssistants",
+              "video_url": "https:\/\/www.youtube.com\/embed\/UdsSKgZiXM8",
               "portfolio_title": "Portfolio title",
               "portfolio_text": "Portfolio text"
             }
