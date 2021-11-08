@@ -4502,6 +4502,25 @@
         "settings": {
           "portfolio_title": "Browse the portfolio of talented video editors from our company"
         }
+      },
+      "audioEd-hero": {
+        "type": "audioEd-hero",
+        "settings": {
+          "hero_title": "Entrust your audio editing project to our creative specialists",
+          "hero_text": "Our team of sound editors offers a wide range of audio editing services, including sound effects, voice acting, and equalization for any project",
+          "link_text": "hire specialist",
+          "btn_url": "#",
+          "hero_image": "shopify:\/\/shop_images\/hero_5169768e-0c83-47a3-be05-cde9a081eef7.png"
+        }
+      },
+      "audioEd-services": {
+        "type": "audioEd-services",
+        "settings": {
+          "services_title": "Audio editing services",
+          "services_text": "We deliver a wide range of audio editing services, preserving the finest details of your sound, voice, or music. It includes noise reduction, separating voice from music, and adding SFX for commercials, movies, and clips. Our specialist will edit your sound files, whether it is simple voice-over editing or complex music splicing.",
+          "services_card": "Need to fix audio files or get a clean sound of your recordings?",
+          "services_image": "shopify:\/\/shop_images\/Line_f787fbd8-05d5-48de-84fc-ef1def61d20e.png"
+        }
       }
     },
     "content_for_index": [
