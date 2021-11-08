@@ -84,11 +84,11 @@ img {
   flex-direction: column;
   row-gap: 30px;
   padding-top: 100px;
-  width: 700px;
+  width: 40%;
 }
 
 .hero__video-holder {
-  width: 40%;
+  width: 60%;
 }
 
 .button--mob {
