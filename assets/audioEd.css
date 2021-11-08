@@ -129,7 +129,7 @@ img {
   left: 25px;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url(./img/headphones.png);
+  background-image: url(./headphones.png);
 }
 
 .types__wrapper {
