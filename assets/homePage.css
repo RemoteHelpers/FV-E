@@ -90,27 +90,6 @@
   text-align: center;
 }
 
-.pop-up-window-btn {
-  font-size: 1.5vw;
-  transition: 0.3s;
-  padding: 0.7vw 2vw;
-  background-color: #F13F00;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 133.4%;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  border: 2px solid transparent;
-  outline-style: none;
-  width: 85%;
-  border-radius: 30px;
-  margin-right: 10%;
-}
-
 .pop-up-window-btn:hover {
   font-size: 1.5vw;
   transition: 0.3s;
