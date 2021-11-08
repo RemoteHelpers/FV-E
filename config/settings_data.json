@@ -4480,6 +4480,15 @@
               "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
               "portfolio_text": ""
             }
+          },
+          "a90e5a5f-ac0e-483d-b6b2-a0cdff1954e6": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=7yuaO9qXYaY",
+              "video_url": "https:\/\/www.youtube.com\/embed\/7yuaO9qXYaY",
+              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
+              "portfolio_text": ""
+            }
           }
         },
         "block_order": [
@@ -4487,7 +4496,8 @@
           "4abacb41-4485-4161-a660-64b020ffc375",
           "aa0e4799-ea90-4a51-9b6c-c4b0cc3a9c0c",
           "799bbd65-264d-4393-ab83-a5ef5eb63f99",
-          "d8864cff-ef1f-43b4-8730-21521f7ca5fe"
+          "d8864cff-ef1f-43b4-8730-21521f7ca5fe",
+          "a90e5a5f-ac0e-483d-b6b2-a0cdff1954e6"
         ],
         "settings": {
           "portfolio_title": "Browse the portfolio of talented video editors from our company"
