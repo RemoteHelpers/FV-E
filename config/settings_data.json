@@ -4561,6 +4561,38 @@
         "settings": {
           "types_title": "Find out what types of professional audio editing"
         }
+      },
+      "audioEd-product": {
+        "type": "audioEd-product",
+        "blocks": {
+          "92004c13-73c6-4c4e-9734-5461211c1c93": {
+            "type": "text",
+            "settings": {
+              "item_text": "Get a <b>sound design for commercials<\/b> and make your advertising sound right."
+            }
+          },
+          "2ca28edc-ce30-4729-8ced-acda6beede25": {
+            "type": "text",
+            "settings": {
+              "item_text": "Choose <b>audio editing for podcasts and documentaries<\/b> to eliminate distractions from your recordings and <b>increase the impact of your message. <\/b>"
+            }
+          },
+          "7904c996-032c-4e0e-ac08-77d9c27d056d": {
+            "type": "text",
+            "settings": {
+              "item_text": "Our specialist will insert the audio for social media and add intro and outro to YouTube videos to <b>enhance your posts, making engaging content that hooks your audience’s attention.<\/b>"
+            }
+          }
+        },
+        "block_order": [
+          "92004c13-73c6-4c4e-9734-5461211c1c93",
+          "2ca28edc-ce30-4729-8ced-acda6beede25",
+          "7904c996-032c-4e0e-ac08-77d9c27d056d"
+        ],
+        "settings": {
+          "product_title": "Audio-editing for any purpose",
+          "product_text": "We provide movie audio editing and work with character dialogues, music, and various effects, making your film more captivating."
+        }
       }
     },
     "content_for_index": [
