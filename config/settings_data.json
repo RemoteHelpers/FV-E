@@ -4602,13 +4602,23 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=tUS1cQv83yA",
               "video_url": "https:\/\/www.youtube.com\/embed\/tUS1cQv83yA",
-              "portfolio_title": "Portfolio title",
+              "portfolio_title": "Video Editing | Remote Helpers",
+              "portfolio_text": ""
+            }
+          },
+          "5f263291-eee9-489d-9f1d-127cc2c24d91": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=xpChRh9XyXw",
+              "video_url": "https:\/\/www.youtube.com\/embed\/xpChRh9XyXw",
+              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
               "portfolio_text": ""
             }
           }
         },
         "block_order": [
-          "75ce74c2-ce17-4753-a3bc-759ce9005b57"
+          "75ce74c2-ce17-4753-a3bc-759ce9005b57",
+          "5f263291-eee9-489d-9f1d-127cc2c24d91"
         ],
         "settings": {
           "portfolio_title": "Check out the portfolio of our talented audio editors’ team"
