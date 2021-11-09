@@ -4521,6 +4521,12 @@
           "services_card": "Need to fix audio files or get a clean sound of your recordings?",
           "services_image": "shopify:\/\/shop_images\/Line_f787fbd8-05d5-48de-84fc-ef1def61d20e.png"
         }
+      },
+      "audioEd-types": {
+        "type": "audioEd-types",
+        "settings": {
+          "types_title": "Find out what types of professional audio editing"
+        }
       }
     },
     "content_for_index": [
