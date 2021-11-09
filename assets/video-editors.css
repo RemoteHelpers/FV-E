@@ -73,8 +73,11 @@ img {
   line-height: 1.7;
 }
 
+.hero {
+  position: relative;
+}
+
 .hero__wrapper {
-  padding-top: 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -83,12 +86,15 @@ img {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
-  padding-top: 100px;
-  width: 40%;
+  padding-top: 180px;
+  width: 700px;
 }
 
 .hero__video-holder {
-  width: 60%;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 40%;
 }
 
 .button--mob {
