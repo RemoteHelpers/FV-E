@@ -203,7 +203,7 @@ img {
   height: 24px;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url(./img/chevron-right.png);
+  background-image: url(./chevron-right.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
