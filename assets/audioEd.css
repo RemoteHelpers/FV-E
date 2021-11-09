@@ -210,7 +210,7 @@ img {
 
 .product {
   padding: 80px 0;
-  background-image: url(./img/stairs.png);
+  background-image: url(./stairs.png);
   background-color: #FCFCFC;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -239,7 +239,7 @@ img {
 .product__item::before {
   content: "";
   position: absolute;
-  background-image: url(./img/list.png);
+  background-image: url(./list.png);
   top: -5px;
   left: 0;
   width: 30px;
