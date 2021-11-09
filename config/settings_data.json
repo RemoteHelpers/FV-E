@@ -4593,6 +4593,76 @@
           "product_title": "Audio-editing for any purpose",
           "product_text": "We provide movie audio editing and work with character dialogues, music, and various effects, making your film more captivating."
         }
+      },
+      "audioEd-videoPortfolio": {
+        "type": "audioEd-videoPortfolio",
+        "blocks": {
+          "75ce74c2-ce17-4753-a3bc-759ce9005b57": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=tUS1cQv83yA",
+              "video_url": "https:\/\/www.youtube.com\/embed\/tUS1cQv83yA",
+              "portfolio_title": "Video Editing | Remote Helpers",
+              "portfolio_text": ""
+            }
+          },
+          "5f263291-eee9-489d-9f1d-127cc2c24d91": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=xpChRh9XyXw",
+              "video_url": "https:\/\/www.youtube.com\/embed\/xpChRh9XyXw",
+              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
+              "portfolio_text": ""
+            }
+          },
+          "6583b6cf-1fb0-4d4a-93e0-aa42bc80c695": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=UdsSKgZiXM8",
+              "video_url": "https:\/\/www.youtube.com\/embed\/UdsSKgZiXM8",
+              "portfolio_title": "Remote Helpers Portfolio| Dmytro V. 634",
+              "portfolio_text": ""
+            }
+          },
+          "18cf11f9-3724-4e48-a795-9605f105a4f2": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=GZy2TU6oMiI",
+              "video_url": "https:\/\/www.youtube.com\/embed\/GZy2TU6oMiI",
+              "portfolio_title": "Video for youtube channel Creative Mind",
+              "portfolio_text": ""
+            }
+          },
+          "b17cd3e3-0281-44d9-8e49-154d0ab5c1fa": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=hdxmekeOMRk",
+              "video_url": "https:\/\/www.youtube.com\/embed\/hdxmekeOMRk",
+              "portfolio_title": "Hire video editors at the outstaffing company",
+              "portfolio_text": ""
+            }
+          },
+          "79c169c0-f49f-4d22-b2b8-1423ac2f4981": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=kUJlDnT3-xA",
+              "video_url": "https:\/\/www.youtube.com\/embed\/kUJlDnT3-xA",
+              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
+              "portfolio_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "75ce74c2-ce17-4753-a3bc-759ce9005b57",
+          "5f263291-eee9-489d-9f1d-127cc2c24d91",
+          "6583b6cf-1fb0-4d4a-93e0-aa42bc80c695",
+          "18cf11f9-3724-4e48-a795-9605f105a4f2",
+          "b17cd3e3-0281-44d9-8e49-154d0ab5c1fa",
+          "79c169c0-f49f-4d22-b2b8-1423ac2f4981"
+        ],
+        "settings": {
+          "portfolio_title": "Check out the portfolio of our talented audio editors’ team"
+        }
       }
     },
     "content_for_index": [
