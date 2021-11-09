@@ -4524,6 +4524,30 @@
       },
       "audioEd-types": {
         "type": "audioEd-types",
+        "blocks": {
+          "35395a1c-b2ce-4e92-ab2a-416ec97d497d": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/volume.png",
+              "card_title": "Sound effects",
+              "card_text": "",
+              "card_url": "#"
+            }
+          },
+          "410fadb8-4e20-4b7c-89c7-47e7e9628874": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/acting.png",
+              "card_title": "Voice acting",
+              "card_text": "",
+              "card_url": "#"
+            }
+          }
+        },
+        "block_order": [
+          "35395a1c-b2ce-4e92-ab2a-416ec97d497d",
+          "410fadb8-4e20-4b7c-89c7-47e7e9628874"
+        ],
         "settings": {
           "types_title": "Find out what types of professional audio editing"
         }
