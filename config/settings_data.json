@@ -4521,6 +4521,46 @@
           "services_card": "Need to fix audio files or get a clean sound of your recordings?",
           "services_image": "shopify:\/\/shop_images\/Line_f787fbd8-05d5-48de-84fc-ef1def61d20e.png"
         }
+      },
+      "audioEd-types": {
+        "type": "audioEd-types",
+        "blocks": {
+          "35395a1c-b2ce-4e92-ab2a-416ec97d497d": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/volume.png",
+              "card_title": "Sound effects",
+              "card_text": "selecting and adding background music and other sound effects to make the animation, motion graphics, and video come to life",
+              "card_url": "#"
+            }
+          },
+          "410fadb8-4e20-4b7c-89c7-47e7e9628874": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/acting.png",
+              "card_title": "Voice acting",
+              "card_text": "adding to a recording a voice that describes or comments on a film, commercials, cartoons, or videos.",
+              "card_url": "#"
+            }
+          },
+          "97bc0daf-2a66-4963-ac71-e0a4c0c2f957": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/design.png",
+              "card_title": "Sound design",
+              "card_text": "analyzing, generating, and reconstructing audio elements with optimized, enhanced performance levels.",
+              "card_url": "#"
+            }
+          }
+        },
+        "block_order": [
+          "35395a1c-b2ce-4e92-ab2a-416ec97d497d",
+          "410fadb8-4e20-4b7c-89c7-47e7e9628874",
+          "97bc0daf-2a66-4963-ac71-e0a4c0c2f957"
+        ],
+        "settings": {
+          "types_title": "Find out what types of professional audio editing"
+        }
       }
     },
     "content_for_index": [
