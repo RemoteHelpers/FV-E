@@ -4442,7 +4442,8 @@
           "hero_title": "Get a quality video of your footage with our video editing team",
           "hero_text": "Need movie editing or promotional video editing? Our specialists combine video materials and do all film processing from brief till the final cut",
           "link_text": "hire specialist",
-          "btn_url": "#contactformSection"
+          "btn_url": "#contactformSection",
+          "hero_image": "shopify:\/\/shop_images\/heroNew.png"
         }
       }
     },
