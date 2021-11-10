@@ -224,6 +224,7 @@
 
 @media (max-width: 1420px) {
     .main-employees-item__name {
+        padding-left: 15px;
         font-size: 24px;
     }
 }
