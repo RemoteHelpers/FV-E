@@ -1,0 +1,33 @@
+<section class="services section">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.services_title }}</h2>
+    <div class="services__wrapper">
+      <p class="services__card">{{ section.settings.services_card }}</p>
+    </div>
+    <p class="basic-text">{{ section.settings.services_text }}</p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "services",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "services_title",
+        "label": "Services title"
+      },
+      {
+        "type": "text",
+        "id": "services_text",
+        "label": "Services text"
+      },
+      {
+        "type": "text",
+        "id": "services_card",
+        "label": "Services card"
+      }
+  ]
+  } 
+{% endschema %}
