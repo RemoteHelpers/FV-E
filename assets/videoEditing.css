@@ -121,7 +121,7 @@ img {
   left: 25px;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url(./img/video.png);
+  background-image: url(./video.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
