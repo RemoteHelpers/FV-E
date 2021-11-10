@@ -77,8 +77,11 @@ img {
   line-height: 1.7;
 }
 
+.hero {
+  position: relative;
+}
+
 .hero__wrapper {
-  margin-top: 80px;
   display: flex;
   justify-content: space-between;
 }
@@ -87,12 +90,21 @@ img {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+<<<<<<< HEAD
   width: 700px;
+=======
+  padding-top: 180px;
+  width: 740px;
+>>>>>>> Natalia_branch
 }
 
 .hero__video-holder {
   position: absolute;
+<<<<<<< HEAD
   top: 0;
+=======
+  top: 100px;
+>>>>>>> Natalia_branch
   right: 20px;
   width: 40%;
 }
@@ -264,7 +276,11 @@ img {
   }
 
   .hero__content {
+<<<<<<< HEAD
     /* padding-top: 50px; */
+=======
+    padding-top: 50px;
+>>>>>>> Natalia_branch
     width: 550px;
   }
 
