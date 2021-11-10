@@ -4552,6 +4552,26 @@
           "product_title": "Video-editing for any purpose",
           "product_text": "Do you run your channel but don't have time to process the footage?"
         }
+      },
+      "videoEditing-videoPortfolio": {
+        "type": "videoEditing-videoPortfolio",
+        "blocks": {
+          "790266b5-76e4-4781-b585-4f9a75bb4094": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=UdsSKgZiXM8",
+              "video_url": "https:\/\/www.youtube.com\/embed\/UdsSKgZiXM8",
+              "portfolio_title": "Remote Helpers Portfolio| Dmytro V. 634",
+              "portfolio_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "790266b5-76e4-4781-b585-4f9a75bb4094"
+        ],
+        "settings": {
+          "portfolio_title": "Browse the portfolio of talented video editors from our company"
+        }
       }
     },
     "content_for_index": [
