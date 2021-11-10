@@ -281,7 +281,7 @@ section {
 }
 
 .about .section__left {
-    width: 50%;
+    width: 100%;
 }
 
 .section__title {
@@ -561,7 +561,7 @@ section {
 }
 
 .main-employees-item__click {
-	padding: 15px 50px;
+	padding: 15px 15px;
     background: #fff;
     border-radius: 71.0644px;
     font-family: Raleway;
@@ -937,7 +937,6 @@ html.lock {
 
     .main-employees-item__click {
         font-size: 15px;
-        padding: 15px 30px;
     }
 }
 
@@ -1112,9 +1111,9 @@ html.lock {
     .resume__button {
         padding-top: 40px;
     }
-    .resume__link {
+    /* .resume__link {
         display: inline-block;
-    }
+    } */
 }
 
 @media(max-width: 800px) {

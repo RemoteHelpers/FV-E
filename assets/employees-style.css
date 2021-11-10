@@ -92,7 +92,7 @@
     font-size: 30px;
     font-weight: 700;
 
-    padding: 5px 0 5px 30px;
+    padding: 5px 5px 5px 30px;
 }
 
 .main-employees-item__price {
@@ -221,6 +221,13 @@
 
 
 /* media */
+
+@media (max-width: 1420px) {
+    .main-employees-item__name {
+        padding-left: 15px;
+        font-size: 24px;
+    }
+}
 
 @media only screen and (max-width : 992px) {
     .main-employees-collection {
