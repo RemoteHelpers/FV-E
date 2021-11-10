@@ -4564,10 +4564,20 @@
               "portfolio_title": "Remote Helpers Portfolio| Dmytro V. 634",
               "portfolio_text": ""
             }
+          },
+          "7594e86f-d806-4c5c-bf35-3f9a9542a4b2": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=tUS1cQv83yA",
+              "video_url": "https:\/\/www.youtube.com\/embed\/tUS1cQv83yA",
+              "portfolio_title": "Video Editing",
+              "portfolio_text": ""
+            }
           }
         },
         "block_order": [
-          "790266b5-76e4-4781-b585-4f9a75bb4094"
+          "790266b5-76e4-4781-b585-4f9a75bb4094",
+          "7594e86f-d806-4c5c-bf35-3f9a9542a4b2"
         ],
         "settings": {
           "portfolio_title": "Browse the portfolio of talented video editors from our company"
