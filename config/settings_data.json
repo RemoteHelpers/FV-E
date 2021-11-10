@@ -4445,6 +4445,14 @@
           "btn_url": "#contactformSection",
           "hero_image": "shopify:\/\/shop_images\/heroNew.png"
         }
+      },
+      "videoEditing-services": {
+        "type": "videoEditing-services",
+        "settings": {
+          "services_title": "Video editing services",
+          "services_text": "It includes video merging, cinematic color grading, trimming, sound mixing, and implementing special effects. We offer professional video montage and post-production work for various materials, whether a corporate training video or an entertainment social media video.",
+          "services_card": "Our specialists provide video editing services and create amazing videos from the raw footage."
+        }
       }
     },
     "content_for_index": [
