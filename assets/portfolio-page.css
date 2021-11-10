@@ -1111,9 +1111,9 @@ html.lock {
     .resume__button {
         padding-top: 40px;
     }
-    .resume__link {
+    /* .resume__link {
         display: inline-block;
-    }
+    } */
 }
 
 @media(max-width: 800px) {
