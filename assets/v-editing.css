@@ -145,19 +145,12 @@
         flex-direction: column;
         row-gap: 30px;
         padding-top: 180px;
-        width: 700px;
+        width: 740px;
     }
-    
-    /* .hero__text {
-        margin: 0;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 1.2;
-    } */
     
     .hero__video-holder {
         position: absolute;
-        top: 0;
+        top: 80px;
         right: 20px;
         width: 40%;
     }
