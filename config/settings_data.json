@@ -2140,96 +2140,6 @@
           "services_title": "LOOK THROUGH THE LIST OF OUR COLOR CORRECTION SERVICES RIGHT HERE:"
         }
       },
-      "v-editing-hero": {
-        "type": "v-editing-hero",
-        "settings": {
-          "hero_title": "Get a quality video of your footage with our video editing team!",
-          "hero_text": "Need movie editing or promotional video editing? Our specialists combine video materials and do all film processing from brief till the final cut",
-          "link_text": "hire specialist",
-          "btn_url": "#contactformSection",
-          "hero_image": "shopify:\/\/shop_images\/Online_games_addiction-amico_1.png"
-        }
-      },
-      "v-editing-services": {
-        "type": "v-editing-services",
-        "settings": {
-          "service_image": "shopify:\/\/shop_images\/film_9e58a4e7-e1d1-4ad2-9a4c-f1971abf53b8.png",
-          "service_title": "Video editing services",
-          "service_text": "Our specialists provide video editing services and create amazing videos from the raw footage.",
-          "service_description": "It includes video merging, cinematic color grading, trimming, sound mixing, and implementing special effects. We offer professional video montage and post-production work for various materials, whether a corporate training video or an entertainment social media video.",
-          "link_text": "Create your video",
-          "btn_url": "#"
-        }
-      },
-      "v-editing-spec": {
-        "type": "v-editing-spec",
-        "blocks": {
-          "52d3b2b7-070b-4ad2-9457-add771b50e56": {
-            "type": "text",
-            "settings": {
-              "item_text": "Order video editing for vloggers, and we will professionally edit vlogs and YouTube videos to create original content."
-            }
-          },
-          "e1a7061a-cd47-4399-8184-743492f185ee": {
-            "type": "text",
-            "settings": {
-              "item_text": "Get video editing for social media to develop video products for Instagram, Facebook, or YouTube."
-            }
-          },
-          "68c08571-ac6b-4606-b9e9-816322a41f9e": {
-            "type": "text",
-            "settings": {
-              "item_text": "With video editing for marketing, you will get videos that help attract customers, distribute products and fascinate visitors on your site."
-            }
-          }
-        },
-        "block_order": [
-          "52d3b2b7-070b-4ad2-9457-add771b50e56",
-          "e1a7061a-cd47-4399-8184-743492f185ee",
-          "68c08571-ac6b-4606-b9e9-816322a41f9e"
-        ],
-        "settings": {
-          "product_title": "Video-editing for any purpose",
-          "product_text": "Do you run your channel but don't have time to process the footage?"
-        }
-      },
-      "v-editing-editor": {
-        "type": "v-editing-editor",
-        "blocks": {
-          "670bf7e7-0e9a-401e-af30-a7326f768694": {
-            "type": "image",
-            "settings": {
-              "edit_image": "shopify:\/\/shop_images\/editor_750b3ceb-4708-4dd0-b399-9908f8b5c968.png",
-              "edit_title": "video editor",
-              "edit_text": "a person who creates video for web-sites"
-            }
-          },
-          "a8ab824b-3be4-4bb3-b51c-3337b1fd4fa0": {
-            "type": "image",
-            "settings": {
-              "edit_image": "shopify:\/\/shop_images\/maker.png",
-              "edit_title": "film maker",
-              "edit_text": "an expert at filmmaking"
-            }
-          },
-          "aaf5bd51-8d1b-4435-9267-4e201a10bb83": {
-            "type": "image",
-            "settings": {
-              "edit_image": "shopify:\/\/shop_images\/comb.png",
-              "edit_title": "video combiner",
-              "edit_text": "a person who is merging different clips into a single piece"
-            }
-          }
-        },
-        "block_order": [
-          "670bf7e7-0e9a-401e-af30-a7326f768694",
-          "a8ab824b-3be4-4bb3-b51c-3337b1fd4fa0",
-          "aaf5bd51-8d1b-4435-9267-4e201a10bb83"
-        ],
-        "settings": {
-          "editor_title": "Hire our video editor to create original videos for your channel"
-        }
-      },
       "video_framing_hero": {
         "type": "video_framing_hero",
         "settings": {
@@ -4365,144 +4275,6 @@
           "portfolio_title": "Look through the portfolios of our creative video producers"
         }
       },
-      "v-editing-variety": {
-        "type": "v-editing-variety",
-        "blocks": {
-          "72564059-be6e-47f3-89bb-1a315f99cd14": {
-            "type": "text",
-            "settings": {
-              "variety_text": "Video framing",
-              "variety_desc": "framing a video for social media, making a video collage, and editing a video frame at a specific time"
-            }
-          },
-          "45c80b83-1d1e-46b9-8fec-135dc581dc52": {
-            "type": "text",
-            "settings": {
-              "variety_text": "Chroma Key",
-              "variety_desc": "editing the background from any green or blue screen video."
-            }
-          },
-          "ab157985-524b-4417-913b-ba022b02dd96": {
-            "type": "text",
-            "settings": {
-              "variety_text": "Screencast",
-              "variety_desc": "digital video recording of your device's screen containing audio narration"
-            }
-          },
-          "6400388f-dee8-47a0-86b5-583579bacbf7": {
-            "type": "text",
-            "settings": {
-              "variety_text": "Subtitles",
-              "variety_desc": "adding captions to your video and making edits to the text of the subtitles"
-            }
-          },
-          "018ef6ae-9da5-48da-8149-0553293797f7": {
-            "type": "text",
-            "settings": {
-              "variety_text": "Intro and outro videos",
-              "variety_desc": "creating videos that hook your audience from the start and end with a concise and powerful message"
-            }
-          },
-          "26c750c7-9352-4fd6-9734-60833794d12d": {
-            "type": "text",
-            "settings": {
-              "variety_text": "Color correction",
-              "variety_desc": "correcting color problems and making the footage look clean and real"
-            }
-          },
-          "575604f6-1124-46d6-b5b6-0a055c60b730": {
-            "type": "text",
-            "settings": {
-              "variety_text": "Visual effects",
-              "variety_desc": "combining existing footage with computer graphics to make realistic scenes"
-            }
-          }
-        },
-        "block_order": [
-          "72564059-be6e-47f3-89bb-1a315f99cd14",
-          "45c80b83-1d1e-46b9-8fec-135dc581dc52",
-          "ab157985-524b-4417-913b-ba022b02dd96",
-          "6400388f-dee8-47a0-86b5-583579bacbf7",
-          "018ef6ae-9da5-48da-8149-0553293797f7",
-          "26c750c7-9352-4fd6-9734-60833794d12d",
-          "575604f6-1124-46d6-b5b6-0a055c60b730"
-        ],
-        "settings": {
-          "variety_title": "Look through the variety of types of video montage we suggest",
-          "product_text": "",
-          "variety-illustration": "shopify:\/\/shop_images\/Group_782.png"
-        }
-      },
-      "v-editing-video-portfolio": {
-        "type": "v-editing-video-portfolio",
-        "blocks": {
-          "38ba5c85-b68c-4cf3-b25a-a32907636001": {
-            "type": "video",
-            "settings": {
-              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=UdsSKgZiXM8",
-              "video_url": "https:\/\/www.youtube.com\/embed\/UdsSKgZiXM8",
-              "portfolio_title": "Remote Helpers Portfolio| Dmytro V. 634",
-              "portfolio_text": ""
-            }
-          },
-          "4abacb41-4485-4161-a660-64b020ffc375": {
-            "type": "video",
-            "settings": {
-              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=tUS1cQv83yA",
-              "video_url": "https:\/\/www.youtube.com\/embed\/tUS1cQv83yA",
-              "portfolio_title": "Video Editing",
-              "portfolio_text": ""
-            }
-          },
-          "aa0e4799-ea90-4a51-9b6c-c4b0cc3a9c0c": {
-            "type": "video",
-            "settings": {
-              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nuQGKAtgIp0",
-              "video_url": "https:\/\/www.youtube.com\/embed\/nuQGKAtgIp0",
-              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
-              "portfolio_text": ""
-            }
-          },
-          "799bbd65-264d-4393-ab83-a5ef5eb63f99": {
-            "type": "video",
-            "settings": {
-              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=IaED361NAps",
-              "video_url": "https:\/\/www.youtube.com\/embed\/IaED361NAps",
-              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
-              "portfolio_text": ""
-            }
-          },
-          "d8864cff-ef1f-43b4-8730-21521f7ca5fe": {
-            "type": "video",
-            "settings": {
-              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=xpChRh9XyXw",
-              "video_url": "https:\/\/www.youtube.com\/embed\/xpChRh9XyXw",
-              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
-              "portfolio_text": ""
-            }
-          },
-          "a90e5a5f-ac0e-483d-b6b2-a0cdff1954e6": {
-            "type": "video",
-            "settings": {
-              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=7yuaO9qXYaY",
-              "video_url": "https:\/\/www.youtube.com\/embed\/7yuaO9qXYaY",
-              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
-              "portfolio_text": ""
-            }
-          }
-        },
-        "block_order": [
-          "38ba5c85-b68c-4cf3-b25a-a32907636001",
-          "4abacb41-4485-4161-a660-64b020ffc375",
-          "aa0e4799-ea90-4a51-9b6c-c4b0cc3a9c0c",
-          "799bbd65-264d-4393-ab83-a5ef5eb63f99",
-          "d8864cff-ef1f-43b4-8730-21521f7ca5fe",
-          "a90e5a5f-ac0e-483d-b6b2-a0cdff1954e6"
-        ],
-        "settings": {
-          "portfolio_title": "Browse the portfolio of talented video editors from our company"
-        }
-      },
       "audioEd-hero": {
         "type": "audioEd-hero",
         "settings": {
@@ -4662,6 +4434,15 @@
         ],
         "settings": {
           "portfolio_title": "Check out the portfolio of our talented audio editors’ team"
+        }
+      },
+      "videoEditing-hero": {
+        "type": "videoEditing-hero",
+        "settings": {
+          "hero_title": "Get a quality video of your footage with our video editing team",
+          "hero_text": "Need movie editing or promotional video editing? Our specialists combine video materials and do all film processing from brief till the final cut",
+          "link_text": "hire specialist",
+          "btn_url": "#contactformSection"
         }
       }
     },
