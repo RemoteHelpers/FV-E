@@ -537,6 +537,16 @@
             text-align: center;
         }
 
+        .button--mob {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+          .button--desk {
+            display: none;
+        }
+
         .product {
             background-image: none;
         }
@@ -617,12 +627,7 @@
         .product {
             padding: 30px 0;
         }
-        .button--mobile {
-            display: block;
-        }
-        .button--desk {
-            display: none;
-        }
+
         .main-title {
             font-size: 38px;
         }
