@@ -4573,11 +4573,21 @@
               "portfolio_title": "Video Editing",
               "portfolio_text": ""
             }
+          },
+          "018c51c4-8063-46af-a6e5-20366b5dcf0c": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nuQGKAtgIp0",
+              "video_url": "https:\/\/www.youtube.com\/embed\/nuQGKAtgIp0",
+              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
+              "portfolio_text": ""
+            }
           }
         },
         "block_order": [
           "790266b5-76e4-4781-b585-4f9a75bb4094",
-          "7594e86f-d806-4c5c-bf35-3f9a9542a4b2"
+          "7594e86f-d806-4c5c-bf35-3f9a9542a4b2",
+          "018c51c4-8063-46af-a6e5-20366b5dcf0c"
         ],
         "settings": {
           "portfolio_title": "Browse the portfolio of talented video editors from our company"
