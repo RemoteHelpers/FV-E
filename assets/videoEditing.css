@@ -82,7 +82,6 @@ img {
 }
 
 .hero__wrapper {
-  padding-top: 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -91,7 +90,7 @@ img {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
-  padding-top: 100px;
+  padding-top: 180px;
   width: 740px;
 }
 
