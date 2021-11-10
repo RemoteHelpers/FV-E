@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -87,7 +91,7 @@ img {
   flex-direction: column;
   row-gap: 30px;
   padding-top: 180px;
-  width: 700px;
+  width: 740px;
 }
 
 .hero__video-holder {
