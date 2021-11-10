@@ -222,6 +222,12 @@
 
 /* media */
 
+@media (max-width: 1420px) {
+    .main-employees-item__name {
+        font-size: 24px;
+    }
+}
+
 @media only screen and (max-width : 992px) {
     .main-employees-collection {
         grid-template-columns: repeat(2, 1fr);
