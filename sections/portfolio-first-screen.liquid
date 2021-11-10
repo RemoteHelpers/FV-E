@@ -113,7 +113,7 @@
                                         {{ section.settings.price__key }}
                                     </p>
                                     <p class="price__value">
-                                        {{ section.settings.price__value }}
+                                      {{ product.price | money_without_trailing_zeros }}
                                     </p>
                                 </div>
                                <button class="first__screen-link" data-url="calendly.com/freelance-video-editors">
