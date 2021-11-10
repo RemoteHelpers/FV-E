@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -73,8 +77,11 @@ img {
   line-height: 1.7;
 }
 
+.hero {
+  position: relative;
+}
+
 .hero__wrapper {
-  padding-top: 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -83,11 +90,14 @@ img {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
-  padding-top: 100px;
-  width: 700px;
+  padding-top: 180px;
+  width: 740px;
 }
 
 .hero__video-holder {
+  position: absolute;
+  top: 0;
+  right: 20px;
   width: 40%;
 }
 
@@ -121,7 +131,7 @@ img {
   left: 25px;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url(./img/video.png);
+  background-image: url(./video.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -173,7 +183,7 @@ img {
 
 .product {
   padding: 80px 0;
-  background-image: url(./img/stairs.png);
+  background-image: url(./stairs.png);
   background-color: #FCFCFC;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -202,7 +212,7 @@ img {
 .product__item::before {
   content: "";
   position: absolute;
-  background-image: url(./img/list.png);
+  background-image: url(./list.png);
   top: -5px;
   left: 0;
   width: 30px;
@@ -223,6 +233,11 @@ img {
     padding-top: 50px;
     width: 550px;
   }
+
+  .hero__video-holder {
+    width: 50%;
+    position: static;
+  }
 }
 
 @media (max-width: 1120px) {
@@ -240,9 +255,7 @@ img {
   }
 
   .hero__video-holder {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+    width: 100%;
     text-align: center;
   }
 
