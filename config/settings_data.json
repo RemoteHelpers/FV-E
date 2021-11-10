@@ -4520,6 +4520,38 @@
           "types_title": "Look through the variety of types of video montage we suggest",
           "types_image": "shopify:\/\/shop_images\/types.png"
         }
+      },
+      "videoEditing-product": {
+        "type": "videoEditing-product",
+        "blocks": {
+          "87f33430-32dd-49e3-bbf3-99a083dc221e": {
+            "type": "text",
+            "settings": {
+              "item_text": "Order <b>video editing for vloggers<\/b>, and we will professionally edit vlogs and YouTube videos to create <b>original content.<\/b>"
+            }
+          },
+          "6bfbeba6-b6f3-4a38-8cec-91503f3d32ee": {
+            "type": "text",
+            "settings": {
+              "item_text": "Get <b>video editing for social media<\/b> to develop video products for Instagram, Facebook, or YouTube."
+            }
+          },
+          "5229b9da-433b-4119-9824-5c209670411a": {
+            "type": "text",
+            "settings": {
+              "item_text": "With <b>video editing for marketing<\/b>, you will get videos that help <b>attract customers, distribute products and fascinate visitors on your site. <\/b>"
+            }
+          }
+        },
+        "block_order": [
+          "87f33430-32dd-49e3-bbf3-99a083dc221e",
+          "6bfbeba6-b6f3-4a38-8cec-91503f3d32ee",
+          "5229b9da-433b-4119-9824-5c209670411a"
+        ],
+        "settings": {
+          "product_title": "Video-editing for any purpose",
+          "product_text": "Do you run your channel but don't have time to process the footage?"
+        }
       }
     },
     "content_for_index": [
