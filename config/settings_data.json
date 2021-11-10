@@ -4456,8 +4456,69 @@
       },
       "videoEditing-types": {
         "type": "videoEditing-types",
+        "blocks": {
+          "f7ac3df2-b0a3-42d5-896b-f2988f5f4bb9": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Video framing",
+              "tItem__text": "framing a video for social media, making a video collage, and editing a video frame at a specific time"
+            }
+          },
+          "c6830a57-7e60-4837-8d52-ca2a051b5c6d": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Chroma Key",
+              "tItem__text": "editing the background from any green or blue screen video."
+            }
+          },
+          "6b74e273-b9ca-47f7-a1b4-c3fc1a4aa43d": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Screencast",
+              "tItem__text": "digital video recording of your device's screen containing audio narration"
+            }
+          },
+          "9a62cf7d-7597-4398-ac98-772afc0c9f5c": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Subtitles",
+              "tItem__text": "adding captions to your video and making edits to the text of the subtitles"
+            }
+          },
+          "bf1cab23-976b-4807-b389-2861b76b6b71": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Intro and outro videos",
+              "tItem__text": "creating videos that hook your audience from the start and end with a concise and powerful message"
+            }
+          },
+          "d9fe1d42-2ed2-45df-8d36-0e499b3ff0ad": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Color correction",
+              "tItem__text": "correcting color problems and making the footage look clean and real"
+            }
+          },
+          "5037e2b4-c5d7-4d2b-a4e5-38c53ffef083": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Visual effects",
+              "tItem__text": "combining existing footage with computer graphics to make realistic scenes"
+            }
+          }
+        },
+        "block_order": [
+          "f7ac3df2-b0a3-42d5-896b-f2988f5f4bb9",
+          "c6830a57-7e60-4837-8d52-ca2a051b5c6d",
+          "6b74e273-b9ca-47f7-a1b4-c3fc1a4aa43d",
+          "9a62cf7d-7597-4398-ac98-772afc0c9f5c",
+          "bf1cab23-976b-4807-b389-2861b76b6b71",
+          "d9fe1d42-2ed2-45df-8d36-0e499b3ff0ad",
+          "5037e2b4-c5d7-4d2b-a4e5-38c53ffef083"
+        ],
         "settings": {
-          "Types_title": "Look through the variety of types of video montage we suggest"
+          "types_title": "Look through the variety of types of video montage we suggest",
+          "types_image": "shopify:\/\/shop_images\/types.png"
         }
       }
     },
