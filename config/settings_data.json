@@ -4456,8 +4456,20 @@
       },
       "videoEditing-types": {
         "type": "videoEditing-types",
+        "blocks": {
+          "f7ac3df2-b0a3-42d5-896b-f2988f5f4bb9": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Video framing",
+              "tItem__text": "framing a video for social media, making a video collage, and editing a video frame at a specific time"
+            }
+          }
+        },
+        "block_order": [
+          "f7ac3df2-b0a3-42d5-896b-f2988f5f4bb9"
+        ],
         "settings": {
-          "Types_title": "Look through the variety of types of video montage we suggest"
+          "types_image": "shopify:\/\/shop_images\/types.png"
         }
       }
     },
