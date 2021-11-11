@@ -217,6 +217,7 @@ img {
   display: block;
   position: relative;
   color: #000;
+  text-decoration: unset;
 }
 
 .card-link::after {
