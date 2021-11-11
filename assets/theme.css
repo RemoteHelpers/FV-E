@@ -2143,9 +2143,9 @@ ol {
   -webkit-overflow-scrolling: touch; }
 
 /*================ #Links and Buttons ================*/
-a:not([disabled]):hover, a:focus {
+/* a:not([disabled]):hover, a:focus {
   color: var(--color-text-focus);
-    text-decoration: none;}
+    text-decoration: none;} */
 
 .password-powered-by a:not([disabled]):hover, .password-powered-by a:focus {
   color: var(--color-text-focus);
