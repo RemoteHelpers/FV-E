@@ -550,6 +550,11 @@ img {
   .main-title {
     font-size: 28px;
   }
+
+  .hero .button {
+    margin-top: 0;
+  }
+  
   .hire__card--mob {
     margin-top: 30px;
     display: block;
