@@ -118,15 +118,15 @@ img {
 .services__wrapper {
   margin-bottom: 30px;
   display: flex;
-  justify-content: space-between;
 }
 
 .services__card {
   position: relative;
   margin: 0;
-  margin-right: 20px;
+  margin-right: 50px;
   padding: 35px;
   padding-left: 100px;
+  width: 500px;
   font-size: 18px;
   border: 1px solid #F5F5F5;
   box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.07);
