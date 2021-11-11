@@ -172,6 +172,15 @@ img {
   background-image: url(./users.svg);
 }
 
+.hire__image-holder {
+  display: flex;
+  align-items: flex-end;
+}
+
+.hire__image-holder img {
+  display: block;
+}
+
 .services__wrapper {
   display: flex;
   flex-wrap: wrap;
