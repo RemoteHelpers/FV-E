@@ -70,6 +70,7 @@ img {
   line-height: 1.1;
   font-family: 'Raleway', sans-serif;
   text-transform: unset;
+  letter-spacing: unset;
 }
 
 .basic-text {
@@ -554,7 +555,7 @@ img {
   .hero .button {
     margin-top: 0;
   }
-  
+
   .hire__card--mob {
     margin-top: 30px;
     display: block;
