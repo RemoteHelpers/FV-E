@@ -198,6 +198,8 @@ img {
   top: 0;
   left: 0;
   background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 2px 8px 25px rgb(0 0 0 / 7%);
   opacity: 0;
   transition: opacity .4s ease-in-out;
 }
