@@ -411,6 +411,7 @@ img {
     width: 80%;
   }
   .hire__image-holder {
+    justify-content: center;
     width: 80%;
   }
   .services__card {
