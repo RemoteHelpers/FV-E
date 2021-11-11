@@ -3421,6 +3421,7 @@
           "6754940b-ba18-4484-af37-000ce89876ca": {
             "type": "image",
             "settings": {
+              "card_image": "shopify:\/\/shop_images\/volume-2.png",
               "card_title": "Audio editors",
               "card_text": "Specialize in making promo videos for products, services, and events and create video content for your Website or Social media"
             }
@@ -3428,6 +3429,7 @@
           "3db02ba4-ab36-4344-991c-4e41a2059636": {
             "type": "image",
             "settings": {
+              "card_image": "shopify:\/\/shop_images\/video.png",
               "card_title": "Video editors",
               "card_text": "To produce a final film or video product, video editors manage camera footage, dialogue, sound effects, graphics, and special effects."
             }
@@ -3435,6 +3437,7 @@
           "530b7212-73c1-4441-a21a-1172a54c7ec7": {
             "type": "image",
             "settings": {
+              "card_image": "shopify:\/\/shop_images\/film.png",
               "card_title": "Video creators",
               "card_text": "Can help with all types of special effects: SFX, VFX, and CGI."
             }
@@ -3442,6 +3445,7 @@
           "3092ae85-d848-4f11-8b56-e045f94bd088": {
             "type": "image",
             "settings": {
+              "card_image": "shopify:\/\/shop_images\/menu.png",
               "card_title": "Titration specialists",
               "card_text": "Add subtitles, captions, credits, and film titles."
             }
@@ -3449,6 +3453,7 @@
           "9f8e9482-637a-4382-b6b2-d926d75285eb": {
             "type": "image",
             "settings": {
+              "card_image": "shopify:\/\/shop_images\/crop.png",
               "card_title": "Video framing",
               "card_text": "Specialist, who can help to create new video frames fast and efficiently."
             }
