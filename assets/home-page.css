@@ -119,6 +119,10 @@ img {
   /* text-align: center; */
 }
 
+.hero .button {
+  margin-top: 30px;
+}
+
 .basic-text--hero {
   color: #ffffff;
 }
