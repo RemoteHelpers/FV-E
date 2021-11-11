@@ -220,6 +220,10 @@ img {
   text-decoration: underline;
 }
 
+.card-link {
+  color: #F13F00;
+}
+
 .card-link::after {
   position: absolute;
   content: "";
