@@ -432,7 +432,6 @@ img {
   }
   .types__list {
     column-gap: 70px;
-    row-gap: 80px;
   }
   .types__item {
     width: calc(50% - 35px);

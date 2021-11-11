@@ -297,7 +297,6 @@ img {
 
 @media (max-width: 1000px) {
   .types__wrapper {
-    row-gap: 50px;
     column-gap: 50px;
   }
 
