@@ -208,6 +208,11 @@ img {
   text-decoration: none;
   box-shadow: 2px 8px 25px -10px rgba(0, 0, 0, 0.07);
   border-radius: 30px;
+  transition: .2s ease-in;
+}
+
+.services__card:hover {
+  box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.07);
 }
 
 .services__card img {
