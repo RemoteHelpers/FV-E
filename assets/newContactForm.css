@@ -1,5 +1,9 @@
 /* button */
-.button:hover {
+.button--form {
+  border: 1px solid transparent;
+}
+
+.button--form:hover {
   background-color: #fff;
   color: #F13F00;
   border: 1px solid #F13F00;
