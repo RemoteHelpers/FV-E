@@ -98,7 +98,7 @@ img {
 .hero__video-holder {
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 100px;
   width: 40%;
 }
 
@@ -250,6 +250,10 @@ img {
   }
 
   .hero__content {
+    width: 100%;
+  }
+
+  .hero__text {
     width: 100%;
   }
 
