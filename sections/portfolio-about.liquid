@@ -38,6 +38,47 @@
         </div>
     </section>
 
+{% schema %}
+  {
+    "name": "Portfolio About",
+    "settings": [
+		{
+			"type": "text",
+			"id": "about__title",
+			"label": "About Title"
+		},
+		{
+			"type": "text",
+			"id": "about__text",
+			"label": "About text"
+		},
+		{
+			"type": "image_picker",
+			"id": "about__image",
+			"label": "About image"
+		},
+		{
+			"type": "text",
+			"id": "skills__title",
+			"label": "Skills Title"
+		}
+	],
+      "blocks": [
+          {
+            "type": "text",
+            "name": "Skills",
+            "settings": [
+              {
+                "type": "text",
+                "id": "skill__item",
+                "label": "Skill",
+                "default":"Skill item"
+              }
+            ]
+          }
+      ]
+  }
+{% endschema %}
 
 {% stylesheet %}
 {% endstylesheet %}
