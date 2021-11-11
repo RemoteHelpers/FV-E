@@ -269,6 +269,10 @@ img {
     display: none;
   }
 
+  .hero .button {
+    margin-top: 30px;
+  }
+
   .services__text {
     margin-bottom: 30px;
   }
@@ -395,6 +399,10 @@ img {
 
   .hero__content {
     row-gap: 15px;
+  }
+
+  .hero .button {
+    margin-top: 0;
   }
 
   .services__card--mob {
