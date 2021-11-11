@@ -44,10 +44,6 @@ img {
   box-sizing: border-box;
 }
 
-.button:hover {
-  background-color: #f8622c;
-}
-
 .main-title {
   margin: 0;
   /* margin-bottom: 60px; */
@@ -69,6 +65,7 @@ img {
   line-height: 1.1;
   font-family: 'Raleway', sans-serif;
   text-transform: unset;
+  letter-spacing: unset;
 }
 
 .basic-text {
@@ -94,11 +91,20 @@ img {
   width: 700px;
 }
 
+.hero__text {
+  width: 580px;
+}
+
 .hero__video-holder {
   position: absolute;
   top: 0;
   right: 20px;
   width: 40%;
+}
+
+.button--hero:hover,
+.button--hero:active {
+  background-color: #FF6931;
 }
 
 .button--mob {
