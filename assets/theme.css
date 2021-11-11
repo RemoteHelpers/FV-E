@@ -134,7 +134,7 @@ color: #000000;
 
 @media (max-width: 550px) {
   .custom-select {
-    width: 100%;
+    width: 100% !important;
   }
 }
 
