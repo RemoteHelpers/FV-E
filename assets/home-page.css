@@ -45,11 +45,11 @@ img {
   box-sizing: border-box;
 }
 
-.button:hover {
+/* .button:hover {
   background-color: #fff;
   color: #F13F00;
   border: 1px solid #F13F00;
-}
+} */
 
 .main-title {
   margin: 0;
@@ -126,8 +126,8 @@ img {
   margin-top: 30px;
 }
 
-.hero .button:hover,
-.hero .button:active {
+.button--hero:hover,
+.button--hero:active {
   background-color: #FF6931;
 }
 
