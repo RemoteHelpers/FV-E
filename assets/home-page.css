@@ -542,7 +542,7 @@ img {
     margin-right: 0;
     width: 100%;
   }
-  .types .img-holder {
+  .types-schedule .img-holder {
     display: none;
   }
   .types__list {
@@ -567,6 +567,12 @@ img {
   .types__item {
     width: 100%;
   }
+
+  .types__title-wrapper .img-holder {
+    margin-bottom: 0;
+    width: 60px;
+  }
+
 }
 
 @media (max-width: 450px) {
