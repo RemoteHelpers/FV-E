@@ -248,7 +248,8 @@ img {
   margin: 0;
 }
 
-.types .img-holder {
+.types__schedule .img-holder {
+  margin-left: 50px;
   width: 30%;
 }
 
