@@ -227,6 +227,10 @@
 	.contactform-section .section-header.section-title {
       font-size: 26px;
     }
+
+    .contact_form__input {
+      width: 100%;
+    }
 }
 
 
