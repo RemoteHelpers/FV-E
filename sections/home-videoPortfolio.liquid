@@ -13,9 +13,11 @@
                         <a href="{{ block.settings.video_urlMfp }}" class="video" title="This is a video">
                             <div class="popup-video-wrapper">
                               <iframe class="portfolio__iframe" src="{{ block.settings.video_url }}" poster="{{ block.settings.preview | img_url: 'master' }}" muted="muted"></iframe>
-                              <svg class="portfolio__play" width="33" height="38" viewBox="0 0 33 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M31.5 16.4019C33.5 17.5566 33.5 20.4434 31.5 21.5981L4.5 37.1865C2.5 38.3412 1.98328e-06 36.8979 2.08423e-06 34.5885L3.44702e-06 3.41154C3.54796e-06 1.10214 2.5 -0.341234 4.5 0.813467L31.5 16.4019Z" fill="white"/>
-                              </svg>
+                              <svg class="portfolio__play" width="33" height="33" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle opacity="0.7" cx="61" cy="61" r="56" fill="#F13F00" stroke="white" stroke-width="10"/>
+                                <circle cx="61" cy="61" r="56" stroke="white" stroke-width="10"/>
+                                <path d="M80.5 58.4019C82.5 59.5566 82.5 62.4434 80.5 63.5981L53.5 79.1865C51.5 80.3412 49 78.8979 49 76.5885L49 45.4115C49 43.1021 51.5 41.6588 53.5 42.8135L80.5 58.4019Z" fill="white"/>
+                                </svg>
                             </div>
                             <span class="portfolio__item-title">
                               {{ block.settings.portfolio_title }}
