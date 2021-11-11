@@ -132,6 +132,11 @@ color: #000000;
   }
 
 
+@media (max-width: 550px) {
+  .custom-select {
+    width: 100%;
+  }
+}
 
 @media only screen and (min-width: 970px){
 	.img-wrapper{
