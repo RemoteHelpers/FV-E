@@ -274,6 +274,7 @@ img {
 
 .types__title-wrapper img {
   margin-bottom: 30px;
+  display: block;
 }
 
 .types__title {
