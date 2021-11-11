@@ -525,7 +525,7 @@ input:-webkit-autofill:active  {
   position: absolute;
   content: ">";
   color: black;
-  top: 15px;px;
+  top: 15px;
   right: 15px;
   transform: rotate(90deg)
 }
