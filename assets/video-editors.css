@@ -133,6 +133,15 @@ img {
   border-radius: 10px;
 }
 
+.services .img-holder {
+  display: flex;
+  align-items: center;
+}
+
+.services .img-holder img {
+  display: block;
+}
+
 .services__card::before {
   position: absolute;
   content: "";
