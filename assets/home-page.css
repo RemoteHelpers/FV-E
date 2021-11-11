@@ -542,7 +542,7 @@ img {
     margin-right: 0;
     width: 100%;
   }
-  .types-schedule .img-holder {
+  .types__schedule .img-holder {
     display: none;
   }
   .types__list {
