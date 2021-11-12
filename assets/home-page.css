@@ -525,9 +525,9 @@ img {
   }
   .services .slick-dots button {
     font-size: 0;
-    width: 10px;
-    height: 10px;
-    background-color: transparent;
+    width: 11px;
+    height: 11px;
+    background-color: #C4C4C4;
     border-radius: 50%;
     border: 1px solid #f13f00;
     padding: 0;
