@@ -218,7 +218,6 @@ img {
 }
 
 .card-link {
-  margin-left: 15px;
   display: block;
   position: relative;
   color: #000;
@@ -364,6 +363,10 @@ img {
   .services .img-holder {
     width: 100%;
     justify-content: center;
+  }
+
+  .types__card-info {
+    padding: 30px;
   }
 }
 
