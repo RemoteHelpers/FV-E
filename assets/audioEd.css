@@ -364,7 +364,7 @@ img {
     width: 100%;
     justify-content: center;
   }
-  
+
   .types__card-info {
     padding: 30px;
   }
@@ -439,6 +439,10 @@ img {
 
   .card-wrapper p {
     font-size: 18px;
+  }
+
+  .card-link-wrapper--front {
+    justify-content: center;
   }
 
   .product {
