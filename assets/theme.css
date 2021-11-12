@@ -8330,9 +8330,9 @@ div.recommeded-card {
     margin: 20px auto;
 }
 
-.slick-slider .slick-slide img {
+/* .slick-slider .slick-slide img {
     margin: 0px auto;
-}
+} */
 
 .slick-slider .slick-slide.grid__item {
 	padding-left: 0px; 
