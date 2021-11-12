@@ -71,6 +71,7 @@ section {
     border-radius: 71px;
     transition: 0.2s ease-in;
     box-sizing: border-box;
+    outline: none;
   }
 
   .button--hero:hover,
@@ -1253,6 +1254,13 @@ html.lock {
         row-gap: 0;
     column-gap: 0;
   } */
+}
+
+@media (max-width: 550px) {
+    .button {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 @media(max-width: 500px) {
