@@ -71,8 +71,11 @@ section {
     border-radius: 71px;
     transition: 0.2s ease-in;
     box-sizing: border-box;
-    outline: none;
   }
+
+  .hire__button button {
+      border: none;
+  } 
 
   .button--hero:hover,
 .button--hero:active {
