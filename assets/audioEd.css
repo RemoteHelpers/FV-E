@@ -212,8 +212,14 @@ img {
   text-align: left;
 }
 
+.card-link-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .card-link {
   margin-top: 30px;
+  margin-left: 15px;
   display: block;
   position: relative;
   color: #000;
