@@ -24,7 +24,7 @@
       {% for block in section.blocks %}
       <div class="types__card">
         <img src="{{ block.settings.card_image | img_url: 'master' }}" alt="">
-        <h3 class="card-title">{{ section.settings.services_title }}</h3>
+        <h3 class="card-title">{{ block.settings.card_title }}</h3>
         <a class="basic-text card-link" href="{{ section.settings.card_url }}">See more</a>
         <div class="types__card-info">
           <div class="card-wrapper">
