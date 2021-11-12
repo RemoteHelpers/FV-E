@@ -1068,7 +1068,7 @@ html.lock {
         order: 0;
     }
     .education .section__left {
-        width: unset;
+        width: 100%;
     }
     .education .section__inner {
         align-items: baseline;
