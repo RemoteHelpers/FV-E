@@ -4452,7 +4452,8 @@
         "settings": {
           "services_title": "Video editing services",
           "services_text": "It includes video merging, cinematic color grading, trimming, sound mixing, and implementing special effects. We offer professional video montage and post-production work for various materials, whether a corporate training video or an entertainment social media video.",
-          "services_card": "Our specialists provide video editing services and create amazing videos from the raw footage."
+          "services_card": "Our specialists provide video editing services and create amazing videos from the raw footage.",
+          "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
         }
       },
       "videoEditing-types": {
