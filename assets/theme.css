@@ -489,7 +489,7 @@ input:-webkit-autofill:active  {
 
 .option-display{
   	border: 2px solid transparent;
-  	border-radius: 48px;
+  	border-radius: 30px;
   	padding: 15px 30px;
   	width: 100%;
   	z-index:20;
