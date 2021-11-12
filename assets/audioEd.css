@@ -230,6 +230,10 @@ img {
   color: #F13F00;
 }
 
+.card-shevron {
+  display: block;
+}
+
 /* .card-link::after {
   position: absolute;
   content: "";
