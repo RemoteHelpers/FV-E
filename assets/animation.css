@@ -155,6 +155,10 @@ img {
   width: calc(33.33% - 48px);
 }
 
+.services__text--mob {
+  display: none;
+}
+
 .types__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -317,6 +321,10 @@ img {
   .services__content {
     margin-right: 0;
     width: 100%;
+  }
+
+  .services__text--mob {
+    display: block;
   }
 
   .services__image-holder {
