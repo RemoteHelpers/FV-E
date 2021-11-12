@@ -1,6 +1,6 @@
 /* button */
 .button--basic {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 
 .button--basic:hover {
