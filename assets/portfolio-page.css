@@ -56,6 +56,28 @@ section {
     padding-bottom: 180px;
 }
 
+.button {
+    margin: 0;
+    display: block;
+    padding: 15px 0;
+    width: 300px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #f13f00;
+    border-radius: 71px;
+    transition: 0.2s ease-in;
+    box-sizing: border-box;
+  }
+
+  .button--hero:hover,
+.button--hero:active {
+  background-color: #FF6931;
+}
+
 .popup-gallery {
     min-width: 0;
 }
