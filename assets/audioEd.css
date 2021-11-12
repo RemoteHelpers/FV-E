@@ -224,6 +224,7 @@ img {
   position: relative;
   color: #000;
   text-decoration: underline;
+  transition: .3s ease-in
 }
 
 .card-link:hover {
@@ -232,6 +233,12 @@ img {
 
 .card-shevron {
   display: block;
+  stroke: #000;
+  transition: .3s ease-in
+}
+
+.card-shevron:hover {
+  stroke: #F13F00;
 }
 
 /* .card-link::after {
