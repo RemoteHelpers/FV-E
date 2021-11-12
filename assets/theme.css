@@ -711,9 +711,9 @@ input:-webkit-autofill:active  {
 }
 
 .creators .slick-dots li{
-  	width:10px;
-  	height:10px;
-	border: 1px solid #F13F00;
+  	width:12px;
+  	height:12px;
+    background-color: #C4C4C4;
   	border-radius: 50%;
   	outline-style:none;
     box-sizing: content-box;
