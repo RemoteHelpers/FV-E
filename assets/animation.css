@@ -102,6 +102,10 @@ img {
   width: 40%;
 }
 
+.hero .button {
+  margin-top: 30px;
+}
+
 .button--hero:hover,
 .button--hero:active {
   background-color: #FF6931;
@@ -267,10 +271,6 @@ img {
 
   .button--desk {
     display: none;
-  }
-
-  .hero .button {
-    margin-top: 30px;
   }
 
   .services__text {
