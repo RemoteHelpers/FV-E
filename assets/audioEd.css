@@ -227,7 +227,7 @@ img {
   transition: .3s ease-in
 }
 
-.card-link:hover {
+.card-link-wrapper:hover .card-link {
   color: #F13F00;
 }
 
@@ -237,7 +237,7 @@ img {
   transition: .3s ease-in
 }
 
-.card-shevron:hover {
+.card-link-wrapper:hover .card-shevron {
   stroke: #F13F00;
 }
 
