@@ -445,6 +445,10 @@ img {
     justify-content: center;
   }
 
+  .types__card img {
+    margin-bottom: 45px;
+  }
+
   .product {
     padding: 30px 0;
   }
