@@ -137,10 +137,6 @@ img {
   border-radius: 10px;
 }
 
-.services__card--mob {
-  display: none;
-}
-
 .services__card::before {
   position: absolute;
   content: "";
@@ -321,16 +317,6 @@ img {
   .services__content {
     margin-right: 0;
     width: 100%;
-  }
-
-  .services__card {
-    display: none;
-  }
-
-  .services__card--mob {
-    margin-top: 30px;
-    display: block;
-    width: 80%;
   }
 
   .services__image-holder {
