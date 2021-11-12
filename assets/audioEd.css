@@ -213,12 +213,12 @@ img {
 }
 
 .card-link-wrapper {
+  margin-top: 30px;
   display: flex;
   align-items: center;
 }
 
 .card-link {
-  margin-top: 30px;
   margin-left: 15px;
   display: block;
   position: relative;
