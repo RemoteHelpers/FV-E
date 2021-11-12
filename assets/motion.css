@@ -373,6 +373,25 @@ img {
     width: 100%;
     justify-content: center;
   }
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .section-title {
+    font-size: 32px;
+    line-height: 1.7;
+  }
+
+  .section {
+    margin-bottom: 80px;
+  }
+
+  .card__title {
+    font-size: 18px;
+  }
 
   .types__wrapper {
     display: none;
@@ -427,25 +446,6 @@ img {
   .card-title {
     margin-bottom: 25px;
     font-size: 20px;
-  }
-}
-
-@media (max-width: 700px) {
-  .container {
-    padding: 0 15px;
-  }
-
-  .section-title {
-    font-size: 32px;
-    line-height: 1.7;
-  }
-
-  .section {
-    margin-bottom: 80px;
-  }
-
-  .card__title {
-    font-size: 18px;
   }
 
   .product {
