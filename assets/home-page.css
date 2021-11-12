@@ -487,6 +487,11 @@ img {
   .container {
     padding: 0 15px;
   }
+
+  .main-title {
+    text-transform: initial;
+  }
+
   .section-title {
     font-size: 32px;
     line-height: 1.7;
