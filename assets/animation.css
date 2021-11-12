@@ -327,6 +327,10 @@ img {
     display: block;
   }
 
+  .services__text {
+    display: none;
+  }
+
   .services__image-holder {
     width: 80%;
   }
