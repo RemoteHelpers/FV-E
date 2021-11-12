@@ -220,7 +220,7 @@ img {
 }
 
 .card-link {
-  margin-left: 15px;
+  /* margin-left: 15px; */
   display: block;
   position: relative;
   color: #000;
