@@ -199,6 +199,8 @@ img {
   top: 0;
   left: 0;
   background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 2px 8px 25px rgb(0 0 0 / 7%);
   opacity: 0;
   transition: opacity .4s ease-in-out;
 }
@@ -211,24 +213,33 @@ img {
   text-align: left;
 }
 
-.card-link {
+.card-link-wrapper {
   margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.card-link {
+  margin-left: 15px;
   display: block;
   position: relative;
   color: #000;
+  text-decoration: underline;
+  transition: .3s ease-in
 }
 
-.card-link::after {
-  position: absolute;
-  content: "";
-  width: 24px;
-  height: 24px;
-  top: 50%;
-  transform: translateY(-57%);
-  background-image: url(./chevron-right.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+.card-link-wrapper:hover .card-link {
+  color: #F13F00;
 }
+
+.card-shevron {
+  display: block;
+  stroke: #000;
+  transition: .3s ease-in
+}
+
+.card-link-wrapper:hover .card-shevron {
+  stroke: #F13F00;
 
 .product {
   padding: 80px 0;
