@@ -221,7 +221,7 @@ img {
 }
 
 .product__item {
-  padding-left: 40px;
+  padding-left: 50px;
   position: relative;
 }
 
@@ -233,7 +233,7 @@ img {
   content: "";
   position: absolute;
   background-image: url(./list.png);
-  top: -5px;
+  top: 5px;
   left: 0;
   width: 30px;
   height: 30px;
