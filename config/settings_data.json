@@ -4717,10 +4717,17 @@
             "settings": {
               "item_text": "If you need <b>video content for advertising,<\/b> our specialists will help make your projects discovered on <b>YouTube, Facebook, Instagram, TikTok, or LinkedIn<\/b> and maximize online sales."
             }
+          },
+          "8ec9e252-5995-4ac9-9255-4f01e107027e": {
+            "type": "text",
+            "settings": {
+              "item_text": "If you are starting your journey into blogging, <b>we will help create trending videos for blogs that will attract more followers to your channel.<\/b>"
+            }
           }
         },
         "block_order": [
-          "7d3c3969-cab3-4136-a367-7d2702fa15d8"
+          "7d3c3969-cab3-4136-a367-7d2702fa15d8",
+          "8ec9e252-5995-4ac9-9255-4f01e107027e"
         ],
         "settings": {
           "product_title": "Social media and website content for any purpose",
