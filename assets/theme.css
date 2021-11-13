@@ -206,6 +206,10 @@ html{
   	min-width: 315px;
 }
 
+.footer__nav-item {
+  text-align: center;
+}
+
 .footer__nav-item a {
   color: #fff !important;
   transition: 0.3s;
