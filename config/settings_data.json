@@ -4624,6 +4624,16 @@
         "settings": {
           "portfolio_title": "Browse the portfolio of talented video editors from our company"
         }
+      },
+      "socMedia-hero": {
+        "type": "socMedia-hero",
+        "settings": {
+          "hero_title": "Get website and social media video content from our video editors",
+          "hero_text": "",
+          "link_text": "",
+          "btn_url": "",
+          "video_url": ""
+        }
       }
     },
     "content_for_index": [
