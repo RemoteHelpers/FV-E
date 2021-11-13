@@ -222,7 +222,7 @@ html{
 }
 
 .footer__nav-item:hover a {
-  color: #000;
+  color: #000 !important;
 }
 
 
