@@ -74,10 +74,6 @@ img {
   line-height: 1.7;
 }
 
-.hero {
-  position: relative;
-}
-
 .hero__wrapper {
   display: flex;
   justify-content: space-between;
@@ -96,10 +92,7 @@ img {
 }
 
 .hero__video-holder {
-  position: absolute;
-  top: 0;
-  right: 100px;
-  width: 43%;
+  width: 50%;
 }
 
 .button--hero:hover,
@@ -232,11 +225,6 @@ img {
   .hero__content {
     padding-top: 50px;
     width: 550px;
-  }
-
-  .hero__video-holder {
-    width: 50%;
-    position: static;
   }
 }
 
