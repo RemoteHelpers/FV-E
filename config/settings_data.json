@@ -4745,10 +4745,60 @@
               "portfolio_title": "Netevia Pay Promo",
               "portfolio_text": ""
             }
+          },
+          "b0dcf9c7-3c81-444f-9962-168c5f68982c": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=wRHR40DfxWs",
+              "video_url": "https:\/\/www.youtube.com\/embed\/wRHR40DfxWs",
+              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_text": ""
+            }
+          },
+          "b89fb992-5d75-4154-adee-dcd257c33443": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=75KRHcPtE-4",
+              "video_url": "https:\/\/www.youtube.com\/embed\/75KRHcPtE-4",
+              "portfolio_title": "Netevia Pay Post",
+              "portfolio_text": ""
+            }
+          },
+          "94754684-f026-402d-98b6-9e40b29f1cf2": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=xmUWViuXE6w",
+              "video_url": "https:\/\/www.youtube.com\/embed\/xmUWViuXE6w",
+              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_text": ""
+            }
+          },
+          "08e289ae-0837-43d1-89d0-52e57a4c61db": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=jKmFn5pc0r8",
+              "video_url": "https:\/\/www.youtube.com\/embed\/jKmFn5pc0r8",
+              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_text": ""
+            }
+          },
+          "61c9911b-bce8-4022-b68d-0f9d560cc284": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=AKxEEaNXm8s",
+              "video_url": "https:\/\/www.youtube.com\/embed\/AKxEEaNXm8s",
+              "portfolio_title": "Promo Facebook",
+              "portfolio_text": ""
+            }
           }
         },
         "block_order": [
-          "99c3a212-1fc9-4bca-b2e1-f21c41d5a249"
+          "99c3a212-1fc9-4bca-b2e1-f21c41d5a249",
+          "b0dcf9c7-3c81-444f-9962-168c5f68982c",
+          "b89fb992-5d75-4154-adee-dcd257c33443",
+          "94754684-f026-402d-98b6-9e40b29f1cf2",
+          "08e289ae-0837-43d1-89d0-52e57a4c61db",
+          "61c9911b-bce8-4022-b68d-0f9d560cc284"
         ],
         "settings": {
           "portfolio_title": "Look through the portfolio of our video marketing specialists"
