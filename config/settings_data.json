@@ -4708,6 +4708,24 @@
         "settings": {
           "types_title": "The types of website and social media videos"
         }
+      },
+      "socMedia-product": {
+        "type": "socMedia-product",
+        "blocks": {
+          "7d3c3969-cab3-4136-a367-7d2702fa15d8": {
+            "type": "text",
+            "settings": {
+              "item_text": "If you need <b>video content for advertising,<\/b> our specialists will help make your projects discovered on <b>YouTube, Facebook, Instagram, TikTok, or LinkedIn<\/b> and maximize online sales."
+            }
+          }
+        },
+        "block_order": [
+          "7d3c3969-cab3-4136-a367-7d2702fa15d8"
+        ],
+        "settings": {
+          "product_title": "Social media and website content for any purpose",
+          "product_text": "Our company provides content creation for business and will help you make brand intro and outro or presentations for any area."
+        }
       }
     },
     "content_for_index": [
