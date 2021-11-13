@@ -36,7 +36,7 @@
 }
 
 .portfolio__item-title {
-  font-weight: 900;
+  font-weight: 600;
   font-size: 18px;
   padding-top: 1em;
   line-height: 130%;
@@ -44,7 +44,7 @@
 }
 
 .portfolio__item-text {
-  font-size: 18px;
+  font-size: 16px;
   width: 80%;
   margin: 0 auto;
   padding-bottom: 15px;
@@ -120,11 +120,10 @@
 
 .popup-gallery .slick-dots li button {
   font-size: 0;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
+  background-color: #C4C4C4;
   border-radius: 50%;
-  border: 1px solid red;
-  margin: 0 7px;
 }
 
 .popup-gallery .slick-active button {

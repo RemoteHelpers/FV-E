@@ -132,6 +132,11 @@ color: #000000;
   }
 
 
+@media (max-width: 550px) {
+  .custom-select {
+    width: 100% !important;
+  }
+}
 
 @media only screen and (min-width: 970px){
 	.img-wrapper{
@@ -484,8 +489,8 @@ input:-webkit-autofill:active  {
 
 .option-display{
   	border: 2px solid transparent;
-  	border-radius: 48px;
-  	padding: 6px 10px;
+  	border-radius: 30px;
+  	padding: 15px 30px;
   	width: 100%;
   	z-index:20;
   	background-color: white;
@@ -495,7 +500,8 @@ input:-webkit-autofill:active  {
 
 .custom-select{
 	position: relative;
-  	margin: 10px 0;
+  	/* margin: 10px 0; */
+    margin-bottom: 15px;
   	border: 2px solid transparent;
   	font-family: Raleway;
 	font-size: 16px;
@@ -525,7 +531,7 @@ input:-webkit-autofill:active  {
   position: absolute;
   content: ">";
   color: black;
-  top:6px;
+  top: 15px;
   right: 15px;
   transform: rotate(90deg)
 }
@@ -705,9 +711,9 @@ input:-webkit-autofill:active  {
 }
 
 .creators .slick-dots li{
-  	width:10px;
-  	height:10px;
-	border: 1px solid #F13F00;
+  	width:12px;
+  	height:12px;
+    background-color: #C4C4C4;
   	border-radius: 50%;
   	outline-style:none;
     box-sizing: content-box;
@@ -2143,9 +2149,9 @@ ol {
   -webkit-overflow-scrolling: touch; }
 
 /*================ #Links and Buttons ================*/
-a:not([disabled]):hover, a:focus {
+/* a:not([disabled]):hover, a:focus {
   color: var(--color-text-focus);
-    text-decoration: none;}
+    text-decoration: none;} */
 
 .password-powered-by a:not([disabled]):hover, .password-powered-by a:focus {
   color: var(--color-text-focus);
@@ -2184,9 +2190,9 @@ a[href^="tel"] {
   @media only screen and (min-width: 750px) {
     .btn, .shopify-payment-button .shopify-payment-button__button--unbranded {
       padding: 10px 18px; } }
-  .btn:not([disabled]):hover, .shopify-payment-button .shopify-payment-button__button--unbranded:not([disabled]):hover, .btn:focus, .shopify-payment-button .shopify-payment-button__button--unbranded:focus {
+  /* .btn:not([disabled]):hover, .shopify-payment-button .shopify-payment-button__button--unbranded:not([disabled]):hover, .btn:focus, .shopify-payment-button .shopify-payment-button__button--unbranded:focus {
     color: var(--color-btn-primary-text);
-    background-color: var(--color-btn-primary-focus); }
+    background-color: var(--color-btn-primary-focus); } */
   .btn .icon-arrow-right, .shopify-payment-button .shopify-payment-button__button--unbranded .icon-arrow-right,
   .btn .icon-arrow-left,
   .shopify-payment-button .shopify-payment-button__button--unbranded .icon-arrow-left {
@@ -8091,9 +8097,9 @@ html{
   	z-index:20;
 }
 
-.btn:hover{
+/* .btn:hover{
 	background-color: #fb4200 !important;
-}
+} */
 
 @media only screen and (min-width: 1650px) {
 	.site-header .flex {
@@ -8324,9 +8330,9 @@ div.recommeded-card {
     margin: 20px auto;
 }
 
-.slick-slider .slick-slide img {
+/* .slick-slider .slick-slide img {
     margin: 0px auto;
-}
+} */
 
 .slick-slider .slick-slide.grid__item {
 	padding-left: 0px; 

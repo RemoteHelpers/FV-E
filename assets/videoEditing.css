@@ -44,10 +44,6 @@ img {
   box-sizing: border-box;
 }
 
-.button:hover {
-  background-color: #f8622c;
-}
-
 .main-title {
   margin: 0;
   /* margin-bottom: 60px; */
@@ -69,6 +65,7 @@ img {
   line-height: 1.1;
   font-family: 'Raleway', sans-serif;
   text-transform: unset;
+  letter-spacing: unset;
 }
 
 .basic-text {
@@ -94,11 +91,24 @@ img {
   width: 740px;
 }
 
+.hero__text {
+  width: 580px;
+}
+
 .hero__video-holder {
   position: absolute;
   top: 0;
   right: 20px;
   width: 40%;
+}
+
+.hero .button {
+  margin-top: 30px;
+}
+
+.button--hero:hover,
+.button--hero:active {
+  background-color: #FF6931;
 }
 
 .button--mob {
@@ -114,13 +124,23 @@ img {
 .services__card {
   position: relative;
   margin: 0;
+  margin-right: 50px;
   padding: 35px;
   padding-left: 90px;
-  width: 47%;
+  width: 500px;
   font-size: 18px;
   border: 1px solid #F5F5F5;
   box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
+}
+
+.services .img-holder {
+  display: flex;
+  align-items: center;
+}
+
+.services .img-holder img {
+  display: block;
 }
 
 .services__card::before {
@@ -201,7 +221,7 @@ img {
 }
 
 .product__item {
-  padding-left: 40px;
+  padding-left: 50px;
   position: relative;
 }
 
@@ -213,7 +233,7 @@ img {
   content: "";
   position: absolute;
   background-image: url(./list.png);
-  top: -5px;
+  top: 5px;
   left: 0;
   width: 30px;
   height: 30px;
@@ -251,6 +271,10 @@ img {
   }
 
   .hero__content {
+    width: 100%;
+  }
+
+  .hero__text {
     width: 100%;
   }
 
@@ -294,7 +318,7 @@ img {
 
   .services__card {
     margin-right: 0;
-    /* margin-bottom: 45px; */
+    margin-bottom: 45px;
     width: 100%;
   }
 
@@ -325,6 +349,7 @@ img {
 
   .section-title {
     font-size: 32px;
+    line-height: 1.7;
   }
 
   .section {
@@ -333,6 +358,10 @@ img {
 
   .product {
     padding: 30px 0;
+  }
+
+  .product__text {
+    margin-bottom: 30px;
   }
 }
 
@@ -366,5 +395,9 @@ img {
 
   .hero__content {
     row-gap: 15px;
+  }
+
+  .hero .button {
+    margin-top: 0;
   }
 }

@@ -3360,15 +3360,15 @@
             "settings": {
               "card_image": "shopify:\/\/shop_images\/edit.png",
               "card_title": "video editing",
-              "card_url": "#"
+              "card_url": "https:\/\/fv-e.com\/pages\/video-editing"
             }
           },
           "cca447e2-d1cf-45bf-a046-9fa0828d8adf": {
             "type": "image",
             "settings": {
-              "card_image": "shopify:\/\/shop_images\/Video_Production_1.png",
+              "card_image": "shopify:\/\/shop_images\/production_275491a4-8db6-44e5-b652-0c13c2da40fd.png",
               "card_title": "video production",
-              "card_url": "#"
+              "card_url": "https:\/\/fv-e.com\/pages\/video-production"
             }
           },
           "b0bfd648-8258-46aa-a795-4f36b1c2c81c": {
@@ -3376,7 +3376,7 @@
             "settings": {
               "card_image": "shopify:\/\/shop_images\/subtitles.png",
               "card_title": "audio editing",
-              "card_url": "#"
+              "card_url": "https:\/\/fv-e.com\/pages\/audio-editing"
             }
           },
           "b12e5d6f-8dc6-427a-bd49-332bcf473920": {
@@ -3384,7 +3384,7 @@
             "settings": {
               "card_image": "shopify:\/\/shop_images\/animation.png",
               "card_title": "animation",
-              "card_url": "#"
+              "card_url": "https:\/\/fv-e.com\/pages\/animation"
             }
           },
           "dca36eae-fd0e-4b6b-972b-6172b5c169be": {
@@ -3410,20 +3410,20 @@
       "1634911040eb4ada09": {
         "type": "home-types",
         "blocks": {
-          "9f8e9482-637a-4382-b6b2-d926d75285eb": {
+          "5a95335a-9899-4136-8e9b-523f5f735f54": {
             "type": "image",
             "settings": {
-              "card_image": "shopify:\/\/shop_images\/crop.png",
-              "card_title": "Video framing",
-              "card_text": "Specialist, who can help to create new video frames fast and efficiently."
+              "card_image": "shopify:\/\/shop_images\/wind_bacbf324-ad19-410d-8102-0caa08e6a66e.png",
+              "card_title": "Animation creators",
+              "card_text": "Work with 2D animation and Motion design, use visual effects, animation, and other cinematic techniques. It includes characters, creatures, FX, and backgrounds."
             }
           },
-          "3092ae85-d848-4f11-8b56-e045f94bd088": {
+          "6754940b-ba18-4484-af37-000ce89876ca": {
             "type": "image",
             "settings": {
-              "card_image": "shopify:\/\/shop_images\/menu.png",
-              "card_title": "Titration specialists",
-              "card_text": "Add subtitles, captions, credits, and film titles."
+              "card_image": "shopify:\/\/shop_images\/volume-2.png",
+              "card_title": "Audio editors",
+              "card_text": "Specialize in making promo videos for products, services, and events and create video content for your Website or Social media"
             }
           },
           "3db02ba4-ab36-4344-991c-4e41a2059636": {
@@ -3442,30 +3442,30 @@
               "card_text": "Can help with all types of special effects: SFX, VFX, and CGI."
             }
           },
-          "6754940b-ba18-4484-af37-000ce89876ca": {
+          "3092ae85-d848-4f11-8b56-e045f94bd088": {
             "type": "image",
             "settings": {
-              "card_image": "shopify:\/\/shop_images\/volume-2.png",
-              "card_title": "Audio editors",
-              "card_text": "Specialize in making promo videos for products, services, and events and create video content for your Website or Social media"
+              "card_image": "shopify:\/\/shop_images\/menu.png",
+              "card_title": "Titration specialists",
+              "card_text": "Add subtitles, captions, credits, and film titles."
             }
           },
-          "5a95335a-9899-4136-8e9b-523f5f735f54": {
+          "9f8e9482-637a-4382-b6b2-d926d75285eb": {
             "type": "image",
             "settings": {
-              "card_image": "shopify:\/\/shop_images\/wind.png",
-              "card_title": "Animation creators",
-              "card_text": "Work with 2D animation and Motion design, use visual effects, animation, and other cinematic techniques. It includes characters, creatures, FX, and backgrounds."
+              "card_image": "shopify:\/\/shop_images\/crop.png",
+              "card_title": "Video framing",
+              "card_text": "Specialist, who can help to create new video frames fast and efficiently."
             }
           }
         },
         "block_order": [
-          "9f8e9482-637a-4382-b6b2-d926d75285eb",
-          "3092ae85-d848-4f11-8b56-e045f94bd088",
+          "5a95335a-9899-4136-8e9b-523f5f735f54",
+          "6754940b-ba18-4484-af37-000ce89876ca",
           "3db02ba4-ab36-4344-991c-4e41a2059636",
           "530b7212-73c1-4441-a21a-1172a54c7ec7",
-          "6754940b-ba18-4484-af37-000ce89876ca",
-          "5a95335a-9899-4136-8e9b-523f5f735f54"
+          "3092ae85-d848-4f11-8b56-e045f94bd088",
+          "9f8e9482-637a-4382-b6b2-d926d75285eb"
         ],
         "settings": {
           "types_title": "Have a look at  the types of video specialists you can get",
@@ -3629,7 +3629,7 @@
           "services_title": "Motion graphic design services",
           "services_text": "To catch the attention of potential clients, our skilled motion designers will create motion design videos, make intro and outro, animation of logos or motion graphics ads and come up with other motion production solutions for your project.",
           "services_card": "We are ready to offer a wide range of animated video production services for any project.",
-          "services_image": "shopify:\/\/shop_images\/Line_f787fbd8-05d5-48de-84fc-ef1def61d20e.png"
+          "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
         }
       },
       "motion-types": {
@@ -4043,7 +4043,8 @@
         "settings": {
           "services_title": "Video production services",
           "services_text": "Our editors provide video content production and offer a wide range of services: video editing, storyboarding, color correction, voiceovers, and scriptwriting.<br>A team of video animators will create motion graphics, 2D and 3D animations, animate the logos and help with post-production editing.",
-          "services_card": "Capture audience attention through video production services."
+          "services_card": "Capture audience attention through video production services.",
+          "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
         }
       },
       "videoEd-types": {
@@ -4291,7 +4292,7 @@
           "services_title": "Audio editing services",
           "services_text": "We deliver a wide range of audio editing services, preserving the finest details of your sound, voice, or music. It includes noise reduction, separating voice from music, and adding SFX for commercials, movies, and clips. Our specialist will edit your sound files, whether it is simple voice-over editing or complex music splicing.",
           "services_card": "Need to fix audio files or get a clean sound of your recordings?",
-          "services_image": "shopify:\/\/shop_images\/Line_f787fbd8-05d5-48de-84fc-ef1def61d20e.png"
+          "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
         }
       },
       "audioEd-types": {
@@ -4300,7 +4301,7 @@
           "35395a1c-b2ce-4e92-ab2a-416ec97d497d": {
             "type": "image",
             "settings": {
-              "card_image": "shopify:\/\/shop_images\/volume.png",
+              "card_image": "shopify:\/\/shop_images\/volume1.png",
               "card_title": "Sound effects",
               "card_text": "selecting and adding background music and other sound effects to make the animation, motion graphics, and video come to life",
               "card_url": "#"
@@ -4309,7 +4310,7 @@
           "410fadb8-4e20-4b7c-89c7-47e7e9628874": {
             "type": "image",
             "settings": {
-              "card_image": "shopify:\/\/shop_images\/acting.png",
+              "card_image": "shopify:\/\/shop_images\/acting1.png",
               "card_title": "Voice acting",
               "card_text": "adding to a recording a voice that describes or comments on a film, commercials, cartoons, or videos.",
               "card_url": "#"
@@ -4318,7 +4319,7 @@
           "97bc0daf-2a66-4963-ac71-e0a4c0c2f957": {
             "type": "image",
             "settings": {
-              "card_image": "shopify:\/\/shop_images\/design.png",
+              "card_image": "shopify:\/\/shop_images\/design1.png",
               "card_title": "Sound design",
               "card_text": "analyzing, generating, and reconstructing audio elements with optimized, enhanced performance levels.",
               "card_url": "#"
@@ -4451,7 +4452,8 @@
         "settings": {
           "services_title": "Video editing services",
           "services_text": "It includes video merging, cinematic color grading, trimming, sound mixing, and implementing special effects. We offer professional video montage and post-production work for various materials, whether a corporate training video or an entertainment social media video.",
-          "services_card": "Our specialists provide video editing services and create amazing videos from the raw footage."
+          "services_card": "Our specialists provide video editing services and create amazing videos from the raw footage.",
+          "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
         }
       },
       "videoEditing-types": {

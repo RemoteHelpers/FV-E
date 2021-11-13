@@ -12,30 +12,18 @@
                         {{ section.settings.education__title }}
                     </h2>
                     <div class="section__items">
-                       {% for block in section.blocks %}
+                       
                           <div class="section__item">
                             <h4>
                             	 {{ education_arr }}
                             </h4>
-                           
-<!--                               <div class="section__item-header">
-                                  <span class="section__item-value">
-                                      {{ block.settings.education__title-value }}
-                                  </span>
-                              </div>
-                              <span class="section__item-faculty">
-                                  {{ block.settings.education__item-faculty }}
-                              </span>
-                              <p class="section__item-period">
-                                  {{ block.settings.education__item-period }}
-                              </p> -->
                           </div>
-                        {% endfor %}
+
                     </div>
                     <div class="hire__button">
-                        <a href="{{ section.settings.education__link }}" target="_blank" class="hire__link">
-                            {{ section.settings.education__link-text }}
-                        </a>
+                      <button class="button button--hero " data-url="https://calendly.com/freelance-video-editors/30min">
+                        {{ section.settings.education__link-text }}
+                      </button>
                     </div>
                 </div>
                 <div class="section__right">

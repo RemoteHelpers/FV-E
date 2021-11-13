@@ -9,7 +9,9 @@
       {% for block in section.blocks %}
       <li class="types__item">
         <div class="types__title-wrapper">
-          <img src="{{ block.settings.card_image | img_url: 'master' }}" alt="">
+          <div class="img-holder">
+            <img src="{{ block.settings.card_image | img_url: 'master' }}" alt="">
+          </div>
           <h4 class="types__title">{{ block.settings.card_title }}</h4>
         </div>
         <p class="types__description">{{ block.settings.card_text }}</p>
