@@ -209,6 +209,7 @@ html{
 .footer__nav-item {
   text-align: center;
   line-height: 2.5;
+  transition: 0.3s;
 }
 
 .footer__nav-item a {
@@ -216,10 +217,12 @@ html{
   transition: 0.3s;
 }
 
-
-.footer__nav-item a:hover {
-  color: #000;
+.footer__nav-item:hover {
   background-color: #fff;
+}
+
+.footer__nav-item:hover a {
+  color: #000;
 }
 
 
