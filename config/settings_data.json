@@ -4644,6 +4644,70 @@
           "services_card": "Our specialists provide content creation services for websites and social networks.",
           "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
         }
+      },
+      "socMedia-types": {
+        "type": "socMedia-types",
+        "blocks": {
+          "04b67836-dfb6-4052-b55e-92a07de61880": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/message-circle.png",
+              "card_title": "Vlog",
+              "card_text": "share your message with your audience and attract new customers"
+            }
+          },
+          "d585bf74-e064-4589-89f1-c7588afd61db": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/edit_609cfc6e-c289-477d-a35a-dd182aa99351.png",
+              "card_title": "Webinar",
+              "card_text": "give a webinar campaign your unique branding for recognition"
+            }
+          },
+          "abbe6164-39a2-477d-8cff-8a60b81016dd": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/monitor_1.png",
+              "card_title": "Video Presentation",
+              "card_text": "help you reach the right audience with the right messages using the quality technologies"
+            }
+          },
+          "6111c555-7cc1-435c-aeb8-fd4d7c76cab5": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/info_62417e28-3b7c-40db-95c1-7a7381e0512e.png",
+              "card_title": "Tutorial",
+              "card_text": "let the customers feel the experience of using your product or service"
+            }
+          },
+          "bb3313b0-5763-4e97-965d-193d2991a20a": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/shopping-bag.png",
+              "card_title": "Product review",
+              "card_text": "let the customers feel the experience of using your product or service"
+            }
+          },
+          "8111e9c9-b2c7-41f0-bb1f-4467706a27d2": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/film_5e23ed80-c204-44dd-b36a-724960e87648.png",
+              "card_title": "Brand film",
+              "card_text": "demonstrate your brand to attract customers and increase open and conversion rates"
+            }
+          }
+        },
+        "block_order": [
+          "04b67836-dfb6-4052-b55e-92a07de61880",
+          "d585bf74-e064-4589-89f1-c7588afd61db",
+          "abbe6164-39a2-477d-8cff-8a60b81016dd",
+          "6111c555-7cc1-435c-aeb8-fd4d7c76cab5",
+          "bb3313b0-5763-4e97-965d-193d2991a20a",
+          "8111e9c9-b2c7-41f0-bb1f-4467706a27d2"
+        ],
+        "settings": {
+          "types_title": "The types of website and social media videos"
+        }
       }
     },
     "content_for_index": [
