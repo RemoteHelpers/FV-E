@@ -81,6 +81,7 @@ img {
 }
 
 .hero__content {
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   row-gap: 40px;
