@@ -4635,6 +4635,15 @@
           "video_url": "",
           "hero_image": "shopify:\/\/shop_images\/hero_0d1a1fbb-a30f-4a69-a880-15e4ec890c10.png"
         }
+      },
+      "socMedia-services": {
+        "type": "socMedia-services",
+        "settings": {
+          "services_title": "Content creation services",
+          "services_text": "Get brand promo videos demonstrating your company's story or product explainer to increase trust, and improve conversion rates. We will help you make successful video ads that boost business and sales, tutorials that introduce the usage of your products and services, or entertainment content for social media platforms.",
+          "services_card": "Our specialists provide content creation services for websites and social networks.",
+          "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
+        }
       }
     },
     "content_for_index": [
