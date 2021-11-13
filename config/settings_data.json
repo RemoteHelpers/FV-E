@@ -4733,6 +4733,26 @@
           "product_title": "Social media and website content for any purpose",
           "product_text": "Our company provides content creation for business and will help you make brand intro and outro or presentations for any area."
         }
+      },
+      "socMedia-videoPortfolio": {
+        "type": "socMedia-videoPortfolio",
+        "blocks": {
+          "99c3a212-1fc9-4bca-b2e1-f21c41d5a249": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=89dbfoxaprg",
+              "video_url": "https:\/\/www.youtube.com\/embed\/89dbfoxaprg",
+              "portfolio_title": "Netevia Pay Promo",
+              "portfolio_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "99c3a212-1fc9-4bca-b2e1-f21c41d5a249"
+        ],
+        "settings": {
+          "portfolio_title": "Look through the portfolio of our video marketing specialists"
+        }
       }
     },
     "content_for_index": [
