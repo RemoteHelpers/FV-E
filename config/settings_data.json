@@ -4629,10 +4629,11 @@
         "type": "socMedia-hero",
         "settings": {
           "hero_title": "Get website and social media video content from our video editors",
-          "hero_text": "",
-          "link_text": "",
+          "hero_text": "The video production team creates a quality website and social media video content for brand building and attracting new customers to your company.",
+          "link_text": "hire specialist",
           "btn_url": "",
-          "video_url": ""
+          "video_url": "",
+          "hero_image": "shopify:\/\/shop_images\/hero_0d1a1fbb-a30f-4a69-a880-15e4ec890c10.png"
         }
       }
     },
