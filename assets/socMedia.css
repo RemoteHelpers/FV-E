@@ -230,6 +230,7 @@ img {
   }
 
   .hero__wrapper {
+    padding-top: 50px;
     flex-direction: column;
     row-gap: 30px;
   }
