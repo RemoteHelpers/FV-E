@@ -208,6 +208,7 @@ html{
 
 .footer__nav-item {
   text-align: center;
+  line-height: 2.5;
 }
 
 .footer__nav-item a {
