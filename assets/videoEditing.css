@@ -401,8 +401,4 @@ img {
   .hero__content {
     row-gap: 15px;
   }
-
-  .hero .button {
-    margin-top: 0;
-  }
 }
