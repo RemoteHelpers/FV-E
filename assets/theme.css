@@ -4601,7 +4601,7 @@ hr {
         padding-top: 30px; } }
 
 .site-header__logo, .site-footer__logo {
-  margin: 15px 0;}
+  /* margin: 15px 0;} */
   .logo-align--center .site-header__logo {
     text-align: center;
     margin: 0 auto; }
