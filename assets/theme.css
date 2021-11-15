@@ -2785,13 +2785,16 @@ textarea {
   font-weight: bold;
   font-size: 16px;
   border-radius: 52px;
+  transition: .3s ease-in;
 }
 
 .site-nav__link .site-nav__label rect {
   display: none;
 }
 
-
+.site-nav__link--active .site-nav__label {
+  border-bottom: none;
+}
 
 .site-nav__link:focus .site-nav__label, .site-nav__link:not([disabled]):hover .site-nav__label {
   /*border-bottom-color: var(--color-text); */
@@ -2814,6 +2817,7 @@ textarea {
 
 .site-nav__link:focus .site-nav__label, .site-nav__link:not([disabled]):hover .site-nav__label::after {
   display: block;
+  color: #F13F00;
 }
 
 .icon-hamburger{
