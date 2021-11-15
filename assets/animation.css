@@ -403,10 +403,6 @@ img {
     row-gap: 15px;
   }
 
-  .hero .button {
-    margin-top: 0;
-  }
-
   .services__card--mob {
     margin-top: 30px;
     display: block;
