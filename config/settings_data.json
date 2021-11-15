@@ -730,7 +730,7 @@
             "type": "block-3",
             "settings": {
               "privacy_title": "Third party links",
-              "privacy_content": "<p>Occasionally, at our discretion, we may include or offer third party products or services on our website. These third party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.<\/p>"
+              "privacy_content": "<p>Occasionally, at our discretion, we may include or offer third-party products or services on our website. These third-party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.<\/p>"
             }
           },
           "ff2a4242-5a8a-4c0c-92d2-a1686015a8fb": {
