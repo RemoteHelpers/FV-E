@@ -2915,6 +2915,11 @@ textarea {
   transition: all .3s ease;
 }
 
+.site-nav__dropdown ul {
+  padding-top: 10px;
+  padding-bottom: 32px;
+}
+
 .site-nav__dropdown a {
   padding: 0;
 }
