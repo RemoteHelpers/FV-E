@@ -2799,14 +2799,14 @@ textarea {
 .site-nav__link:focus .site-nav__label, .site-nav__link:not([disabled]):hover .site-nav__label {
   /*border-bottom-color: var(--color-text); */
   /* border:1px solid #F13F00;
-  border-radius: 52px;
-  color: #F13F00; */
+  border-radius: 52px; */
+  color: #F13F00;
 }
 
 .site-nav__link .site-nav__label::after {
   position: absolute;
   content: "";
-  bottom: 0;
+  bottom: -3px;
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -2817,7 +2817,6 @@ textarea {
 
 .site-nav__link:focus .site-nav__label, .site-nav__link:not([disabled]):hover .site-nav__label::after {
   display: block;
-  color: #F13F00;
 }
 
 .icon-hamburger{
