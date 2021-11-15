@@ -275,6 +275,11 @@ div.footer-description a{
 }
 
 @media only screen and (max-width: 800px){
+  .site-header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
   .footer .flex{
   	flex-direction: column;
     justify-content: space-between;
@@ -4615,7 +4620,7 @@ hr {
       border-bottom: 1px solid var(--color-border); } }
   @media only screen and (min-width: 750px) {
     .site-header {
-      padding: 0 5vw;
+      padding: 25px 5vw;
      }
       .site-header.logo--center {
         padding-top: 30px; } }
@@ -8364,6 +8369,7 @@ html{
     	margin-left: -29vw;
       }
 }
+
 
 @media (min-width: 768px){
 	.row.row__tabs .col-sm-6 {
