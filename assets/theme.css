@@ -5731,7 +5731,9 @@ hr {
 
   .mobile-nav__icon svg {
     position: absolute;
-    right: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% -50%);
   }
 
 .mobile-nav__table {
