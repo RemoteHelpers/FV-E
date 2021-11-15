@@ -2887,6 +2887,7 @@ textarea {
 
 .site-nav--has-dropdown {
   position: relative;
+  height: 100%;
 }
 
 
