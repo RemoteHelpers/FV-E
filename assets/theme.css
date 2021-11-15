@@ -2895,7 +2895,6 @@ textarea {
   visibility: hidden;
   /* display: none; */
   position: absolute;
-  margin-top: 28px;
   padding: 11px 0px 11px 0;
   width: 207px;
   left: 50%;
