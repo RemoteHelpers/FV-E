@@ -2830,7 +2830,7 @@ textarea {
   transition: .3s ease-in;
 }
 
-.site-nav__label svg:hover {
+.site-nav__link:focus .site-nav__label, .site-nav__link:not([disabled]):hover .site-nav__label svg {
   fill: #F13F00;
 }
 
