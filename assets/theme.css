@@ -2823,7 +2823,8 @@ textarea {
 
 .site-nav__label svg {
   position: absolute;
-  top: -5px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .icon-hamburger{
