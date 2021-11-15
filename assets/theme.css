@@ -5693,7 +5693,7 @@ hr {
 .mobile-nav__label {
   border-bottom: 1px solid transparent; }
   .mobile-nav__link--active .mobile-nav__label {
-    color: #F13F00;
+    color: #F13F00 !important;
     border-bottom-color: #F13F00; }
 
 .mobile-nav__sublist-link:not(.mobile-nav__sublist-header) {
