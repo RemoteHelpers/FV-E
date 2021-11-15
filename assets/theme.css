@@ -338,11 +338,6 @@ div.footer-description a{
   nav.flex__item {
     height: 100%;
   }
-
-  .site-header {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
 }
 
 .social-media {
@@ -2894,14 +2889,20 @@ textarea {
   height: 100%;
 }
 
+.site-nav li {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 
 .site-nav__dropdown {
   opacity: 0;
   visibility: hidden;
   /* display: none; */
   position: absolute;
-  padding: 11px 0px 11px 0;
+  /* padding: 11px 0px 11px 0; */
   width: 207px;
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.05);
@@ -4600,8 +4601,7 @@ hr {
       border-bottom: 1px solid var(--color-border); } }
   @media only screen and (min-width: 750px) {
     .site-header {
-      padding-left: 5vw;
-      padding-right: 5vw;
+      padding: 0 5vw;
      }
       .site-header.logo--center {
         padding-top: 30px; } }
