@@ -5771,9 +5771,10 @@ hr {
   .mobile-nav__dropdown.is-closing {
     transition: all 0.45s cubic-bezier(0.29, 0.63, 0.44, 1);
     opacity: 0.99; }
-    .mobile-nav__sublist-link  .mobile-nav__label {
-      color: #000;
-    }
+
+  .mobile-nav__label {
+    color: #000;
+  }
 
   .mobile-nav__dropdown .mobile-nav__sublist-header {
     /* font-family: var(--font-stack-header);
