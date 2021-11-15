@@ -716,7 +716,7 @@
             "type": "block-3",
             "settings": {
               "privacy_title": "Remarketing",
-              "privacy_content": "<p>Cookies are also used to display remarketing advertisements, based upon the user’s previous visits to <strong>https:\/\/v-edstore.myshopify.com\/<\/strong>, across the internet.<\/p><p>Remarketing advertisements are displayed through Google’s display-advertisement network. Users may opt out of Google’s use of cookies at any time by visiting the Google Ads Preferences Manager.<\/p>"
+              "privacy_content": "<p>Cookies are also used to display remarketing advertisements across the internet based on the user’s previous visits to https:\/\/v-edstore.myshopify.com\/.<\/p><p>Remarketing advertisements are displayed through Google’s display-advertisement network. Users may opt out of Google’s use of cookies at any time by visiting the Google Ads Preferences Manager.<\/p>"
             }
           },
           "f58e4e9c-9a11-434c-809a-e55f4c94fe80": {
