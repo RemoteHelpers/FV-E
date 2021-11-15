@@ -312,6 +312,7 @@ div.footer-description a{
     content: "";
     width: 120%;
     height: 1px;
+    left: -50px;
     background-color: #fff;
     overflow: hidden;
   }
