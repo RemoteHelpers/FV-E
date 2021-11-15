@@ -207,7 +207,6 @@ html{
 }
 
 .footer__nav-item {
-  text-align: center;
   line-height: 2.5;
   transition: 0.3s;
 }
@@ -217,12 +216,8 @@ html{
   transition: 0.3s;
 }
 
-.footer__nav-item:hover {
-  background-color: #fff;
-}
-
 .footer__nav-item:hover a {
-  color: #000 !important;
+  font-weight: 700;
 }
 
 
@@ -298,6 +293,11 @@ div.footer-description a{
   .footer__item.logo{
   	margin:30px 0px;
   }
+
+  .footer__nav-item  {
+    text-align: center;
+  }
+
 }
 
 .list--inline{
