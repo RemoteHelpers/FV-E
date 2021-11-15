@@ -4623,6 +4623,185 @@
         "settings": {
           "portfolio_title": "Browse the portfolio of talented video editors from our company"
         }
+      },
+      "socMedia-hero": {
+        "type": "socMedia-hero",
+        "settings": {
+          "hero_title": "Get website and social media video content from our video editors",
+          "hero_text": "The video production team creates a quality website and social media video content for brand building and attracting new customers to your company.",
+          "link_text": "hire specialist",
+          "btn_url": "#contactformSection",
+          "video_url": "",
+          "hero_image": "shopify:\/\/shop_images\/hero_0d1a1fbb-a30f-4a69-a880-15e4ec890c10.png"
+        }
+      },
+      "socMedia-services": {
+        "type": "socMedia-services",
+        "settings": {
+          "services_title": "Content creation services",
+          "services_text": "Get brand promo videos demonstrating your company's story or product explainer to increase trust, and improve conversion rates. We will help you make successful video ads that boost business and sales, tutorials that introduce the usage of your products and services, or entertainment content for social media platforms.",
+          "services_card": "Our specialists provide content creation services for websites and social networks.",
+          "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
+        }
+      },
+      "socMedia-types": {
+        "type": "socMedia-types",
+        "blocks": {
+          "04b67836-dfb6-4052-b55e-92a07de61880": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/message-circle.png",
+              "card_title": "Vlog",
+              "card_text": "share your message with your audience and attract new customers"
+            }
+          },
+          "d585bf74-e064-4589-89f1-c7588afd61db": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/edit_609cfc6e-c289-477d-a35a-dd182aa99351.png",
+              "card_title": "Webinar",
+              "card_text": "give a webinar campaign your unique branding for recognition"
+            }
+          },
+          "abbe6164-39a2-477d-8cff-8a60b81016dd": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/monitor_1.png",
+              "card_title": "Video Presentation",
+              "card_text": "help you reach the right audience with the right messages using the quality technologies"
+            }
+          },
+          "6111c555-7cc1-435c-aeb8-fd4d7c76cab5": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/info_62417e28-3b7c-40db-95c1-7a7381e0512e.png",
+              "card_title": "Tutorial",
+              "card_text": "let the customers feel the experience of using your product or service"
+            }
+          },
+          "bb3313b0-5763-4e97-965d-193d2991a20a": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/shopping-bag.png",
+              "card_title": "Product review",
+              "card_text": "let the customers feel the experience of using your product or service"
+            }
+          },
+          "8111e9c9-b2c7-41f0-bb1f-4467706a27d2": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/film_5e23ed80-c204-44dd-b36a-724960e87648.png",
+              "card_title": "Brand film",
+              "card_text": "demonstrate your brand to attract customers and increase open and conversion rates"
+            }
+          }
+        },
+        "block_order": [
+          "04b67836-dfb6-4052-b55e-92a07de61880",
+          "d585bf74-e064-4589-89f1-c7588afd61db",
+          "abbe6164-39a2-477d-8cff-8a60b81016dd",
+          "6111c555-7cc1-435c-aeb8-fd4d7c76cab5",
+          "bb3313b0-5763-4e97-965d-193d2991a20a",
+          "8111e9c9-b2c7-41f0-bb1f-4467706a27d2"
+        ],
+        "settings": {
+          "types_title": "The types of website and social media videos"
+        }
+      },
+      "socMedia-product": {
+        "type": "socMedia-product",
+        "blocks": {
+          "7d3c3969-cab3-4136-a367-7d2702fa15d8": {
+            "type": "text",
+            "settings": {
+              "item_text": "If you need <b>video content for advertising,<\/b> our specialists will help make your projects discovered on <b>YouTube, Facebook, Instagram, TikTok, or LinkedIn<\/b> and maximize online sales."
+            }
+          },
+          "8ec9e252-5995-4ac9-9255-4f01e107027e": {
+            "type": "text",
+            "settings": {
+              "item_text": "If you are starting your journey into blogging, <b>we will help create trending videos for blogs that will attract more followers to your channel.<\/b>"
+            }
+          }
+        },
+        "block_order": [
+          "7d3c3969-cab3-4136-a367-7d2702fa15d8",
+          "8ec9e252-5995-4ac9-9255-4f01e107027e"
+        ],
+        "settings": {
+          "product_title": "Social media and website content for any purpose",
+          "product_text": "Our company provides content creation for business and will help you make brand intro and outro or presentations for any area."
+        }
+      },
+      "socMedia-videoPortfolio": {
+        "type": "socMedia-videoPortfolio",
+        "blocks": {
+          "99c3a212-1fc9-4bca-b2e1-f21c41d5a249": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=89dbfoxaprg",
+              "video_url": "https:\/\/www.youtube.com\/embed\/89dbfoxaprg",
+              "portfolio_title": "Netevia Pay Promo",
+              "portfolio_text": ""
+            }
+          },
+          "b0dcf9c7-3c81-444f-9962-168c5f68982c": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=wRHR40DfxWs",
+              "video_url": "https:\/\/www.youtube.com\/embed\/wRHR40DfxWs",
+              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_text": ""
+            }
+          },
+          "b89fb992-5d75-4154-adee-dcd257c33443": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=75KRHcPtE-4",
+              "video_url": "https:\/\/www.youtube.com\/embed\/75KRHcPtE-4",
+              "portfolio_title": "Netevia Pay Post",
+              "portfolio_text": ""
+            }
+          },
+          "94754684-f026-402d-98b6-9e40b29f1cf2": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=xmUWViuXE6w",
+              "video_url": "https:\/\/www.youtube.com\/embed\/xmUWViuXE6w",
+              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_text": ""
+            }
+          },
+          "08e289ae-0837-43d1-89d0-52e57a4c61db": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=jKmFn5pc0r8",
+              "video_url": "https:\/\/www.youtube.com\/embed\/jKmFn5pc0r8",
+              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_text": ""
+            }
+          },
+          "61c9911b-bce8-4022-b68d-0f9d560cc284": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=AKxEEaNXm8s",
+              "video_url": "https:\/\/www.youtube.com\/embed\/AKxEEaNXm8s",
+              "portfolio_title": "Promo Facebook",
+              "portfolio_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "99c3a212-1fc9-4bca-b2e1-f21c41d5a249",
+          "b0dcf9c7-3c81-444f-9962-168c5f68982c",
+          "b89fb992-5d75-4154-adee-dcd257c33443",
+          "94754684-f026-402d-98b6-9e40b29f1cf2",
+          "08e289ae-0837-43d1-89d0-52e57a4c61db",
+          "61c9911b-bce8-4022-b68d-0f9d560cc284"
+        ],
+        "settings": {
+          "portfolio_title": "Look through the portfolio of our video marketing specialists"
+        }
       }
     },
     "content_for_index": [
