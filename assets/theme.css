@@ -5736,6 +5736,13 @@ hr {
     transform: translate(-50%, -50%);
   }
 
+  .mobile-nav__return-btn svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 .mobile-nav__table {
   display: table;
   width: 100%; }
