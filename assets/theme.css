@@ -5726,6 +5726,8 @@ hr {
   bottom: 0;
   padding-left: 22px;
   padding-right: 22px;
+  width: 9px;
+  height: 11px;
   pointer-events: none;
   overflow: hidden; }
 
