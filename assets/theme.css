@@ -247,7 +247,7 @@ html{
  }
 
 div.footer-description a:hover{
-	color: #F13F00;
+	font-weight: 700;
 }
 
 div.footer-description a{
