@@ -709,7 +709,7 @@
             "type": "block-3",
             "settings": {
               "privacy_title": "Do we use cookies?",
-              "privacy_content": "<p>Yes, Cookies are small files that a site or its service provider transfers to your computers hard drive through your Web browser (if you allow) that enables the sites or service providers systems to recognize your browser and capture and remember certain information.<\/p><p>We use cookies to help us remember, understand and save your preferences for future visits and compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future. This information is collected in an anonymous form that includes no personally identifiable information. No personally identifiable information is collected on this website unless that information is explicitly submitted via a fill-in form.<\/p>"
+              "privacy_content": "<p>Yes. Cookies are small files that a site or its service provider transfers to your computer’s hard drive through your Web browser (if you allow it). This enables site’s or service provider’s systems to recognize your browser and capture and remember certain bits of information.<\/p><p>Cookies help us to save your preferences and better understand them upon your future site visits, as well as to compile aggregate data about the traffic and interactions on the site to improve on-site experience and tools in the future. The information collected includes no personally identifiable information unless it is explicitly submitted via a fill-in form.<\/p>"
             }
           },
           "a992cb2d-828e-4b74-897e-b8b19c973c93": {
