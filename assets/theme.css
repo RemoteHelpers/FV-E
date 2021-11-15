@@ -294,6 +294,7 @@ div.footer-description a{
   }
 
   .footer__nav {
+    margin-bottom: 20px;
     width: 100%;
   }
 
@@ -302,8 +303,17 @@ div.footer-description a{
   }
 
   .footer__nav-item  {
+    position: relative;
     text-align: center;
-    border-bottom: 1px solid #fff;
+  }
+
+  .footer__nav-item::after {
+    position: absolute;
+    content: "";
+    width: 120%;
+    height: 1px;
+    background-color: #fff;
+    overflow: hidden;
   }
 
 }
