@@ -262,7 +262,6 @@ div.footer-description a{
 	max-width: 130px;
   	font-size: 14px;
 	line-height: 133.4%;
-  	float: right;
   	margin: 0px 0px 10px 10px;
 }
 
@@ -292,6 +291,11 @@ div.footer-description a{
 
   .footer__item.logo{
   	margin:30px 0px;
+  }
+
+  .footer__nav-list {
+    width: 100%;
+    border-bottom: 1px solid #fff;
   }
 
   .footer__nav-item  {
