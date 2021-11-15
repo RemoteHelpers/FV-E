@@ -276,9 +276,8 @@ div.footer-description a{
 }
 
 @media only screen and (max-width: 800px){
-  .site-header {
-    padding-top: 25px;
-    padding-bottom: 25px;
+  .site-header__logo {
+    margin: 20px 0;
   }
 
   .footer .flex{
