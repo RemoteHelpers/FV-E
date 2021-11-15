@@ -293,13 +293,17 @@ div.footer-description a{
   	margin:30px 0px;
   }
 
+  .footer__nav {
+    width: 100%;
+  }
+
   .footer__nav-list {
     width: 100%;
-    border-bottom: 1px solid #fff;
   }
 
   .footer__nav-item  {
     text-align: center;
+    border-bottom: 1px solid #fff;
   }
 
 }
