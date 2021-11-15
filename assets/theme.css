@@ -338,6 +338,11 @@ div.footer-description a{
   nav.flex__item {
     height: 100%;
   }
+
+  .site-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .social-media {
