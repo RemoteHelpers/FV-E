@@ -221,11 +221,7 @@ html{
   font-weight: 700;
 }
 
-@media (max-width: 800px) {
-  .site-header__logo {
-    margin: 20px 0;
-  }
-}
+
 
 
 @media only screen and (max-width: 850px){
@@ -4644,6 +4640,13 @@ hr {
       text-align: left; }
       .site-header__logo img {
         margin: 0; } }
+
+
+@media (max-width: 800px) {
+  .site-header__logo {
+    margin: 20px 0;
+  }
+}
 
 
 .site-header__logo__title, .site-footer__logo__title {
