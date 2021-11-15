@@ -2889,9 +2889,9 @@ textarea {
   visibility: hidden;
   /* display: none; */
   position: absolute;
+  margin-top: 20px;
   padding: 11px 0px 11px 0;
   width: 207px;
-  bottom: -100px;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.05);
