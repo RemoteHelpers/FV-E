@@ -2879,6 +2879,10 @@ textarea {
   position: static;
 }
 
+.site-nav--has-dropdown {
+  position: relative;
+}
+
 
 .site-nav__dropdown {
   opacity: 0;
