@@ -323,6 +323,7 @@ div.footer-description a{
 .list--inline{
 	display: flex;
   margin: 0;
+  padding: 10px 0;
    	align-items: center;
   	justify-content: space-between;
 }
