@@ -275,6 +275,7 @@ img {
   .hero__wrapper {
     flex-direction: column;
     row-gap: 30px;
+    align-items: center;
   }
 
   .hero__content {
