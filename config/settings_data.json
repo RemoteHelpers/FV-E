@@ -688,14 +688,14 @@
             "type": "block-3",
             "settings": {
               "privacy_title": "What information do we collect?",
-              "privacy_content": "<p>We only collect personally identifiable information from you when you log into our site or enter information into our form fields. You may be asked to enter your: name, e-mail address, mailing address or phone number.<\/p>"
+              "privacy_content": "<p>We collect personally identifiable information from you only when you log into our site or enter information into our form fields. We may ask for your name, e-mail address, mailing address or phone number.<\/p>"
             }
           },
           "afe0205d-6d6a-4cbd-976c-f736a20a8886": {
             "type": "block-3",
             "settings": {
               "privacy_title": "What do we use your information for?",
-              "privacy_content": "<p>Any of the information we collect from you may be used in one of the following ways:<\/p><p>● <strong>To personalize your experience<\/strong><\/p><p>Your information helps us to better respond to your individual needs<\/p><p>● <strong>To improve our website<\/strong><\/p><p>We continually strive to improve our website offerings based on the information and feedback we receive from you<\/p><p>● <strong>To improve customer service<\/strong><\/p><p>Your information helps us to more effectively respond to your customer service requests and support needs<\/p><p>● <strong>To send periodic emails<\/strong><\/p><p>The email address you provide may be used by automated, trigger-based email campaigns to send you information, respond to inquiries, and\/or other requests or questions<\/p><p><strong>● To contact you<\/strong><\/p><p>If you request that we contact you<\/p>"
+              "privacy_content": "<p>Any information we collect from you may be used for one of the following:<\/p><p>● To personalize your experience<\/p><p>Your information helps us to better respond to your individual needs<\/p><p>● To improve our website<\/p><p>We continually strive to improve our website based on the information and feedback we receive from you<\/p><p>● To improve customer service<\/p><p>Your information helps us to respond more efficiently to your customer service requests and support needs<\/p><p>● To send periodic emails<\/p><p>The email address you provide may be used by automated, trigger-based email campaigns to send you information, respond to inquiries, and\/or other requests or questions<\/p><p>● To contact you<\/p><p>If you request that we contact you<\/p>"
             }
           },
           "12aa9931-a0d8-444e-b8fe-67b09bbb24b8": {
@@ -709,28 +709,28 @@
             "type": "block-3",
             "settings": {
               "privacy_title": "Do we use cookies?",
-              "privacy_content": "<p>Yes, Cookies are small files that a site or its service provider transfers to your computers hard drive through your Web browser (if you allow) that enables the sites or service providers systems to recognize your browser and capture and remember certain information.<\/p><p>We use cookies to help us remember, understand and save your preferences for future visits and compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future. This information is collected in an anonymous form that includes no personally identifiable information. No personally identifiable information is collected on this website unless that information is explicitly submitted via a fill-in form.<\/p>"
+              "privacy_content": "<p>Yes. Cookies are small files that a site or its service provider transfers to your computer’s hard drive through your Web browser (if you allow it). This enables site’s or service provider’s systems to recognize your browser and capture and remember certain bits of information.<\/p><p>Cookies help us to save your preferences and better understand them upon your future site visits, as well as to compile aggregate data about the traffic and interactions on the site to improve on-site experience and tools in the future. The information collected includes no personally identifiable information unless it is explicitly submitted via a fill-in form.<\/p>"
             }
           },
           "a992cb2d-828e-4b74-897e-b8b19c973c93": {
             "type": "block-3",
             "settings": {
               "privacy_title": "Remarketing",
-              "privacy_content": "<p>Cookies are also used to display remarketing advertisements, based upon the user’s previous visits to <strong>https:\/\/v-edstore.myshopify.com\/<\/strong>, across the internet.<\/p><p>Remarketing advertisements are displayed through Google’s display-advertisement network. Users may opt out of Google’s use of cookies at any time by visiting the Google Ads Preferences Manager.<\/p>"
+              "privacy_content": "<p>Cookies are also used to display remarketing advertisements across the internet based on the user’s previous visits to https:\/\/v-edstore.myshopify.com\/.<\/p><p>Remarketing advertisements are displayed through Google’s display-advertisement network. Users may opt out of Google’s use of cookies at any time by visiting the Google Ads Preferences Manager.<\/p>"
             }
           },
           "f58e4e9c-9a11-434c-809a-e55f4c94fe80": {
             "type": "block-3",
             "settings": {
               "privacy_title": "Do we disclose any information to outside parties?",
-              "privacy_content": "<p>We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property, or safety. However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.<\/p>"
+              "privacy_content": "<p>We do not sell, trade, or otherwise transfer your personally identifiable information to third parties. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe it is needed in order to comply with the law, enforce our site policies, or protect our or other’s rights, property, or safety. However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.<\/p>"
             }
           },
           "89ec2097-34ef-4508-ae03-0daeff759b67": {
             "type": "block-3",
             "settings": {
               "privacy_title": "Third party links",
-              "privacy_content": "<p>Occasionally, at our discretion, we may include or offer third party products or services on our website. These third party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.<\/p>"
+              "privacy_content": "<p>Occasionally, at our discretion, we may include or offer third-party products or services on our website. These third-party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.<\/p>"
             }
           },
           "ff2a4242-5a8a-4c0c-92d2-a1686015a8fb": {
@@ -744,7 +744,7 @@
             "type": "block-3",
             "settings": {
               "privacy_title": "Terms and Conditions",
-              "privacy_content": "<p>Please also visit our Terms and Conditions section establishing the use, disclaimers, and limitations of liability governing the use of our website at <strong>v-edstore.myshopify.com<\/strong><\/p>"
+              "privacy_content": "<p>Please also visit our Terms and Conditions section establishing the use, disclaimers, and limitations of liability governing the use of our website at v-edstore.myshopify.com<\/p>"
             }
           },
           "f5126ef2-1db0-4847-91af-07e9aa2d9fb7": {
@@ -766,14 +766,14 @@
             "settings": {
               "title": "Contacting Us",
               "words": "If there are any questions regarding this privacy policy you may contact us using the information below.",
-              "company_name": "Company Name",
+              "company_name": "Company Name: freelance video editors",
               "house_number": "22",
               "street": "Rymarskaya st.",
               "city": "Kharkiv",
               "post_code": "65137",
               "country": "Ukraine",
-              "phone": "+38 099 710 10 33",
-              "email": "mail@mail.mail"
+              "phone": "+380504737375",
+              "email": "sales@fv-e.com"
             }
           }
         },
