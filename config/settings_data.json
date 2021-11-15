@@ -744,7 +744,7 @@
             "type": "block-3",
             "settings": {
               "privacy_title": "Terms and Conditions",
-              "privacy_content": "<p>Please also visit our Terms and Conditions section establishing the use, disclaimers, and limitations of liability governing the use of our website at <strong>v-edstore.myshopify.com<\/strong><\/p>"
+              "privacy_content": "<p>Please also visit our Terms and Conditions section establishing the use, disclaimers, and limitations of liability governing the use of our website at v-edstore.myshopify.com<\/p>"
             }
           },
           "f5126ef2-1db0-4847-91af-07e9aa2d9fb7": {
@@ -766,14 +766,14 @@
             "settings": {
               "title": "Contacting Us",
               "words": "If there are any questions regarding this privacy policy you may contact us using the information below.",
-              "company_name": "Company Name",
+              "company_name": "Company Name: freelance video editors",
               "house_number": "22",
               "street": "Rymarskaya st.",
               "city": "Kharkiv",
               "post_code": "65137",
               "country": "Ukraine",
-              "phone": "+38 099 710 10 33",
-              "email": "mail@mail.mail"
+              "phone": "+380504737375",
+              "email": "sales@fv-e.com"
             }
           }
         },
