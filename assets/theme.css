@@ -313,6 +313,7 @@ div.footer-description a{
     width: 120%;
     height: 1px;
     left: -50px;
+    bottom: 0;
     background-color: #fff;
     overflow: hidden;
   }
