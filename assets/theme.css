@@ -2915,6 +2915,10 @@ textarea {
   transition: all .3s ease;
 }
 
+.site-nav__dropdown .site-nav__label {
+  font-size: 14px;
+}
+
 .site-nav__dropdown-motion {
   /* margin-top: 15% !important;
   transition: all 1s ease; */
