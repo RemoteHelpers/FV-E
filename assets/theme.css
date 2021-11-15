@@ -5726,10 +5726,13 @@ hr {
   bottom: 0;
   padding-left: 22px;
   padding-right: 22px;
-  width: 9px;
-  height: 11px;
   pointer-events: none;
   overflow: hidden; }
+
+  .mobile-nav__icon svg {
+    position: absolute;
+    right: 0;
+  }
 
 .mobile-nav__table {
   display: table;
