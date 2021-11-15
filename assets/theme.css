@@ -2809,6 +2809,7 @@ textarea {
   border-radius: 50%;
   background-color: #F13F00;
   display: none;
+  transition: .3s ease-in;
 }
 
 .site-nav__link:focus .site-nav__label, .site-nav__link:not([disabled]):hover .site-nav__label::after {
