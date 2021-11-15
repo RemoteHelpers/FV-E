@@ -688,7 +688,7 @@
             "type": "block-3",
             "settings": {
               "privacy_title": "What information do we collect?",
-              "privacy_content": "<p>We only collect personally identifiable information from you when you log into our site or enter information into our form fields. You may be asked to enter your: name, e-mail address, mailing address or phone number.<\/p>"
+              "privacy_content": "<p>We collect personally identifiable information from you only when you log into our site or enter information into our form fields. We may ask for your name, e-mail address, mailing address or phone number.<\/p>"
             }
           },
           "afe0205d-6d6a-4cbd-976c-f736a20a8886": {
