@@ -5778,7 +5778,7 @@ hr {
     display: table-cell;
     vertical-align: middle;
     padding-left: 15px;
-  color: #F13F00;
+  color: #F13F00 !important;
 }
   .mobile-nav__dropdown .mobile-nav__sublist-header--main-nav-parent {
     color: var(--color-body-text); }
