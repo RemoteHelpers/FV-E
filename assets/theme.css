@@ -2823,8 +2823,15 @@ textarea {
 
 .site-nav__label svg {
   position: absolute;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
+  fill: #000;
+  transition: .3s ease-in;
+}
+
+.site-nav__label svg:hover {
+  fill: #F13F00;
 }
 
 .icon-hamburger{
