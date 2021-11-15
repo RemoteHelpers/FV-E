@@ -2821,6 +2821,10 @@ textarea {
   opacity: 1;
 }
 
+.site-nav__label svg {
+  top: -5px;
+}
+
 .icon-hamburger{
 	color: #F13F00;
 }
