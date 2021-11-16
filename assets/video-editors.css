@@ -234,6 +234,10 @@ img {
     width: 550px;
   }
 
+  .hero__content {
+    width: 100%;
+  }
+
   .hero__video-holder {
     width: 50%;
     position: static;
@@ -248,10 +252,6 @@ img {
   .hero__wrapper {
     flex-direction: column;
     row-gap: 30px;
-  }
-
-  .hero__content {
-    width: 100%;
   }
 
   .hero__text {
@@ -392,9 +392,5 @@ img {
 
   .hero__content {
     row-gap: 15px;
-  }
-
-  .hero .button {
-    margin-top: 0;
   }
 }
