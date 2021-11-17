@@ -4927,11 +4927,21 @@
               "portfolio_title": "Hire video editors at the outstaffing company",
               "portfolio_text": ""
             }
+          },
+          "2fc7b275-c6ac-4543-bfff-0647f8e7cb4d": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=Ms5Vc57f43g",
+              "video_url": "https:\/\/www.youtube.com\/embed\/Ms5Vc57f43g",
+              "portfolio_title": "Hire designers at the remote outsourcing firm",
+              "portfolio_text": ""
+            }
           }
         },
         "block_order": [
           "4bcd5667-8303-4f05-a39e-74a6d11f1e5b",
-          "dca7f036-93fd-48db-b3df-c598ee8cf3e1"
+          "dca7f036-93fd-48db-b3df-c598ee8cf3e1",
+          "2fc7b275-c6ac-4543-bfff-0647f8e7cb4d"
         ],
         "settings": {
           "portfolio_title": "Look through the portfolios of our promotional video makers"
