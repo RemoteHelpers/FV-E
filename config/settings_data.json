@@ -4996,6 +4996,34 @@
           "services_card": "Show your product’s benefits and reach a new audience with commercial video production services from our specialists.",
           "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
         }
+      },
+      "commercialVideo-types": {
+        "type": "commercialVideo-types",
+        "blocks": {
+          "1d61ab29-19fa-4e96-8502-d6dd1f2f52b0": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/box_1.png",
+              "card_title": "Advertising video",
+              "card_text": "demonstrate your offers in front of web users around the globe"
+            }
+          },
+          "a50fc603-d214-4f03-a8b9-8b5ce6a5c2b2": {
+            "type": "image",
+            "settings": {
+              "card_image": "shopify:\/\/shop_images\/loader.png",
+              "card_title": "Corporate video",
+              "card_text": "advertise a business, product, or service with the goal of attracting customers and business development"
+            }
+          }
+        },
+        "block_order": [
+          "1d61ab29-19fa-4e96-8502-d6dd1f2f52b0",
+          "a50fc603-d214-4f03-a8b9-8b5ce6a5c2b2"
+        ],
+        "settings": {
+          "types_title": "The types of website and social media videos"
+        }
       }
     },
     "content_for_index": [
