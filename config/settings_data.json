@@ -4945,13 +4945,23 @@
               "portfolio_title": "Hire personal assistants to free up the schedule",
               "portfolio_text": ""
             }
+          },
+          "4d028372-013b-49a7-9e1b-96063a85c4e5": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=Cif0_2fqwGQ",
+              "video_url": "https:\/\/www.youtube.com\/embed\/Cif0_2fqwGQ",
+              "portfolio_title": "Hire PPC specialists at the outstaffing company",
+              "portfolio_text": ""
+            }
           }
         },
         "block_order": [
           "4bcd5667-8303-4f05-a39e-74a6d11f1e5b",
           "dca7f036-93fd-48db-b3df-c598ee8cf3e1",
           "2fc7b275-c6ac-4543-bfff-0647f8e7cb4d",
-          "bc4cbff5-1069-48ec-9170-bab52f7a495a"
+          "bc4cbff5-1069-48ec-9170-bab52f7a495a",
+          "4d028372-013b-49a7-9e1b-96063a85c4e5"
         ],
         "settings": {
           "portfolio_title": "Look through the portfolios of our promotional video makers"
