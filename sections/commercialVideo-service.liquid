@@ -1,0 +1,44 @@
+<section class="services section">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.services_title }}</h2>
+    <div class="services__wrapper">
+      <div class="services__content">
+        <p class="services__card">{{ section.settings.services_card }}</p>
+        <p class="services__text basic-text">{{ section.settings.services_text }}</p>
+      </div>
+      <div class="services__image-holder">
+        <img src="{{ section.settings.services_image | img_url: 'master' }}" alt="">
+      </div>
+      <p class="services__text services__text--mob basic-text">{{ section.settings.services_text }}</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "services",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "services_title",
+        "label": "Services title"
+      },
+      {
+        "type": "text",
+        "id": "services_text",
+        "label": "Services text"
+      },
+      {
+        "type": "text",
+        "id": "services_card",
+        "label": "Services card"
+      },
+      {
+          "type": "image_picker",
+          "id": "services_image",
+          "label": "Services image"
+      }
+  ]
+  } 
+{% endschema %}
