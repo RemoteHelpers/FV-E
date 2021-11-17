@@ -4803,6 +4803,16 @@
         "settings": {
           "portfolio_title": "Look through the portfolio of our video marketing specialists"
         }
+      },
+      "promotional-hero": {
+        "type": "promotional-hero",
+        "settings": {
+          "hero_title": "Create an eye-catching promotional video with our specialists",
+          "hero_text": "Our video production team will create a promotional video for any project that helps tell a brand story and advertise social media channels.",
+          "link_text": "hire specialist",
+          "btn_url": "#contactformSection",
+          "hero_image": "shopify:\/\/shop_images\/hero_0cddb28e-e272-435e-a1d9-ae860185ca17.png"
+        }
       }
     },
     "content_for_index": [
