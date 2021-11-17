@@ -5104,11 +5104,21 @@
               "portfolio_title": "video for Lavazza",
               "portfolio_text": ""
             }
+          },
+          "61a49edc-6484-4f67-8706-206e1e4555ee": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nR42-BWtJyA",
+              "video_url": "https:\/\/www.youtube.com\/embed\/nuQGKAtgIp0",
+              "portfolio_title": "Portfolio title",
+              "portfolio_text": "Portfolio text"
+            }
           }
         },
         "block_order": [
           "679f9aa9-80bc-4044-ac85-2bec623a2581",
-          "1e5aba54-6dfa-435a-96c8-44e280db7f82"
+          "1e5aba54-6dfa-435a-96c8-44e280db7f82",
+          "61a49edc-6484-4f67-8706-206e1e4555ee"
         ],
         "settings": {
           "portfolio_title": "Check out the examples of our creative video producers’ work"
