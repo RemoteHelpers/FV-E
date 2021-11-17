@@ -4881,6 +4881,24 @@
           "types_title": "Look at the types of promotional videos we can provide you with",
           "types_image": "shopify:\/\/shop_images\/types_bde3dcb8-10c1-4e9b-ba48-e9e3007a1fa3.png"
         }
+      },
+      "promotional-product": {
+        "type": "promotional-product",
+        "blocks": {
+          "0c666a7e-291f-4e05-9d7b-ba14fdfcd93e": {
+            "type": "text",
+            "settings": {
+              "item_text": "We will make <b>promo videos for social media<\/b> that you can post on any public networks or websites and demonstrate your offerings to a global audience."
+            }
+          }
+        },
+        "block_order": [
+          "0c666a7e-291f-4e05-9d7b-ba14fdfcd93e"
+        ],
+        "settings": {
+          "product_title": "Promo video for different purposes",
+          "product_text": "Our video production team creates promotional videos for business that engage viewers with animated text, eye-catching graphics, and strong calls to action."
+        }
       }
     },
     "content_for_index": [
