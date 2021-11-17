@@ -5051,6 +5051,38 @@
         "settings": {
           "types_title": "The types of website and social media videos"
         }
+      },
+      "commercialVideo-product": {
+        "type": "commercialVideo-product",
+        "blocks": {
+          "87191581-5901-4cad-abe7-b0bbc618281d": {
+            "type": "text",
+            "settings": {
+              "item_text": "We create social media commercials tailored to each online platform to <b>help you deliver promotional content to the target audience. <\/b>"
+            }
+          },
+          "15ef2729-8eda-4393-991a-89201cc15418": {
+            "type": "text",
+            "settings": {
+              "item_text": "Choose marketing video ads to <b>engage the audience with your brand or services.<\/b>"
+            }
+          },
+          "0b6cba93-b190-4a16-9365-acb8a69f1e77": {
+            "type": "text",
+            "settings": {
+              "item_text": "With <b>video ads for eCommerce,<\/b> you will easily showcase your products to potential clients and turn them into clients."
+            }
+          }
+        },
+        "block_order": [
+          "87191581-5901-4cad-abe7-b0bbc618281d",
+          "15ef2729-8eda-4393-991a-89201cc15418",
+          "0b6cba93-b190-4a16-9365-acb8a69f1e77"
+        ],
+        "settings": {
+          "product_title": "Advertising videos for different purposes",
+          "product_text": "Get business commercials from our specialists to discover your company and advertise your services."
+        }
       }
     },
     "content_for_index": [
