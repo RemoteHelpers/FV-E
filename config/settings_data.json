@@ -4813,6 +4813,15 @@
           "btn_url": "#contactformSection",
           "hero_image": "shopify:\/\/shop_images\/hero_0cddb28e-e272-435e-a1d9-ae860185ca17.png"
         }
+      },
+      "promotional-services": {
+        "type": "promotional-services",
+        "settings": {
+          "services_title": "Promotional video services",
+          "services_text": "Showcase your brand using animated promos with motion graphic effects. Promotional video services include montage, color correction, and titling. We will make your video captivating by adding animation, slow motion, and music that fits the company’s story.",
+          "services_card": "Our video editors create video content that engages audiences and inspires them to action.",
+          "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
+        }
       }
     },
     "content_for_index": [
