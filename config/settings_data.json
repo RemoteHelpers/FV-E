@@ -4906,6 +4906,26 @@
           "product_title": "Promo video for different purposes",
           "product_text": "Our video production team creates promotional videos for business that engage viewers with animated text, eye-catching graphics, and strong calls to action."
         }
+      },
+      "promotional-videoPortfolio": {
+        "type": "promotional-videoPortfolio",
+        "blocks": {
+          "4bcd5667-8303-4f05-a39e-74a6d11f1e5b": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=IZExWRbKSHU",
+              "video_url": "https:\/\/www.youtube.com\/embed\/IZExWRbKSHU",
+              "portfolio_title": "SMM Main PROMO",
+              "portfolio_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "4bcd5667-8303-4f05-a39e-74a6d11f1e5b"
+        ],
+        "settings": {
+          "portfolio_title": "Look through the portfolios of our promotional video makers"
+        }
       }
     },
     "content_for_index": [
