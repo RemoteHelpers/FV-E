@@ -1,0 +1,54 @@
+<section class="hero section">
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero__content">
+        <h1 class="main-title">{{ section.settings.hero_title }}</h1>
+        <p class="basic-text hero__text">{{ section.settings.hero_text }}</p>
+        <a href="{{ section.settings.btn_url }}" class="button btn star-btn button--desk">{{ section.settings.link_text }}</a>
+      </div>
+      <div class="hero__video-holder">
+        <!-- <img src="{{ section.settings.hero_image | img_url: 'master' }}" alt=""> -->
+        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_khsxr1qb.json"  background="transparent"  speed="1"  style="width: 100%; height: auto;" autoplay></lottie-player>      </div>
+      <a href="{{ section.settings.btn_url }}" class="button button--hero button--mob">{{ section.settings.link_text }}</a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "hero",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "hero_title",
+        "label": "Hero title"
+      },
+      {
+        "type": "text",
+        "id": "hero_text",
+        "label": "Hero text"
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link text"
+      },
+      {
+        "type": "url",
+        "id": "btn_url",
+        "label": "URL"
+      },
+      {
+        "type": "url",
+        "id": "video_url",
+        "label": "Video URL"
+      },
+      {
+        "type": "image_picker",
+        "id": "hero_image",
+        "label": "Hero image"
+      }
+  ]
+  } 
+{% endschema %}
