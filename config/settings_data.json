@@ -5083,6 +5083,12 @@
           "product_title": "Advertising videos for different purposes",
           "product_text": "Get business commercials from our specialists to discover your company and advertise your services."
         }
+      },
+      "commercialVideo-videoPortfolio": {
+        "type": "commercialVideo-videoPortfolio",
+        "settings": {
+          "portfolio_title": "Check out the examples of our creative video producers’ work"
+        }
       }
     },
     "content_for_index": [
