@@ -86,7 +86,7 @@ img {
 .hero__content {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 40px;
   padding-top: 180px;
   width: 700px;
 }
@@ -100,10 +100,6 @@ img {
   top: 180px;
   right: 150px;
   width: 39%;
-}
-
-.hero .button {
-  margin-top: 30px;
 }
 
 .button--hero:hover,
