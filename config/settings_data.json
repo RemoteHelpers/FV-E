@@ -5086,6 +5086,30 @@
       },
       "commercialVideo-videoPortfolio": {
         "type": "commercialVideo-videoPortfolio",
+        "blocks": {
+          "679f9aa9-80bc-4044-ac85-2bec623a2581": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=v4Q-pbiKwl8",
+              "video_url": "https:\/\/www.youtube.com\/embed\/v4Q-pbiKwl8",
+              "portfolio_title": "video for the levelens",
+              "portfolio_text": ""
+            }
+          },
+          "1e5aba54-6dfa-435a-96c8-44e280db7f82": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nR42-BWtJyA",
+              "video_url": "https:\/\/www.youtube.com\/embed\/nR42-BWtJyA",
+              "portfolio_title": "video for Lavazza",
+              "portfolio_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "679f9aa9-80bc-4044-ac85-2bec623a2581",
+          "1e5aba54-6dfa-435a-96c8-44e280db7f82"
+        ],
         "settings": {
           "portfolio_title": "Check out the examples of our creative video producers’ work"
         }
