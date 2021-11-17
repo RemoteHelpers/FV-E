@@ -4890,10 +4890,17 @@
             "settings": {
               "item_text": "We will make <b>promo videos for social media<\/b> that you can post on any public networks or websites and demonstrate your offerings to a global audience."
             }
+          },
+          "885a534c-7fe2-4ae3-b347-0744c49e07ab": {
+            "type": "text",
+            "settings": {
+              "item_text": "Get our promo video makers to develop a digital marketing promotional video and showcase your brand or services to <b>attract the target audience.<\/b>"
+            }
           }
         },
         "block_order": [
-          "0c666a7e-291f-4e05-9d7b-ba14fdfcd93e"
+          "0c666a7e-291f-4e05-9d7b-ba14fdfcd93e",
+          "885a534c-7fe2-4ae3-b347-0744c49e07ab"
         ],
         "settings": {
           "product_title": "Promo video for different purposes",
