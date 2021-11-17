@@ -2,15 +2,12 @@
   <div class="container">
     <h2 class="section-title">{{ section.settings.services_title }}</h2>
     <div class="services__wrapper">
-      <div class="services__content">
-        <p class="services__card">{{ section.settings.services_card }}</p>
-        <p class="services__text basic-text">{{ section.settings.services_text }}</p>
-      </div>
-      <div class="services__image-holder">
+      <p class="services__card">{{ section.settings.services_card }}</p>
+      <div class="img-holder">
         <img src="{{ section.settings.services_image | img_url: 'master' }}" alt="">
       </div>
-      <p class="services__text services__text--mob basic-text">{{ section.settings.services_text }}</p>
     </div>
+    <p class="basic-text">{{ section.settings.services_text }}</p>
   </div>
 </section>
 
@@ -35,9 +32,9 @@
         "label": "Services card"
       },
       {
-          "type": "image_picker",
-          "id": "services_image",
-          "label": "Services image"
+        "type": "image_picker",
+        "id": "services_image",
+        "label": "Services image"
       }
   ]
   } 
