@@ -4822,6 +4822,65 @@
           "services_card": "Our video editors create video content that engages audiences and inspires them to action.",
           "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
         }
+      },
+      "promotional-types": {
+        "type": "promotional-types",
+        "blocks": {
+          "9e875d3b-b87e-43a2-a3d0-585b954947bb": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Business promo video",
+              "tItem__text": "creating a business video to promote products and services"
+            }
+          },
+          "c215e897-5d00-4bce-ae64-103b58e027a9": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Animated promo video",
+              "tItem__text": "make storytelling captivating with animation"
+            }
+          },
+          "00a34c1f-26a7-4e1b-b5ac-371151b17d17": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Website promo video",
+              "tItem__text": "give publicity to your website to achieve the users’ attention"
+            }
+          },
+          "881a1f53-a584-43f1-b428-1170181548d0": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Event promo video",
+              "tItem__text": "advertise an upcoming event to drive attendance"
+            }
+          },
+          "dd2805ab-17ca-4f2b-8c1c-6ddf112fbaa7": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Product promo video",
+              "tItem__text": "showcase a product and demonstrate its benefits"
+            }
+          },
+          "ffc97513-eb96-4ee8-abae-eff3c35afa97": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "YouTube promo video",
+              "tItem__text": "advertise your brand and services to YouTube viewers"
+            }
+          }
+        },
+        "block_order": [
+          "9e875d3b-b87e-43a2-a3d0-585b954947bb",
+          "c215e897-5d00-4bce-ae64-103b58e027a9",
+          "00a34c1f-26a7-4e1b-b5ac-371151b17d17",
+          "881a1f53-a584-43f1-b428-1170181548d0",
+          "dd2805ab-17ca-4f2b-8c1c-6ddf112fbaa7",
+          "ffc97513-eb96-4ee8-abae-eff3c35afa97"
+        ],
+        "settings": {
+          "types_title": "Look at the types of promotional videos we can provide you with",
+          "types_image": "shopify:\/\/shop_images\/types_bde3dcb8-10c1-4e9b-ba48-e9e3007a1fa3.png"
+        }
       }
     },
     "content_for_index": [
