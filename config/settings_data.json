@@ -4906,6 +4906,76 @@
           "product_title": "Promo video for different purposes",
           "product_text": "Our video production team creates promotional videos for business that engage viewers with animated text, eye-catching graphics, and strong calls to action."
         }
+      },
+      "promotional-videoPortfolio": {
+        "type": "promotional-videoPortfolio",
+        "blocks": {
+          "4bcd5667-8303-4f05-a39e-74a6d11f1e5b": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=IZExWRbKSHU",
+              "video_url": "https:\/\/www.youtube.com\/embed\/IZExWRbKSHU",
+              "portfolio_title": "SMM Main PROMO",
+              "portfolio_text": ""
+            }
+          },
+          "dca7f036-93fd-48db-b3df-c598ee8cf3e1": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=hdxmekeOMRk",
+              "video_url": "https:\/\/www.youtube.com\/embed\/hdxmekeOMRk",
+              "portfolio_title": "Hire video editors at the outstaffing company",
+              "portfolio_text": ""
+            }
+          },
+          "2fc7b275-c6ac-4543-bfff-0647f8e7cb4d": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=Ms5Vc57f43g",
+              "video_url": "https:\/\/www.youtube.com\/embed\/Ms5Vc57f43g",
+              "portfolio_title": "Hire designers at the remote outsourcing firm",
+              "portfolio_text": ""
+            }
+          },
+          "bc4cbff5-1069-48ec-9170-bab52f7a495a": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=wWvoJ7lh8Ps",
+              "video_url": "https:\/\/www.youtube.com\/embed\/wWvoJ7lh8Ps",
+              "portfolio_title": "Hire personal assistants to free up the schedule",
+              "portfolio_text": ""
+            }
+          },
+          "4d028372-013b-49a7-9e1b-96063a85c4e5": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=Cif0_2fqwGQ",
+              "video_url": "https:\/\/www.youtube.com\/embed\/Cif0_2fqwGQ",
+              "portfolio_title": "Hire PPC specialists at the outstaffing company",
+              "portfolio_text": ""
+            }
+          },
+          "154fba18-8fee-477f-9279-af0220a67b24": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=rygD8i0KrJg",
+              "video_url": "https:\/\/www.youtube.com\/embed\/rygD8i0KrJg",
+              "portfolio_title": "Hire SMM managers to promote the social channels",
+              "portfolio_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "4bcd5667-8303-4f05-a39e-74a6d11f1e5b",
+          "dca7f036-93fd-48db-b3df-c598ee8cf3e1",
+          "2fc7b275-c6ac-4543-bfff-0647f8e7cb4d",
+          "bc4cbff5-1069-48ec-9170-bab52f7a495a",
+          "4d028372-013b-49a7-9e1b-96063a85c4e5",
+          "154fba18-8fee-477f-9279-af0220a67b24"
+        ],
+        "settings": {
+          "portfolio_title": "Look through the portfolios of our promotional video makers"
+        }
       }
     },
     "content_for_index": [
