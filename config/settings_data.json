@@ -4987,6 +4987,15 @@
           "video_url": "",
           "hero_image": "shopify:\/\/shop_images\/hero_9758497e-8535-4fff-874e-2281bafe3a6a.png"
         }
+      },
+      "commercialVideo-service": {
+        "type": "commercialVideo-service",
+        "settings": {
+          "services_title": "Commercial video production services",
+          "services_text": "We create marketing videos using motion graphics, animation, voice-overs, and sound design. In addition, we provide post-production editing, which includes montage, color grading, text animation, and music syncing. Choose our services to arouse the audience's interest in your brand and drive them to take action.",
+          "services_card": "Show your product’s benefits and reach a new audience with commercial video production services from our specialists.",
+          "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
+        }
       }
     },
     "content_for_index": [
