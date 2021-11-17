@@ -5083,6 +5083,66 @@
           "product_title": "Advertising videos for different purposes",
           "product_text": "Get business commercials from our specialists to discover your company and advertise your services."
         }
+      },
+      "commercialVideo-videoPortfolio": {
+        "type": "commercialVideo-videoPortfolio",
+        "blocks": {
+          "679f9aa9-80bc-4044-ac85-2bec623a2581": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=v4Q-pbiKwl8",
+              "video_url": "https:\/\/www.youtube.com\/embed\/v4Q-pbiKwl8",
+              "portfolio_title": "video for the levelens",
+              "portfolio_text": ""
+            }
+          },
+          "1e5aba54-6dfa-435a-96c8-44e280db7f82": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nR42-BWtJyA",
+              "video_url": "https:\/\/www.youtube.com\/embed\/nR42-BWtJyA",
+              "portfolio_title": "video for Lavazza",
+              "portfolio_text": ""
+            }
+          },
+          "61a49edc-6484-4f67-8706-206e1e4555ee": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nuQGKAtgIp0",
+              "video_url": "https:\/\/www.youtube.com\/embed\/nuQGKAtgIp0",
+              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
+              "portfolio_text": ""
+            }
+          },
+          "bfd04dda-e7c6-4b1b-9416-2d265b122cc0": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=QhxtX7_Oe_g",
+              "video_url": "https:\/\/www.youtube.com\/embed\/QhxtX7_Oe_g",
+              "portfolio_title": "Remote Helpers Portfolio | Anastasiia Y. 925",
+              "portfolio_text": ""
+            }
+          },
+          "137b1d1c-98bd-489a-a1f8-eaef970a5ab7": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=PJmZ96pygE8",
+              "video_url": "https:\/\/www.youtube.com\/embed\/PJmZ96pygE8",
+              "portfolio_title": "Video Editing",
+              "portfolio_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "679f9aa9-80bc-4044-ac85-2bec623a2581",
+          "1e5aba54-6dfa-435a-96c8-44e280db7f82",
+          "61a49edc-6484-4f67-8706-206e1e4555ee",
+          "bfd04dda-e7c6-4b1b-9416-2d265b122cc0",
+          "137b1d1c-98bd-489a-a1f8-eaef970a5ab7"
+        ],
+        "settings": {
+          "portfolio_title": "Check out the examples of our creative video producers’ work"
+        }
       }
     },
     "content_for_index": [
