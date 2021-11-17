@@ -4918,10 +4918,20 @@
               "portfolio_title": "SMM Main PROMO",
               "portfolio_text": ""
             }
+          },
+          "dca7f036-93fd-48db-b3df-c598ee8cf3e1": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=hdxmekeOMRk",
+              "video_url": "https:\/\/www.youtube.com\/embed\/hdxmekeOMRk",
+              "portfolio_title": "Portfolio title",
+              "portfolio_text": "Portfolio text"
+            }
           }
         },
         "block_order": [
-          "4bcd5667-8303-4f05-a39e-74a6d11f1e5b"
+          "4bcd5667-8303-4f05-a39e-74a6d11f1e5b",
+          "dca7f036-93fd-48db-b3df-c598ee8cf3e1"
         ],
         "settings": {
           "portfolio_title": "Look through the portfolios of our promotional video makers"
