@@ -86,8 +86,6 @@ img {
 .hero__content {
   display: flex;
   flex-direction: column;
-  -webkit-row-gap: 40px;
-  -moz-row-gap: 40px;
   row-gap: 40px;
   padding-top: 180px;
   margin-right: 40px;
@@ -272,8 +270,6 @@ img {
 
   .hero__wrapper {
     flex-direction: column;
-    -webkit-row-gap: 30px;
-    -moz-row-gap: 30px;
     row-gap: 30px;
     align-items: center;
   }
@@ -399,8 +395,6 @@ img {
   }
 
   .hero__content {
-    -webkit-row-gap: 15px;
-    -moz-row-gap: 15px;
     row-gap: 15px;
   }
 }
