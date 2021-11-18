@@ -442,6 +442,10 @@ img {
   .hero {
     height: 500px;
   }
+
+  .video-bg video {
+    height: 100vh;
+  }
   /* .video-bg {
     display: none;
   } */
