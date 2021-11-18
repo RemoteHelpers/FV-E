@@ -158,9 +158,12 @@ img {
   justify-content: space-between;
 }
 
+.types__wrapper .img-holder {
+  margin-right: 30px;
+}
+
 .types__list {
   margin: 0;
-  margin-right: 30px;
   padding: 0;
   width: 50%;
   list-style: none;
