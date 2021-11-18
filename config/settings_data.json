@@ -4043,7 +4043,8 @@
         "settings": {
           "services_title": "Video production services",
           "services_text": "Our editors provide video content production and offer a wide range of services: video editing, storyboarding, color correction, voiceovers, and scriptwriting.<br>A team of video animators will create motion graphics, 2D and 3D animations, animate the logos and help with post-production editing.",
-          "services_card": "Capture audience attention through video production services."
+          "services_card": "Capture audience attention through video production services.",
+          "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
         }
       },
       "videoEd-types": {
