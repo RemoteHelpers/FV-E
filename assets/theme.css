@@ -552,7 +552,7 @@ input:-webkit-autofill:active  {
 .option-wrapper{
   	z-index: 10;
   	background-color: white;
-  	padding-top: 35px;
+  	padding-top: 55px;
   	position: absolute;
   	top: 10px;
   	left: 0;
@@ -8684,7 +8684,7 @@ div.recommeded-card {
   }
   
   .button-wrapper {
-	width: 100%
+	width: 99%
 }
 
 @media(max-width: 350px) {
