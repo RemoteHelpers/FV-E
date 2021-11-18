@@ -530,7 +530,7 @@ input:-webkit-autofill:active  {
   	border: 2px solid transparent;
   	border-radius: 30px;
   	padding: 15px 30px;
-  	width: 100%;
+  	width: 99%;
   	z-index:20;
   	background-color: white;
 	position: relative;
@@ -552,7 +552,7 @@ input:-webkit-autofill:active  {
 .option-wrapper{
   	z-index: 10;
   	background-color: white;
-  	padding-top: 35px;
+  	padding-top: 55px;
   	position: absolute;
   	top: 10px;
   	left: 0;
