@@ -5162,6 +5162,41 @@
           "services_card": "The shot composition and framing services from our specialists will make your viewers feel involved in the scenes of your clip.",
           "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
         }
+      },
+      "videoFraming-types": {
+        "type": "videoFraming-types",
+        "blocks": {
+          "c294ebf6-8d0a-4bc1-91f4-6d11449cc245": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Wide shot",
+              "tItem__text": "a frame in which a character or group of characters is completely in the frame."
+            }
+          },
+          "67857848-e64d-4d4b-a695-f994d920bbde": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Medium shot",
+              "tItem__text": "a frame that shows an actor from the top of his head to mid-way down the torso"
+            }
+          },
+          "bdcfb117-943b-4dca-ba8f-859df0abfcf8": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Close-up shot",
+              "tItem__text": "a shot of a subject or object taken at close range to show the viewer more detail."
+            }
+          }
+        },
+        "block_order": [
+          "c294ebf6-8d0a-4bc1-91f4-6d11449cc245",
+          "67857848-e64d-4d4b-a695-f994d920bbde",
+          "bdcfb117-943b-4dca-ba8f-859df0abfcf8"
+        ],
+        "settings": {
+          "types_title": "Check out the types of framing our specialists work with",
+          "types_image": "shopify:\/\/shop_images\/types_e354f2f5-ce52-41ac-bbbb-0fc225441df2.png"
+        }
       }
     },
     "content_for_index": [
