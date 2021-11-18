@@ -135,9 +135,9 @@ img {
   color: #ffffff;
 }
 
-.hero .img-holder {
+/* .hero .img-holder {
   display: none;
-}
+} */
 
 .hire__wrapper {
   display: flex;
@@ -442,17 +442,17 @@ img {
   .hero {
     height: 500px;
   }
-  .video-bg {
+  /* .video-bg {
     display: none;
-  }
-  .hero .img-holder {
+  } */
+  /* .hero .img-holder {
     display: block;
     height: 100%;
-  }
-  .hero .img-holder img {
+  } */
+  /* .hero .img-holder img {
     height: 100%;
     object-fit: cover;
-  }
+  } */
   .plan__wrapper {
     flex-direction: column;
   }
