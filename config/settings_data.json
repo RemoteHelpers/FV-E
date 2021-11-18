@@ -5197,6 +5197,31 @@
           "types_title": "Check out the types of framing our specialists work with",
           "types_image": "shopify:\/\/shop_images\/types_e354f2f5-ce52-41ac-bbbb-0fc225441df2.png"
         }
+      },
+      "videoFraming-product": {
+        "type": "videoFraming-product",
+        "blocks": {
+          "847aa23c-0028-43af-a84d-182a54d3e834": {
+            "type": "text",
+            "settings": {
+              "item_text": "We provide video framing in advertising to <b>help present your brand<\/b> and influence how viewers interpret informa.tion about your product."
+            }
+          },
+          "fd7f7c47-5cf6-4ce5-9131-d0d26882e7fd": {
+            "type": "text",
+            "settings": {
+              "item_text": "Our video production specialists will help <b>keep the viewers engaged with video framing in social media and create an emotional connection<\/b> with the object of your story."
+            }
+          }
+        },
+        "block_order": [
+          "847aa23c-0028-43af-a84d-182a54d3e834",
+          "fd7f7c47-5cf6-4ce5-9131-d0d26882e7fd"
+        ],
+        "settings": {
+          "product_title": "Video framing for any purpose",
+          "product_text": "Emphasize the object that you are going to show in your commercial using video framing in marketing. It plays a vital role in affecting a consumer's decision-making ability."
+        }
       }
     },
     "content_for_index": [
