@@ -5153,6 +5153,15 @@
           "btn_url": "#contactformSection",
           "hero_image": "shopify:\/\/shop_images\/hero_9d3d620e-4235-4752-8c72-40b921d5fdfd.png"
         }
+      },
+      "videoFraming-services": {
+        "type": "videoFraming-services",
+        "settings": {
+          "services_title": "Video framing services",
+          "services_text": "The wide range of video post-production editing includes keyframing, retouching, and color balancing. We will add objects, motion graphics, voice-overs, and background music to make your visual content more engaging.",
+          "services_card": "The shot composition and framing services from our specialists will make your viewers feel involved in the scenes of your clip.",
+          "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
+        }
       }
     },
     "content_for_index": [
