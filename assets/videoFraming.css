@@ -159,13 +159,13 @@ img {
 }
 
 .types__wrapper .img-holder {
-  margin-right: 30px;
+  margin-right: 100px;
 }
 
 .types__list {
   margin: 0;
   padding: 0;
-  width: 50%;
+  width: 48%;
   list-style: none;
 }
 
