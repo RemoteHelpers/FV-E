@@ -5243,11 +5243,31 @@
               "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
               "portfolio_text": ""
             }
+          },
+          "f3de0542-c5c7-41ee-9037-42373a9434e8": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=tUS1cQv83yA",
+              "video_url": "https:\/\/www.youtube.com\/embed\/tUS1cQv83yA",
+              "portfolio_title": "Video Editing | Remote Helpers",
+              "portfolio_text": ""
+            }
+          },
+          "337da06a-c407-4ee4-b63f-ab20c4ad4fa0": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=uKtMTKlavzg",
+              "video_url": "https:\/\/www.youtube.com\/embed\/uKtMTKlavzg",
+              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_text": ""
+            }
           }
         },
         "block_order": [
           "4940c2c8-e882-4ed3-8a84-4c61f1f2ef9b",
-          "d29adcb5-b9a8-4a6d-93ac-e0a2031fbeaa"
+          "d29adcb5-b9a8-4a6d-93ac-e0a2031fbeaa",
+          "f3de0542-c5c7-41ee-9037-42373a9434e8",
+          "337da06a-c407-4ee4-b63f-ab20c4ad4fa0"
         ],
         "settings": {
           "portfolio_title": "Look through the portfolios of our remote video editing team"
