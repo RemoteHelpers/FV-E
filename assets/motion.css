@@ -346,6 +346,10 @@ img {
     font-size: 16px;
   }
 
+  .services__card br {
+    display: none;
+  }
+
   .services__card::before {
     left: 15px;
     width: 35px;
