@@ -4653,7 +4653,7 @@ hr {
 .site-header__logo__title, .site-footer__logo__title {
 	color: #000;
   	min-width: fit-content;
-  	padding-left: 10px;
+  	padding-left: 24px;
   	font-family: Raleway;
 	font-style: normal;
 }
