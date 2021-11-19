@@ -5231,13 +5231,23 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nuQGKAtgIp0",
               "video_url": "https:\/\/www.youtube.com\/embed\/nuQGKAtgIp0",
-              "portfolio_title": "Portfolio title",
-              "portfolio_text": "Portfolio text"
+              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
+              "portfolio_text": ""
+            }
+          },
+          "d29adcb5-b9a8-4a6d-93ac-e0a2031fbeaa": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=IaED361NAps",
+              "video_url": "https:\/\/www.youtube.com\/embed\/IaED361NAps",
+              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_text": ""
             }
           }
         },
         "block_order": [
-          "4940c2c8-e882-4ed3-8a84-4c61f1f2ef9b"
+          "4940c2c8-e882-4ed3-8a84-4c61f1f2ef9b",
+          "d29adcb5-b9a8-4a6d-93ac-e0a2031fbeaa"
         ],
         "settings": {
           "portfolio_title": "Look through the portfolios of our remote video editing team"
