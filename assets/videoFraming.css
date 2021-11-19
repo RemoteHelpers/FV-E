@@ -115,7 +115,7 @@ img {
 .services__wrapper {
   margin-bottom: 30px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .services__card {
@@ -264,6 +264,10 @@ img {
 
   .basic-text {
     font-size: 20px;
+  }
+
+  .services__wrapper .basic-text br {
+    display: none;
   }
 }
 
