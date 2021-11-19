@@ -119,7 +119,7 @@ img {
 .services__wrapper {
   margin-bottom: 30px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .services__card {
