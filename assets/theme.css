@@ -4660,7 +4660,8 @@ hr {
 
 .site-header__logo__title--main, .site-footer__logo__title--main{
   	font-weight: 900;
-	font-size: 20px;
+	font-size: 30px;
+  text-transform: capitalize;
 }
 
 .site-header__logo__title--sub, .site-footer__logo__title--sub{
