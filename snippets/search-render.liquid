@@ -1,4 +1,4 @@
-{% if search.performed %}
+
 {% if search.results_count > 0 %}
 <hr aria-hidden="true" />
 {% endif %}
@@ -104,4 +104,3 @@
 {% include 'pagination', paginate: paginate %}
 </div>
 {%- endif -%}
-{% endif %}
