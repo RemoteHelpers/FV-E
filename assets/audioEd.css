@@ -87,12 +87,8 @@ img {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
-<<<<<<< HEAD
-  width: 700px;
-=======
   padding-top: 180px;
   width: 740px;
->>>>>>> Natalia_branch
 }
 
 .hero__text {
@@ -101,16 +97,8 @@ img {
 
 .hero__video-holder {
   position: absolute;
-<<<<<<< HEAD
-  top: 0;
-=======
   top: 100px;
-<<<<<<< HEAD
->>>>>>> Natalia_branch
-  right: 20px;
-=======
   right: 100px;
->>>>>>> Natalia_branch
   width: 40%;
 }
 
