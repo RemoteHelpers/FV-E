@@ -5270,6 +5270,15 @@
               "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
               "portfolio_text": ""
             }
+          },
+          "4925d2b9-ee2a-4fbc-9bae-1e3d230518c6": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=QhxtX7_Oe_g",
+              "video_url": "https:\/\/www.youtube.com\/embed\/QhxtX7_Oe_g",
+              "portfolio_title": "Remote Helpers Portfolio | Anastasiia Y. 925",
+              "portfolio_text": ""
+            }
           }
         },
         "block_order": [
@@ -5277,7 +5286,8 @@
           "d29adcb5-b9a8-4a6d-93ac-e0a2031fbeaa",
           "f3de0542-c5c7-41ee-9037-42373a9434e8",
           "337da06a-c407-4ee4-b63f-ab20c4ad4fa0",
-          "e97a4c84-ead3-46a4-9f36-8945f1defff0"
+          "e97a4c84-ead3-46a4-9f36-8945f1defff0",
+          "4925d2b9-ee2a-4fbc-9bae-1e3d230518c6"
         ],
         "settings": {
           "portfolio_title": "Look through the portfolios of our remote video editing team"
