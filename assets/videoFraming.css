@@ -86,7 +86,7 @@ img {
 .hero__content {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 40px;
   padding-top: 180px;
   margin-right: 40px;
   width: 740px;
@@ -101,10 +101,6 @@ img {
   top: 130px;
   right: 200px;
   width: 32%;
-}
-
-.hero .button {
-  margin-top: 30px;
 }
 
 .button--hero:hover,
@@ -152,7 +148,7 @@ img {
   left: 25px;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url(./video.png);
+  background-image: url(./crop.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -162,11 +158,14 @@ img {
   justify-content: space-between;
 }
 
+.types__wrapper .img-holder {
+  margin-right: 100px;
+}
+
 .types__list {
   margin: 0;
-  margin-right: 30px;
   padding: 0;
-  width: 50%;
+  width: 48%;
   list-style: none;
 }
 
@@ -252,6 +251,7 @@ img {
   }
 
   .hero__video-holder {
+    padding-top: 100px;
     width: 50%;
     position: static;
   }
@@ -284,6 +284,7 @@ img {
   }
 
   .hero__video-holder {
+    padding-top: 0;
     width: 100%;
     text-align: center;
   }
@@ -333,16 +334,16 @@ img {
   }
 
   .types__wrapper {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
   }
 
   .types .img-holder {
     margin-bottom: 30px;
+    margin-right: 0;
   }
 
   .types__list {
-    margin-right: 0;
     width: 100%;
   }
 }

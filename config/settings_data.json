@@ -5143,6 +5143,155 @@
         "settings": {
           "portfolio_title": "Check out the examples of our creative video producers’ work"
         }
+      },
+      "videoFraming-hero": {
+        "type": "videoFraming-hero",
+        "settings": {
+          "hero_title": "Get video framing services from our specialists in a few clicks",
+          "hero_text": "Remote video editors will help you create the right video framing for your project. Try our post-production editing to hook your target audience!",
+          "link_text": "hire specialist",
+          "btn_url": "#contactformSection",
+          "hero_image": "shopify:\/\/shop_images\/hero_9d3d620e-4235-4752-8c72-40b921d5fdfd.png"
+        }
+      },
+      "videoFraming-services": {
+        "type": "videoFraming-services",
+        "settings": {
+          "services_title": "Video framing services",
+          "services_text": "The wide range of video post-production editing includes keyframing, retouching, and color balancing. We will add objects, motion graphics, voice-overs, and background music to make your visual content more engaging.",
+          "services_card": "The shot composition and framing services from our specialists will make your viewers feel involved in the scenes of your clip.",
+          "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
+        }
+      },
+      "videoFraming-types": {
+        "type": "videoFraming-types",
+        "blocks": {
+          "c294ebf6-8d0a-4bc1-91f4-6d11449cc245": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Wide shot",
+              "tItem__text": "a frame in which a character or group of characters is completely in the frame."
+            }
+          },
+          "67857848-e64d-4d4b-a695-f994d920bbde": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Medium shot",
+              "tItem__text": "a frame that shows an actor from the top of his head to mid-way down the torso"
+            }
+          },
+          "bdcfb117-943b-4dca-ba8f-859df0abfcf8": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Close-up shot",
+              "tItem__text": "a shot of a subject or object taken at close range to show the viewer more detail."
+            }
+          }
+        },
+        "block_order": [
+          "c294ebf6-8d0a-4bc1-91f4-6d11449cc245",
+          "67857848-e64d-4d4b-a695-f994d920bbde",
+          "bdcfb117-943b-4dca-ba8f-859df0abfcf8"
+        ],
+        "settings": {
+          "types_title": "Check out the types of framing our specialists work with",
+          "types_image": "shopify:\/\/shop_images\/types_e354f2f5-ce52-41ac-bbbb-0fc225441df2.png"
+        }
+      },
+      "videoFraming-product": {
+        "type": "videoFraming-product",
+        "blocks": {
+          "847aa23c-0028-43af-a84d-182a54d3e834": {
+            "type": "text",
+            "settings": {
+              "item_text": "We provide video framing in advertising to <b>help present your brand<\/b> and influence how viewers interpret informa.tion about your product."
+            }
+          },
+          "fd7f7c47-5cf6-4ce5-9131-d0d26882e7fd": {
+            "type": "text",
+            "settings": {
+              "item_text": "Our video production specialists will help <b>keep the viewers engaged with video framing in social media and create an emotional connection<\/b> with the object of your story."
+            }
+          }
+        },
+        "block_order": [
+          "847aa23c-0028-43af-a84d-182a54d3e834",
+          "fd7f7c47-5cf6-4ce5-9131-d0d26882e7fd"
+        ],
+        "settings": {
+          "product_title": "Video framing for any purpose",
+          "product_text": "Emphasize the object that you are going to show in your commercial using video framing in marketing. It plays a vital role in affecting a consumer's decision-making ability."
+        }
+      },
+      "videoFraming-videoPortfolio": {
+        "type": "videoFraming-videoPortfolio",
+        "blocks": {
+          "4940c2c8-e882-4ed3-8a84-4c61f1f2ef9b": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nuQGKAtgIp0",
+              "video_url": "https:\/\/www.youtube.com\/embed\/nuQGKAtgIp0",
+              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
+              "portfolio_text": ""
+            }
+          },
+          "d29adcb5-b9a8-4a6d-93ac-e0a2031fbeaa": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=IaED361NAps",
+              "video_url": "https:\/\/www.youtube.com\/embed\/IaED361NAps",
+              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_text": ""
+            }
+          },
+          "f3de0542-c5c7-41ee-9037-42373a9434e8": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=tUS1cQv83yA",
+              "video_url": "https:\/\/www.youtube.com\/embed\/tUS1cQv83yA",
+              "portfolio_title": "Video Editing | Remote Helpers",
+              "portfolio_text": ""
+            }
+          },
+          "337da06a-c407-4ee4-b63f-ab20c4ad4fa0": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=uKtMTKlavzg",
+              "video_url": "https:\/\/www.youtube.com\/embed\/uKtMTKlavzg",
+              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_text": ""
+            }
+          },
+          "e97a4c84-ead3-46a4-9f36-8945f1defff0": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=xpChRh9XyXw",
+              "video_url": "https:\/\/www.youtube.com\/embed\/xpChRh9XyXw",
+              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
+              "portfolio_text": ""
+            }
+          },
+          "4925d2b9-ee2a-4fbc-9bae-1e3d230518c6": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=QhxtX7_Oe_g",
+              "video_url": "https:\/\/www.youtube.com\/embed\/QhxtX7_Oe_g",
+              "portfolio_title": "Remote Helpers Portfolio | Anastasiia Y. 925",
+              "portfolio_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "4940c2c8-e882-4ed3-8a84-4c61f1f2ef9b",
+          "d29adcb5-b9a8-4a6d-93ac-e0a2031fbeaa",
+          "f3de0542-c5c7-41ee-9037-42373a9434e8",
+          "337da06a-c407-4ee4-b63f-ab20c4ad4fa0",
+          "e97a4c84-ead3-46a4-9f36-8945f1defff0",
+          "4925d2b9-ee2a-4fbc-9bae-1e3d230518c6"
+        ],
+        "settings": {
+          "portfolio_title": "Look through the portfolios of our remote video editing team"
+        }
       }
     },
     "content_for_index": [
