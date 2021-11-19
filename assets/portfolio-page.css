@@ -56,6 +56,32 @@ section {
     padding-bottom: 180px;
 }
 
+.button {
+    margin: 0;
+    display: block;
+    padding: 15px 0;
+    width: 300px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #f13f00;
+    border-radius: 71px;
+    transition: 0.2s ease-in;
+    box-sizing: border-box;
+  }
+
+  .hire__button button {
+      border: none;
+  } 
+
+  .button--hero:hover,
+.button--hero:active {
+  background-color: #FF6931;
+}
+
 .popup-gallery {
     min-width: 0;
 }
@@ -1042,7 +1068,7 @@ html.lock {
         order: 0;
     }
     .education .section__left {
-        width: unset;
+        width: 100%;
     }
     .education .section__inner {
         align-items: baseline;
@@ -1231,6 +1257,13 @@ html.lock {
         row-gap: 0;
     column-gap: 0;
   } */
+}
+
+@media (max-width: 550px) {
+    .button {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 @media(max-width: 500px) {

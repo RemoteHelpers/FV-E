@@ -63,20 +63,9 @@
     </div>
       {%- if section.settings.see_all != blank -%}
         <div class="button-wrapper">
-          <a class="star-btn btn button" href="{{section.settings.see_all}}" aria-label="{{section.settings.see_all}}">
+          <a class="button button--basic" href="{{section.settings.see_all}}" aria-label="{{section.settings.see_all}}">
               More
           </a>
-          <div class="star-wrapper">
-            <div class="star-w star-1">
-              {% include "star-img" %}
-            </div>
-            <div class="star-w star-2--bigbtn star-2">
-                {% include "star-img" %}
-            </div>
-            <div class="star-w star-3">
-              {% include "star-img" %}
-            </div>
-        </div>
           </div>
         {%- endif -%}
     </section>

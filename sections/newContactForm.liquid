@@ -60,15 +60,13 @@
                 <input type="text" style="display:none;" class="contact_form__input--select" required id="{{ formId }}-type" name="contact[{{ 'contact.form.type' | t }}]" value="{{section.blocks[0].settings.select_option_value | downcase}}">
              
                <input type="text" required class="contact_form__input--name contact_form__input" placeholder="Your name" id="{{ formId }}-name" name="contact[{{ 'contact.form.name' | t }}]" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" oninvalid="setCustomValidity('Enter letters')" oninput="setCustomValidity('')">
-              <input type="text" class="contact_form__input--company contact_form__input" placeholder="Company name"  id="{{ formId }}-company_name" name="contact[{{ 'contact.form.company_name' | t }}]" onchange="if(this.value.trim()){this.classList.add('notEmpty')}">
               <input type="email" required class="contact_form__input--email contact_form__input" placeholder="E-mail" id="{{ formId }}-email" name="contact[email]" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" oninvalid="setCustomValidity('xxx@xxx.xxx')" oninput="setCustomValidity('')">
               <input type="tel"  oninvalid="setCustomValidity('Enter phone only numbers without () or - ')" oninput="setCustomValidity('')" class="contact_form__input--phone contact_form__input" placeholder="Phone number" pattern="(\+)?[0-9]{0,3}[0-9]{3}[0-9]{3}[0-9]{4}"
               required id="{{ formId }}-phone" name="contact[{{ 'contact.form.phone' | t }}]">
-              <textarea required class='contact_form__input textarea' id="{{ formId }}-message" name="contact[{{ 'contact.form.message' | t }}]" placeholder="Your message"></textarea>
              </div>
              <div class="button-wrapper">
-              <input type="submit" class="button star-btn btn" value="{{ 'contact.form.submit' | t }}">
-              <div class="star-wrapper">
+              <input type="submit" class="button button--basic" value="{{ 'contact.form.submit' | t }}">
+              <!-- <div class="star-wrapper">
                 <div class="star-w star-1">
                   {% include "star-img" %}
                 </div>
@@ -78,7 +76,7 @@
                 <div class="star-w star-3">
                   {% include "star-img" %}
                 </div>
-              </div>
+              </div> -->
             </div>
          </div>
           </div>

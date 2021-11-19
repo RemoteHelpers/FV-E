@@ -44,10 +44,6 @@ img {
   box-sizing: border-box;
 }
 
-.button:hover {
-  background-color: #f8622c;
-}
-
 .main-title {
   margin: 0;
   /* margin-bottom: 60px; */
@@ -69,6 +65,7 @@ img {
   line-height: 1.1;
   font-family: 'Raleway', sans-serif;
   text-transform: unset;
+  letter-spacing: unset;
 }
 
 .basic-text {
@@ -94,11 +91,24 @@ img {
   width: 700px;
 }
 
+.hero__text {
+  width: 580px;
+}
+
 .hero__video-holder {
   position: absolute;
-  top: 0;
-  right: 20px;
-  width: 40%;
+  top: 100px;
+  right: 150px;
+  width: 39%;
+}
+
+.hero .button {
+  margin-top: 30px;
+}
+
+.button--hero:hover,
+.button--hero:active {
+  background-color: #FF6931;
 }
 
 .button--mob {
@@ -127,10 +137,6 @@ img {
   border-radius: 10px;
 }
 
-.services__card--mob {
-  display: none;
-}
-
 .services__card::before {
   position: absolute;
   content: "";
@@ -149,11 +155,15 @@ img {
   width: calc(33.33% - 48px);
 }
 
+.services__text--mob {
+  display: none;
+}
+
 .types__wrapper {
   display: flex;
   flex-wrap: wrap;
   column-gap: 72px;
-  row-gap: 70px;
+  row-gap: 40px;
 }
 
 .card__title {
@@ -177,9 +187,7 @@ img {
 }
 
 .product__text {
-  margin: 0;
   margin-bottom: 50px;
-  font-size: 16px;
 }
 
 .product__list {
@@ -189,9 +197,8 @@ img {
 }
 
 .product__item {
-  padding-left: 40px;
+  padding-left: 50px;
   position: relative;
-  font-size: 16px;
 }
 
 .product__item:not(:last-child) {
@@ -202,7 +209,7 @@ img {
   content: "";
   position: absolute;
   background-image: url(./list.png);
-  top: -5px;
+  top: 5px;
   left: 0;
   width: 30px;
   height: 30px;
@@ -213,6 +220,22 @@ img {
   display: none;
 }
 
+@media (max-width: 1580px) {
+  .hero__content {
+    padding-top: 50px;
+    width: 550px;
+  }
+
+  .hero__text {
+    width: 100%;
+  }
+
+  .hero__video-holder {
+    width: 50%;
+    position: static;
+  }
+}
+
 @media (max-width: 1300px) {
   .main-title {
     font-size: 35px;
@@ -220,16 +243,6 @@ img {
 
   .basic-text {
     font-size: 20px;
-  }
-
-  .hero__content {
-    padding-top: 50px;
-    width: 550px;
-  }
-
-  .hero__video-holder {
-    width: 50%;
-    position: static;
   }
 }
 
@@ -286,7 +299,6 @@ img {
 
 @media (max-width: 1000px) {
   .types__wrapper {
-    row-gap: 50px;
     column-gap: 50px;
   }
 
@@ -313,15 +325,15 @@ img {
     width: 100%;
   }
 
-  .services__card {
+  .services__text {
     display: none;
   }
 
-  .services__card--mob {
-    margin-top: 30px;
+  .services__text--mob {
+    margin-top: 25px;
     display: block;
-    width: 80%;
   }
+
 
   .services__image-holder {
     width: 80%;
@@ -335,6 +347,7 @@ img {
 
   .section-title {
     font-size: 32px;
+    line-height: 1.7;
   }
 
   .section {
