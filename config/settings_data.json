@@ -5222,6 +5222,26 @@
           "product_title": "Video framing for any purpose",
           "product_text": "Emphasize the object that you are going to show in your commercial using video framing in marketing. It plays a vital role in affecting a consumer's decision-making ability."
         }
+      },
+      "videoFraming-videoPortfolio": {
+        "type": "videoFraming-videoPortfolio",
+        "blocks": {
+          "4940c2c8-e882-4ed3-8a84-4c61f1f2ef9b": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nuQGKAtgIp0",
+              "video_url": "https:\/\/www.youtube.com\/embed\/nuQGKAtgIp0",
+              "portfolio_title": "Portfolio title",
+              "portfolio_text": "Portfolio text"
+            }
+          }
+        },
+        "block_order": [
+          "4940c2c8-e882-4ed3-8a84-4c61f1f2ef9b"
+        ],
+        "settings": {
+          "portfolio_title": "Look through the portfolios of our remote video editing team"
+        }
       }
     },
     "content_for_index": [
