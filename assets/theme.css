@@ -4665,7 +4665,7 @@ hr {
 }
 
 .site-header__logo__title--sub, .site-footer__logo__title--sub{
-  text-align: center;
+  letter-spacing: 1.2;
   	font-weight: 900;
 	font-size: 10px;
 	letter-spacing: 0.28em;
