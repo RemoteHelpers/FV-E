@@ -5302,6 +5302,15 @@
           "btn_url": "#contactformSection",
           "hero_image": "shopify:\/\/shop_images\/hero_fd6ce94b-d5ff-4905-a374-5ce3865b357d.png"
         }
+      },
+      "colorCorrection-services": {
+        "type": "colorCorrection-services",
+        "settings": {
+          "services_title": "Video color correction services",
+          "services_text": "Our video color correction services include fixing white balance, retouching, brightness and contrast calibration, and color balance. We will adjust RGB curve,  shadows and saturation, and correct exposure  to capture the exact visual and match your material’s appearance consistently.",
+          "services_card": "Give your footage a cleaner and more unified look with post production editing from our specialists.",
+          "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
+        }
       }
     },
     "content_for_index": [
