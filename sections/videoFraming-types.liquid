@@ -2,7 +2,12 @@
   <div class="container">
     <h2 class="section-title">{{ section.settings.types_title }}</h2>
     <div class="types__wrapper">
-      <div class="img-holder"><img src="{{ section.settings.types_image | img_url: 'master' }}" alt=""></div>
+      <div class="img-holder">
+        <picture>
+          <source srcset="{{ section.settings.types_imageMob | img_url: 'master' }}" media="(max-width: 850px)">
+          <img src="{{ section.settings.types_image | img_url: 'master' }}" alt="">
+        </picture>
+      </div>
       <ul class="types__list">
         {% for block in section.blocks %}
         <li class="types__item">
@@ -29,6 +34,11 @@
         "type": "image_picker",
         "id": "types_image",
         "label": "Types image"
+      },
+      {
+        "type": "image_picker",
+        "id": "types_imageMob",
+        "label": "Types image mob"
       }
   ],
   "blocks": [
