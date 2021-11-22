@@ -5357,7 +5357,7 @@
           "238e5bc5-c583-4db9-a49a-9bdc51d69ca9": {
             "type": "text",
             "settings": {
-              "item_text": "There’s also color <b>correction in social media<\/b> — to make your promo stand out among  the endless posts on Instagram, Twitter, or Facebook feed."
+              "item_text": "There’s also color <b>correction in social media<\/b> — to make your promo stand out among the endless posts on Instagram, Twitter, or Facebook feed."
             }
           }
         },
@@ -5369,6 +5369,76 @@
         "settings": {
           "product_title": "Color grading for any purpose",
           "product_text": "There are several possible areas and platforms where our employees can apply color correction in video editing."
+        }
+      },
+      "colorCorrection-videoPortfolio": {
+        "type": "colorCorrection-videoPortfolio",
+        "blocks": {
+          "7c7ed9f9-f56a-4d95-9d2f-39f0f114f9db": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=7yuaO9qXYaY",
+              "video_url": "https:\/\/www.youtube.com\/embed\/7yuaO9qXYaY",
+              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
+              "portfolio_text": ""
+            }
+          },
+          "98eb99de-ba9a-46e4-8ce6-ff1bd561b0fb": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=xpChRh9XyXw",
+              "video_url": "https:\/\/www.youtube.com\/embed\/xpChRh9XyXw",
+              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
+              "portfolio_text": ""
+            }
+          },
+          "3b3e2dc8-b238-416c-bf5c-0c153b233917": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=kUJlDnT3-xA",
+              "video_url": "https:\/\/www.youtube.com\/embed\/kUJlDnT3-xA",
+              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
+              "portfolio_text": ""
+            }
+          },
+          "a48efb43-8b99-4ad3-b328-caa997e3cc2c": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=QhxtX7_Oe_g",
+              "video_url": "https:\/\/www.youtube.com\/embed\/QhxtX7_Oe_g",
+              "portfolio_title": "Remote Helpers Portfolio | Anastasiia Y. 925",
+              "portfolio_text": ""
+            }
+          },
+          "faddb4be-b930-4b8c-b4c0-012bbff49250": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=ixNMiEVkuog",
+              "video_url": "https:\/\/www.youtube.com\/embed\/ixNMiEVkuog",
+              "portfolio_title": "Remote Helpers Portfolio | Anastasiia Y. 925",
+              "portfolio_text": ""
+            }
+          },
+          "bb6297b0-1180-4459-95c6-95158736101c": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nuQGKAtgIp0",
+              "video_url": "https:\/\/www.youtube.com\/embed\/nuQGKAtgIp0",
+              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
+              "portfolio_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "7c7ed9f9-f56a-4d95-9d2f-39f0f114f9db",
+          "98eb99de-ba9a-46e4-8ce6-ff1bd561b0fb",
+          "3b3e2dc8-b238-416c-bf5c-0c153b233917",
+          "a48efb43-8b99-4ad3-b328-caa997e3cc2c",
+          "faddb4be-b930-4b8c-b4c0-012bbff49250",
+          "bb6297b0-1180-4459-95c6-95158736101c"
+        ],
+        "settings": {
+          "portfolio_title": "Browse through the portfolio of our video editors"
         }
       }
     },
