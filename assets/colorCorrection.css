@@ -254,6 +254,10 @@ img {
 }
 
 @media (max-width: 1300px) {
+  br {
+    display: none;
+  }
+
   .main-title {
     font-size: 35px;
   }
