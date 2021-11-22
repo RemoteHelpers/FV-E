@@ -3628,7 +3628,7 @@
         "settings": {
           "services_title": "Motion graphic design services",
           "services_text": "To catch the attention of potential clients, our skilled motion designers will create motion design videos, make intro and outro, animation of logos or motion graphics ads and come up with other motion production solutions for your project.",
-          "services_card": "We are ready to offer a wide range of animated video production services for any project.",
+          "services_card": "We are ready to offer a wide range<br> of animated video production services for any project.",
           "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
         }
       },
@@ -4628,7 +4628,7 @@
       "socMedia-hero": {
         "type": "socMedia-hero",
         "settings": {
-          "hero_title": "Get website and social media video content from our video editors",
+          "hero_title": "Get website and social media video content from our<br> video editors",
           "hero_text": "The video production team creates a quality website and social media video content for brand building and attracting new customers to your company.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -4980,7 +4980,7 @@
       "commercialVideo-hero": {
         "type": "commercialVideo-hero",
         "settings": {
-          "hero_title": "Get a commercial video  from our specialists just in a few clicks",
+          "hero_title": "Get a commercial video<br>  from our specialists just in a few clicks",
           "hero_text": "Need to advertise products or introduce a company to a wide audience? Our video editors provide commercial video production for various projects.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -5158,7 +5158,7 @@
         "type": "videoFraming-services",
         "settings": {
           "services_title": "Video framing services",
-          "services_text": "The wide range of video post-production editing includes keyframing, retouching, and color balancing. We will add objects, motion graphics, voice-overs, and background music to make your visual content more engaging.",
+          "services_text": "The wide range of video post-production editing includes keyframing, retouching, and color balancing.<br> We will add objects, motion graphics, voice-overs, and background music to make your visual content more engaging.",
           "services_card": "The shot composition and framing services from our specialists will make your viewers feel involved in the scenes of your clip.",
           "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
         }

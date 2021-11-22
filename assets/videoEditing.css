@@ -98,9 +98,9 @@ img {
 
 .hero__video-holder {
   position: absolute;
-  top: 130px;
-  right: 200px;
-  width: 32%;
+  top: 100px;
+  right: 290px;
+  width: 29%;
 }
 
 .hero .button {
@@ -119,15 +119,15 @@ img {
 .services__wrapper {
   margin-bottom: 30px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .services__card {
   position: relative;
   margin: 0;
   margin-right: 50px;
-  padding: 35px;
-  padding-left: 90px;
+  padding: 35px 45px;
+  padding-left: 140px;
   width: 500px;
   font-size: 18px;
   border: 1px solid #F5F5F5;
@@ -149,7 +149,7 @@ img {
   content: "";
   width: 50px;
   height: 50px;
-  left: 25px;
+  left: 45px;
   top: 50%;
   transform: translateY(-50%);
   background-image: url(./video.png);
