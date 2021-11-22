@@ -4619,10 +4619,11 @@ hr {
     .site-header {
       border-bottom: 1px solid var(--color-border); } }
   @media only screen and (min-width: 750px) {
-    /* .site-header {
-      padding-left: 5vw;
-      padding-right: 5vw;
-     } */
+    .site-header {
+      padding: 0;
+      /* padding-left: 5vw;
+      padding-right: 5vw; */
+     }
       .site-header.logo--center {
         padding-top: 30px; } }
 
