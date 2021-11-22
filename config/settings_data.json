@@ -5373,6 +5373,20 @@
       },
       "colorCorrection-videoPortfolio": {
         "type": "colorCorrection-videoPortfolio",
+        "blocks": {
+          "7c7ed9f9-f56a-4d95-9d2f-39f0f114f9db": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=7yuaO9qXYaY",
+              "video_url": "https:\/\/www.youtube.com\/embed\/7yuaO9qXYaY",
+              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
+              "portfolio_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "7c7ed9f9-f56a-4d95-9d2f-39f0f114f9db"
+        ],
         "settings": {
           "portfolio_title": "Browse through the portfolio of our video editors"
         }
