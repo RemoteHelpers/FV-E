@@ -148,7 +148,7 @@ img {
   left: 25px;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url(./mouse-pointer.png);
+  background-image: url(./settings.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
