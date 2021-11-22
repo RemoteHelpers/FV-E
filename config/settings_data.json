@@ -5311,6 +5311,33 @@
           "services_card": "Give your footage a cleaner and more unified look with post production editing from our specialists.",
           "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
         }
+      },
+      "colorCorrection-types": {
+        "type": "colorCorrection-types",
+        "blocks": {
+          "c7b5e247-f8da-45d4-8adc-e627f4dc6772": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Primary color correction",
+              "tItem__text": "adjusting and correcting the entire video image"
+            }
+          },
+          "f2b7b7c0-db8f-468c-9cde-9f9ad2ee8446": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Secondary color correction",
+              "tItem__text": "selecting certain parts of the image or objects in the video frame and correcting only those parts."
+            }
+          }
+        },
+        "block_order": [
+          "c7b5e247-f8da-45d4-8adc-e627f4dc6772",
+          "f2b7b7c0-db8f-468c-9cde-9f9ad2ee8446"
+        ],
+        "settings": {
+          "types_title": "Look through the types of color correction we work with",
+          "types_image": "shopify:\/\/shop_images\/types_3507fc31-5795-40fd-a0e5-bdcbc918de3a.png"
+        }
       }
     },
     "content_for_index": [
