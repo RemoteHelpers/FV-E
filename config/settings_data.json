@@ -5338,6 +5338,24 @@
           "types_title": "Look through the types of color correction we work with",
           "types_image": "shopify:\/\/shop_images\/types_3507fc31-5795-40fd-a0e5-bdcbc918de3a.png"
         }
+      },
+      "colorCorrection-product": {
+        "type": "colorCorrection-product",
+        "blocks": {
+          "45f84116-36db-4fa6-b077-e81791af9964": {
+            "type": "text",
+            "settings": {
+              "item_text": "<b>Color grading for youtube videos<\/b> makes them more visually appealing and helps to catch the attention of potential clients."
+            }
+          }
+        },
+        "block_order": [
+          "45f84116-36db-4fa6-b077-e81791af9964"
+        ],
+        "settings": {
+          "product_title": "Color grading for any purpose",
+          "product_text": "There are several possible areas and platforms where our employees can apply color correction in video editing."
+        }
       }
     },
     "content_for_index": [
