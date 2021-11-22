@@ -370,7 +370,7 @@ div.footer-description a{
 }
 .site-header .flex{
 	justify-content: space-between;
-    max-width: 1065px;
+    /* max-width: 1065px; */
     margin: 0 auto;
 }
 
