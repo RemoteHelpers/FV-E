@@ -5195,7 +5195,8 @@
         ],
         "settings": {
           "types_title": "Check out the types of framing our specialists work with",
-          "types_image": "shopify:\/\/shop_images\/types_e354f2f5-ce52-41ac-bbbb-0fc225441df2.png"
+          "types_image": "shopify:\/\/shop_images\/types_e354f2f5-ce52-41ac-bbbb-0fc225441df2.png",
+          "types_imageMob": "shopify:\/\/shop_images\/types-mob.png"
         }
       },
       "videoFraming-product": {
