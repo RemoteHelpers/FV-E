@@ -8121,10 +8121,10 @@ html{
    	max-width: 1420px;
 }
 
-  .site-header .flex {
+  /* .site-header .flex {
     max-width: 1160px;
     min-width: 1100px;
-  }
+  } */
 
 }
 
@@ -8232,10 +8232,10 @@ html{
 } */
 
 @media only screen and (min-width: 1650px) {
-	.site-header .flex {
+	/* .site-header .flex {
     max-width: 1350px;
     min-width: 1230px;
-	}
+	} */
 	
   
   .site-nav__link .site-nav__label {
