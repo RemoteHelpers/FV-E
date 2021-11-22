@@ -5357,7 +5357,7 @@
           "238e5bc5-c583-4db9-a49a-9bdc51d69ca9": {
             "type": "text",
             "settings": {
-              "item_text": "There’s also color <b>correction in social media<\/b> — to make your promo stand out among  the endless posts on Instagram, Twitter, or Facebook feed."
+              "item_text": "There’s also color <b>correction in social media<\/b> — to make your promo stand out among the endless posts on Instagram, Twitter, or Facebook feed."
             }
           }
         },
@@ -5369,6 +5369,12 @@
         "settings": {
           "product_title": "Color grading for any purpose",
           "product_text": "There are several possible areas and platforms where our employees can apply color correction in video editing."
+        }
+      },
+      "colorCorrection-videoPortfolio": {
+        "type": "colorCorrection-videoPortfolio",
+        "settings": {
+          "portfolio_title": "Browse through the portfolio of our video editors"
         }
       }
     },
