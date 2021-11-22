@@ -5292,6 +5292,16 @@
         "settings": {
           "portfolio_title": "Look through the portfolios of our remote video editing team"
         }
+      },
+      "colorCorrection-hero": {
+        "type": "colorCorrection-hero",
+        "settings": {
+          "hero_title": "Get color correction services<br> to make your video stand out",
+          "hero_text": "Our remote video editors provide color grading and color correction services and help make quality video content for different projects.",
+          "link_text": "hire specialist",
+          "btn_url": "#contactformSection",
+          "hero_image": "shopify:\/\/shop_images\/hero_fd6ce94b-d5ff-4905-a374-5ce3865b357d.png"
+        }
       }
     },
     "content_for_index": [
