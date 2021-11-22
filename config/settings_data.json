@@ -5353,11 +5353,18 @@
             "settings": {
               "item_text": "Specialists may also offer you <b>commercial color grading<\/b> to make any of your promotional video materials look clean and vibrant."
             }
+          },
+          "238e5bc5-c583-4db9-a49a-9bdc51d69ca9": {
+            "type": "text",
+            "settings": {
+              "item_text": "There’s also color <b>correction in social media<\/b> — to make your promo stand out among  the endless posts on Instagram, Twitter, or Facebook feed."
+            }
           }
         },
         "block_order": [
           "45f84116-36db-4fa6-b077-e81791af9964",
-          "a7cfe011-3790-4efd-8e5d-f1bcebc1c6e1"
+          "a7cfe011-3790-4efd-8e5d-f1bcebc1c6e1",
+          "238e5bc5-c583-4db9-a49a-9bdc51d69ca9"
         ],
         "settings": {
           "product_title": "Color grading for any purpose",
