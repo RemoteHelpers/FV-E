@@ -5347,10 +5347,17 @@
             "settings": {
               "item_text": "<b>Color grading for youtube videos<\/b> makes them more visually appealing and helps to catch the attention of potential clients."
             }
+          },
+          "a7cfe011-3790-4efd-8e5d-f1bcebc1c6e1": {
+            "type": "text",
+            "settings": {
+              "item_text": "Specialists may also offer you <b>commercial color grading<\/b> to make any of your promotional video materials look clean and vibrant."
+            }
           }
         },
         "block_order": [
-          "45f84116-36db-4fa6-b077-e81791af9964"
+          "45f84116-36db-4fa6-b077-e81791af9964",
+          "a7cfe011-3790-4efd-8e5d-f1bcebc1c6e1"
         ],
         "settings": {
           "product_title": "Color grading for any purpose",
