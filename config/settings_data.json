@@ -5382,10 +5382,30 @@
               "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
               "portfolio_text": ""
             }
+          },
+          "98eb99de-ba9a-46e4-8ce6-ff1bd561b0fb": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=xpChRh9XyXw",
+              "video_url": "https:\/\/www.youtube.com\/embed\/xpChRh9XyXw",
+              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
+              "portfolio_text": ""
+            }
+          },
+          "3b3e2dc8-b238-416c-bf5c-0c153b233917": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=kUJlDnT3-xA",
+              "video_url": "https:\/\/www.youtube.com\/embed\/kUJlDnT3-xA",
+              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
+              "portfolio_text": ""
+            }
           }
         },
         "block_order": [
-          "7c7ed9f9-f56a-4d95-9d2f-39f0f114f9db"
+          "7c7ed9f9-f56a-4d95-9d2f-39f0f114f9db",
+          "98eb99de-ba9a-46e4-8ce6-ff1bd561b0fb",
+          "3b3e2dc8-b238-416c-bf5c-0c153b233917"
         ],
         "settings": {
           "portfolio_title": "Browse through the portfolio of our video editors"
