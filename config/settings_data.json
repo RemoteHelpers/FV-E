@@ -4440,7 +4440,7 @@
       "videoEditing-hero": {
         "type": "videoEditing-hero",
         "settings": {
-          "hero_title": "Get a quality video of your footage with our video editing team",
+          "hero_title": "Get quality video editing",
           "hero_text": "Need movie editing or promotional video editing? Our specialists combine video materials and do all film processing from brief till the final cut",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -4519,7 +4519,7 @@
           "5037e2b4-c5d7-4d2b-a4e5-38c53ffef083"
         ],
         "settings": {
-          "types_title": "Look through the variety of types of video montage we suggest",
+          "types_title": "Types of video montage",
           "types_image": "shopify:\/\/shop_images\/types.png"
         }
       },
@@ -4622,7 +4622,7 @@
           "7749be38-8ad7-4fba-983a-45d9d3e6de72"
         ],
         "settings": {
-          "portfolio_title": "Browse the portfolio of talented video editors from our company"
+          "portfolio_title": "Video editors’ portfolio"
         }
       },
       "socMedia-hero": {
