@@ -4980,7 +4980,7 @@
       "commercialVideo-hero": {
         "type": "commercialVideo-hero",
         "settings": {
-          "hero_title": "Get a commercial video<br>  from our specialists just in a few clicks",
+          "hero_title": "Get a commercial video from our specialists",
           "hero_text": "Need to advertise products or introduce a company to a wide audience? Our video editors provide commercial video production for various projects.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -5049,7 +5049,7 @@
           "f06c9c70-0437-4fbe-b72b-1d2934618d8f"
         ],
         "settings": {
-          "types_title": "The types of website and social media videos"
+          "types_title": "Types of commercial advertising videos"
         }
       },
       "commercialVideo-product": {
