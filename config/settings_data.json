@@ -2766,7 +2766,7 @@
       "animation-hero": {
         "type": "animation-hero",
         "settings": {
-          "hero_title": "Create engaging video content with our animation video makers",
+          "hero_title": "Our animation video makers сreate engaging content",
           "hero_text": "Animation video makers create any kind of animated video production for your project, from traditional animation creation to 3D video animation.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -3519,7 +3519,7 @@
       "animation-service": {
         "type": "animation-service",
         "settings": {
-          "services_title": "Check out the animated video production services we provide",
+          "services_title": "Animated video production services",
           "services_text": "From traditional cell animation, hand-drawn for each clip, various 2D animation styles, to 3D animation creation. These techniques bring the characters, pops, images to life, making them look alive by movement.",
           "services_card": "We are ready to offer a wide range of animated video production services for any project.",
           "services_image": "shopify:\/\/shop_images\/services_df5467c6-44c9-49b7-8442-0294265fc9d4.png"
@@ -3577,7 +3577,7 @@
           "565e94fc-07a2-4c13-8fc4-c00163bc6b03"
         ],
         "settings": {
-          "types_title": "Look through the types of animated videos our specialists offer"
+          "types_title": "Types of animated videos"
         }
       },
       "animation-product": {
@@ -3608,7 +3608,7 @@
           "e02c23de-2433-49e1-a002-1c0a4916d9d8"
         ],
         "settings": {
-          "product_title": "Choose a suitable animated product according to your purpose",
+          "product_title": "Animated product for any purpose",
           "product_text": "On our website, you can order animated products for any purpose."
         }
       },
@@ -4024,7 +4024,7 @@
           "970aee6c-280f-4d11-87ea-25cad9cfe8bb"
         ],
         "settings": {
-          "portfolio_title": "Check out the portfolio of our creative video animation team"
+          "portfolio_title": "Our video animation team’s portfolio"
         }
       },
       "videoEd-hero": {
