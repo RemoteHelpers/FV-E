@@ -4807,7 +4807,7 @@
       "promotional-hero": {
         "type": "promotional-hero",
         "settings": {
-          "hero_title": "Create an eye-catching promotional video with our specialists",
+          "hero_title": "Get quality promotional video for your project",
           "hero_text": "Our video production team will create a promotional video for any project that helps tell a brand story and advertise social media channels.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -4878,7 +4878,7 @@
           "ffc97513-eb96-4ee8-abae-eff3c35afa97"
         ],
         "settings": {
-          "types_title": "Look at the types of promotional videos we can provide you with",
+          "types_title": "Types of promotional videos we can provide you with.",
           "types_image": "shopify:\/\/shop_images\/types_bde3dcb8-10c1-4e9b-ba48-e9e3007a1fa3.png"
         }
       },
