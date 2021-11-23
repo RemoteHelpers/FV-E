@@ -5147,7 +5147,7 @@
       "videoFraming-hero": {
         "type": "videoFraming-hero",
         "settings": {
-          "hero_title": "Get video framing services from our specialists in a few clicks",
+          "hero_title": "Get Video framing services",
           "hero_text": "Remote video editors will help you create the right video framing for your project. Try our post-production editing to hook your target audience!",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -5194,7 +5194,7 @@
           "bdcfb117-943b-4dca-ba8f-859df0abfcf8"
         ],
         "settings": {
-          "types_title": "Check out the types of framing our specialists work with",
+          "types_title": "Types of framing our specialists work with",
           "types_image": "shopify:\/\/shop_images\/types_e354f2f5-ce52-41ac-bbbb-0fc225441df2.png",
           "types_imageMob": "shopify:\/\/shop_images\/types-mob.png"
         }
@@ -5291,7 +5291,7 @@
           "4925d2b9-ee2a-4fbc-9bae-1e3d230518c6"
         ],
         "settings": {
-          "portfolio_title": "Look through the portfolios of our remote video editing team"
+          "portfolio_title": "Portfolio of our video editing team"
         }
       },
       "colorCorrection-hero": {
