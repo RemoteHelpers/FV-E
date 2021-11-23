@@ -4030,7 +4030,7 @@
       "videoEd-hero": {
         "type": "videoEd-hero",
         "settings": {
-          "hero_title": "Get quality video production content from remote video editors",
+          "hero_title": "Get quality video production",
           "hero_text": "Our video production team provides video and audio editing services and helps create high-quality content as a way to build brand awareness.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -4108,7 +4108,7 @@
           "7d713bc5-cf84-44b6-afe1-0f74860e563d"
         ],
         "settings": {
-          "types_title": "Look through the types of animated videos our specialists offer"
+          "types_title": "Types of video production"
         }
       },
       "videoEd-product": {
