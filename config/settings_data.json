@@ -5336,7 +5336,7 @@
           "f2b7b7c0-db8f-468c-9cde-9f9ad2ee8446"
         ],
         "settings": {
-          "types_title": "Look through the types of color correction we work with",
+          "types_title": "Types of color correction",
           "types_image": "shopify:\/\/shop_images\/types_3507fc31-5795-40fd-a0e5-bdcbc918de3a.png"
         }
       },
@@ -5439,7 +5439,7 @@
           "bb6297b0-1180-4459-95c6-95158736101c"
         ],
         "settings": {
-          "portfolio_title": "Browse through the portfolio of our video editors"
+          "portfolio_title": "Our video editors’ portfolio"
         }
       }
     },
