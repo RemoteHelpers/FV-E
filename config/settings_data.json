@@ -5394,6 +5394,15 @@
           "btn_url": "#contactformSection",
           "hero_image": "shopify:\/\/shop_images\/hero_220aa1fa-da40-4dee-bcc2-6092452e6584.png"
         }
+      },
+      "chromakey-services": {
+        "type": "chromakey-services",
+        "settings": {
+          "services_title": "Green screen video services",
+          "services_text": "Our specialists can add visual effects and change the background in post-production to create an eye-catching chroma key video for your project. With green screen technology, they are able to create  a new composited background by taking existing background footage and putting it into the shot.",
+          "services_card": "The video editors from our company will gladly help you with screen compositing of any footage",
+          "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
+        }
       }
     },
     "content_for_index": [
