@@ -2766,7 +2766,7 @@
       "animation-hero": {
         "type": "animation-hero",
         "settings": {
-          "hero_title": "Create engaging video content with our animation video makers",
+          "hero_title": "Our animation video makers сreate engaging content",
           "hero_text": "Animation video makers create any kind of animated video production for your project, from traditional animation creation to 3D video animation.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -3335,7 +3335,7 @@
       "163489549794f2a10c": {
         "type": "home-hero",
         "settings": {
-          "hero_title": "Get a wide range of video editing services in a few clicks",
+          "hero_title": "Get our video editing services",
           "hero_text": "Need to create video content for your project? Check out our video editors to implement video-creating tasks: audio and video editing services, animation, or video production.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -3346,7 +3346,7 @@
       "1634903179ec7ad7d2": {
         "type": "home-hire",
         "settings": {
-          "hire_title": "Find out more information about our outstaffing company",
+          "hire_title": "About us",
           "hire_text": "We are a Ukrainian-based outstaffing company that was founded in 2020 and now includes 10+ skilled video editors. Our specialists deliver various online video editing services and have already helped advertise products or services for more than 20+ companies worldwide.",
           "hire_card": "Take advantage to get a creative team! We are at your disposal both full-time (8-hour) or part-time (4-hour) working days in your time zone.",
           "hire_image": "shopify:\/\/shop_images\/hire.png"
@@ -3404,7 +3404,7 @@
           "dca36eae-fd0e-4b6b-972b-6172b5c169be"
         ],
         "settings": {
-          "services_title": "Improve your content with our video processing services"
+          "services_title": "Video processing services"
         }
       },
       "1634911040eb4ada09": {
@@ -3468,7 +3468,7 @@
           "9f8e9482-637a-4382-b6b2-d926d75285eb"
         ],
         "settings": {
-          "types_title": "Have a look at  the types of video specialists you can get",
+          "types_title": "Look through the types of video specialists our company provides",
           "types_text": "At our site, you can hire full-time or part-time video editors who provide complex video and audio editing and animation work altogether.",
           "types_image": "shopify:\/\/shop_images\/clock.png"
         }
@@ -3512,14 +3512,14 @@
           "9a55834f-bacd-418f-bf19-326f85cd8fa0"
         ],
         "settings": {
-          "plan_title": "What do you need to do to start working with us?",
+          "plan_title": "How to start working with us?",
           "plan_image": "shopify:\/\/shop_images\/plan.png"
         }
       },
       "animation-service": {
         "type": "animation-service",
         "settings": {
-          "services_title": "Check out the animated video production services we provide",
+          "services_title": "Animated video production services",
           "services_text": "From traditional cell animation, hand-drawn for each clip, various 2D animation styles, to 3D animation creation. These techniques bring the characters, pops, images to life, making them look alive by movement.",
           "services_card": "We are ready to offer a wide range of animated video production services for any project.",
           "services_image": "shopify:\/\/shop_images\/services_df5467c6-44c9-49b7-8442-0294265fc9d4.png"
@@ -3577,7 +3577,7 @@
           "565e94fc-07a2-4c13-8fc4-c00163bc6b03"
         ],
         "settings": {
-          "types_title": "Look through the types of animated videos our specialists offer"
+          "types_title": "Types of animated videos"
         }
       },
       "animation-product": {
@@ -3608,14 +3608,14 @@
           "e02c23de-2433-49e1-a002-1c0a4916d9d8"
         ],
         "settings": {
-          "product_title": "Choose a suitable animated product according to your purpose",
+          "product_title": "Animated product for any purpose",
           "product_text": "On our website, you can order animated products for any purpose."
         }
       },
       "motion-hero": {
         "type": "motion-hero",
         "settings": {
-          "hero_title": "Create motion graphics for your project with our motion designer",
+          "hero_title": "Get a motion designer for your project",
           "hero_text": "Our team of motion designers will make a unique and eye-catching motion graphics video to help you demonstrate your product to potential clients.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -3626,7 +3626,7 @@
       "motion-services": {
         "type": "motion-services",
         "settings": {
-          "services_title": "Motion graphic design services",
+          "services_title": "Check out the motion graphic design services offered",
           "services_text": "To catch the attention of potential clients, our skilled motion designers will create motion design videos, make intro and outro, animation of logos or motion graphics ads and come up with other motion production solutions for your project.",
           "services_card": "We are ready to offer a wide range<br> of animated video production services for any project.",
           "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
@@ -3669,7 +3669,7 @@
           "7789dd49-8806-49fb-898b-63e5069bcd90"
         ],
         "settings": {
-          "types_title": "Look through the types of motion graphics production we offer"
+          "types_title": "Types of motion graphics production"
         }
       },
       "motion-product": {
@@ -3700,7 +3700,7 @@
           "05c4dbdd-7054-4442-b53f-5ad0992aa936"
         ],
         "settings": {
-          "product_title": "Motion graphic design for any purpose",
+          "product_title": "See for yourself where you can use motion graphic design",
           "product_text": "Our team’s motion design studio delivers the best results to clients to get ahead in their business."
         }
       },
@@ -3784,7 +3784,7 @@
         ],
         "settings": {
           "bg_color": "#f5f5f5",
-          "title": "Fill out the form",
+          "title": "Contact form.",
           "description": "Our manager will contact you at once",
           "image": "shopify:\/\/shop_images\/form_368140bb-98c9-4fc6-b00d-26f5975eda3e.png"
         }
@@ -3954,7 +3954,7 @@
           "3ba31d49-f741-4168-a194-8756d37f5ca5"
         ],
         "settings": {
-          "portfolio_title": "Look through our production team’s video editing portfolio"
+          "portfolio_title": "Video editing portfolios"
         }
       },
       "animation-videoPortfolio": {
@@ -4024,13 +4024,13 @@
           "970aee6c-280f-4d11-87ea-25cad9cfe8bb"
         ],
         "settings": {
-          "portfolio_title": "Check out the portfolio of our creative video animation team"
+          "portfolio_title": "Our video animation team’s portfolio"
         }
       },
       "videoEd-hero": {
         "type": "videoEd-hero",
         "settings": {
-          "hero_title": "Get quality video production content from remote video editors",
+          "hero_title": "Get quality video production",
           "hero_text": "Our video production team provides video and audio editing services and helps create high-quality content as a way to build brand awareness.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -4108,7 +4108,7 @@
           "7d713bc5-cf84-44b6-afe1-0f74860e563d"
         ],
         "settings": {
-          "types_title": "Look through the types of animated videos our specialists offer"
+          "types_title": "Types of video production"
         }
       },
       "videoEd-product": {
@@ -4203,7 +4203,7 @@
           "b5ee6d3c-fb7b-4949-8875-b5f7cbba4b18"
         ],
         "settings": {
-          "portfolio_title": "Check out our creative team’s motion graphics design portfolio"
+          "portfolio_title": "Our motion graphics design portfolio"
         }
       },
       "videoEd-videoPortfolio": {
@@ -4273,13 +4273,13 @@
           "80efc3cc-cc40-4eea-9e3a-7ba1563a2a67"
         ],
         "settings": {
-          "portfolio_title": "Look through the portfolios of our creative video producers"
+          "portfolio_title": "Portfolios of our video producers."
         }
       },
       "audioEd-hero": {
         "type": "audioEd-hero",
         "settings": {
-          "hero_title": "Entrust your audio editing project to our creative specialists",
+          "hero_title": "Get our specialists for your audio editing project",
           "hero_text": "Our team of sound editors offers a wide range of audio editing services, including sound effects, voice acting, and equalization for any project",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -4332,7 +4332,7 @@
           "97bc0daf-2a66-4963-ac71-e0a4c0c2f957"
         ],
         "settings": {
-          "types_title": "Find out what types of professional audio editing"
+          "types_title": "Types of professional audio editing"
         }
       },
       "audioEd-product": {
@@ -4363,7 +4363,7 @@
           "7904c996-032c-4e0e-ac08-77d9c27d056d"
         ],
         "settings": {
-          "product_title": "Audio-editing for any purpose",
+          "product_title": "Sound editing for any purpose",
           "product_text": "We provide movie audio editing and work with character dialogues, music, and various effects, making your film more captivating."
         }
       },
@@ -4434,13 +4434,13 @@
           "79c169c0-f49f-4d22-b2b8-1423ac2f4981"
         ],
         "settings": {
-          "portfolio_title": "Check out the portfolio of our talented audio editors’ team"
+          "portfolio_title": "Portfolio of our audio editors"
         }
       },
       "videoEditing-hero": {
         "type": "videoEditing-hero",
         "settings": {
-          "hero_title": "Get a quality video of your footage with our video editing team",
+          "hero_title": "Get quality video editing",
           "hero_text": "Need movie editing or promotional video editing? Our specialists combine video materials and do all film processing from brief till the final cut",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -4519,7 +4519,7 @@
           "5037e2b4-c5d7-4d2b-a4e5-38c53ffef083"
         ],
         "settings": {
-          "types_title": "Look through the variety of types of video montage we suggest",
+          "types_title": "Types of video montage",
           "types_image": "shopify:\/\/shop_images\/types.png"
         }
       },
@@ -4622,13 +4622,13 @@
           "7749be38-8ad7-4fba-983a-45d9d3e6de72"
         ],
         "settings": {
-          "portfolio_title": "Browse the portfolio of talented video editors from our company"
+          "portfolio_title": "Video editors’ portfolio"
         }
       },
       "socMedia-hero": {
         "type": "socMedia-hero",
         "settings": {
-          "hero_title": "Get website and social media video content from our<br> video editors",
+          "hero_title": "Get website and social media video content",
           "hero_text": "The video production team creates a quality website and social media video content for brand building and attracting new customers to your company.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -4706,7 +4706,7 @@
           "8111e9c9-b2c7-41f0-bb1f-4467706a27d2"
         ],
         "settings": {
-          "types_title": "The types of website and social media videos"
+          "types_title": "Types of website and social media videos"
         }
       },
       "socMedia-product": {
@@ -4801,13 +4801,13 @@
           "61c9911b-bce8-4022-b68d-0f9d560cc284"
         ],
         "settings": {
-          "portfolio_title": "Look through the portfolio of our video marketing specialists"
+          "portfolio_title": "Portfolio of our video marketing specialists"
         }
       },
       "promotional-hero": {
         "type": "promotional-hero",
         "settings": {
-          "hero_title": "Create an eye-catching promotional video with our specialists",
+          "hero_title": "Get quality promotional video for your project",
           "hero_text": "Our video production team will create a promotional video for any project that helps tell a brand story and advertise social media channels.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -4878,7 +4878,7 @@
           "ffc97513-eb96-4ee8-abae-eff3c35afa97"
         ],
         "settings": {
-          "types_title": "Look at the types of promotional videos we can provide you with",
+          "types_title": "Types of promotional videos we can provide you with.",
           "types_image": "shopify:\/\/shop_images\/types_bde3dcb8-10c1-4e9b-ba48-e9e3007a1fa3.png"
         }
       },
@@ -4903,7 +4903,7 @@
           "885a534c-7fe2-4ae3-b347-0744c49e07ab"
         ],
         "settings": {
-          "product_title": "Promo video for different purposes",
+          "product_title": "Promo video for various purposes",
           "product_text": "Our video production team creates promotional videos for business that engage viewers with animated text, eye-catching graphics, and strong calls to action."
         }
       },
@@ -4974,13 +4974,13 @@
           "154fba18-8fee-477f-9279-af0220a67b24"
         ],
         "settings": {
-          "portfolio_title": "Look through the portfolios of our promotional video makers"
+          "portfolio_title": "Our promotional video makers’ portfolio"
         }
       },
       "commercialVideo-hero": {
         "type": "commercialVideo-hero",
         "settings": {
-          "hero_title": "Get a commercial video<br>  from our specialists just in a few clicks",
+          "hero_title": "Get a commercial video from our specialists",
           "hero_text": "Need to advertise products or introduce a company to a wide audience? Our video editors provide commercial video production for various projects.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -5049,7 +5049,7 @@
           "f06c9c70-0437-4fbe-b72b-1d2934618d8f"
         ],
         "settings": {
-          "types_title": "The types of website and social media videos"
+          "types_title": "Types of commercial advertising videos"
         }
       },
       "commercialVideo-product": {
@@ -5141,13 +5141,13 @@
           "137b1d1c-98bd-489a-a1f8-eaef970a5ab7"
         ],
         "settings": {
-          "portfolio_title": "Check out the examples of our creative video producers’ work"
+          "portfolio_title": "Portfolio of our video producers"
         }
       },
       "videoFraming-hero": {
         "type": "videoFraming-hero",
         "settings": {
-          "hero_title": "Get video framing services from our specialists in a few clicks",
+          "hero_title": "Get Video framing services",
           "hero_text": "Remote video editors will help you create the right video framing for your project. Try our post-production editing to hook your target audience!",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -5194,7 +5194,7 @@
           "bdcfb117-943b-4dca-ba8f-859df0abfcf8"
         ],
         "settings": {
-          "types_title": "Check out the types of framing our specialists work with",
+          "types_title": "Types of framing our specialists work with",
           "types_image": "shopify:\/\/shop_images\/types_e354f2f5-ce52-41ac-bbbb-0fc225441df2.png",
           "types_imageMob": "shopify:\/\/shop_images\/types-mob.png"
         }
@@ -5291,7 +5291,7 @@
           "4925d2b9-ee2a-4fbc-9bae-1e3d230518c6"
         ],
         "settings": {
-          "portfolio_title": "Look through the portfolios of our remote video editing team"
+          "portfolio_title": "Portfolio of our video editing team"
         }
       },
       "colorCorrection-hero": {
@@ -5336,7 +5336,7 @@
           "f2b7b7c0-db8f-468c-9cde-9f9ad2ee8446"
         ],
         "settings": {
-          "types_title": "Look through the types of color correction we work with",
+          "types_title": "Types of color correction",
           "types_image": "shopify:\/\/shop_images\/types_3507fc31-5795-40fd-a0e5-bdcbc918de3a.png"
         }
       },
@@ -5439,7 +5439,7 @@
           "bb6297b0-1180-4459-95c6-95158736101c"
         ],
         "settings": {
-          "portfolio_title": "Browse through the portfolio of our video editors"
+          "portfolio_title": "Our video editors’ portfolio"
         }
       }
     },
