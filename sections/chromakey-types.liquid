@@ -1,0 +1,63 @@
+<section class="types section">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.types_title }}</h2>
+    <div class="types__wrapper">
+      <div class="img-holder">
+        <picture>
+          <source srcset="{{ section.settings.types_imageMob | img_url: 'master' }}" media="(max-width: 850px)">
+          <img src="{{ section.settings.types_image | img_url: 'master' }}" alt="">
+        </picture>
+      </div>
+      <ul class="types__list">
+        {% for block in section.blocks %}
+        <li class="types__item">
+          <h4 class="item__title">{{ block.settings.tItem__title }}</h4>
+          <p class="item__text">{{ block.settings.tItem__text }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "types",
+  
+  "settings": [
+      {
+        "type": "text",
+        "id": "types_title",
+        "label": "Types title"
+      },
+      {
+        "type": "image_picker",
+        "id": "types_image",
+        "label": "Types image"
+      },
+      {
+        "type": "image_picker",
+        "id": "types_imageMob",
+        "label": "Types image mob"
+      }
+  ],
+  "blocks": [
+      {
+        "type": "text",
+        "name": "types-list",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tItem__title",
+            "label": "Types item title"
+          },
+          {
+            "type": "text",
+            "id": "tItem__text",
+            "label": "Types item text"
+          }
+        ]
+      }
+  ]
+} 
+{% endschema %}
