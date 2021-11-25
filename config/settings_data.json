@@ -819,63 +819,6 @@
           "see_all": "shopify:\/\/collections"
         }
       },
-      "chromakey-info": {
-        "type": "chromakey-info",
-        "settings": {
-          "hero_title": "Create a green screen video with our chroma key specialists.",
-          "hero_text": "Our company’s green screen video production team will create a perfect chromakey video for your project to get you ahead of your competitors.",
-          "link_text": "Create your video",
-          "btn_url": "#",
-          "hero_image": "shopify:\/\/shop_images\/chromakey.jpg",
-          "hero_imagemob": "shopify:\/\/shop_images\/chromakey-mob_ee40c615-9ad3-48c8-843e-1bb1fc227c1d.jpg"
-        }
-      },
-      "chromakey-services": {
-        "type": "chromakey-services",
-        "settings": {
-          "services_image": "shopify:\/\/shop_images\/services.png",
-          "services_title": "Check out the green screen production services that we offer.",
-          "services_text": "Green screen technology is a perfect low-budget solution for high-quality production videos. With the help of our skillful green screen video makers, you can create an excellent chroma key video for your project. Our chroma key specialists will composite two video streams together, create a wide-angle scene and provide service of adding a green background with a speaker presence. So entrust our video makers with your project, and we will deliver the best results following your requirements.",
-          "link_text": "Create your video",
-          "btn_url": "#"
-        }
-      },
-      "chromakey-types": {
-        "type": "chromakey-types",
-        "blocks": {
-          "23470702-e262-43d6-a42b-6311e02be211": {
-            "type": "image",
-            "settings": {
-              "card_image": "shopify:\/\/shop_images\/card1.jpg",
-              "card_text": "Business green screen video - chroma keying videos for businesses, startups, etc."
-            }
-          },
-          "0398e0db-bf64-4406-b61d-9d839461bf78": {
-            "type": "image",
-            "settings": {
-              "card_image": "shopify:\/\/shop_images\/card2.jpg",
-              "card_text": "Youtube green screen video - making a green screen video for your youtube channel."
-            }
-          }
-        },
-        "block_order": [
-          "23470702-e262-43d6-a42b-6311e02be211",
-          "0398e0db-bf64-4406-b61d-9d839461bf78"
-        ],
-        "settings": {
-          "types_title": "Look through the types of chroma key videos our team produces."
-        }
-      },
-      "chromakey-purpose": {
-        "type": "chromakey-purpose",
-        "settings": {
-          "purpose_title": "Pick a green screen production service for your project's purpose.",
-          "purpose_text": "Nowadays, almost every major video production process includes green screen effects. It’s cheaper than going out of your way to shoot a video in a specific location, with the noise and distractions from the surrounding environment. That is why chroma key services are needed in many fields of video production. For example, you can order a chroma key for google meet to get quality videos with original background or a green screen for online teaching to make your lessons more exciting and get your student’s attention.",
-          "link_text": "Create your video",
-          "btn_url": "#",
-          "purpose_image": "shopify:\/\/shop_images\/purpose.jpg"
-        }
-      },
       "ContactForm": {
         "type": "ContactForm",
         "blocks": {
@@ -5440,6 +5383,16 @@
         ],
         "settings": {
           "portfolio_title": "Our video editors’ portfolio"
+        }
+      },
+      "chromakey-hero": {
+        "type": "chromakey-hero",
+        "settings": {
+          "hero_title": "Our specialists help create videos using the chroma key",
+          "hero_text": "Get remote video editors to assist you with green screen video production — they can add visual effects, or provide chroma keying of custom backgrounds",
+          "link_text": "hire specialist",
+          "btn_url": "#contactformSection",
+          "hero_image": "shopify:\/\/shop_images\/hero_220aa1fa-da40-4dee-bcc2-6092452e6584.png"
         }
       }
     },
