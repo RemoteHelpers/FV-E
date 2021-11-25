@@ -148,7 +148,7 @@ img {
   left: 25px;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url(./crop.png);
+  background-image: url(./frame.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
