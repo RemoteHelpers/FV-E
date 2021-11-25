@@ -5523,6 +5523,33 @@
           "services_card": "Our visual effects artists can add vfx to any of your videos.",
           "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
         }
+      },
+      "visualEffect-types": {
+        "type": "visualEffect-types",
+        "blocks": {
+          "ce64b37a-8b2f-47c2-b3f5-2c11a2ef1eed": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Visible effects",
+              "tItem__text": "effects that are visible to the viewer and help make a video more impactful"
+            }
+          },
+          "46dcc818-6e31-4bf0-80cd-a15472e4bb3f": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Invisible effects",
+              "tItem__text": "effects that are created not to be noticed but instead improve the overall impression from the video, creating a realistic look"
+            }
+          }
+        },
+        "block_order": [
+          "ce64b37a-8b2f-47c2-b3f5-2c11a2ef1eed",
+          "46dcc818-6e31-4bf0-80cd-a15472e4bb3f"
+        ],
+        "settings": {
+          "types_title": "Types of visual effects",
+          "types_image": "shopify:\/\/shop_images\/star.png"
+        }
       }
     },
     "content_for_index": [
