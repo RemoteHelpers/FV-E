@@ -5403,6 +5403,42 @@
           "services_card": "The video editors from our company will gladly help you with screen compositing of any footage",
           "services_image": "shopify:\/\/shop_images\/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
         }
+      },
+      "chromakey-types": {
+        "type": "chromakey-types",
+        "blocks": {
+          "d46139e1-2c91-43d3-b3a4-a3dbb0ca9336": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Animated background",
+              "tItem__text": "make your video more engaging by adding an animated background"
+            }
+          },
+          "7db1e6d0-b7a2-4835-8dae-aca5f5a0444a": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Real-life background",
+              "tItem__text": "real-life footage can help make commercials more grounded and informational\/educational videos easier to follow"
+            }
+          },
+          "678634b7-f255-42ed-85ed-566141f9f7dc": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Static background",
+              "tItem__text": "custom static background to show infographics,  your company’s logo or other non-animated imagery"
+            }
+          }
+        },
+        "block_order": [
+          "d46139e1-2c91-43d3-b3a4-a3dbb0ca9336",
+          "7db1e6d0-b7a2-4835-8dae-aca5f5a0444a",
+          "678634b7-f255-42ed-85ed-566141f9f7dc"
+        ],
+        "settings": {
+          "types_title": "Types of chroma key videos our team works with",
+          "types_image": "shopify:\/\/shop_images\/types_b65c6e2b-3b2b-46f0-913a-9542670fb326.png",
+          "types_imageMob": "shopify:\/\/shop_images\/types-mob_e79b3402-b2cf-4ec3-994d-aacfe7c2b925.png"
+        }
       }
     },
     "content_for_index": [
