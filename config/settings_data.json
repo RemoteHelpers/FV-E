@@ -5439,6 +5439,31 @@
           "types_image": "shopify:\/\/shop_images\/types_b65c6e2b-3b2b-46f0-913a-9542670fb326.png",
           "types_imageMob": "shopify:\/\/shop_images\/types-mob_e79b3402-b2cf-4ec3-994d-aacfe7c2b925.png"
         }
+      },
+      "chromakey-product": {
+        "type": "chromakey-product",
+        "blocks": {
+          "9a5984aa-952a-46fd-9568-b58c3bf4f086": {
+            "type": "text",
+            "settings": {
+              "item_text": "Green screen technology allows us to <b>help companies and small businesses<\/b> shoot creative ads, and more visually interesting informational or educational videos."
+            }
+          },
+          "8a6706b7-93a2-4593-a938-807668428878": {
+            "type": "text",
+            "settings": {
+              "item_text": "Get visual effects to draw users’ attention to your video on various social media feeds — <b>brighter, more exciting videos achieved through screen compositing.<\/b>"
+            }
+          }
+        },
+        "block_order": [
+          "9a5984aa-952a-46fd-9568-b58c3bf4f086",
+          "8a6706b7-93a2-4593-a938-807668428878"
+        ],
+        "settings": {
+          "product_title": "Green screen video services for any purpose",
+          "product_text": "Hire our specialists to work on your new trendy video employing green screen effects."
+        }
       }
     },
     "content_for_index": [
