@@ -5504,6 +5504,16 @@
         "settings": {
           "portfolio_title": "Portfolios of our video editors"
         }
+      },
+      "visualEffect-hero": {
+        "type": "visualEffect-hero",
+        "settings": {
+          "hero_title": "Visual effects to make an eye-catching video",
+          "hero_text": "Get our video editors to create visual effects for you. They will add special effects to your videos to bring more attention to your business.",
+          "link_text": "hire specialist",
+          "btn_url": "#contactformSection",
+          "hero_image": "shopify:\/\/shop_images\/hero_c69c1f3a-f1bf-406b-bef9-6c0c011bf80b.png"
+        }
       }
     },
     "content_for_index": [
