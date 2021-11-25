@@ -5550,6 +5550,38 @@
           "types_title": "Types of visual effects",
           "types_image": "shopify:\/\/shop_images\/star.png"
         }
+      },
+      "visualEffect-product": {
+        "type": "visualEffect-product",
+        "blocks": {
+          "b3a25556-70a4-4a69-88f4-4a8ba3e5700f": {
+            "type": "text",
+            "settings": {
+              "item_text": "They create <b>visual effects in advertising<\/b> to help your ads convey a specific message <b>to make your product or service more memorable.<\/b>"
+            }
+          },
+          "edf38a9a-c2f0-4858-8d84-d478c83e7eb4": {
+            "type": "text",
+            "settings": {
+              "item_text": "Furthermore, they can work on <b>informational videos adding infographics,<\/b> charts and graphs to help reach your audience more effectively."
+            }
+          },
+          "1601fe5c-2be2-418d-aa83-2e77125d612f": {
+            "type": "text",
+            "settings": {
+              "item_text": "By applying special effects in animation, <b>they can develop a stunning image of your brand,<\/b> which will catch the potential client's attention."
+            }
+          }
+        },
+        "block_order": [
+          "b3a25556-70a4-4a69-88f4-4a8ba3e5700f",
+          "edf38a9a-c2f0-4858-8d84-d478c83e7eb4",
+          "1601fe5c-2be2-418d-aa83-2e77125d612f"
+        ],
+        "settings": {
+          "product_title": "We create Visual fx for various purposes",
+          "product_text": "Our specialists will provide you with various video-making aspects, including vfx compositing, vfx green screen, and vfx motion."
+        }
       }
     },
     "content_for_index": [
