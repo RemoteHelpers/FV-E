@@ -1,15 +1,17 @@
 <section class="types section">
   <div class="container">
     <div class="types__wrapper">
-      <h2 class="section-title">{{ section.settings.types_title }}</h2>
-      <ul class="types__list">
-        {% for block in section.blocks %}
-        <li class="types__item">
-          <h4 class="item__title">{{ block.settings.tItem__title }}</h4>
-          <p class="item__text">{{ block.settings.tItem__text }}</p>
-        </li>
-        {% endfor %}
-      </ul>
+      <div class="types__content">
+        <h2 class="section-title">{{ section.settings.types_title }}</h2>
+        <ul class="types__list">
+          {% for block in section.blocks %}
+          <li class="types__item">
+            <h4 class="item__title">{{ block.settings.tItem__title }}</h4>
+            <p class="item__text">{{ block.settings.tItem__text }}</p>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
       <div class="img-holder"><img src="{{ section.settings.types_image | img_url: 'master' }}" alt=""></div>
     </div>
   </div>
