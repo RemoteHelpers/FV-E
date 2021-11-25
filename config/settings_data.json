@@ -5464,6 +5464,46 @@
           "product_title": "Green screen video services for any purpose",
           "product_text": "Hire our specialists to work on your new trendy video employing green screen effects."
         }
+      },
+      "chromakey-videoPortfolio": {
+        "type": "chromakey-videoPortfolio",
+        "blocks": {
+          "eb267b16-39b9-46ca-88dd-c3e875c54b6e": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=UdsSKgZiXM8",
+              "video_url": "https:\/\/www.youtube.com\/embed\/UdsSKgZiXM8",
+              "portfolio_title": "Remote Helpers Portfolio| Dmytro V. 634",
+              "portfolio_text": ""
+            }
+          },
+          "8fc8e8cb-82cc-4234-aab5-86e2526ad40c": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=gtAwt2D_sdI",
+              "video_url": "https:\/\/www.youtube.com\/embed\/gtAwt2D_sdI",
+              "portfolio_title": "Remote Helpers Portfolio| Dmytro V. 634",
+              "portfolio_text": ""
+            }
+          },
+          "ab5ceb1c-11a3-41fc-a461-4964123b041e": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=GZy2TU6oMiI",
+              "video_url": "https:\/\/www.youtube.com\/embed\/GZy2TU6oMiI",
+              "portfolio_title": "Video for youtube channel Creative Mind",
+              "portfolio_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "eb267b16-39b9-46ca-88dd-c3e875c54b6e",
+          "8fc8e8cb-82cc-4234-aab5-86e2526ad40c",
+          "ab5ceb1c-11a3-41fc-a461-4964123b041e"
+        ],
+        "settings": {
+          "portfolio_title": "Portfolios of our video editors"
+        }
       }
     },
     "content_for_index": [
