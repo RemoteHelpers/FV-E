@@ -1,21 +1,18 @@
 <section class="types section">
   <div class="container">
-    <h2 class="section-title">{{ section.settings.types_title }}</h2>
     <div class="types__wrapper">
-      <div class="img-holder">
-        <picture>
-          <source srcset="{{ section.settings.types_imageMob | img_url: 'master' }}" media="(max-width: 850px)">
-          <img src="{{ section.settings.types_image | img_url: 'master' }}" alt="">
-        </picture>
+      <div class="types__content">
+        <h2 class="section-title">{{ section.settings.types_title }}</h2>
+        <ul class="types__list">
+          {% for block in section.blocks %}
+          <li class="types__item">
+            <h4 class="item__title">{{ block.settings.tItem__title }}</h4>
+            <p class="item__text">{{ block.settings.tItem__text }}</p>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
-      <ul class="types__list">
-        {% for block in section.blocks %}
-        <li class="types__item">
-          <h4 class="item__title">{{ block.settings.tItem__title }}</h4>
-          <p class="item__text">{{ block.settings.tItem__text }}</p>
-        </li>
-        {% endfor %}
-      </ul>
+      <div class="img-holder"><img src="{{ section.settings.types_image | img_url: 'master' }}" alt=""></div>
     </div>
   </div>
 </section>
@@ -34,11 +31,6 @@
         "type": "image_picker",
         "id": "types_image",
         "label": "Types image"
-      },
-      {
-        "type": "image_picker",
-        "id": "types_imageMob",
-        "label": "Types image mob"
       }
   ],
   "blocks": [
