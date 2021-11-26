@@ -804,63 +804,6 @@
           "see_all": "shopify://collections"
         }
       },
-      "chromakey-info": {
-        "type": "chromakey-info",
-        "settings": {
-          "hero_title": "Create a green screen video with our chroma key specialists.",
-          "hero_text": "Our company’s green screen video production team will create a perfect chromakey video for your project to get you ahead of your competitors.",
-          "link_text": "Create your video",
-          "btn_url": "#",
-          "hero_image": "shopify://shop_images/chromakey.jpg",
-          "hero_imagemob": "shopify://shop_images/chromakey-mob_ee40c615-9ad3-48c8-843e-1bb1fc227c1d.jpg"
-        }
-      },
-      "chromakey-services": {
-        "type": "chromakey-services",
-        "settings": {
-          "services_image": "shopify://shop_images/services.png",
-          "services_title": "Check out the green screen production services that we offer.",
-          "services_text": "Green screen technology is a perfect low-budget solution for high-quality production videos. With the help of our skillful green screen video makers, you can create an excellent chroma key video for your project. Our chroma key specialists will composite two video streams together, create a wide-angle scene and provide service of adding a green background with a speaker presence. So entrust our video makers with your project, and we will deliver the best results following your requirements.",
-          "link_text": "Create your video",
-          "btn_url": "#"
-        }
-      },
-      "chromakey-types": {
-        "type": "chromakey-types",
-        "blocks": {
-          "23470702-e262-43d6-a42b-6311e02be211": {
-            "type": "image",
-            "settings": {
-              "card_image": "shopify://shop_images/card1.jpg",
-              "card_text": "Business green screen video - chroma keying videos for businesses, startups, etc."
-            }
-          },
-          "0398e0db-bf64-4406-b61d-9d839461bf78": {
-            "type": "image",
-            "settings": {
-              "card_image": "shopify://shop_images/card2.jpg",
-              "card_text": "Youtube green screen video - making a green screen video for your youtube channel."
-            }
-          }
-        },
-        "block_order": [
-          "23470702-e262-43d6-a42b-6311e02be211",
-          "0398e0db-bf64-4406-b61d-9d839461bf78"
-        ],
-        "settings": {
-          "types_title": "Look through the types of chroma key videos our team produces."
-        }
-      },
-      "chromakey-purpose": {
-        "type": "chromakey-purpose",
-        "settings": {
-          "purpose_title": "Pick a green screen production service for your project's purpose.",
-          "purpose_text": "Nowadays, almost every major video production process includes green screen effects. It’s cheaper than going out of your way to shoot a video in a specific location, with the noise and distractions from the surrounding environment. That is why chroma key services are needed in many fields of video production. For example, you can order a chroma key for google meet to get quality videos with original background or a green screen for online teaching to make your lessons more exciting and get your student’s attention.",
-          "link_text": "Create your video",
-          "btn_url": "#",
-          "purpose_image": "shopify://shop_images/purpose.jpg"
-        }
-      },
       "ContactForm": {
         "type": "ContactForm",
         "blocks": {
@@ -2751,7 +2694,7 @@
       "animation-hero": {
         "type": "animation-hero",
         "settings": {
-          "hero_title": "Create engaging video content with our animation video makers",
+          "hero_title": "Our animation video makers сreate engaging content",
           "hero_text": "Animation video makers create any kind of animated video production for your project, from traditional animation creation to 3D video animation.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -3320,7 +3263,7 @@
       "163489549794f2a10c": {
         "type": "home-hero",
         "settings": {
-          "hero_title": "Get a wide range of video editing services in a few clicks",
+          "hero_title": "Get our video editing services",
           "hero_text": "Need to create video content for your project? Check out our video editors to implement video-creating tasks: audio and video editing services, animation, or video production.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -3331,7 +3274,7 @@
       "1634903179ec7ad7d2": {
         "type": "home-hire",
         "settings": {
-          "hire_title": "Find out more information about our outstaffing company",
+          "hire_title": "About us",
           "hire_text": "We are a Ukrainian-based outstaffing company that was founded in 2020 and now includes 10+ skilled video editors. Our specialists deliver various online video editing services and have already helped advertise products or services for more than 20+ companies worldwide.",
           "hire_card": "Take advantage to get a creative team! We are at your disposal both full-time (8-hour) or part-time (4-hour) working days in your time zone.",
           "hire_image": "shopify://shop_images/hire.png"
@@ -3389,7 +3332,7 @@
           "dca36eae-fd0e-4b6b-972b-6172b5c169be"
         ],
         "settings": {
-          "services_title": "Improve your content with our video processing services"
+          "services_title": "Video processing services"
         }
       },
       "1634911040eb4ada09": {
@@ -3453,7 +3396,7 @@
           "9f8e9482-637a-4382-b6b2-d926d75285eb"
         ],
         "settings": {
-          "types_title": "Have a look at  the types of video specialists you can get",
+          "types_title": "Look through the types of video specialists our company provides",
           "types_text": "At our site, you can hire full-time or part-time video editors who provide complex video and audio editing and animation work altogether.",
           "types_image": "shopify://shop_images/clock.png"
         }
@@ -3497,14 +3440,14 @@
           "9a55834f-bacd-418f-bf19-326f85cd8fa0"
         ],
         "settings": {
-          "plan_title": "What do you need to do to start working with us?",
+          "plan_title": "How to start working with us?",
           "plan_image": "shopify://shop_images/plan.png"
         }
       },
       "animation-service": {
         "type": "animation-service",
         "settings": {
-          "services_title": "Check out the animated video production services we provide",
+          "services_title": "Animated video production services",
           "services_text": "From traditional cell animation, hand-drawn for each clip, various 2D animation styles, to 3D animation creation. These techniques bring the characters, pops, images to life, making them look alive by movement.",
           "services_card": "We are ready to offer a wide range of animated video production services for any project.",
           "services_image": "shopify://shop_images/services_df5467c6-44c9-49b7-8442-0294265fc9d4.png"
@@ -3562,7 +3505,7 @@
           "565e94fc-07a2-4c13-8fc4-c00163bc6b03"
         ],
         "settings": {
-          "types_title": "Look through the types of animated videos our specialists offer"
+          "types_title": "Types of animated videos"
         }
       },
       "animation-product": {
@@ -3593,14 +3536,14 @@
           "e02c23de-2433-49e1-a002-1c0a4916d9d8"
         ],
         "settings": {
-          "product_title": "Choose a suitable animated product according to your purpose",
+          "product_title": "Animated product for any purpose",
           "product_text": "On our website, you can order animated products for any purpose."
         }
       },
       "motion-hero": {
         "type": "motion-hero",
         "settings": {
-          "hero_title": "Create motion graphics for your project with our motion designer",
+          "hero_title": "Get a motion designer for your project",
           "hero_text": "Our team of motion designers will make a unique and eye-catching motion graphics video to help you demonstrate your product to potential clients.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -3611,7 +3554,7 @@
       "motion-services": {
         "type": "motion-services",
         "settings": {
-          "services_title": "Motion graphic design services",
+          "services_title": "Check out the motion graphic design services offered",
           "services_text": "To catch the attention of potential clients, our skilled motion designers will create motion design videos, make intro and outro, animation of logos or motion graphics ads and come up with other motion production solutions for your project.",
           "services_card": "We are ready to offer a wide range<br> of animated video production services for any project.",
           "services_image": "shopify://shop_images/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
@@ -3654,7 +3597,7 @@
           "7789dd49-8806-49fb-898b-63e5069bcd90"
         ],
         "settings": {
-          "types_title": "Look through the types of motion graphics production we offer"
+          "types_title": "Types of motion graphics production"
         }
       },
       "motion-product": {
@@ -3685,7 +3628,7 @@
           "05c4dbdd-7054-4442-b53f-5ad0992aa936"
         ],
         "settings": {
-          "product_title": "Motion graphic design for any purpose",
+          "product_title": "See for yourself where you can use motion graphic design",
           "product_text": "Our team’s motion design studio delivers the best results to clients to get ahead in their business."
         }
       },
@@ -3769,7 +3712,7 @@
         ],
         "settings": {
           "bg_color": "#f5f5f5",
-          "title": "Fill out the form",
+          "title": "Contact form.",
           "description": "Our manager will contact you at once",
           "image": "shopify://shop_images/form_368140bb-98c9-4fc6-b00d-26f5975eda3e.png"
         }
@@ -3939,7 +3882,7 @@
           "3ba31d49-f741-4168-a194-8756d37f5ca5"
         ],
         "settings": {
-          "portfolio_title": "Look through our production team’s video editing portfolio"
+          "portfolio_title": "Video editing portfolios"
         }
       },
       "animation-videoPortfolio": {
@@ -4009,13 +3952,13 @@
           "970aee6c-280f-4d11-87ea-25cad9cfe8bb"
         ],
         "settings": {
-          "portfolio_title": "Check out the portfolio of our creative video animation team"
+          "portfolio_title": "Our video animation team’s portfolio"
         }
       },
       "videoEd-hero": {
         "type": "videoEd-hero",
         "settings": {
-          "hero_title": "Get quality video production content from remote video editors",
+          "hero_title": "Get quality video production",
           "hero_text": "Our video production team provides video and audio editing services and helps create high-quality content as a way to build brand awareness.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -4093,7 +4036,7 @@
           "7d713bc5-cf84-44b6-afe1-0f74860e563d"
         ],
         "settings": {
-          "types_title": "Look through the types of animated videos our specialists offer"
+          "types_title": "Types of video production"
         }
       },
       "videoEd-product": {
@@ -4188,7 +4131,7 @@
           "b5ee6d3c-fb7b-4949-8875-b5f7cbba4b18"
         ],
         "settings": {
-          "portfolio_title": "Check out our creative team’s motion graphics design portfolio"
+          "portfolio_title": "Our motion graphics design portfolio"
         }
       },
       "videoEd-videoPortfolio": {
@@ -4258,13 +4201,13 @@
           "80efc3cc-cc40-4eea-9e3a-7ba1563a2a67"
         ],
         "settings": {
-          "portfolio_title": "Look through the portfolios of our creative video producers"
+          "portfolio_title": "Portfolios of our video producers."
         }
       },
       "audioEd-hero": {
         "type": "audioEd-hero",
         "settings": {
-          "hero_title": "Entrust your audio editing project to our creative specialists",
+          "hero_title": "Get our specialists for your audio editing project",
           "hero_text": "Our team of sound editors offers a wide range of audio editing services, including sound effects, voice acting, and equalization for any project",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -4317,7 +4260,7 @@
           "97bc0daf-2a66-4963-ac71-e0a4c0c2f957"
         ],
         "settings": {
-          "types_title": "Find out what types of professional audio editing"
+          "types_title": "Types of professional audio editing"
         }
       },
       "audioEd-product": {
@@ -4348,7 +4291,7 @@
           "7904c996-032c-4e0e-ac08-77d9c27d056d"
         ],
         "settings": {
-          "product_title": "Audio-editing for any purpose",
+          "product_title": "Sound editing for any purpose",
           "product_text": "We provide movie audio editing and work with character dialogues, music, and various effects, making your film more captivating."
         }
       },
@@ -4419,13 +4362,13 @@
           "79c169c0-f49f-4d22-b2b8-1423ac2f4981"
         ],
         "settings": {
-          "portfolio_title": "Check out the portfolio of our talented audio editors’ team"
+          "portfolio_title": "Portfolio of our audio editors"
         }
       },
       "videoEditing-hero": {
         "type": "videoEditing-hero",
         "settings": {
-          "hero_title": "Get a quality video of your footage with our video editing team",
+          "hero_title": "Get quality video editing",
           "hero_text": "Need movie editing or promotional video editing? Our specialists combine video materials and do all film processing from brief till the final cut",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -4504,7 +4447,7 @@
           "5037e2b4-c5d7-4d2b-a4e5-38c53ffef083"
         ],
         "settings": {
-          "types_title": "Look through the variety of types of video montage we suggest",
+          "types_title": "Types of video montage",
           "types_image": "shopify://shop_images/types.png"
         }
       },
@@ -4607,13 +4550,13 @@
           "7749be38-8ad7-4fba-983a-45d9d3e6de72"
         ],
         "settings": {
-          "portfolio_title": "Browse the portfolio of talented video editors from our company"
+          "portfolio_title": "Video editors’ portfolio"
         }
       },
       "socMedia-hero": {
         "type": "socMedia-hero",
         "settings": {
-          "hero_title": "Get website and social media video content from our<br> video editors",
+          "hero_title": "Get website and social media video content",
           "hero_text": "The video production team creates a quality website and social media video content for brand building and attracting new customers to your company.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -4691,7 +4634,7 @@
           "8111e9c9-b2c7-41f0-bb1f-4467706a27d2"
         ],
         "settings": {
-          "types_title": "The types of website and social media videos"
+          "types_title": "Types of website and social media videos"
         }
       },
       "socMedia-product": {
@@ -4786,13 +4729,13 @@
           "61c9911b-bce8-4022-b68d-0f9d560cc284"
         ],
         "settings": {
-          "portfolio_title": "Look through the portfolio of our video marketing specialists"
+          "portfolio_title": "Portfolio of our video marketing specialists"
         }
       },
       "promotional-hero": {
         "type": "promotional-hero",
         "settings": {
-          "hero_title": "Create an eye-catching promotional video with our specialists",
+          "hero_title": "Get quality promotional video for your project",
           "hero_text": "Our video production team will create a promotional video for any project that helps tell a brand story and advertise social media channels.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -4863,7 +4806,7 @@
           "ffc97513-eb96-4ee8-abae-eff3c35afa97"
         ],
         "settings": {
-          "types_title": "Look at the types of promotional videos we can provide you with",
+          "types_title": "Types of promotional videos we can provide you with.",
           "types_image": "shopify://shop_images/types_bde3dcb8-10c1-4e9b-ba48-e9e3007a1fa3.png"
         }
       },
@@ -4888,7 +4831,7 @@
           "885a534c-7fe2-4ae3-b347-0744c49e07ab"
         ],
         "settings": {
-          "product_title": "Promo video for different purposes",
+          "product_title": "Promo video for various purposes",
           "product_text": "Our video production team creates promotional videos for business that engage viewers with animated text, eye-catching graphics, and strong calls to action."
         }
       },
@@ -4959,13 +4902,13 @@
           "154fba18-8fee-477f-9279-af0220a67b24"
         ],
         "settings": {
-          "portfolio_title": "Look through the portfolios of our promotional video makers"
+          "portfolio_title": "Our promotional video makers’ portfolio"
         }
       },
       "commercialVideo-hero": {
         "type": "commercialVideo-hero",
         "settings": {
-          "hero_title": "Get a commercial video<br>  from our specialists just in a few clicks",
+          "hero_title": "Get a commercial video from our specialists",
           "hero_text": "Need to advertise products or introduce a company to a wide audience? Our video editors provide commercial video production for various projects.",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -5034,7 +4977,7 @@
           "f06c9c70-0437-4fbe-b72b-1d2934618d8f"
         ],
         "settings": {
-          "types_title": "The types of website and social media videos"
+          "types_title": "Types of commercial advertising videos"
         }
       },
       "commercialVideo-product": {
@@ -5126,13 +5069,13 @@
           "137b1d1c-98bd-489a-a1f8-eaef970a5ab7"
         ],
         "settings": {
-          "portfolio_title": "Check out the examples of our creative video producers’ work"
+          "portfolio_title": "Portfolio of our video producers"
         }
       },
       "videoFraming-hero": {
         "type": "videoFraming-hero",
         "settings": {
-          "hero_title": "Get video framing services from our specialists in a few clicks",
+          "hero_title": "Get Video framing services",
           "hero_text": "Remote video editors will help you create the right video framing for your project. Try our post-production editing to hook your target audience!",
           "link_text": "hire specialist",
           "btn_url": "#contactformSection",
@@ -5179,8 +5122,9 @@
           "bdcfb117-943b-4dca-ba8f-859df0abfcf8"
         ],
         "settings": {
-          "types_title": "Check out the types of framing our specialists work with",
-          "types_image": "shopify://shop_images/types_e354f2f5-ce52-41ac-bbbb-0fc225441df2.png"
+          "types_title": "Types of framing our specialists work with",
+          "types_image": "shopify://shop_images/types_e354f2f5-ce52-41ac-bbbb-0fc225441df2.png",
+          "types_imageMob": "shopify://shop_images/types-mob.png"
         }
       },
       "videoFraming-product": {
@@ -5275,7 +5219,423 @@
           "4925d2b9-ee2a-4fbc-9bae-1e3d230518c6"
         ],
         "settings": {
-          "portfolio_title": "Look through the portfolios of our remote video editing team"
+          "portfolio_title": "Portfolio of our video editing team"
+        }
+      },
+      "colorCorrection-hero": {
+        "type": "colorCorrection-hero",
+        "settings": {
+          "hero_title": "Get color correction services<br> to make your video stand out",
+          "hero_text": "Our remote video editors provide color grading and color correction services and help make quality video content for different projects.",
+          "link_text": "hire specialist",
+          "btn_url": "#contactformSection",
+          "hero_image": "shopify://shop_images/hero_fd6ce94b-d5ff-4905-a374-5ce3865b357d.png"
+        }
+      },
+      "colorCorrection-services": {
+        "type": "colorCorrection-services",
+        "settings": {
+          "services_title": "Video color correction services",
+          "services_text": "Our video color correction services include fixing white balance, retouching, brightness and contrast calibration, and color balance. We will adjust RGB curve,  shadows and saturation, and correct exposure<br> to capture the exact visual and match your material’s appearance consistently.",
+          "services_card": "Give your footage a cleaner and more unified look with post production editing from our specialists.",
+          "services_image": "shopify://shop_images/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
+        }
+      },
+      "colorCorrection-types": {
+        "type": "colorCorrection-types",
+        "blocks": {
+          "c7b5e247-f8da-45d4-8adc-e627f4dc6772": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Primary color correction",
+              "tItem__text": "adjusting and correcting the entire video image"
+            }
+          },
+          "f2b7b7c0-db8f-468c-9cde-9f9ad2ee8446": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Secondary color correction",
+              "tItem__text": "selecting certain parts of the image or objects in the video frame and correcting only those parts."
+            }
+          }
+        },
+        "block_order": [
+          "c7b5e247-f8da-45d4-8adc-e627f4dc6772",
+          "f2b7b7c0-db8f-468c-9cde-9f9ad2ee8446"
+        ],
+        "settings": {
+          "types_title": "Types of color correction",
+          "types_image": "shopify://shop_images/types_3507fc31-5795-40fd-a0e5-bdcbc918de3a.png"
+        }
+      },
+      "colorCorrection-product": {
+        "type": "colorCorrection-product",
+        "blocks": {
+          "45f84116-36db-4fa6-b077-e81791af9964": {
+            "type": "text",
+            "settings": {
+              "item_text": "<b>Color grading for youtube videos</b> makes them more visually appealing and helps to catch the attention of potential clients."
+            }
+          },
+          "a7cfe011-3790-4efd-8e5d-f1bcebc1c6e1": {
+            "type": "text",
+            "settings": {
+              "item_text": "Specialists may also offer you <b>commercial color grading</b> to make any of your promotional video materials look clean and vibrant."
+            }
+          },
+          "238e5bc5-c583-4db9-a49a-9bdc51d69ca9": {
+            "type": "text",
+            "settings": {
+              "item_text": "There’s also color <b>correction in social media</b> — to make your promo stand out among the endless posts on Instagram, Twitter, or Facebook feed."
+            }
+          }
+        },
+        "block_order": [
+          "45f84116-36db-4fa6-b077-e81791af9964",
+          "a7cfe011-3790-4efd-8e5d-f1bcebc1c6e1",
+          "238e5bc5-c583-4db9-a49a-9bdc51d69ca9"
+        ],
+        "settings": {
+          "product_title": "Color grading for any purpose",
+          "product_text": "There are several possible areas and platforms where our employees can apply color correction in video editing."
+        }
+      },
+      "colorCorrection-videoPortfolio": {
+        "type": "colorCorrection-videoPortfolio",
+        "blocks": {
+          "7c7ed9f9-f56a-4d95-9d2f-39f0f114f9db": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https://www.youtube.com/watch?v=7yuaO9qXYaY",
+              "video_url": "https://www.youtube.com/embed/7yuaO9qXYaY",
+              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
+              "portfolio_text": ""
+            }
+          },
+          "98eb99de-ba9a-46e4-8ce6-ff1bd561b0fb": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https://www.youtube.com/watch?v=xpChRh9XyXw",
+              "video_url": "https://www.youtube.com/embed/xpChRh9XyXw",
+              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
+              "portfolio_text": ""
+            }
+          },
+          "3b3e2dc8-b238-416c-bf5c-0c153b233917": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https://www.youtube.com/watch?v=kUJlDnT3-xA",
+              "video_url": "https://www.youtube.com/embed/kUJlDnT3-xA",
+              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
+              "portfolio_text": ""
+            }
+          },
+          "a48efb43-8b99-4ad3-b328-caa997e3cc2c": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https://www.youtube.com/watch?v=QhxtX7_Oe_g",
+              "video_url": "https://www.youtube.com/embed/QhxtX7_Oe_g",
+              "portfolio_title": "Remote Helpers Portfolio | Anastasiia Y. 925",
+              "portfolio_text": ""
+            }
+          },
+          "faddb4be-b930-4b8c-b4c0-012bbff49250": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https://www.youtube.com/watch?v=ixNMiEVkuog",
+              "video_url": "https://www.youtube.com/embed/ixNMiEVkuog",
+              "portfolio_title": "Remote Helpers Portfolio | Anastasiia Y. 925",
+              "portfolio_text": ""
+            }
+          },
+          "bb6297b0-1180-4459-95c6-95158736101c": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https://www.youtube.com/watch?v=nuQGKAtgIp0",
+              "video_url": "https://www.youtube.com/embed/nuQGKAtgIp0",
+              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
+              "portfolio_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "7c7ed9f9-f56a-4d95-9d2f-39f0f114f9db",
+          "98eb99de-ba9a-46e4-8ce6-ff1bd561b0fb",
+          "3b3e2dc8-b238-416c-bf5c-0c153b233917",
+          "a48efb43-8b99-4ad3-b328-caa997e3cc2c",
+          "faddb4be-b930-4b8c-b4c0-012bbff49250",
+          "bb6297b0-1180-4459-95c6-95158736101c"
+        ],
+        "settings": {
+          "portfolio_title": "Our video editors’ portfolio"
+        }
+      },
+      "chromakey-hero": {
+        "type": "chromakey-hero",
+        "settings": {
+          "hero_title": "Our specialists help create videos using the chroma key",
+          "hero_text": "Get remote video editors to assist you with green screen video production — they can add visual effects, or provide chroma keying of custom backgrounds",
+          "link_text": "hire specialist",
+          "btn_url": "#contactformSection",
+          "hero_image": "shopify://shop_images/hero_220aa1fa-da40-4dee-bcc2-6092452e6584.png"
+        }
+      },
+      "chromakey-services": {
+        "type": "chromakey-services",
+        "settings": {
+          "services_title": "Green screen video services",
+          "services_text": "Our specialists can add visual effects and change the background in post-production to create an eye-catching chroma key video for your project. With green screen technology, they are able to create  a new composited background by taking existing background footage and putting it into the shot.",
+          "services_card": "The video editors from our company will gladly help you with screen compositing of any footage",
+          "services_image": "shopify://shop_images/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
+        }
+      },
+      "chromakey-types": {
+        "type": "chromakey-types",
+        "blocks": {
+          "d46139e1-2c91-43d3-b3a4-a3dbb0ca9336": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Animated background",
+              "tItem__text": "make your video more engaging by adding an animated background"
+            }
+          },
+          "7db1e6d0-b7a2-4835-8dae-aca5f5a0444a": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Real-life background",
+              "tItem__text": "real-life footage can help make commercials more grounded and informational/educational videos easier to follow"
+            }
+          },
+          "678634b7-f255-42ed-85ed-566141f9f7dc": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Static background",
+              "tItem__text": "custom static background to show infographics,  your company’s logo or other non-animated imagery"
+            }
+          }
+        },
+        "block_order": [
+          "d46139e1-2c91-43d3-b3a4-a3dbb0ca9336",
+          "7db1e6d0-b7a2-4835-8dae-aca5f5a0444a",
+          "678634b7-f255-42ed-85ed-566141f9f7dc"
+        ],
+        "settings": {
+          "types_title": "Types of chroma key videos our team works with",
+          "types_image": "shopify://shop_images/types_b65c6e2b-3b2b-46f0-913a-9542670fb326.png",
+          "types_imageMob": "shopify://shop_images/types-mob_e79b3402-b2cf-4ec3-994d-aacfe7c2b925.png"
+        }
+      },
+      "chromakey-product": {
+        "type": "chromakey-product",
+        "blocks": {
+          "9a5984aa-952a-46fd-9568-b58c3bf4f086": {
+            "type": "text",
+            "settings": {
+              "item_text": "Green screen technology allows us to <b>help companies and small businesses</b> shoot creative ads, and more visually interesting informational or educational videos."
+            }
+          },
+          "8a6706b7-93a2-4593-a938-807668428878": {
+            "type": "text",
+            "settings": {
+              "item_text": "Get visual effects to draw users’ attention to your video on various social media feeds — <b>brighter, more exciting videos achieved through screen compositing.</b>"
+            }
+          }
+        },
+        "block_order": [
+          "9a5984aa-952a-46fd-9568-b58c3bf4f086",
+          "8a6706b7-93a2-4593-a938-807668428878"
+        ],
+        "settings": {
+          "product_title": "Green screen video services for any purpose",
+          "product_text": "Hire our specialists to work on your new trendy video employing green screen effects."
+        }
+      },
+      "chromakey-videoPortfolio": {
+        "type": "chromakey-videoPortfolio",
+        "blocks": {
+          "eb267b16-39b9-46ca-88dd-c3e875c54b6e": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https://www.youtube.com/watch?v=UdsSKgZiXM8",
+              "video_url": "https://www.youtube.com/embed/UdsSKgZiXM8",
+              "portfolio_title": "Remote Helpers Portfolio| Dmytro V. 634",
+              "portfolio_text": ""
+            }
+          },
+          "8fc8e8cb-82cc-4234-aab5-86e2526ad40c": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https://www.youtube.com/watch?v=gtAwt2D_sdI",
+              "video_url": "https://www.youtube.com/embed/gtAwt2D_sdI",
+              "portfolio_title": "Remote Helpers Portfolio| Dmytro V. 634",
+              "portfolio_text": ""
+            }
+          },
+          "ab5ceb1c-11a3-41fc-a461-4964123b041e": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https://www.youtube.com/watch?v=GZy2TU6oMiI",
+              "video_url": "https://www.youtube.com/embed/GZy2TU6oMiI",
+              "portfolio_title": "Video for youtube channel Creative Mind",
+              "portfolio_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "eb267b16-39b9-46ca-88dd-c3e875c54b6e",
+          "8fc8e8cb-82cc-4234-aab5-86e2526ad40c",
+          "ab5ceb1c-11a3-41fc-a461-4964123b041e"
+        ],
+        "settings": {
+          "portfolio_title": "Portfolios of our video editors"
+        }
+      },
+      "visualEffect-hero": {
+        "type": "visualEffect-hero",
+        "settings": {
+          "hero_title": "Visual effects to make an eye-catching video",
+          "hero_text": "Get our video editors to create visual effects for you. They will add special effects to your videos to bring more attention to your business.",
+          "link_text": "hire specialist",
+          "btn_url": "#contactformSection",
+          "hero_image": "shopify://shop_images/hero_c69c1f3a-f1bf-406b-bef9-6c0c011bf80b.png"
+        }
+      },
+      "visualEffect-services": {
+        "type": "visualEffect-services",
+        "settings": {
+          "services_title": "VFX services our specialists can provide",
+          "services_text": "Our services include video matting either to cut out the object from a scene or put a new background and color grading to give footage a more natural look or make it more vibrant instead. Moreover,  our specialists can add 3d elements and motion graphics, and green screen footage if needed.",
+          "services_card": "Our visual effects artists can add vfx to any of your videos.",
+          "services_image": "shopify://shop_images/Line_9a451905-500f-42e5-8603-44939d9ac13e.png"
+        }
+      },
+      "visualEffect-types": {
+        "type": "visualEffect-types",
+        "blocks": {
+          "ce64b37a-8b2f-47c2-b3f5-2c11a2ef1eed": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Visible effects",
+              "tItem__text": "effects that are visible to the viewer and help make a video more impactful"
+            }
+          },
+          "46dcc818-6e31-4bf0-80cd-a15472e4bb3f": {
+            "type": "text",
+            "settings": {
+              "tItem__title": "Invisible effects",
+              "tItem__text": "effects that are created not to be noticed but instead improve the overall impression from the video, creating a realistic look"
+            }
+          }
+        },
+        "block_order": [
+          "ce64b37a-8b2f-47c2-b3f5-2c11a2ef1eed",
+          "46dcc818-6e31-4bf0-80cd-a15472e4bb3f"
+        ],
+        "settings": {
+          "types_title": "Types of visual effects",
+          "types_image": "shopify://shop_images/star.png"
+        }
+      },
+      "visualEffect-product": {
+        "type": "visualEffect-product",
+        "blocks": {
+          "b3a25556-70a4-4a69-88f4-4a8ba3e5700f": {
+            "type": "text",
+            "settings": {
+              "item_text": "They create <b>visual effects in advertising</b> to help your ads convey a specific message <b>to make your product or service more memorable.</b>"
+            }
+          },
+          "edf38a9a-c2f0-4858-8d84-d478c83e7eb4": {
+            "type": "text",
+            "settings": {
+              "item_text": "Furthermore, they can work on <b>informational videos adding infographics,</b> charts and graphs to help reach your audience more effectively."
+            }
+          },
+          "1601fe5c-2be2-418d-aa83-2e77125d612f": {
+            "type": "text",
+            "settings": {
+              "item_text": "By applying special effects in animation, <b>they can develop a stunning image of your brand,</b> which will catch the potential client's attention."
+            }
+          }
+        },
+        "block_order": [
+          "b3a25556-70a4-4a69-88f4-4a8ba3e5700f",
+          "edf38a9a-c2f0-4858-8d84-d478c83e7eb4",
+          "1601fe5c-2be2-418d-aa83-2e77125d612f"
+        ],
+        "settings": {
+          "product_title": "We create Visual fx for various purposes",
+          "product_text": "Our specialists will provide you with various video-making aspects, including vfx compositing, vfx green screen, and vfx motion."
+        }
+      },
+      "visualEffect-videoPortfolio": {
+        "type": "visualEffect-videoPortfolio",
+        "blocks": {
+          "5c1db42c-ea3b-48a2-b20a-a9526cd86155": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https://www.youtube.com/watch?v=GNJ7y-Jm6sg",
+              "video_url": "https://www.youtube.com/embed/GNJ7y-Jm6sg",
+              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_text": ""
+            }
+          },
+          "a3d3b1c3-174e-4433-928e-dedb96872491": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https://www.youtube.com/watch?v=SdBIopl7GK0",
+              "video_url": "https://www.youtube.com/embed/SdBIopl7GK0",
+              "portfolio_title": "Remote Helpers Portfolio | Nataliia T. 681",
+              "portfolio_text": ""
+            }
+          },
+          "0563e2c8-c836-4c14-8460-a2d27a95bf70": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https://www.youtube.com/watch?v=nTI6qgOJIjo",
+              "video_url": "https://www.youtube.com/embed/nTI6qgOJIjo",
+              "portfolio_title": "Юнити/Разработчик игр. Unity/Game Developer Online. Лучший старт в IT без опыта!",
+              "portfolio_text": ""
+            }
+          },
+          "1501fe52-90f0-48ef-872d-94cc6534989d": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https://www.youtube.com/watch?v=A2K6FFE104c",
+              "video_url": "https://www.youtube.com/embed/A2K6FFE104c",
+              "portfolio_title": "Специалист техподдержки. Technical support specialist . Присоединяйся к команде RemotEmployees!",
+              "portfolio_text": ""
+            }
+          },
+          "dc6aa2d3-2c4a-4565-ba71-a07239942a84": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https://www.youtube.com/watch?v=AQ7CO-KAG4A",
+              "video_url": "https://www.youtube.com/embed/AQ7CO-KAG4A",
+              "portfolio_title": "Hire marketing managers at the outsourcing firm | Remote Helpers",
+              "portfolio_text": ""
+            }
+          },
+          "5021d204-2f58-4c99-bc90-586aa56b89c4": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https://www.youtube.com/watch?v=-d9bnx670yc",
+              "video_url": "https://www.youtube.com/embed/-d9bnx670yc",
+              "portfolio_title": "Instagram Promo",
+              "portfolio_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "5c1db42c-ea3b-48a2-b20a-a9526cd86155",
+          "a3d3b1c3-174e-4433-928e-dedb96872491",
+          "0563e2c8-c836-4c14-8460-a2d27a95bf70",
+          "1501fe52-90f0-48ef-872d-94cc6534989d",
+          "dc6aa2d3-2c4a-4565-ba71-a07239942a84",
+          "5021d204-2f58-4c99-bc90-586aa56b89c4"
+        ],
+        "settings": {
+          "portfolio_title": "Look through our vfx artists’ portfolios"
         }
       }
     },

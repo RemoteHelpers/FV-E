@@ -46,6 +46,7 @@ img {
 
 .main-title {
   margin: 0;
+  /* margin-bottom: 60px; */
   font-weight: 800;
   font-size: 44px;
   line-height: 1.4;
@@ -88,11 +89,11 @@ img {
   row-gap: 40px;
   padding-top: 180px;
   margin-right: 40px;
-  width: 636px;
+  width: 640px;
 }
 
 .hero__text {
-  width: 606px;
+  width: 580px;
 }
 
 .hero__video-holder {
@@ -114,14 +115,15 @@ img {
 .services__wrapper {
   margin-bottom: 30px;
   display: flex;
+  /* justify-content: space-between; */
 }
 
 .services__card {
   position: relative;
   margin: 0;
   margin-right: 50px;
-  padding: 35px;
-  padding-left: 90px;
+  padding: 35px 50px;
+  padding-left: 140px;
   width: 500px;
   font-size: 18px;
   border: 1px solid #F5F5F5;
@@ -143,27 +145,28 @@ img {
   content: "";
   width: 50px;
   height: 50px;
-  left: 25px;
+  left: 50px;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url(./frame.png);
+  background-image: url(./moon.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .types__wrapper {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
-.types__wrapper .img-holder {
+.types__content {
   margin-right: 100px;
+  width: 45%;
 }
 
 .types__list {
   margin: 0;
+  margin-right: 30px;
   padding: 0;
-  width: 48%;
   list-style: none;
 }
 
@@ -249,7 +252,6 @@ img {
   }
 
   .hero__video-holder {
-    padding-top: 100px;
     width: 50%;
     position: static;
   }
@@ -262,10 +264,6 @@ img {
 
   .basic-text {
     font-size: 20px;
-  }
-
-  .services__wrapper .basic-text br {
-    display: none;
   }
 }
 
@@ -286,7 +284,6 @@ img {
   }
 
   .hero__video-holder {
-    padding-top: 0;
     width: 100%;
     text-align: center;
   }
@@ -336,16 +333,16 @@ img {
   }
 
   .types__wrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 
   .types .img-holder {
     margin-bottom: 30px;
-    margin-right: 0;
   }
 
   .types__list {
+    margin-right: 0;
     width: 100%;
   }
 }
