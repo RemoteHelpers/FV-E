@@ -5582,6 +5582,76 @@
           "product_title": "We create Visual fx for various purposes",
           "product_text": "Our specialists will provide you with various video-making aspects, including vfx compositing, vfx green screen, and vfx motion."
         }
+      },
+      "visualEffect-videoPortfolio": {
+        "type": "visualEffect-videoPortfolio",
+        "blocks": {
+          "5c1db42c-ea3b-48a2-b20a-a9526cd86155": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=GNJ7y-Jm6sg",
+              "video_url": "https:\/\/www.youtube.com\/embed\/GNJ7y-Jm6sg",
+              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_text": ""
+            }
+          },
+          "a3d3b1c3-174e-4433-928e-dedb96872491": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=SdBIopl7GK0",
+              "video_url": "https:\/\/www.youtube.com\/embed\/SdBIopl7GK0",
+              "portfolio_title": "Remote Helpers Portfolio | Nataliia T. 681",
+              "portfolio_text": ""
+            }
+          },
+          "0563e2c8-c836-4c14-8460-a2d27a95bf70": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nTI6qgOJIjo",
+              "video_url": "https:\/\/www.youtube.com\/embed\/nTI6qgOJIjo",
+              "portfolio_title": "Юнити\/Разработчик игр. Unity\/Game Developer Online. Лучший старт в IT без опыта!",
+              "portfolio_text": ""
+            }
+          },
+          "1501fe52-90f0-48ef-872d-94cc6534989d": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=A2K6FFE104c",
+              "video_url": "https:\/\/www.youtube.com\/embed\/A2K6FFE104c",
+              "portfolio_title": "Специалист техподдержки. Technical support specialist . Присоединяйся к команде RemotEmployees!",
+              "portfolio_text": ""
+            }
+          },
+          "dc6aa2d3-2c4a-4565-ba71-a07239942a84": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=AQ7CO-KAG4A",
+              "video_url": "https:\/\/www.youtube.com\/embed\/AQ7CO-KAG4A",
+              "portfolio_title": "Hire marketing managers at the outsourcing firm | Remote Helpers",
+              "portfolio_text": ""
+            }
+          },
+          "5021d204-2f58-4c99-bc90-586aa56b89c4": {
+            "type": "video",
+            "settings": {
+              "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=-d9bnx670yc",
+              "video_url": "https:\/\/www.youtube.com\/embed\/-d9bnx670yc",
+              "portfolio_title": "Instagram Promo",
+              "portfolio_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "5c1db42c-ea3b-48a2-b20a-a9526cd86155",
+          "a3d3b1c3-174e-4433-928e-dedb96872491",
+          "0563e2c8-c836-4c14-8460-a2d27a95bf70",
+          "1501fe52-90f0-48ef-872d-94cc6534989d",
+          "dc6aa2d3-2c4a-4565-ba71-a07239942a84",
+          "5021d204-2f58-4c99-bc90-586aa56b89c4"
+        ],
+        "settings": {
+          "portfolio_title": "Look through our vfx artists’ portfolios"
+        }
       }
     },
     "content_for_index": [
