@@ -286,9 +286,9 @@ div.footer-description a{
   	flex-wrap: wrap;
 }
 
-.footer.site-footer{
+/* .footer.site-footer{
 	padding: 35px 5vw;
-}
+} */
 
 @media only screen and (max-width: 800px){
 
