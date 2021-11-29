@@ -282,7 +282,7 @@ div.footer-description a{
 }
 
 .footer .flex{
-	justify-content: space-around;
+	justify-content: space-between;
   	flex-wrap: wrap;
 }
 
