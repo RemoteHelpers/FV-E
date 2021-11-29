@@ -88,6 +88,19 @@
 	height: 100%;
 }
 
+.container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 50px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
 /* .site-nav--has-dropdown:hover .site-nav__dropdown{
 	display: block;
 } */
@@ -269,13 +282,13 @@ div.footer-description a{
 }
 
 .footer .flex{
-	justify-content: space-around;
+	justify-content: space-between;
   	flex-wrap: wrap;
 }
 
-.footer.site-footer{
+/* .footer.site-footer{
 	padding: 35px 5vw;
-}
+} */
 
 @media only screen and (max-width: 800px){
 
