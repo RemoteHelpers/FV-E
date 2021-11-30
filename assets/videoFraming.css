@@ -99,8 +99,8 @@ img {
 .hero__video-holder {
   position: absolute;
   top: 50px;
-  right: 200px;
-  width: 32%;
+  right: 250px;
+  width: 28%;
 }
 
 .button--hero:hover,
