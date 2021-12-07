@@ -2502,7 +2502,7 @@
           "p1Second": "Our outstaffing company can get you effective workers to complete your projects. Remote specialists from our team can work either full-time or part-time. You can get the best executor for your task by looking through different videomaker portfolios. Together, we can get the most fitting worker to complete your assignments and manage your goals. Our team is capable of achieving various video editing tasks.",
           "imgFirst": "shopify:\/\/shop_images\/video-editors-img-one.png",
           "imgSecond": "shopify:\/\/shop_images\/video-editors-img-second.png",
-          "button_link": "#contactformSection",
+          "button_link": "#",
           "button_label": "hire specialist"
         }
       },
@@ -2563,7 +2563,7 @@
           "h2": "We can offer high-quality services to clients who are looking for good specialists at a fair price.",
           "p": "If you want someone who is creative, suggests new ideas, and helps to apply best practice to your content, does various tasks in creating high-quality video content, take the opportunity and hire our remote specialist.",
           "img": "shopify:\/\/shop_images\/video-star.png",
-          "button_link": "#contactformSection",
+          "button_link": "#",
           "button_label": "start now"
         }
       },

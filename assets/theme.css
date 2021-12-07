@@ -76,10 +76,6 @@
 ==============================================================================*/
 /*================ Slick Slider SCSS ================*/
 
-html {
-  scroll-behavior: smooth;
-}
-
 #shopify-section-header {
   position: sticky;
   top: 0;
