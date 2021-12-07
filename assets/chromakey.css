@@ -97,8 +97,8 @@ img {
 
 .hero__video-holder {
   position: absolute;
-  top: 130px;
-  right: 200px;
+  top: 30px;
+  right: 280px;
   width: 32%;
 }
 
@@ -249,7 +249,6 @@ img {
   }
 
   .hero__video-holder {
-    padding-top: 100px;
     width: 50%;
     position: static;
   }
