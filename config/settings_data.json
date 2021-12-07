@@ -653,35 +653,28 @@
             "type": "block-1",
             "settings": {
               "title": "AGREEMENT TO TERMS",
-              "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ante in nibh mauris cursus. Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit. Bibendum at varius vel pharetra vel turpis nunc eget. Ullamcorper dignissim cras tincidunt lobortis feugiat. Quis lectus nulla at volutpat diam ut. Viverra accumsan in nisl nisi scelerisque eu. Mus mauris vitae ultricies leo integer malesuada. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Malesuada fames ac turpis egestas maecenas. Facilisis volutpat est velit egestas dui id ornare arcu. Id neque aliquam vestibulum morbi. Lectus sit amet est placerat in egestas. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Ut lectus arcu bibendum at. <\/p><p><br\/><\/p>"
+              "content": "<p>By using our site, you consent to our website’s privacy policy.<\/p><p><br\/><\/p>"
             }
           },
           "bb551b8f-01f3-49fd-839d-0cc0e5ac1636": {
             "type": "block-1",
             "settings": {
-              "title": "INTELLECTUAL PROPERTY RIGHTS",
-              "content": "<p>Maecenas pharetra convallis posuere morbi leo urna. Est ultricies integer quis auctor elit sed vulputate mi. Ullamcorper morbi tincidunt ornare massa eget. Vestibulum lectus mauris ultrices eros in cursus. Purus gravida quis blandit turpis cursus in hac. At augue eget arcu dictum varius. Lacus vel facilisis volutpat est. Et molestie ac feugiat sed lectus. Augue ut lectus arcu bibendum at varius vel. Fames ac turpis egestas sed tempus. Blandit aliquam etiam erat velit scelerisque in dictum non consectetur. Odio eu feugiat pretium nibh ipsum consequat nisl vel pretium. Dignissim diam quis enim lobortis scelerisque fermentum dui. In hac habitasse platea dictumst quisque sagittis purus sit. Nisl purus in mollis nunc sed id semper risus. Condimentum vitae sapien pellentesque habitant morbi tristique. Etiam erat velit scelerisque in dictum non consectetur. Vestibulum lectus mauris ultrices eros in cursus. Orci ac auctor augue mauris augue neque gravida in. Consequat ac felis donec et odio pellentesque diam volutpat.<\/p><p><br\/><\/p>"
-            }
-          },
-          "3786aceb-829a-4a6d-97a2-4266ac24928b": {
-            "type": "block-1",
-            "settings": {
-              "title": "USER REPRESENTATIONS",
-              "content": "<p><strong>Amet consectetur adipiscing elit pellentesque habitant morbi tristique. Eu tincidunt tortor aliquam nulla. Pharetra diam sit amet nisl suscipit adipiscing bibendum. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Ultrices dui sapien eget mi proin sed. Sed blandit libero volutpat sed cras. In tellus integer feugiat scelerisque varius morbi enim. Massa ultricies mi quis hendrerit dolor magna eget. Netus et malesuada fames ac turpis egestas sed. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc.<\/strong><\/p><p><br\/><\/p>"
+              "title": "CHANGES TO OUR PRIVACY POLICY",
+              "content": "<p>If we decide to change our privacy policy, we will post those changes on this page.<\/p><p><br\/><\/p>"
             }
           },
           "cac1388c-15d0-42d0-8ab2-e995ac8367cd": {
             "type": "block-2",
             "settings": {
-              "title": "CONTACT US",
-              "company_name": "Company Name",
+              "title": "CONTACTING US",
+              "company_name": "Freelance Video Editors",
               "house_number": "22",
               "street": "Rymarskaya st.",
               "city": "Kharkiv",
               "post_code": "65137",
               "country": "Ukraine",
-              "phone": "+38 099 710 10 33",
-              "email": "mail@mail.mail"
+              "phone": "+380504737375",
+              "email": "sales@fv-e.com"
             }
           },
           "80d519ef-be3d-42fd-b454-1d93a73fd124": {
@@ -780,7 +773,6 @@
         "block_order": [
           "25d2893b-3b94-4d9c-82b6-9e1b8d5b6b4a",
           "bb551b8f-01f3-49fd-839d-0cc0e5ac1636",
-          "3786aceb-829a-4a6d-97a2-4266ac24928b",
           "cac1388c-15d0-42d0-8ab2-e995ac8367cd",
           "80d519ef-be3d-42fd-b454-1d93a73fd124",
           "afe0205d-6d6a-4cbd-976c-f736a20a8886",
@@ -3847,7 +3839,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=Ms5Vc57f43g",
               "video_url": "https:\/\/www.youtube.com\/embed\/Ms5Vc57f43g",
-              "portfolio_title": "Hire designers at the remote outsourcing firm",
+              "portfolio_title": "Hire designers at the outsourcing firm",
               "portfolio_text": ""
             }
           },
@@ -3856,7 +3848,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=xiSsGuasmGU",
               "video_url": "https:\/\/www.youtube.com\/embed\/xiSsGuasmGU",
-              "portfolio_title": "Explainer. Who is SMM manager?",
+              "portfolio_title": "Who is SMM manager?",
               "portfolio_text": ""
             }
           },
@@ -3865,7 +3857,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=gtAwt2D_sdI",
               "video_url": "https:\/\/www.youtube.com\/embed\/gtAwt2D_sdI",
-              "portfolio_title": "Remote Helpers Portfolio| Dmytro V. 634",
+              "portfolio_title": "How to convert analog time to digital",
               "portfolio_text": ""
             }
           },
@@ -3883,7 +3875,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=rygD8i0KrJg",
               "video_url": "https:\/\/www.youtube.com\/embed\/rygD8i0KrJg",
-              "portfolio_title": "Hire SMM managers to promote the social channels",
+              "portfolio_title": "Hire SMM managers to promote your brand",
               "portfolio_text": ""
             }
           }
@@ -3917,7 +3909,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=xiSsGuasmGU",
               "video_url": "https:\/\/www.youtube.com\/embed\/xiSsGuasmGU",
-              "portfolio_title": "Explainer. Who is SMM manager?",
+              "portfolio_title": "Who is SMM manager?",
               "portfolio_text": ""
             }
           },
@@ -3926,7 +3918,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=SNfubsH_hqQ",
               "video_url": "https:\/\/www.youtube.com\/embed\/SNfubsH_hqQ",
-              "portfolio_title": "Virtual assistants website promo",
+              "portfolio_title": "Virtual assistant PROMO",
               "portfolio_text": ""
             }
           },
@@ -4114,7 +4106,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=fjbvzHOd998",
               "video_url": "https:\/\/www.youtube.com\/embed\/fjbvzHOd998",
-              "portfolio_title": "Моушн Дизайнер. Твоя интересная работа в RemotEmployees!",
+              "portfolio_title": "Realize yourself as a motion designer in RemotEmployees!",
               "portfolio_text": ""
             }
           },
@@ -4123,7 +4115,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=FkbsnYdN1hw",
               "video_url": "https:\/\/www.youtube.com\/embed\/FkbsnYdN1hw",
-              "portfolio_title": "UI.UX Designer. Твоя идея для RemotEmployees!",
+              "portfolio_title": "UI.UX Designer in RemotEmployees",
               "portfolio_text": ""
             }
           },
@@ -4132,7 +4124,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=gNW3Bmk87QY",
               "video_url": "https:\/\/www.youtube.com\/embed\/gNW3Bmk87QY",
-              "portfolio_title": "Prom video - Typography",
+              "portfolio_title": "Typography PROMO",
               "portfolio_text": ""
             }
           }
@@ -4184,7 +4176,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nR42-BWtJyA",
               "video_url": "https:\/\/www.youtube.com\/embed\/nR42-BWtJyA",
-              "portfolio_title": "video for Lavazza",
+              "portfolio_title": "Lavazza PROMO",
               "portfolio_text": ""
             }
           },
@@ -4193,7 +4185,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=kUJlDnT3-xA",
               "video_url": "https:\/\/www.youtube.com\/embed\/kUJlDnT3-xA",
-              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
+              "portfolio_title": "Travel. Motivational Video",
               "portfolio_text": ""
             }
           },
@@ -4202,7 +4194,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=eqP6lZK0aNs",
               "video_url": "https:\/\/www.youtube.com\/embed\/eqP6lZK0aNs",
-              "portfolio_title": "Remote Helpers Portfolio | Yevhen O. 717",
+              "portfolio_title": "War Short Film",
               "portfolio_text": ""
             }
           }
@@ -4318,7 +4310,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=tUS1cQv83yA",
               "video_url": "https:\/\/www.youtube.com\/embed\/tUS1cQv83yA",
-              "portfolio_title": "Video Editing | Remote Helpers",
+              "portfolio_title": "Atmospheric Landscapes Film",
               "portfolio_text": ""
             }
           },
@@ -4327,7 +4319,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=xpChRh9XyXw",
               "video_url": "https:\/\/www.youtube.com\/embed\/xpChRh9XyXw",
-              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
+              "portfolio_title": "Library as a good place for rest and studying",
               "portfolio_text": ""
             }
           },
@@ -4336,7 +4328,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=UdsSKgZiXM8",
               "video_url": "https:\/\/www.youtube.com\/embed\/UdsSKgZiXM8",
-              "portfolio_title": "Remote Helpers Portfolio| Dmytro V. 634",
+              "portfolio_title": "What is roman numerals and how to understand them",
               "portfolio_text": ""
             }
           },
@@ -4345,7 +4337,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=GZy2TU6oMiI",
               "video_url": "https:\/\/www.youtube.com\/embed\/GZy2TU6oMiI",
-              "portfolio_title": "Video for youtube channel Creative Mind",
+              "portfolio_title": "Destroyed House Short Film",
               "portfolio_text": ""
             }
           },
@@ -4363,7 +4355,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=kUJlDnT3-xA",
               "video_url": "https:\/\/www.youtube.com\/embed\/kUJlDnT3-xA",
-              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
+              "portfolio_title": "Travel. Motivational Video",
               "portfolio_text": ""
             }
           }
@@ -4506,7 +4498,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=UdsSKgZiXM8",
               "video_url": "https:\/\/www.youtube.com\/embed\/UdsSKgZiXM8",
-              "portfolio_title": "Remote Helpers Portfolio| Dmytro V. 634",
+              "portfolio_title": "What is roman numerals and how to understand them",
               "portfolio_text": ""
             }
           },
@@ -4515,7 +4507,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=tUS1cQv83yA",
               "video_url": "https:\/\/www.youtube.com\/embed\/tUS1cQv83yA",
-              "portfolio_title": "Video Editing",
+              "portfolio_title": "Atmospheric Landscapes Film",
               "portfolio_text": ""
             }
           },
@@ -4524,7 +4516,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nuQGKAtgIp0",
               "video_url": "https:\/\/www.youtube.com\/embed\/nuQGKAtgIp0",
-              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
+              "portfolio_title": "Play Wider PROMO",
               "portfolio_text": ""
             }
           },
@@ -4533,7 +4525,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=IaED361NAps",
               "video_url": "https:\/\/www.youtube.com\/embed\/IaED361NAps",
-              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_title": "Restaurant Promo Video",
               "portfolio_text": ""
             }
           },
@@ -4542,7 +4534,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=xpChRh9XyXw",
               "video_url": "https:\/\/www.youtube.com\/embed\/xpChRh9XyXw",
-              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
+              "portfolio_title": "Library as a good place for rest and studying",
               "portfolio_text": ""
             }
           },
@@ -4551,7 +4543,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=7yuaO9qXYaY",
               "video_url": "https:\/\/www.youtube.com\/embed\/7yuaO9qXYaY",
-              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
+              "portfolio_title": "City Attractions Film",
               "portfolio_text": ""
             }
           }
@@ -4694,7 +4686,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=wRHR40DfxWs",
               "video_url": "https:\/\/www.youtube.com\/embed\/wRHR40DfxWs",
-              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_title": "Couture Colour Promo",
               "portfolio_text": ""
             }
           },
@@ -4703,7 +4695,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=75KRHcPtE-4",
               "video_url": "https:\/\/www.youtube.com\/embed\/75KRHcPtE-4",
-              "portfolio_title": "Netevia Pay Post",
+              "portfolio_title": "Netevia Promo",
               "portfolio_text": ""
             }
           },
@@ -4712,7 +4704,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=xmUWViuXE6w",
               "video_url": "https:\/\/www.youtube.com\/embed\/xmUWViuXE6w",
-              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_title": "Building PC for 300 USD",
               "portfolio_text": ""
             }
           },
@@ -4721,7 +4713,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=jKmFn5pc0r8",
               "video_url": "https:\/\/www.youtube.com\/embed\/jKmFn5pc0r8",
-              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_title": "Elon Musk - Story of Success",
               "portfolio_text": ""
             }
           },
@@ -4876,7 +4868,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=Ms5Vc57f43g",
               "video_url": "https:\/\/www.youtube.com\/embed\/Ms5Vc57f43g",
-              "portfolio_title": "Hire designers at the remote outsourcing firm",
+              "portfolio_title": "Designers Recruitment Promo",
               "portfolio_text": ""
             }
           },
@@ -4885,7 +4877,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=wWvoJ7lh8Ps",
               "video_url": "https:\/\/www.youtube.com\/embed\/wWvoJ7lh8Ps",
-              "portfolio_title": "Hire personal assistants to free up the schedule",
+              "portfolio_title": "Remote Personal Assistant Promo",
               "portfolio_text": ""
             }
           },
@@ -4894,7 +4886,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=Cif0_2fqwGQ",
               "video_url": "https:\/\/www.youtube.com\/embed\/Cif0_2fqwGQ",
-              "portfolio_title": "Hire PPC specialists at the outstaffing company",
+              "portfolio_title": "PPC specialist Recruitment Promo",
               "portfolio_text": ""
             }
           },
@@ -4903,7 +4895,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=rygD8i0KrJg",
               "video_url": "https:\/\/www.youtube.com\/embed\/rygD8i0KrJg",
-              "portfolio_title": "Hire SMM managers to promote the social channels",
+              "portfolio_title": "Hire SMM managers to promote your brand",
               "portfolio_text": ""
             }
           }
@@ -5035,7 +5027,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=v4Q-pbiKwl8",
               "video_url": "https:\/\/www.youtube.com\/embed\/v4Q-pbiKwl8",
-              "portfolio_title": "video for the levelens",
+              "portfolio_title": "How to get a stable income with investment activities",
               "portfolio_text": ""
             }
           },
@@ -5044,7 +5036,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nR42-BWtJyA",
               "video_url": "https:\/\/www.youtube.com\/embed\/nR42-BWtJyA",
-              "portfolio_title": "video for Lavazza",
+              "portfolio_title": "Lavazza PROMO",
               "portfolio_text": ""
             }
           },
@@ -5053,7 +5045,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nuQGKAtgIp0",
               "video_url": "https:\/\/www.youtube.com\/embed\/nuQGKAtgIp0",
-              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
+              "portfolio_title": "Play Wider PROMO",
               "portfolio_text": ""
             }
           },
@@ -5062,7 +5054,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=QhxtX7_Oe_g",
               "video_url": "https:\/\/www.youtube.com\/embed\/QhxtX7_Oe_g",
-              "portfolio_title": "Remote Helpers Portfolio | Anastasiia Y. 925",
+              "portfolio_title": "Wedding Videography Blog",
               "portfolio_text": ""
             }
           },
@@ -5071,7 +5063,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=PJmZ96pygE8",
               "video_url": "https:\/\/www.youtube.com\/embed\/PJmZ96pygE8",
-              "portfolio_title": "Video Editing",
+              "portfolio_title": "Smart Trader Services Promo",
               "portfolio_text": ""
             }
           }
@@ -5175,7 +5167,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nuQGKAtgIp0",
               "video_url": "https:\/\/www.youtube.com\/embed\/nuQGKAtgIp0",
-              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
+              "portfolio_title": "Play Wider PROMO",
               "portfolio_text": ""
             }
           },
@@ -5184,7 +5176,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=IaED361NAps",
               "video_url": "https:\/\/www.youtube.com\/embed\/IaED361NAps",
-              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_title": "Restaurant Promo Video",
               "portfolio_text": ""
             }
           },
@@ -5193,7 +5185,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=tUS1cQv83yA",
               "video_url": "https:\/\/www.youtube.com\/embed\/tUS1cQv83yA",
-              "portfolio_title": "Video Editing | Remote Helpers",
+              "portfolio_title": "Atmospheric Landscapes Film",
               "portfolio_text": ""
             }
           },
@@ -5202,7 +5194,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=uKtMTKlavzg",
               "video_url": "https:\/\/www.youtube.com\/embed\/uKtMTKlavzg",
-              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_title": "Sky Jumping Promo Video",
               "portfolio_text": ""
             }
           },
@@ -5211,7 +5203,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=xpChRh9XyXw",
               "video_url": "https:\/\/www.youtube.com\/embed\/xpChRh9XyXw",
-              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
+              "portfolio_title": "Library as a good place for rest and studying",
               "portfolio_text": ""
             }
           },
@@ -5220,7 +5212,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=QhxtX7_Oe_g",
               "video_url": "https:\/\/www.youtube.com\/embed\/QhxtX7_Oe_g",
-              "portfolio_title": "Remote Helpers Portfolio | Anastasiia Y. 925",
+              "portfolio_title": "Wedding Videography Blog",
               "portfolio_text": ""
             }
           }
@@ -5323,7 +5315,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=7yuaO9qXYaY",
               "video_url": "https:\/\/www.youtube.com\/embed\/7yuaO9qXYaY",
-              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
+              "portfolio_title": "City Attractions Film",
               "portfolio_text": ""
             }
           },
@@ -5332,7 +5324,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=xpChRh9XyXw",
               "video_url": "https:\/\/www.youtube.com\/embed\/xpChRh9XyXw",
-              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
+              "portfolio_title": "Library as a good place for rest and studying",
               "portfolio_text": ""
             }
           },
@@ -5341,7 +5333,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=kUJlDnT3-xA",
               "video_url": "https:\/\/www.youtube.com\/embed\/kUJlDnT3-xA",
-              "portfolio_title": "Remote Helpers Portfolio | Roman O. 803",
+              "portfolio_title": "Travel. Motivational Video",
               "portfolio_text": ""
             }
           },
@@ -5350,7 +5342,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=QhxtX7_Oe_g",
               "video_url": "https:\/\/www.youtube.com\/embed\/QhxtX7_Oe_g",
-              "portfolio_title": "Remote Helpers Portfolio | Anastasiia Y. 925",
+              "portfolio_title": "Wedding Videography Blog",
               "portfolio_text": ""
             }
           },
@@ -5359,7 +5351,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=ixNMiEVkuog",
               "video_url": "https:\/\/www.youtube.com\/embed\/ixNMiEVkuog",
-              "portfolio_title": "Remote Helpers Portfolio | Anastasiia Y. 925",
+              "portfolio_title": "Romantic Video Shoot",
               "portfolio_text": ""
             }
           },
@@ -5368,7 +5360,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nuQGKAtgIp0",
               "video_url": "https:\/\/www.youtube.com\/embed\/nuQGKAtgIp0",
-              "portfolio_title": "Remote Helpers Portfolio | Olesia H 604",
+              "portfolio_title": "Play Wider PROMO",
               "portfolio_text": ""
             }
           }
@@ -5473,7 +5465,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=UdsSKgZiXM8",
               "video_url": "https:\/\/www.youtube.com\/embed\/UdsSKgZiXM8",
-              "portfolio_title": "Remote Helpers Portfolio| Dmytro V. 634",
+              "portfolio_title": "What is roman numerals and how to understand them",
               "portfolio_text": ""
             }
           },
@@ -5482,7 +5474,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=gtAwt2D_sdI",
               "video_url": "https:\/\/www.youtube.com\/embed\/gtAwt2D_sdI",
-              "portfolio_title": "Remote Helpers Portfolio| Dmytro V. 634",
+              "portfolio_title": "How to convert analog time to digital",
               "portfolio_text": ""
             }
           },
@@ -5491,7 +5483,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=GZy2TU6oMiI",
               "video_url": "https:\/\/www.youtube.com\/embed\/GZy2TU6oMiI",
-              "portfolio_title": "Video for youtube channel Creative Mind",
+              "portfolio_title": "Destroyed House Short Film",
               "portfolio_text": ""
             }
           }
@@ -5591,7 +5583,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=GNJ7y-Jm6sg",
               "video_url": "https:\/\/www.youtube.com\/embed\/GNJ7y-Jm6sg",
-              "portfolio_title": "Remote Helpers Portfolio | Nazar K 716",
+              "portfolio_title": "Visual Effects Portfolio of Nazar K.",
               "portfolio_text": ""
             }
           },
@@ -5600,7 +5592,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=SdBIopl7GK0",
               "video_url": "https:\/\/www.youtube.com\/embed\/SdBIopl7GK0",
-              "portfolio_title": "Remote Helpers Portfolio | Nataliia T. 681",
+              "portfolio_title": "Art Video Exhibition",
               "portfolio_text": ""
             }
           },
@@ -5609,7 +5601,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=nTI6qgOJIjo",
               "video_url": "https:\/\/www.youtube.com\/embed\/nTI6qgOJIjo",
-              "portfolio_title": "Юнити\/Разработчик игр. Unity\/Game Developer Online. Лучший старт в IT без опыта!",
+              "portfolio_title": "Unity Game Developer vacancy is open. Get a chance to work on foreign projects",
               "portfolio_text": ""
             }
           },
@@ -5618,7 +5610,7 @@
             "settings": {
               "video_urlMfp": "https:\/\/www.youtube.com\/watch?v=A2K6FFE104c",
               "video_url": "https:\/\/www.youtube.com\/embed\/A2K6FFE104c",
-              "portfolio_title": "Специалист техподдержки. Technical support specialist . Присоединяйся к команде RemotEmployees!",
+              "portfolio_title": "Join RemoteEmployees as Customer Support Specialist",
               "portfolio_text": ""
             }
           },
