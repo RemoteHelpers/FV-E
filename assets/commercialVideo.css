@@ -248,6 +248,10 @@ img {
 }
 
 @media (max-width: 1120px) {
+  .main-title br {
+    display: none;
+  }
+
   .section-title {
     margin-bottom: 30px;
   }

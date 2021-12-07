@@ -89,7 +89,7 @@ img {
   row-gap: 40px;
   padding-top: 180px;
   margin-right: 40px;
-  width: 740px;
+  width: 700px;
 }
 
 .hero__text {
@@ -98,9 +98,9 @@ img {
 
 .hero__video-holder {
   position: absolute;
-  top: 130px;
-  right: 200px;
-  width: 32%;
+  top: 100px;
+  right: 300px;
+  width: 25%;
 }
 
 .button--hero:hover,
@@ -115,7 +115,7 @@ img {
 .services__wrapper {
   margin-bottom: 30px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .services__card {

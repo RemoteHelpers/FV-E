@@ -75,13 +75,12 @@ img {
 }
 
 .hero__wrapper {
-  padding-top: 150px;
   display: flex;
   justify-content: space-between;
 }
 
 .hero__content {
-  padding-top: 30px;
+  padding-top: 180px;
   display: flex;
   flex-direction: column;
   row-gap: 40px;
@@ -93,6 +92,7 @@ img {
 }
 
 .hero__video-holder {
+  padding-top: 80px;
   width: 50%;
 }
 
@@ -225,12 +225,15 @@ img {
 }
 
 @media (max-width: 1120px) {
+  .main-title br {
+    display: none;
+  }
+
   .section-title {
     margin-bottom: 30px;
   }
 
   .hero__wrapper {
-    padding-top: 50px;
     flex-direction: column;
     row-gap: 30px;
   }
@@ -244,6 +247,7 @@ img {
   }
 
   .hero__video-holder {
+    padding-top: 0;
     margin-bottom: 20px;
     width: 100%;
     text-align: center;
