@@ -653,35 +653,28 @@
             "type": "block-1",
             "settings": {
               "title": "AGREEMENT TO TERMS",
-              "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ante in nibh mauris cursus. Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit. Bibendum at varius vel pharetra vel turpis nunc eget. Ullamcorper dignissim cras tincidunt lobortis feugiat. Quis lectus nulla at volutpat diam ut. Viverra accumsan in nisl nisi scelerisque eu. Mus mauris vitae ultricies leo integer malesuada. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Malesuada fames ac turpis egestas maecenas. Facilisis volutpat est velit egestas dui id ornare arcu. Id neque aliquam vestibulum morbi. Lectus sit amet est placerat in egestas. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Ut lectus arcu bibendum at. <\/p><p><br\/><\/p>"
+              "content": "<p>By using our site, you consent to our website’s privacy policy.<\/p><p><br\/><\/p>"
             }
           },
           "bb551b8f-01f3-49fd-839d-0cc0e5ac1636": {
             "type": "block-1",
             "settings": {
-              "title": "INTELLECTUAL PROPERTY RIGHTS",
-              "content": "<p>Maecenas pharetra convallis posuere morbi leo urna. Est ultricies integer quis auctor elit sed vulputate mi. Ullamcorper morbi tincidunt ornare massa eget. Vestibulum lectus mauris ultrices eros in cursus. Purus gravida quis blandit turpis cursus in hac. At augue eget arcu dictum varius. Lacus vel facilisis volutpat est. Et molestie ac feugiat sed lectus. Augue ut lectus arcu bibendum at varius vel. Fames ac turpis egestas sed tempus. Blandit aliquam etiam erat velit scelerisque in dictum non consectetur. Odio eu feugiat pretium nibh ipsum consequat nisl vel pretium. Dignissim diam quis enim lobortis scelerisque fermentum dui. In hac habitasse platea dictumst quisque sagittis purus sit. Nisl purus in mollis nunc sed id semper risus. Condimentum vitae sapien pellentesque habitant morbi tristique. Etiam erat velit scelerisque in dictum non consectetur. Vestibulum lectus mauris ultrices eros in cursus. Orci ac auctor augue mauris augue neque gravida in. Consequat ac felis donec et odio pellentesque diam volutpat.<\/p><p><br\/><\/p>"
-            }
-          },
-          "3786aceb-829a-4a6d-97a2-4266ac24928b": {
-            "type": "block-1",
-            "settings": {
-              "title": "USER REPRESENTATIONS",
-              "content": "<p><strong>Amet consectetur adipiscing elit pellentesque habitant morbi tristique. Eu tincidunt tortor aliquam nulla. Pharetra diam sit amet nisl suscipit adipiscing bibendum. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Ultrices dui sapien eget mi proin sed. Sed blandit libero volutpat sed cras. In tellus integer feugiat scelerisque varius morbi enim. Massa ultricies mi quis hendrerit dolor magna eget. Netus et malesuada fames ac turpis egestas sed. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc.<\/strong><\/p><p><br\/><\/p>"
+              "title": "CHANGES TO OUR PRIVACY POLICY",
+              "content": "<p>If we decide to change our privacy policy, we will post those changes on this page.<\/p><p><br\/><\/p>"
             }
           },
           "cac1388c-15d0-42d0-8ab2-e995ac8367cd": {
             "type": "block-2",
             "settings": {
-              "title": "CONTACT US",
-              "company_name": "Company Name",
+              "title": "CONTACTING US",
+              "company_name": "Freelance Video Editors",
               "house_number": "22",
               "street": "Rymarskaya st.",
               "city": "Kharkiv",
               "post_code": "65137",
               "country": "Ukraine",
-              "phone": "+38 099 710 10 33",
-              "email": "mail@mail.mail"
+              "phone": "+380504737375",
+              "email": "sales@fv-e.com"
             }
           },
           "80d519ef-be3d-42fd-b454-1d93a73fd124": {
@@ -780,7 +773,6 @@
         "block_order": [
           "25d2893b-3b94-4d9c-82b6-9e1b8d5b6b4a",
           "bb551b8f-01f3-49fd-839d-0cc0e5ac1636",
-          "3786aceb-829a-4a6d-97a2-4266ac24928b",
           "cac1388c-15d0-42d0-8ab2-e995ac8367cd",
           "80d519ef-be3d-42fd-b454-1d93a73fd124",
           "afe0205d-6d6a-4cbd-976c-f736a20a8886",
