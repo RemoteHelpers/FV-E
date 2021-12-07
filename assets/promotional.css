@@ -89,7 +89,7 @@ img {
   row-gap: 40px;
   padding-top: 180px;
   margin-right: 40px;
-  width: 700px;
+  width: 740px;
 }
 
 .hero__text {
@@ -98,9 +98,9 @@ img {
 
 .hero__video-holder {
   position: absolute;
-  top: 100px;
-  right: 300px;
-  width: 25%;
+  top: 130px;
+  right: 200px;
+  width: 32%;
 }
 
 .button--hero:hover,
