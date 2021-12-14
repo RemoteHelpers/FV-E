@@ -921,5 +921,5 @@
 }
 
 .col-xs-4 {
-    width: 100%;
+    width: 100% !important;
 }
