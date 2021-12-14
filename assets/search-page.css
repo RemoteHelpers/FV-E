@@ -202,7 +202,7 @@
 } 
 
 .card-ed-photo {
-    height: 178px;
+    width: 100%;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
@@ -574,7 +574,7 @@
     } 
 
     .card-ed-photo {
-        width: 100%;
+        height: 190px;
         border-top-left-radius: 30px;
         object-fit: cover;
         border-bottom-left-radius: 30px;
