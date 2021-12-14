@@ -69,12 +69,12 @@
                   </div>
                   <div class="search--less-than-2-results"></div>
                   <style>
-                    /* .search-results-display {
+                    .search-results-display {
                       display: none;
-                    } */
-                    /* .display-search-result {
+                    }
+                    .display-search-result {
                       display: none;
-                    } */
+                    }
                     .pagination{
                       display: none;
                     } 
@@ -87,7 +87,7 @@
                 <div class="text-center">
                 {%endif%}
 
-                {% if search.terms != blank and search.results_count == 0 %}
+                <!-- {% if search.terms != blank and search.results_count == 0 %}
                 <div class="rte search--no-results-found">
                   <div style="margin-top: 5%; display: flex;">
                     <p class="res-counter">{{search.results_count}}</p><p class="res-query"> results for "{{search.terms}}"</p>
@@ -95,7 +95,7 @@
                   <p class="res-counter">{{ 'general.search.no_results' | t }}</p>
                 </div>
                 <div class="search--less-than-2-results"></div>
-                {%endif%}
+                {%endif%} -->
 
                 {%if search.results_count > 0 %}
                 <div class="search-results-display">
