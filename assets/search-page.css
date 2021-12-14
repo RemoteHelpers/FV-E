@@ -939,6 +939,11 @@
     padding-right: 0 !important;
 }
 
+.col-xs-8 {
+    width: 100% !important;
+    float: unset !important;
+}
+
 .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
