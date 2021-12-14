@@ -1,11 +1,203 @@
+{% paginate search.results by 6 %}
+{% assign result = search.results | sort: '{{sortType}}' %}
 
+{{ 'search-page.css' | asset_url | stylesheet_tag }}
+{{ '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' | script_tag }}
+{{ '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' | stylesheet_tag }}
+{{ '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css' | stylesheet_tag }}
+
+
+
+<div class="price">
+
+<div class="page-width search">
+  <h1 class="search-header">Employees</h1>
+  <p class="search-subheader">Check out our remote guys’ portfolios and video resumes.</p>
+
+  <div class="grid">
+    <div class="grid__item medium-up--six-tenths medium-up--push-two-tenths">
+      <form action="{{ routes.search_url }}" method="get" role="search" class="search-form search-page-form">
+        <div class="input-group input-group--nowrap">
+          <div class="search-input input-group__field input-group__field--connected search-form__input-wrapper">
+            <input id="searchInput" type="search" name="q" value="{{ search.terms | escape }}"
+              placeholder="Business video" role="combobox" aria-autocomplete="list"
+              aria-owns="predictive-search-results" aria-expanded="false"
+              aria-label="{{ 'general.search.placeholder' | t }}" aria-haspopup="listbox" class="search-form__input"
+              data-search-page-predictive-search-input />
+
+            <button style="outline: 0;" type="submit" onclick="getValue()" class="search-btn" aria-label="{{ 'general.search.submit' | t }}"
+              data-search-page-predictive-search-submit>
+              {% include 'icon-search' %}
+            </button>
+            <input type="hidden" name="options[prefix]" value="last" aria-hidden="true" />
+
+            <button type="reset" class="search-form__clear-action"
+              aria-label="{{ 'general.search.clear_search_term' | t }}" data-search-page-predictive-search-clear>
+              {% include 'icon-close' %}
+            </button>
+
+            <div class="predictive-search-wrapper" data-predictive-search-mount="default">
+              <div class="predictive-search" style="display: block;">
+              </div>
+            </div>
+            <a class="clear-all-btn" href="/search">Clear all</a>
+            <div align="center" style="margin-top: 30px;">
+              {% assign collectionAllTags = collections.all.tags %}
+              {% for tag in collectionAllTags %}
+                  <button class="btn-product-tag" id="btn{{tag}}" value="{{tag}}, "
+                onclick="clickOnTag(this); return false;"><a id="{{tag}}"class="product-tag">{{ tag }}</a></button>{%include
+                  'clear-tag-icon'%}
+                  {%endfor%}
+            </div>
+
+
+              {% if search.performed == false %}
+              <div class="text-center">
+                {% endif %}
+
+                <!-- Here you can add new forbidden words for search requests -->
+                {% assign forbiddenRequests = "contact,hello,v-edstore,page,name,eduaction,experience,about" | split: ',' %}
+                <!-- end -->
+                
+                {% for request in forbiddenRequests %}
+                  {%if search.terms contains {{request}}%}
+                  <div class="rte search--no-results-found">
+                    <div style="margin-top: 5%; display: flex;">
+                      <p class="res-counter">0</p><p class="res-query"> results for "{{search.terms}}"</p>
+                      </div>
+                    <p class="res-counter">{{ 'general.search.no_results' | t }}</p>
+                  </div>
+                  <div class="search--less-than-2-results"></div>
+                  <style>
+                    .search-results-display {
+                      display: none;
+                    }
+                    .display-search-result {
+                      display: none;
+                    }
+                    .pagination{
+                      display: none;
+                    } 
+                  </style>
+                  {%endif%}
+                {% endfor %}
+
+                {% if search.terms == blank %}
+                <div class="search--less-than-2-results"></div>
+                <div class="text-center">
+                {%endif%}
+
+                {% if search.terms != blank and search.results_count == 0 %}
+                <div class="rte search--no-results-found">
+                  <div style="margin-top: 5%; display: flex;">
+                    <p class="res-counter">{{search.results_count}}</p><p class="res-query"> results for "{{search.terms}}"</p>
+                    </div>
+                  <p class="res-counter">{{ 'general.search.no_results' | t }}</p>
+                </div>
+                <div class="search--less-than-2-results"></div>
+                {%endif%}
+
+                {%if search.results_count > 0 %}
+                <div class="search-results-display">
+                  <div style="margin-top: 5%; display: flex;">
+                  <p class="res-counter">{%include 'searchCounter'%}</p><p class="res-query"> results for "{{search.terms}}"</p>
+                  </div>
+
+                  {% endif %}
+
+                </div>
+              </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
 
 {%include 'search-render' %}
+</div>
 
 
 
 
+{% if search.results_count > 0 and search.results_count < 2 %} <div class="search--less-than-2-results">
+  {{search.results_count}}
+  </div>
+  {% endif %}
 
+  {% endpaginate %}
+
+  <script>
+    let searchValue = [searchInput.value];
+    const searchBtn = document.getElementsByClassName("search-btn");
+    const comma = ", ";
+    var activeId = [];
+    var searchString;
+
+    function clickOnTag (obj) {
+      
+      searchValue = [searchInput.value];
+
+
+
+      searchValue.push(obj.value);
+      searchInput.value = searchValue.join(''); 
+
+
+      activeTag.classList.add("active");
+      return false;
+
+    }
+
+    function makeTagActive () {
+      const close = "close";
+      const activeValue = document.getElementById("searchInput").value;
+      const input = document.getElementById("searchInput");
+      const activeTag = document.getElementById(activeValue);
+      const activeCloseBtn = document.getElementById(close+activeValue);
+      
+
+      activeTag.classList.add("active");
+      activeCloseBtn.classList.add("activesvg");
+
+      activeCloseBtn.addEventListener('click', function () {
+        document.location.href = "/search";
+      })
+      return false;
+    }
+    // makeTagActive ();
+
+
+  function showLog () {
+    searchString = searchValue.join();
+    activeId = searchString.split(comma);
+    forDelete = activeId;
+    activeId.forEach(element => {
+      let currentItem = element;
+      const activeTag = document.getElementById(currentItem);
+      const activeTagBtn = document.getElementById("btn"+currentItem);
+      activeTag.classList.add("active");
+      activeTagBtn.classList.add("unclickble");
+      const activeCloseBtn = document.getElementById("close"+currentItem);
+      activeCloseBtn.classList.add("activesvg");
+      activeCloseBtn.addEventListener('clock', function (){
+        return true;})
+});
+
+  }
+  function deleteTag (closeBtn) {
+    const str2 = "close";
+    let currentTabValue = closeBtn.id;
+    currentTabValue = currentTabValue.replace(/close/gi,'');
+    let currentSearchValue = searchInput.value;
+    let re = currentTabValue+", ";
+    currentSearchValue = currentSearchValue.replace(re,'');
+    searchInput.value = currentSearchValue;
+    let searchForm = document.getElementsByClassName("search-form");
+    searchForm.search();
+    
+  }
+  showLog();
+  </script> 
