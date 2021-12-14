@@ -181,7 +181,7 @@
 }
 
 .display-search-result li {
-
+    width: calc(33.33% - 20px);
 } 
 
 .search-product-card {
