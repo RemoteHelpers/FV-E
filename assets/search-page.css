@@ -919,3 +919,7 @@
         margin-left: 0%;
     }
 }
+
+.col-xs-4 {
+    width: 100%;
+}
