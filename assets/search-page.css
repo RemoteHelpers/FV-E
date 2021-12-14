@@ -219,6 +219,7 @@
     border-top-right-radius: 30px;
 }
 .card-ed-title {
+    text-align: center;
     font-family: Raleway;
     font-style: normal;
     font-weight: 800;
