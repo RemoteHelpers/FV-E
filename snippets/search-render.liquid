@@ -1,6 +1,6 @@
-<!-- {% if search.performed %} -->
+{% if search.performed %}
 {% if search.results_count > 0 %}
-<hr aria-hidden="false" />
+<hr aria-hidden="true" />
 {% endif %}
 
 <h2 class="visually-hidden">{{ 'general.search.heading' | t: count: search.results_count }}</h2>
@@ -104,4 +104,4 @@
 {% include 'pagination', paginate: paginate %}
 </div>
 {%- endif -%}
-<!-- {% endif %} -->
+{% endif %}
