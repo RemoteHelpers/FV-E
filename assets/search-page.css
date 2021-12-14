@@ -178,7 +178,7 @@
     flex-wrap: wrap;
     column-gap: 45px;
     row-gap: 45px;
-    background-color: rgba(199, 35, 84, 0.698);
+    /* background-color: rgba(199, 35, 84, 0.698); */
 }
 
 .display-search-result li {
@@ -188,7 +188,7 @@
     border: 2px solid transparent;
     box-shadow: -5px -5px 10px rgba(189, 189, 189, 0.25), 5px 5px 10px rgba(189, 189, 189, 0.25);
     transition: all .3s ease;
-    background-color: rgba(145, 238, 127, 0.822);
+    /* background-color: rgba(145, 238, 127, 0.822); */
 }
 
 .display-search-result li:hover {
@@ -959,4 +959,5 @@
     background-color: transparent;
     color: #f13f00;
     border: 2px solid #f13f00;
+    transition: .3s;
 }
