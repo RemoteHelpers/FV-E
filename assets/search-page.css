@@ -956,4 +956,7 @@
 
 .btn-product {
     margin-bottom: 30px !important;
+    background-color: transparent;
+    color: #f13f00;
+    border: 2px solid #f13f00;
 }
