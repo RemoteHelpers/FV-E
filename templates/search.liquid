@@ -82,12 +82,12 @@
                   {%endif%}
                 {% endfor %}
 
-                {% if search.terms == blank %}
+                <!-- {% if search.terms == blank %}
                 <div class="search--less-than-2-results"></div>
                 <div class="text-center">
-                {%endif%}
+                {%endif%} -->
 
-                {% if search.terms != blank and search.results_count == 0 %}
+                {% if search.terms == blank and search.results_count == 0 %}
                 <div class="rte search--no-results-found">
                   <div style="margin-top: 5%; display: flex;">
                     <p class="res-counter">{{search.results_count}}</p><p class="res-query"> results for "{{search.terms}}"</p>
