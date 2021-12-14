@@ -953,3 +953,7 @@
 .none {
     display: none;
 }
+
+.btn-product {
+    margin-bottom: 30px;
+}
