@@ -178,6 +178,7 @@
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 40px;
+    background-color: rgba(199, 35, 84, 0.698);
 }
 
 .display-search-result li {
