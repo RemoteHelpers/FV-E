@@ -54,7 +54,7 @@
   <div class="display-mobile-search-result">
     <ul class="mobile-ul">
       {% for item in result %}
-      <a class="none" href="{{ item.url }}">
+      <a class="hidden-link" href="{{ item.url }}">
         <li class="mobile-li">
           {% if item.object_type == 'product' %}
           <!-- {% include 'product-card-for-search', product: item %} -->
