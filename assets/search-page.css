@@ -173,6 +173,7 @@
     -webkit-column-count: 2; /* Safari and Chrome */
     column-count: 2;
     list-style-type: decimal;
+    margin-bottom: 100px;
 }
 
 .display-search-result li {
