@@ -175,6 +175,7 @@
     list-style-type: decimal;
     margin-bottom: 100px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .display-search-result li {
