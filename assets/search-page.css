@@ -176,13 +176,13 @@
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 40px;
+    column-gap: 45px;
+    row-gap: 45px;
     background-color: rgba(199, 35, 84, 0.698);
 }
 
 .display-search-result li {
-    width: calc(33.33% - 20px);
+    width: calc(33.33% - 30px);
     border-radius: 30px;
     background: #FFFFFF;
     border: 2px solid transparent;
