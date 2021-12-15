@@ -558,6 +558,10 @@
 }
 
 @media only screen and (max-width : 655px) {
+    .mobile-li {
+        width: 100%;
+    }
+
     .mobile-search-result-page-container {
         margin-left: 17%;
         width: 50%;
@@ -588,7 +592,7 @@
     } 
 
     .card-ed-photo {
-        height: 190px;
+        /* height: 190px; */
         border-top-left-radius: 30px;
         object-fit: cover;
         border-bottom-left-radius: 30px;
