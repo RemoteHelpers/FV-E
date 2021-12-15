@@ -979,3 +979,13 @@
     background-color: #f13f00;
     text-decoration: none;
 }
+
+@media (max-width: 1070px) {
+    .display-search-result ol {
+
+    }
+
+    .display-search-result li {
+        width: calc(50% - 90px);
+    }
+}
