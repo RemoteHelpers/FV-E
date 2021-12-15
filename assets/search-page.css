@@ -558,10 +558,6 @@
 }
 
 @media only screen and (max-width : 655px) {
-    .mobile-li {
-        width: 100%;
-    }
-
     .mobile-search-result-page-container {
         margin-left: 17%;
         width: 50%;
@@ -1014,5 +1010,11 @@
 
     .mobile-li:hover {
         border: 2px solid #f13f00;
+    }
+}
+
+@media (max-width: 650px) {
+    .mobile-li {
+        width: 100%;  
     }
 }
