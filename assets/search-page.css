@@ -570,7 +570,7 @@
 
     .display-mobile-search-result {
         display: block;
-        margin-left: 12%;
+        /* margin-left: 12%; */
     }
 
     .search-product-card {
