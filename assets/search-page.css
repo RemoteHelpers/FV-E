@@ -973,3 +973,8 @@
     border-radius: 71px;
     transition: .3s;
 }
+
+.btn-product:hover {
+    color: #fff;
+    background-color: #f13f00;
+}
