@@ -855,12 +855,8 @@
 
 @media only screen and (max-width : 372px) {
     .search-product-card {
-        height: 205px;
-        width: 50%;
-        margin-left: 3%;
         border-radius: 30px;
         background: #FFFFFF;
-        box-shadow: -5px -5px 10px rgba(189, 189, 189, 0.25), 5px 5px 10px rgba(189, 189, 189, 0.25);
     } 
 
     .input-group {
@@ -878,12 +874,9 @@
 @media only screen and (max-width : 338px) {
 
     .search-product-card {
-        height: 205px;
-        width: 50%;
         margin-left: 0;
         border-radius: 30px;
         background: #FFFFFF;
-        box-shadow: -5px -5px 10px rgba(189, 189, 189, 0.25), 5px 5px 10px rgba(189, 189, 189, 0.25);
     }
 
 
