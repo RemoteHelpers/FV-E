@@ -650,7 +650,6 @@
         display: table;
         border-collapse: separate;
         width: 428px;
-        margin-left: 10%;
     }
 }
 
@@ -677,7 +676,6 @@
         display: table;
         border-collapse: separate;
         width: 396px;
-        margin-left: 8%;
     }
 }
 
@@ -691,7 +689,6 @@
         display: table;
         border-collapse: separate;
         width: 396px;
-        margin-left: 6%;
     }
 }
 
@@ -764,7 +761,6 @@
         display: table;
         border-collapse: separate;
         width: 328px;
-        margin-left: 5%;
     }
 }
 
@@ -842,7 +838,6 @@
         display: table;
         border-collapse: separate;
         width: 305px;
-        margin-left: 9%;
     }
     .delete-tag-btn {
         border: none;
@@ -864,7 +859,6 @@
         display: table;
         border-collapse: separate;
         width: 305px;
-        margin-left: 5%;
     }
     .mobile-search-result-page-container {
         width: 52%;
