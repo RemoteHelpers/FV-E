@@ -775,7 +775,6 @@
     background: #FFFFFF;
 }
 .card-ed-photo {
-    height: 205px;
     border-top-left-radius: 30px;
     object-fit: cover;
     border-bottom-left-radius: 30px;
