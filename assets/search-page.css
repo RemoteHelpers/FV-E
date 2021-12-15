@@ -835,7 +835,7 @@
         align-items: flex-start;
         margin-top: 0;
         margin-bottom: 0;
-        margin-left: -5%;
+        /* margin-left: -5%; */
     }
     .input-group {
         position: relative;
@@ -893,7 +893,7 @@
         align-items: flex-start;
         margin-top: 0;
         margin-bottom: 0;
-        margin-left: -5%;
+        /* margin-left: -5%; */
     }
     .input-group {
         position: relative;
