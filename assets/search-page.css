@@ -827,7 +827,6 @@
     .search-product-card {
         border-radius: 30px;
         background: #FFFFFF;
-        box-shadow: -5px -5px 10px rgba(189, 189, 189, 0.25), 5px 5px 10px rgba(189, 189, 189, 0.25);
     }
 
     .price {
