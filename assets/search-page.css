@@ -1005,3 +1005,7 @@
         padding-right: 10px;
     }
 }
+
+.img-link {
+    display: block;
+}
