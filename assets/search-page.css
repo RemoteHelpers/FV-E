@@ -584,7 +584,7 @@
     }
 
     .search-product-card:hover {
-        border: 1px solid #F13F00;
+        /* border: 1px solid #F13F00; */
     } 
 
     .card-ed-photo {
