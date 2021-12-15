@@ -999,4 +999,7 @@
     .grid__item {
         padding-left: 0;
     }
+    .search-form__input {
+        padding-left: 10px;
+    }
 }
