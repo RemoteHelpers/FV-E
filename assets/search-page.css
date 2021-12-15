@@ -977,4 +977,5 @@
 .btn-product:hover {
     color: #fff;
     background-color: #f13f00;
+    text-decoration: none;
 }
