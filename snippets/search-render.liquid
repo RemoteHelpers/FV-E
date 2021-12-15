@@ -93,10 +93,15 @@
     </ul>
     {% for item in result %}
     {% if item.object_type == 'page' %}
-    <div align="center" class="mobile-search-result-page-container">
-    <div style="padding-top: 4%;"><a href="{{item.url}}" class="mobile-search-result-page-type">{{item.object_type}}: </a><a class="mobile-search-result-page-title" href="{{item.url}}">{{item.title}}</a></div>  
-    <div><a href="{{item.url}}" class="search-result-page-link">{{shop.domain}}/...{{item.title}}</a></div>
-  </div>
+    <!-- <div align="center" class="mobile-search-result-page-container">
+      <div style="padding-top: 4%;">
+        <a href="{{item.url}}" class="mobile-search-result-page-type">{{item.object_type}}: </a>
+        <a class="mobile-search-result-page-title" href="{{item.url}}">{{item.title}}</a>
+      </div>  
+      <div>
+        <a href="{{item.url}}" class="search-result-page-link">{{shop.domain}}/...{{item.title}}</a>
+      </div>
+    </div> -->
 
       {%endif%}
     {%endfor%}
