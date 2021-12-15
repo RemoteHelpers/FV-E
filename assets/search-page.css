@@ -982,10 +982,10 @@
 
 @media (max-width: 1070px) {
     .display-search-result ol {
-
+        column-gap: 30px;
     }
 
     .display-search-result li {
-        width: calc(50% - 90px);
+        width: calc(50% - 15px);
     }
 }
