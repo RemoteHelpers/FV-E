@@ -181,6 +181,7 @@ section {
 
 .section__left {
     width: unset;
+    background-color: rgb(202, 236, 146);
 }
 
 .section__right {
