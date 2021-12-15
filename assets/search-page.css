@@ -1001,6 +1001,7 @@
     .mobile-li {
         width: 70%;
         border: 2px solid transparent;
+        border-radius: 30px;
         box-shadow: -5px -5px 10px rgb(189 189 189 / 25%), 5px 5px 10px rgb(189 189 189 / 25%);
         transition: all .3s ease;
     }
