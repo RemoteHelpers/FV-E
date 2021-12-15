@@ -991,6 +991,10 @@
 }
 
 @media (max-width: 850px) {
+    .mobile-ul {
+        justify-content: center;
+    }
+
     .mobile-li {
         width: 70%;
     }
