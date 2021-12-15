@@ -574,13 +574,13 @@
     }
 
     .search-product-card {
-        height: 190px;
-        width: 71%;
+        /* height: 190px;
+        width: 71%; */
         margin-left: 0px;
         border-radius: 30px;
         background: #FFFFFF;
-        box-shadow: -5px -5px 10px rgba(189, 189, 189, 0.25), 5px 5px 10px rgba(189, 189, 189, 0.25);
-        border: 1px solid transparent;
+        /* box-shadow: -5px -5px 10px rgba(189, 189, 189, 0.25), 5px 5px 10px rgba(189, 189, 189, 0.25);
+        border: 1px solid transparent; */
     }
 
     .search-product-card:hover {
