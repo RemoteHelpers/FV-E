@@ -63,8 +63,10 @@
 
           <div class="search-product-card">
             <div class="row">
-              <div class="col-xs-4"><img class="card-ed-photo" src="{{ item | img_url: 'master' }}"
+              <a href="{{ item.url }}">
+                <div class="col-xs-4"><img class="card-ed-photo" src="{{ item | img_url: 'master' }}"
                   alt="{{ item.image.alt | escape }}"></div>
+              </a>
               <div class="card-ed-details">
                 <div class="row">
                   <div class="col-xs-8">
