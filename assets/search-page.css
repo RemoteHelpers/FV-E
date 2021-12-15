@@ -956,7 +956,7 @@
 }
 
 .btn-product {
-    display: inline-block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -970,5 +970,6 @@
     color: #f13f00;
     text-transform: uppercase;
     border: 2px solid #f13f00;
+    border-radius: 71px;
     transition: .3s;
 }
