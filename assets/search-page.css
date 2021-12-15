@@ -994,3 +994,9 @@
         width: 100%;  
     }
 }
+
+@media (max-width: 340px) {
+    .grid__item {
+        padding-left: 0;
+    }
+}
