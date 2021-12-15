@@ -182,6 +182,7 @@
 }
 
 .display-search-result li {
+    padding-bottom: 70px;
     width: calc(33.33% - 30px);
     border-radius: 30px;
     background: #FFFFFF;
