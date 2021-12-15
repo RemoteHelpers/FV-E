@@ -182,12 +182,10 @@
 }
 
 .display-search-result li {
-    padding-bottom: 50px;
     width: calc(33.33% - 30px);
     border-radius: 30px;
     background: #FFFFFF;
     border: 2px solid transparent;
-    box-shadow: -5px -5px 10px rgba(189, 189, 189, 0.25), 5px 5px 10px rgba(189, 189, 189, 0.25);
     transition: all .3s ease;
     /* background-color: rgba(145, 238, 127, 0.822); */
 }
@@ -198,15 +196,8 @@
 }
 
 .search-product-card {
-    /* margin-bottom: 20px;
-    height: 180px;
-    width: 97%;
-    margin-left: 30px; */
-    /* border-radius: 30px;
-    background: #FFFFFF;
-    border: 2px solid transparent;
+    padding-bottom: 50px;
     box-shadow: -5px -5px 10px rgba(189, 189, 189, 0.25), 5px 5px 10px rgba(189, 189, 189, 0.25);
-    transition: all .3s ease; */
 } 
 
 /* .search-product-card:hover {
