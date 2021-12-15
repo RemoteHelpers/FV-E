@@ -198,6 +198,7 @@
 .search-product-card {
     padding-bottom: 50px;
     box-shadow: -5px -5px 10px rgba(189, 189, 189, 0.25), 5px 5px 10px rgba(189, 189, 189, 0.25);
+    border-radius: 30px;
 } 
 
 /* .search-product-card:hover {
