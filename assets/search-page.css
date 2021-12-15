@@ -992,6 +992,7 @@
 
 @media (max-width: 850px) {
     .mobile-ul {
+        display: flex;
         justify-content: center;
     }
 
