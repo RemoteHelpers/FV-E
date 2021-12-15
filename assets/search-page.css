@@ -999,6 +999,7 @@
     }
 
     .mobile-li {
+        padding-bottom: 30px;
         width: 70%;
         border: 2px solid transparent;
         border-radius: 30px;
